@@ -1,0 +1,1731 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>AI進化レーダー</title>
+<meta name="description" content="使っているAIツールの最新アップデートを集めて重要度判定するダッシュボード" />
+<meta name="theme-color" content="#101426" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="AI進化レーダー" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+  /* ============ Design tokens ============ */
+  :root{
+    --bg:#eef0f9;
+    --surface:#ffffff;
+    --surface-2:#f6f7fc;
+    --border:#e8eaf3;
+    --border-strong:#d8dce9;
+    --text:#161b2e;
+    --text-soft:#56607a;
+    --text-mute:#8d93a9;
+    --brand:#5b5bf0;
+    --brand-2:#8b5cf6;
+    --brand-soft:#eceeff;
+    --brand-ink:#4338ca;
+    --brand-grad:linear-gradient(135deg,#6366f1 0%,#7c5cf6 55%,#a855f7 100%);
+    --shadow:0 2px 4px rgba(23,27,46,.04), 0 12px 32px rgba(23,27,46,.08);
+    --shadow-sm:0 1px 2px rgba(23,27,46,.05), 0 4px 14px rgba(23,27,46,.04);
+    --shadow-lg:0 4px 10px rgba(23,27,46,.06), 0 24px 48px rgba(80,70,229,.14);
+    --radius:18px;
+    --radius-sm:12px;
+
+    --rank-s:#e11d48; --rank-s-bg:#fff0f3;
+    --rank-a:#ea580c; --rank-a-bg:#fff4ec;
+    --rank-b:#2563eb; --rank-b-bg:#edf3ff;
+    --rank-c:#64748b; --rank-c-bg:#f1f3f8;
+
+    --ok:#16a34a; --ok-bg:#e9f9f0;
+    --warn:#d97706; --warn-bg:#fff7e8;
+    --err:#dc2626; --err-bg:#fdecec;
+
+    --side-bg:#101426;
+    --side-bg-2:#161b33;
+    --side-text:rgba(235,238,255,.66);
+    --side-mute:rgba(235,238,255,.38);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    font-family:"Outfit","Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",system-ui,-apple-system,sans-serif;
+    background:
+      radial-gradient(1100px 520px at 88% -12%, rgba(168,140,255,.16) 0%, transparent 60%),
+      radial-gradient(900px 480px at -8% 22%, rgba(96,180,255,.13) 0%, transparent 55%),
+      radial-gradient(800px 500px at 60% 110%, rgba(255,140,190,.08) 0%, transparent 55%),
+      var(--bg);
+    background-attachment:fixed;
+    color:var(--text);
+    -webkit-font-smoothing:antialiased;line-height:1.65;
+    font-size:15px;
+  }
+  button{font-family:inherit;cursor:pointer}
+  input,select,textarea{font-family:inherit;font-size:15px;accent-color:var(--brand)}
+  a{color:inherit}
+  ::selection{background:#cdd2ff}
+  ::-webkit-scrollbar{width:10px;height:10px}
+  ::-webkit-scrollbar-thumb{background:#c5cadc;border-radius:6px;border:2px solid transparent;background-clip:content-box}
+  ::-webkit-scrollbar-thumb:hover{background:#aab1c9;border:2px solid transparent;background-clip:content-box}
+  ::-webkit-scrollbar-track{background:transparent}
+  :focus-visible{outline:2px solid var(--brand);outline-offset:2px;border-radius:4px}
+
+  /* ============ Layout ============ */
+  .app{display:flex;min-height:100vh}
+  .sidebar{
+    width:252px;flex-shrink:0;
+    background:linear-gradient(180deg,var(--side-bg-2) 0%,var(--side-bg) 38%,#0c0f1e 100%);
+    display:flex;flex-direction:column;
+    position:sticky;top:0;height:100vh;
+    box-shadow:inset -1px 0 0 rgba(255,255,255,.05);
+  }
+  .brand{
+    display:flex;align-items:center;gap:12px;
+    padding:22px 20px 18px;
+    position:relative;
+  }
+  .brand::after{
+    content:"";position:absolute;left:20px;right:20px;bottom:0;height:1px;
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,.14),transparent);
+  }
+  .brand-logo{
+    width:40px;height:40px;border-radius:13px;flex-shrink:0;
+    background:var(--brand-grad);
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 6px 18px rgba(124,92,246,.5), inset 0 1px 0 rgba(255,255,255,.35);
+    position:relative;overflow:hidden;
+  }
+  .brand-logo::after{
+    content:"";position:absolute;inset:-30%;
+    background:conic-gradient(from 0deg, rgba(255,255,255,.65), transparent 70deg, transparent 360deg);
+    animation:radar-sweep 4s linear infinite;
+    mix-blend-mode:overlay;
+  }
+  @keyframes radar-sweep{to{transform:rotate(360deg)}}
+  .brand-logo svg{width:23px;height:23px;position:relative;z-index:1}
+  .brand-name{font-weight:800;font-size:16px;letter-spacing:.01em;line-height:1.15;color:#fff}
+  .brand-sub{font-size:10.5px;color:rgba(235,238,255,.45);font-weight:700;letter-spacing:.14em;margin-top:2px}
+
+  .nav{padding:10px 14px;flex:1;overflow-y:auto}
+  .nav::-webkit-scrollbar-thumb{background:rgba(255,255,255,.15);background-clip:content-box;border:2px solid transparent}
+  .nav-group-title{
+    font-size:10.5px;font-weight:800;color:var(--side-mute);
+    letter-spacing:.14em;padding:16px 12px 7px;text-transform:uppercase;
+  }
+  .nav-item{
+    display:flex;align-items:center;gap:12px;
+    padding:10px 13px;border-radius:12px;
+    color:var(--side-text);font-weight:600;font-size:14px;
+    border:none;background:none;width:100%;text-align:left;
+    transition:background .15s,color .15s,transform .15s;position:relative;
+    margin-bottom:2px;
+  }
+  .nav-item:hover{background:rgba(255,255,255,.07);color:#fff;transform:translateX(2px)}
+  .nav-item.active{
+    background:var(--brand-grad);color:#fff;
+    box-shadow:0 6px 16px rgba(99,80,240,.45), inset 0 1px 0 rgba(255,255,255,.25);
+  }
+  .nav-item svg{width:18px;height:18px;flex-shrink:0;opacity:.85}
+  .nav-item.active svg{opacity:1}
+  .nav-item .badge{
+    margin-left:auto;background:rgba(255,255,255,.14);color:#fff;
+    font-size:11px;font-weight:800;min-width:21px;height:21px;
+    border-radius:11px;display:flex;align-items:center;justify-content:center;padding:0 7px;
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,.18);
+  }
+  .nav-item.active .badge{background:rgba(255,255,255,.24)}
+
+  .main{flex:1;min-width:0;display:flex;flex-direction:column}
+  .topbar{
+    display:flex;align-items:center;gap:14px;
+    padding:15px 30px;
+    background:rgba(255,255,255,.72);
+    backdrop-filter:blur(14px) saturate(1.4);
+    -webkit-backdrop-filter:blur(14px) saturate(1.4);
+    border-bottom:1px solid rgba(216,220,233,.6);
+    position:sticky;top:0;z-index:20;
+  }
+  .topbar h1{font-size:21px;font-weight:800;letter-spacing:.01em;color:#11152a}
+  .topbar .page-sub{font-size:12.5px;color:var(--text-mute);font-weight:500;margin-top:0}
+  .topbar .spacer{flex:1}
+  .menu-btn{display:none;background:var(--surface);border:1px solid var(--border-strong);border-radius:11px;padding:8px;color:var(--text-soft)}
+  .menu-btn svg{width:20px;height:20px;display:block}
+
+  .content{padding:26px 30px 70px;max-width:1180px;width:100%;margin:0 auto}
+  #view > *{animation:rise .35s cubic-bezier(.21,.8,.35,1) both}
+  #view > *:nth-child(2){animation-delay:.04s}
+  #view > *:nth-child(3){animation-delay:.08s}
+  #view > *:nth-child(4){animation-delay:.12s}
+  #view > *:nth-child(5){animation-delay:.16s}
+  #view > *:nth-child(6){animation-delay:.2s}
+  @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+
+  /* ============ Buttons ============ */
+  .btn{
+    display:inline-flex;align-items:center;gap:7px;justify-content:center;
+    padding:9px 17px;border-radius:12px;border:1px solid var(--border-strong);
+    background:var(--surface);color:var(--text);font-weight:700;font-size:14px;
+    transition:transform .12s,box-shadow .15s,background .15s,border-color .15s;
+    white-space:nowrap;box-shadow:var(--shadow-sm);
+  }
+  .btn:hover{background:var(--surface-2);border-color:#c0c5d8;transform:translateY(-1px);box-shadow:var(--shadow)}
+  .btn:active{transform:translateY(0) scale(.97)}
+  .btn svg{width:16px;height:16px}
+  .btn-primary{
+    background:var(--brand-grad);border-color:transparent;color:#fff;
+    box-shadow:0 4px 14px rgba(108,86,243,.4), inset 0 1px 0 rgba(255,255,255,.3);
+  }
+  .btn-primary:hover{background:var(--brand-grad);filter:brightness(1.08);border-color:transparent;box-shadow:0 6px 20px rgba(108,86,243,.5), inset 0 1px 0 rgba(255,255,255,.3)}
+  .btn-ghost{border-color:transparent;background:transparent;color:var(--text-soft);box-shadow:none}
+  .btn-ghost:hover{background:rgba(23,27,46,.05);box-shadow:none}
+  .btn-danger{color:var(--err);border-color:#f3c7c7}
+  .btn-danger:hover{background:var(--err-bg);border-color:#eeb4b4}
+  .btn-sm{padding:6px 12px;font-size:13px;border-radius:10px}
+  .btn-icon{padding:8px;border-radius:10px}
+  .btn-icon svg{width:16px;height:16px}
+
+  /* ============ Cards / badges ============ */
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow-sm)}
+
+  .rank{
+    display:inline-flex;align-items:center;justify-content:center;
+    font-weight:800;font-size:12.5px;border-radius:9px;
+    width:27px;height:25px;letter-spacing:.02em;flex-shrink:0;
+  }
+  .rank.S{
+    color:#fff;background:linear-gradient(135deg,#fb4d6d,#e11d48 60%,#c4123a);
+    box-shadow:0 3px 10px rgba(225,29,72,.45), inset 0 1px 0 rgba(255,255,255,.35);
+  }
+  .rank.A{
+    color:#fff;background:linear-gradient(135deg,#fb923c,#ea580c 65%);
+    box-shadow:0 3px 9px rgba(234,88,12,.38), inset 0 1px 0 rgba(255,255,255,.3);
+  }
+  .rank.B{color:var(--rank-b);background:var(--rank-b-bg);box-shadow:inset 0 0 0 1.5px #c4d7fb}
+  .rank.C{color:var(--rank-c);background:var(--rank-c-bg)}
+
+  .chip{
+    display:inline-flex;align-items:center;gap:5px;
+    padding:3px 10px;border-radius:999px;font-size:12px;font-weight:600;
+    background:var(--surface-2);border:1px solid var(--border);color:var(--text-soft);
+    white-space:nowrap;
+  }
+  .chip.cat{background:#f2efff;border-color:#e1daff;color:#5b50c9}
+  .status{
+    display:inline-flex;align-items:center;gap:6px;
+    padding:4px 11px;border-radius:999px;font-size:12px;font-weight:700;white-space:nowrap;
+  }
+  .status::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor;box-shadow:0 0 6px currentColor}
+  .status.unread{color:#4338ca;background:#edefff}
+  .status.read{color:#5a6478;background:#eef1f6}
+  .status.try_later{color:#b45309;background:#fff3dd}
+  .status.tried{color:#0e7490;background:#e0f5fb}
+  .status.adopted{color:#15803d;background:#e5f7ec}
+  .status.ignored{color:#94a3b8;background:#f1f3f8}
+  .mark-read{display:inline-flex;align-items:center;gap:4px;padding:4px 10px;font-size:12px;font-weight:700;border-radius:8px;border:1px solid var(--border-strong);background:var(--surface);color:var(--text-soft);white-space:nowrap;transition:.12s}
+  .mark-read:hover{border-color:var(--ok);color:var(--ok);background:var(--ok-bg)}
+  .mark-read svg{width:13px;height:13px}
+  .auto-status{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:700;color:var(--brand-ink);background:var(--brand-soft);border:1px solid #dcdcff;border-radius:999px;padding:5px 12px;white-space:nowrap}
+  .auto-status .spin{width:13px;height:13px;border:2px solid #c7c5ff;border-top-color:var(--brand);border-radius:50%;animation:spin .7s linear infinite;flex-shrink:0}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .status.ignored::before{box-shadow:none}
+  .status.read::before{box-shadow:none}
+
+  /* ============ Update card ============ */
+  .grid{display:grid;gap:15px}
+  .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+  .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+  .grid.cols-4{grid-template-columns:repeat(4,1fr)}
+
+  .ucard{
+    background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+    padding:17px 18px;display:flex;flex-direction:column;gap:11px;
+    transition:transform .18s,box-shadow .18s,border-color .18s;
+    cursor:pointer;position:relative;overflow:hidden;box-shadow:var(--shadow-sm);
+  }
+  .ucard::before{
+    content:"";position:absolute;left:0;top:0;bottom:0;width:0;
+    transition:width .18s;
+  }
+  .ucard:hover{border-color:#c9c6f5;box-shadow:var(--shadow-lg);transform:translateY(-3px)}
+  .ucard.rk-S::before{width:4px;background:linear-gradient(180deg,#fb4d6d,#e11d48)}
+  .ucard.rk-A::before{width:4px;background:linear-gradient(180deg,#fb923c,#ea580c)}
+  .ucard.rk-S{background:linear-gradient(135deg,#fffafb 0%,#fff 45%)}
+  .ucard-top{display:flex;align-items:flex-start;gap:10px}
+  .ucard-tool{display:flex;align-items:center;gap:8px;min-width:0}
+  .tool-dot{width:9px;height:9px;border-radius:3.5px;flex-shrink:0;background:var(--brand);box-shadow:0 0 0 3px rgba(91,91,240,.12)}
+  .ucard-tool span{font-size:12.5px;font-weight:700;color:var(--text-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .ucard h3{font-size:17.5px;font-weight:800;line-height:1.55;letter-spacing:.01em;color:#11152a}
+  .ucard .summary{font-size:13.5px;color:var(--text-soft);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .ucard-meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:auto}
+  .ucard-date{font-size:12px;color:var(--text-mute);font-weight:600}
+
+  /* ============ Stat tiles ============ */
+  .stat{
+    background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+    padding:17px 19px;display:flex;flex-direction:column;gap:6px;box-shadow:var(--shadow-sm);
+    position:relative;overflow:hidden;transition:transform .18s,box-shadow .18s;
+  }
+  .stat:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+  .stat::after{
+    content:"";position:absolute;right:-26px;top:-26px;width:90px;height:90px;border-radius:50%;
+    background:radial-gradient(circle,rgba(124,92,246,.09),transparent 70%);
+  }
+  .stat .label{font-size:12.5px;color:var(--text-mute);font-weight:700;display:flex;align-items:center;gap:8px}
+  .stat .label svg{
+    width:27px;height:27px;padding:5.5px;border-radius:9px;flex-shrink:0;
+    background:var(--brand-soft);color:var(--brand-ink);
+  }
+  .stat .value{font-size:32px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+  .stat .value small{font-size:14px;font-weight:600;color:var(--text-mute)}
+  .stat.is-link{cursor:pointer;text-align:left;border-color:var(--border);font:inherit;color:inherit}
+  .stat.is-link:hover{border-color:#c1bdf5;box-shadow:var(--shadow-lg)}
+  .stat-go{position:absolute;top:14px;right:14px;color:var(--text-mute);opacity:.45;transition:.15s;z-index:1}
+  .stat-go svg{width:18px;height:18px;display:block}
+  .stat.is-link:hover .stat-go{opacity:1;color:var(--brand);transform:translateX(2px)}
+
+  .section-head{display:flex;align-items:center;gap:10px;margin:30px 0 14px}
+  .section-head h2{font-size:18px;font-weight:800;letter-spacing:.01em;color:#11152a;display:flex;align-items:center;gap:9px}
+  .section-head h2::before{content:"";width:4px;height:17px;border-radius:2px;background:var(--brand-grad)}
+  .section-head .count{font-size:13px;color:var(--text-mute);font-weight:700}
+  .section-head .spacer{flex:1}
+
+  /* ============ Table ============ */
+  .table-wrap{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm)}
+  table{width:100%;border-collapse:collapse}
+  th{
+    text-align:left;font-size:11.5px;font-weight:800;color:var(--text-mute);
+    padding:12px 16px;border-bottom:1px solid var(--border);background:var(--surface-2);
+    letter-spacing:.05em;white-space:nowrap;text-transform:uppercase;
+  }
+  td{padding:13px 16px;border-bottom:1px solid var(--border);font-size:14px;vertical-align:middle}
+  tr:last-child td{border-bottom:none}
+  tbody tr{transition:background .12s}
+  tbody tr:hover{background:#f6f6ff}
+  .row-title{font-weight:800;font-size:14.5px;color:#11152a;cursor:pointer;transition:color .12s}
+  .row-title:hover{color:var(--brand)}
+  .tool-on{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--ok)}
+  .tool-on svg{width:14px;height:14px}
+  .tool-off{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--text-mute)}
+
+  /* ============ Filter bar ============ */
+  .filterbar{
+    display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:18px;
+  }
+  .search{
+    display:flex;align-items:center;gap:8px;background:var(--surface);
+    border:1px solid var(--border-strong);border-radius:12px;padding:0 13px;
+    flex:1;min-width:200px;max-width:360px;box-shadow:var(--shadow-sm);
+    transition:border-color .15s,box-shadow .15s;
+  }
+  .search:focus-within{border-color:var(--brand);box-shadow:0 0 0 3.5px rgba(91,91,240,.14)}
+  .search svg{width:17px;height:17px;color:var(--text-mute);flex-shrink:0}
+  .search input{border:none;outline:none;padding:10px 0;background:none;width:100%;color:var(--text)}
+  select.filter{
+    border:1px solid var(--border-strong);border-radius:12px;padding:9px 32px 9px 13px;
+    background:var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238b91a3' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E") no-repeat right 12px center;
+    appearance:none;font-weight:600;color:var(--text-soft);outline:none;
+    box-shadow:var(--shadow-sm);transition:border-color .15s,box-shadow .15s;cursor:pointer;
+  }
+  select.filter:hover{border-color:#c0c5d8}
+  select.filter:focus{border-color:var(--brand);box-shadow:0 0 0 3.5px rgba(91,91,240,.14)}
+  .toggle-pill{
+    display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:12px;
+    border:1px solid var(--border-strong);background:var(--surface);font-weight:600;font-size:13.5px;color:var(--text-soft);
+    box-shadow:var(--shadow-sm);cursor:pointer;transition:border-color .15s;
+  }
+  .toggle-pill:hover{border-color:#c0c5d8}
+  .toggle-pill input{width:15px;height:15px;cursor:pointer}
+
+  /* ============ Forms ============ */
+  .form{display:flex;flex-direction:column;gap:18px}
+  .form-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px 26px;box-shadow:var(--shadow-sm)}
+  .form-card + .form-card{margin-top:16px}
+  .form-card h3{font-size:14px;font-weight:800;margin-bottom:17px;color:var(--text);display:flex;align-items:center;gap:9px}
+  .form-card h3 svg{
+    width:26px;height:26px;padding:5px;border-radius:8px;flex-shrink:0;
+    background:var(--brand-soft);color:var(--brand-ink);
+  }
+  .section-head h2 svg{width:17px;height:17px}
+  .field{display:flex;flex-direction:column;gap:6px}
+  .field + .field{margin-top:15px}
+  .field label{font-size:13px;font-weight:700;color:var(--text-soft)}
+  .field label .req{color:var(--err);margin-left:3px}
+  .field .hint{font-size:11.5px;color:var(--text-mute);font-weight:500}
+  .field input[type=text],.field input[type=url],.field input[type=number],.field input[type=date],.field select,.field textarea{
+    border:1px solid var(--border-strong);border-radius:11px;padding:10px 13px;
+    background:var(--surface);color:var(--text);outline:none;transition:border-color .15s,box-shadow .15s;width:100%;
+  }
+  .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--brand);box-shadow:0 0 0 3.5px rgba(91,91,240,.14)}
+  .field textarea{resize:vertical;min-height:80px;line-height:1.65}
+  .field-row{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+  .checks{display:flex;flex-wrap:wrap;gap:9px}
+  .check-pill{
+    display:inline-flex;align-items:center;gap:7px;padding:8px 14px;border-radius:999px;
+    border:1px solid var(--border-strong);background:var(--surface);font-weight:600;font-size:13.5px;
+    color:var(--text-soft);cursor:pointer;transition:all .14s;user-select:none;
+  }
+  .check-pill:hover{border-color:#b6b3f0;color:var(--brand-ink);transform:translateY(-1px)}
+  .check-pill.on{
+    background:var(--brand-grad);border-color:transparent;color:#fff;
+    box-shadow:0 3px 10px rgba(108,86,243,.35);
+  }
+  .check-pill input{display:none}
+  .switch{display:inline-flex;align-items:center;gap:10px;font-weight:600;color:var(--text-soft);cursor:pointer}
+  .switch input{appearance:none;width:44px;height:25px;border-radius:999px;background:#ccd1e0;position:relative;cursor:pointer;transition:.2s;flex-shrink:0}
+  .switch input::after{content:"";position:absolute;width:19px;height:19px;border-radius:50%;background:#fff;top:3px;left:3px;transition:.2s cubic-bezier(.3,1.4,.6,1);box-shadow:0 1px 4px rgba(0,0,0,.25)}
+  .switch input:checked{background:var(--brand);box-shadow:0 2px 8px rgba(91,91,240,.4)}
+  .switch input:checked::after{left:22px}
+
+  .form-actions{display:flex;gap:10px;margin-top:8px}
+
+  /* ============ Detail ============ */
+  .detail-grid{display:grid;grid-template-columns:1fr 320px;gap:20px;align-items:start}
+  .detail-block{margin-bottom:18px}
+  .detail-block .blk-label{font-size:12px;font-weight:800;color:var(--text-mute);letter-spacing:.04em;margin-bottom:6px;text-transform:uppercase}
+  .detail-title{font-size:23px;font-weight:800;line-height:1.4;letter-spacing:.005em;margin-bottom:12px}
+  .raw-excerpt{background:var(--surface-2);border:1px solid var(--border);border-radius:13px;padding:15px 17px;font-size:13.5px;color:var(--text-soft);white-space:pre-wrap;max-height:280px;overflow-y:auto;line-height:1.75}
+
+  /* ---- Detail READ view ---- */
+  .detail-head{margin-bottom:18px}
+  .detail-toprow{display:flex;gap:11px;align-items:center;margin-bottom:13px;flex-wrap:wrap}
+  .detail-title-lg{font-size:26px;font-weight:800;line-height:1.42;letter-spacing:.003em;margin-bottom:13px}
+  .detail-tool{display:inline-flex;align-items:center;gap:8px;font-weight:700;color:var(--text-soft);font-size:14px}
+  .read-hero{background:linear-gradient(135deg,#f0f1ff 0%,#f6f2ff 100%);border:1px solid #dedcff;border-radius:var(--radius);padding:20px 22px;margin-bottom:15px;box-shadow:var(--shadow-sm)}
+  .read-hero .rb-head{display:flex;align-items:center;gap:9px;margin-bottom:10px}
+  .read-hero .rb-ico{width:30px;height:30px;border-radius:9px;display:flex;align-items:center;justify-content:center;background:var(--brand-grad);color:#fff;flex-shrink:0}
+  .read-hero .rb-ico svg{width:16px;height:16px}
+  .read-hero .rb-label{font-size:13px;font-weight:800;color:var(--brand-ink);letter-spacing:.03em}
+  .read-hero .rb-body{font-size:18px;line-height:1.85;font-weight:700;color:#2a2566}
+  .read-block{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px 22px;margin-bottom:13px;box-shadow:var(--shadow-sm)}
+  .read-block .rb-head{display:flex;align-items:center;gap:10px;margin-bottom:11px}
+  .read-block .rb-ico{width:32px;height:32px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .read-block .rb-ico svg{width:17px;height:17px}
+  .read-block .rb-label{font-size:13.5px;font-weight:800;letter-spacing:.02em}
+  .read-block .rb-body{font-size:15.5px;line-height:1.92;color:var(--text);white-space:pre-wrap;word-break:break-word}
+  .read-block.is-action{background:linear-gradient(135deg,#effaf2 0%,#f3fbf6 100%);border-color:#c4ecd2}
+  .read-block.is-raw{background:var(--surface-2)}
+  .read-block.is-raw .rb-body{font-size:14px;color:var(--text-soft);line-height:1.85;max-height:340px;overflow-y:auto}
+  .read-add{display:flex;align-items:center;gap:8px;width:100%;text-align:left;background:transparent;border:1.5px dashed var(--border-strong);border-radius:13px;padding:12px 16px;color:var(--text-mute);font-weight:700;font-size:13.5px;margin-bottom:13px;transition:.13s}
+  .read-add:hover{border-color:var(--brand);color:var(--brand);background:var(--brand-soft)}
+  .read-add svg{width:15px;height:15px}
+  .quick-status{display:flex;gap:8px;flex-wrap:wrap;margin-top:11px}
+  .meta-list{display:flex;flex-direction:column;gap:0}
+  .meta-list .row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid var(--border)}
+  .meta-list .row:last-child{border-bottom:none}
+  .meta-list .k{font-size:13px;color:var(--text-mute);font-weight:600}
+  .meta-list .v{font-size:13.5px;font-weight:700;text-align:right}
+  .score-ring{display:flex;align-items:center;gap:14px;padding:4px 0 8px}
+  .score-num{font-size:40px;font-weight:800;letter-spacing:-.03em;background:var(--brand-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+
+  /* ============ Misc ============ */
+  .empty{
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;
+    padding:58px 20px;text-align:center;color:var(--text-mute);
+  }
+  .empty svg{width:52px;height:52px;opacity:.85;padding:11px;border-radius:16px;background:var(--brand-soft);color:var(--brand)}
+  .empty h3{font-size:16px;font-weight:800;color:var(--text-soft)}
+  .empty p{font-size:13.5px;max-width:340px}
+
+  .back-link{display:inline-flex;align-items:center;gap:6px;color:var(--text-soft);font-weight:700;font-size:13.5px;background:none;border:none;margin-bottom:8px;border-radius:8px;padding:4px 6px 4px 2px;transition:color .13s,transform .13s}
+  .back-link:hover{color:var(--brand);transform:translateX(-2px)}
+  .back-link svg{width:16px;height:16px}
+
+  .toast-wrap{position:fixed;bottom:22px;right:22px;z-index:100;display:flex;flex-direction:column;gap:10px}
+  .toast{
+    background:rgba(23,28,46,.92);backdrop-filter:blur(8px);color:#fff;padding:13px 18px;border-radius:14px;font-weight:700;font-size:14px;
+    box-shadow:0 12px 36px rgba(0,0,0,.3), inset 0 1px 0 rgba(255,255,255,.12);display:flex;align-items:center;gap:10px;
+    animation:slideIn .3s cubic-bezier(.2,.9,.3,1.2);max-width:340px;
+  }
+  .toast svg{width:18px;height:18px;flex-shrink:0}
+  .toast.ok{background:linear-gradient(135deg,rgba(18,103,60,.95),rgba(16,84,49,.95))}
+  .toast.err{background:linear-gradient(135deg,rgba(170,38,42,.95),rgba(140,30,34,.95))}
+  @keyframes slideIn{from{transform:translateY(14px) scale(.96);opacity:0}to{transform:translateY(0) scale(1);opacity:1}}
+
+  /* Modal */
+  .modal-bg{position:fixed;inset:0;background:rgba(16,19,38,.5);backdrop-filter:blur(5px);z-index:90;display:flex;align-items:center;justify-content:center;padding:20px;animation:fade .18s}
+  @keyframes fade{from{opacity:0}to{opacity:1}}
+  .modal{
+    background:var(--surface);border-radius:22px;max-width:440px;width:100%;padding:26px;
+    box-shadow:0 30px 80px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.8);
+    animation:pop .22s cubic-bezier(.2,.9,.3,1.15);
+    max-height:88vh;overflow-y:auto;
+  }
+  @keyframes pop{from{transform:translateY(14px) scale(.96);opacity:0}to{transform:translateY(0) scale(1);opacity:1}}
+  .modal h3{font-size:17px;font-weight:800;margin-bottom:8px}
+  .modal p{font-size:14px;color:var(--text-soft);margin-bottom:20px}
+  .modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:18px}
+
+  .log-line{display:flex;align-items:center;gap:11px;padding:11px 15px;border-bottom:1px solid var(--border);font-size:13.5px}
+  .log-line:last-child{border-bottom:none}
+  .log-ico{width:24px;height:24px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .log-ico svg{width:14px;height:14px}
+  .log-ico.ok{background:var(--ok-bg);color:var(--ok)}
+  .log-ico.err{background:var(--err-bg);color:var(--err)}
+  .log-ico.skip{background:var(--surface-2);color:var(--text-mute)}
+  .log-line .msg{flex:1;color:var(--text-soft)}
+  .log-line .tm{font-size:12px;color:var(--text-mute);font-weight:600}
+
+  .pri{display:inline-flex;align-items:center;justify-content:center;width:25px;height:23px;border-radius:7px;font-weight:800;font-size:12px}
+  .pri.A{color:#fff;background:linear-gradient(135deg,#fb923c,#ea580c);box-shadow:0 2px 6px rgba(234,88,12,.3)}
+  .pri.B{color:var(--rank-b);background:var(--rank-b-bg)}
+  .pri.C{color:var(--rank-c);background:var(--rank-c-bg)}
+
+  .cat-tile{
+    background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+    padding:19px 20px;cursor:pointer;transition:transform .18s,box-shadow .18s,border-color .18s;box-shadow:var(--shadow-sm);
+    position:relative;overflow:hidden;
+  }
+  .cat-tile:hover{border-color:#c9c6f5;box-shadow:var(--shadow-lg);transform:translateY(-3px)}
+  .cat-tile .ct-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+  .cat-tile .ct-name{font-size:15px;font-weight:800}
+  .cat-tile .ct-num{font-size:26px;font-weight:800;letter-spacing:-.02em}
+  .cat-tile .ct-bar{height:7px;border-radius:4px;background:var(--surface-2);box-shadow:inset 0 0 0 1px var(--border);overflow:hidden;margin-top:8px}
+  .cat-tile .ct-bar i{display:block;height:100%;background:var(--brand-grad);border-radius:4px;transition:width .5s cubic-bezier(.2,.8,.3,1)}
+
+  .seg{display:inline-flex;background:rgba(23,27,46,.05);border:1px solid var(--border);border-radius:13px;padding:4px;gap:3px}
+  .seg button{border:none;background:none;padding:8px 16px;border-radius:9px;font-weight:700;font-size:13.5px;color:var(--text-soft);transition:all .15s}
+  .seg button:hover{color:var(--text)}
+  .seg button.on{background:var(--surface);color:var(--brand-ink);box-shadow:0 2px 8px rgba(23,27,46,.12)}
+
+  .scrim{display:none}
+
+  /* ============ Responsive ============ */
+  @media(max-width:980px){
+    .detail-grid{grid-template-columns:1fr}
+    .grid.cols-4{grid-template-columns:repeat(2,1fr)}
+    .grid.cols-3{grid-template-columns:repeat(2,1fr)}
+  }
+  @media(max-width:760px){
+    .sidebar{position:fixed;left:0;top:0;z-index:60;transform:translateX(-100%);transition:transform .28s cubic-bezier(.3,.9,.3,1);box-shadow:0 0 60px rgba(0,0,0,.45)}
+    .sidebar.open{transform:translateX(0)}
+    .scrim{display:none;position:fixed;inset:0;background:rgba(10,12,24,.5);backdrop-filter:blur(2px);z-index:55}
+    .scrim.show{display:block}
+    .menu-btn{display:inline-flex}
+    .content{padding:18px 16px 60px}
+    .topbar{padding:12px 16px}
+    .topbar h1{font-size:17px}
+    .grid.cols-4{grid-template-columns:repeat(2,1fr)}
+    .grid.cols-3,.grid.cols-2{grid-template-columns:1fr}
+    .stat .value{font-size:26px}
+    .field-row{grid-template-columns:1fr}
+    .table-wrap{overflow-x:auto}
+    table{min-width:680px}
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="scrim" id="scrim" onclick="toggleMenu(false)"></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="2.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/>
+          <path d="M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1" opacity=".7"/>
+        </svg>
+      </div>
+      <div>
+        <div class="brand-name">AI進化レーダー</div>
+        <div class="brand-sub">AI UPDATE RADAR</div>
+      </div>
+    </div>
+    <nav class="nav" id="nav"></nav>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <button class="menu-btn" onclick="toggleMenu(true)" aria-label="メニュー">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <div>
+        <h1 id="pageTitle">ホーム</h1>
+        <div class="page-sub" id="pageSub"></div>
+      </div>
+      <span id="autoStatus" class="auto-status" style="display:none"></span>
+      <div class="spacer"></div>
+      <div id="topActions"></div>
+    </header>
+    <main class="content" id="view"></main>
+  </div>
+</div>
+<div class="toast-wrap" id="toasts"></div>
+<div id="modalRoot"></div>
+
+<script>
+/* ============================================================
+   AI進化レーダー — 単一HTML MVP
+   データ構造は仕様書(Supabase tools/updates/fetch_logs/categories)に準拠。
+   後でNext.js+Supabaseへ移行しやすいように、データ層をDB関数風に分離。
+   ============================================================ */
+
+/* ---------- Icons ---------- */
+const I = {
+  home:'<path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/>',
+  tools:'<path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/>',
+  updates:'<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h10M7 13h7"/>',
+  category:'<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',
+  flask:'<path d="M9 3h6M10 3v6l-5 8.5A2 2 0 0 0 6.7 21h10.6a2 2 0 0 0 1.7-3.5L14 9V3"/><path d="M7.5 15h9"/>',
+  fetch:'<path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 4v5h-5"/>',
+  plus:'<path d="M12 5v14M5 12h14"/>',
+  edit:'<path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/>',
+  trash:'<path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6"/>',
+  search:'<circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>',
+  check:'<path d="M20 6 9 17l-5-5"/>',
+  x:'<path d="M18 6 6 18M6 6l12 12"/>',
+  arrowLeft:'<path d="M19 12H5M12 19l-7-7 7-7"/>',
+  chevR:'<path d="m9 18 6-6-6-6"/>',
+  ext:'<path d="M15 3h6v6M10 14 21 3M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/>',
+  bolt:'<path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/>',
+  star:'<path d="m12 2 3 6.5 7 .8-5 4.7 1.3 7L12 17.5 5.4 21l1.3-7-5-4.7 7-.8z"/>',
+  inbox:'<path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.5 5h13l3.5 7v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-6z"/>',
+  eye:'<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+};
+function icon(name,cls){return `<svg class="${cls||''}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${I[name]||''}</svg>`}
+
+/* ---------- Constants (lib/constants.ts 相当) ---------- */
+const BUSINESS_CATEGORIES = [
+  'EC / 楽天 / LP制作','三高産業','Kiki Toa','アプリ開発','画像生成',
+  '動画生成','音楽制作','営業資料','自動化','その他'
+];
+const STATUS_LABELS = {unread:'未読',read:'既読',try_later:'あとで試す',tried:'試した',adopted:'導入済み',ignored:'無視'};
+const STATUS_ORDER = ['unread','read','try_later','tried','adopted','ignored'];
+const TOOL_COLORS = ['#4f46e5','#0ea5e9','#16a34a','#db2777','#ea580c','#7c3aed','#0891b2','#ca8a04','#dc2626','#059669'];
+
+/* ---------- Storage layer (lib/supabase.ts 相当の差し替えポイント) ---------- */
+const DB = {
+  KEY:'ai_radar_v1',
+  _data:null,
+  load(){
+    if(this._data) return this._data;
+    try{ this._data = JSON.parse(localStorage.getItem(this.KEY)); }catch(e){ this._data=null; }
+    if(!this._data){ this._data = seedData(); this.save(); }
+    else if(runMigrations(this._data)){ this.save(); } // 既存データへ重要アップデートを反映
+    return this._data;
+  },
+  save(){ localStorage.setItem(this.KEY, JSON.stringify(this._data)); },
+  reset(){ this._data = seedData(); this.save(); },
+};
+function uid(){ return 'id-'+Math.random().toString(36).slice(2,10)+Date.now().toString(36).slice(-4); }
+function nowISO(){ return new Date().toISOString(); }
+
+/* ---------- Score engine (lib/score.ts 相当・仕様書8章) ---------- */
+const SCORE_KEYWORDS = ['new model','release','beta','launch','api','pricing','code','agent','image','video','music','voice','workflow','automation','claude code','codex','gemini','chatgpt','suno','runway','v0'];
+function computeScore(update, tool){
+  let s = 0;
+  const text = ((update.title||'')+' '+(update.raw_excerpt||'')+' '+(update.raw_content||'')).toLowerCase();
+  const cats = update.related_categories || [];
+  if(tool && tool.is_using) s += 25;
+  if(tool && tool.priority==='A') s += 20;
+  else if(tool && tool.priority==='B') s += 10;
+  if(cats.includes('アプリ開発')) s += 15;
+  if(cats.includes('EC / 楽天 / LP制作')) s += 15;
+  if(cats.includes('Kiki Toa')) s += 15;
+  if(SCORE_KEYWORDS.some(k=>text.includes(k))) s += 20;
+  if(/pricing|料金|プラン|価格|無料|有料/.test(text)) s += 10;
+  if(/api|code|develop|開発|コード|sdk|cli/.test(text)) s += 15;
+  if(/image|video|music|画像|動画|音楽|音声|voice|生成/.test(text)) s += 15;
+  return s;
+}
+function rankFromScore(s){ return s>=85?'S':s>=70?'A':s>=50?'B':'C'; }
+
+/* ---------- Data access (各テーブル) ---------- */
+function getTools(){ return DB.load().tools; }
+function getUpdates(){ return DB.load().updates; }
+function getLogs(){ return DB.load().fetch_logs; }
+function toolById(id){ return getTools().find(t=>t.id===id); }
+function updateById(id){ return getUpdates().find(u=>u.id===id); }
+function toolColor(id){ const idx=getTools().findIndex(t=>t.id===id); return TOOL_COLORS[idx%TOOL_COLORS.length]; }
+
+function saveTool(t){
+  const d=DB.load();
+  if(t.id){ const i=d.tools.findIndex(x=>x.id===t.id); t.updated_at=nowISO(); d.tools[i]=t; }
+  else{ t.id=uid(); t.slug=t.slug||slugify(t.name); t.created_at=nowISO(); t.updated_at=nowISO(); t.last_fetched_at=null; d.tools.push(t); }
+  DB.save(); return t;
+}
+function deleteTool(id){
+  const d=DB.load();
+  d.tools = d.tools.filter(t=>t.id!==id);
+  d.updates = d.updates.filter(u=>u.tool_id!==id);
+  DB.save();
+}
+function saveUpdate(u){
+  const d=DB.load();
+  const tool=toolById(u.tool_id);
+  u.score = computeScore(u, tool);
+  u.rank = rankFromScore(u.score);
+  if(u.id){ const i=d.updates.findIndex(x=>x.id===u.id); u.updated_at=nowISO(); d.updates[i]=u; }
+  else{ u.id=uid(); u.created_at=nowISO(); u.updated_at=nowISO(); u.fetched_at=u.fetched_at||nowISO(); d.updates.push(u); }
+  DB.save(); return u;
+}
+function deleteUpdate(id){ const d=DB.load(); d.updates=d.updates.filter(u=>u.id!==id); DB.save(); }
+function setStatus(id,status){
+  const u=updateById(id); if(!u)return;
+  u.status=status; u.updated_at=nowISO();
+  u.is_saved = (status==='try_later'||status==='tried'||status==='adopted');
+  DB.save();
+}
+// 開かずに既読化（一覧・カードのクイックアクション用）
+function markRead(id){ setStatus(id,'read'); toast('既読にしました','ok'); render(); }
+function markReadMany(ids){ if(!ids||!ids.length)return; ids.forEach(id=>setStatus(id,'read')); toast(ids.length+'件を既読にしました','ok'); render(); }
+function addLog(log){ const d=DB.load(); log.id=uid(); log.created_at=nowISO(); d.fetch_logs.unshift(log); if(d.fetch_logs.length>60)d.fetch_logs.length=60; DB.save(); }
+function slugify(s){ return (s||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')||'tool-'+Math.random().toString(36).slice(2,6); }
+
+/* ---------- Recompute all scores (使用時に呼ぶ) ---------- */
+function recomputeAll(){
+  const d=DB.load();
+  d.updates.forEach(u=>{ const t=toolById(u.tool_id); u.score=computeScore(u,t); u.rank=rankFromScore(u.score); });
+  DB.save();
+}
+
+/* ============================================================
+   Seed data (仕様書9章 初期ツール + デモアップデート)
+   ============================================================ */
+function seedData(){
+  const t = (o)=>Object.assign({
+    id:uid(),slug:slugify(o.name),category:'',official_url:'',release_notes_url:'',rss_url:'',x_url:'',
+    priority:'B',is_using:false,related_businesses:[],memo:'',is_active:true,
+    last_fetched_at:null,created_at:nowISO(),updated_at:nowISO()
+  },o);
+
+  const tools = [
+    t({name:'ChatGPT / OpenAI',category:'総合AI',priority:'A',is_using:true,
+       official_url:'https://openai.com',release_notes_url:'https://help.openai.com/en/articles/6825453-chatgpt-release-notes',
+       x_url:'https://x.com/OpenAI',related_businesses:['アプリ開発','EC / 楽天 / LP制作','三高産業','Kiki Toa']}),
+    t({name:'Claude / Claude Code',category:'開発・文章AI',priority:'A',is_using:true,
+       official_url:'https://claude.com',release_notes_url:'https://docs.claude.com/en/release-notes',
+       x_url:'https://x.com/AnthropicAI',related_businesses:['アプリ開発','三高産業','EC / 楽天 / LP制作']}),
+    t({name:'Gemini',category:'総合AI',priority:'A',is_using:true,
+       official_url:'https://gemini.google.com',release_notes_url:'https://blog.google/products/gemini/',
+       x_url:'https://x.com/GoogleAI',related_businesses:['アプリ開発','画像生成','その他']}),
+    t({name:'v0',category:'アプリUI生成',priority:'A',is_using:true,
+       official_url:'https://v0.app',release_notes_url:'https://v0.app/changelog',related_businesses:['アプリ開発']}),
+    t({name:'Cursor',category:'AI開発環境',priority:'B',is_using:false,
+       official_url:'https://cursor.com',release_notes_url:'https://cursor.com/changelog',related_businesses:['アプリ開発']}),
+    t({name:'Suno',category:'音楽生成',priority:'A',is_using:true,
+       official_url:'https://suno.com',release_notes_url:'https://suno.com',related_businesses:['Kiki Toa','音楽制作']}),
+    t({name:'Runway',category:'動画生成',priority:'B',is_using:false,
+       official_url:'https://runwayml.com',release_notes_url:'https://runwayml.com/research',related_businesses:['Kiki Toa','動画生成']}),
+    t({name:'Canva',category:'デザイン',priority:'B',is_using:true,
+       official_url:'https://canva.com',release_notes_url:'https://canva.com/newsroom',related_businesses:['EC / 楽天 / LP制作','Kiki Toa','三高産業']}),
+    t({name:'NotebookLM',category:'情報整理',priority:'B',is_using:false,
+       official_url:'https://notebooklm.google.com',release_notes_url:'https://blog.google/technology/ai/notebooklm-new-features/',related_businesses:['三高産業','その他']}),
+  ];
+
+  const byName = (n)=>tools.find(x=>x.name===n).id;
+  const daysAgo = (n)=>{ const d=new Date(); d.setDate(d.getDate()-n); return d.toISOString(); };
+
+  const rawUp = [
+    {tool:'Claude / Claude Code',title:'Claude Code に新しいエージェント機能とサブエージェント並列実行が追加',
+     pub:daysAgo(1),cats:['アプリ開発','自動化'],
+     excerpt:'Claude Code でサブエージェントを並列起動し、複数ファイルの調査・編集を同時に進められるagent workflowが正式リリース。コード生成の精度とスピードが向上。',
+     summary:'Claude Code が複数の作業を並列で自動実行できるように。アプリ開発の調査・修正が一気に速くなる。',
+     impact:'アプリ開発の作業時間を大幅短縮。複数ファイルの修正を任せられる。',
+     action:'次のアプリ改修で並列エージェントを試す。'},
+    {tool:'ChatGPT / OpenAI',title:'OpenAI が新モデルと API の価格改定を発表（pricing / new model）',
+     pub:daysAgo(2),cats:['アプリ開発','営業資料','自動化'],
+     excerpt:'New model launch with lower API pricing. 推論性能が向上し、長文処理とコード生成が強化。API利用料が値下げ。',
+     summary:'新モデル登場＋API値下げ。文章作成・コード生成のコストが下がる。',
+     impact:'営業資料の自動生成や社内文書作成のコストダウンに直結。',
+     action:'営業資料テンプレを新モデルで再生成して品質比較。'},
+    {tool:'Suno',title:'Suno に新しい音楽生成モデルとステム分離（music / voice）機能が登場',
+     pub:daysAgo(3),cats:['Kiki Toa','音楽制作'],
+     excerpt:'New music generation model with higher fidelity vocals and stem separation. ボーカルと楽器を分離して書き出し可能に。',
+     summary:'Suno の音質が向上し、ボーカルと楽器を分けて書き出せるように。',
+     impact:'Kiki Toa の楽曲制作・YouTube用ミックスがやりやすくなる。',
+     action:'次の楽曲でステム分離を使ってミックス調整を試す。'},
+    {tool:'v0',title:'v0 が画面デザインからフルスタックアプリ生成に対応（code / launch）',
+     pub:daysAgo(4),cats:['アプリ開発'],
+     excerpt:'v0 now generates full-stack apps with database and API routes from a prompt. UI生成だけでなくバックエンドも生成。',
+     summary:'v0 が画面だけでなくDB・APIまで作れるように進化。',
+     impact:'アプリ開発のプロトタイプ作成がさらに高速化。',
+     action:'AI進化レーダーのNext.js版を v0 で試作してみる。'},
+    {tool:'Gemini',title:'Gemini に画像生成（image）と長文要約の新機能が追加',
+     pub:daysAgo(5),cats:['画像生成','その他'],
+     excerpt:'New image generation and long-context summarization features in Gemini app.',
+     summary:'Gemini で画像生成と長文の要約が強化。',
+     impact:'LP用の画像案出しや資料の下調べに使える。',
+     action:'楽天LPのバナー案を Gemini 画像生成で試す。'},
+    {tool:'Canva',title:'Canva に AI 一括デザイン生成（Magic）機能が追加',
+     pub:daysAgo(6),cats:['EC / 楽天 / LP制作','三高産業'],
+     excerpt:'New bulk AI design generation in Canva for marketing assets.',
+     summary:'Canva で複数デザインをAIが一括生成できるように。',
+     impact:'楽天の商品バナーや三高産業の社内資料を量産しやすい。',
+     action:'楽天セール用バナーを一括生成で作ってみる。'},
+    {tool:'Runway',title:'Runway が新しい動画生成モデル（video）をベータ公開',
+     pub:daysAgo(8),cats:['動画生成','Kiki Toa'],
+     excerpt:'Runway releases new video generation model in beta with longer clips.',
+     summary:'Runway の新動画モデルがベータ公開。長めのクリップ生成に対応。',
+     impact:'Kiki Toa の MV / YouTube 用映像制作に使える可能性。',
+     action:'ベータに登録して短いMV素材を生成テスト。'},
+    {tool:'Cursor',title:'Cursor のエディタUIと補完が小幅アップデート',
+     pub:daysAgo(10),cats:['アプリ開発'],
+     excerpt:'Minor UI tweaks and autocomplete improvements.',
+     summary:'Cursor の操作感と補完が少し改善。',
+     impact:'開発体験の小改善。急ぎで試す必要は低い。',
+     action:'時間がある時に最新版を入れて様子見。'},
+  ];
+
+  const updates = rawUp.map(r=>{
+    const tool = tools.find(x=>x.name===r.tool);
+    const u = {
+      id:uid(),tool_id:tool.id,title:r.title,source_url:tool.release_notes_url,
+      published_at:r.pub,fetched_at:nowISO(),raw_content:r.excerpt,raw_excerpt:r.excerpt,
+      manual_summary:r.summary,ai_summary:'',simple_explanation:'',impact_summary:r.impact,
+      action_suggestion:r.action,related_categories:r.cats,score:0,rank:'C',status:'unread',
+      is_saved:false,memo:'',created_at:nowISO(),updated_at:nowISO()
+    };
+    u.score=computeScore(u,tool); u.rank=rankFromScore(u.score);
+    return u;
+  });
+  // demo statuses
+  updates[2].status='try_later'; updates[2].is_saved=true;
+  updates[5].status='read';
+  updates[7].status='ignored';
+
+  const base = {tools, updates, fetch_logs:[], categories:BUSINESS_CATEGORIES.map(n=>({id:uid(),name:n,slug:slugify(n),description:''}))};
+  // 重要実ニュースを初期データに同梱（新規インストール時）
+  const f = buildFable5Update(base); if(f) base.updates.unshift(f);
+  base.applied_migrations = MIGRATIONS.map(m=>m.id); // 新規は適用済み扱い（二重追加防止）
+  return base;
+}
+
+/* ============================================================
+   実ニュースの組み込み & データマイグレーション
+   既存のlocalStorageにも後から重要アップデートを反映するための仕組み。
+   ※ユーザーが削除した場合はmigration済みのため復活しない。
+   ============================================================ */
+// 2026-06-12 検証済み実ニュース（出典: Anthropic公式 / Bloomberg / CNBC / Fortune）
+function buildFable5Update(d){
+  const tool = (d.tools||[]).find(t=>/claude/i.test(t.name)) || (d.tools||[])[0];
+  if(!tool) return null;
+  const u = {
+    id:uid(), tool_id:tool.id,
+    title:'米政府の輸出規制でAnthropicがFable 5・Mythos 5の海外アクセスを停止（export / national security）',
+    source_url:'https://www.anthropic.com/news/fable-mythos-access',
+    published_at:'2026-06-12T21:21:00.000Z', fetched_at:nowISO(),
+    raw_content:'米国政府が国家安全保障を理由に輸出規制（export control）指令を発出。Anthropicは2026年6月12日17:21(ET)に受領。指令は「米国内外を問わず、すべての外国籍ユーザーによるFable 5・Mythos 5へのアクセス停止」を命じる内容。クラウドの共有環境では国籍別の制限が困難なため、Anthropicは両モデルを同日深夜に世界中で停止した。対象はFable 5とMythos 5のみで、他のClaudeモデルは影響を受けない。政府はFable 5の「ジェイルブレイク（特定のコードベースを読ませてソフトの欠陥を修正させる手法）」を把握したとしている。Anthropicは法的指令に従う一方、「数億人に提供する商用モデルを、限定的なジェイルブレイクの可能性だけでリコールすべきではない」と強く反対し、誤解だとして可能な限り早期の復旧を目指すとしている。',
+    raw_excerpt:'米国政府が国家安全保障を理由に輸出規制指令を発出。Anthropicは2026年6月12日17:21(ET)に受領し、Fable 5・Mythos 5について米国内外を問わず全ての外国籍ユーザーのアクセスを停止。クラウド共有環境で国籍別制限が困難なため両モデルを世界中で即時停止した。他のClaudeモデルは影響なし。原因はFable 5のジェイルブレイク懸念。Anthropicは従いつつ強く反対し早期復旧を目指す。（出典: Anthropic公式, Bloomberg, CNBC, Fortune）',
+    manual_summary:'米政府が安全保障を理由に、Fable 5とMythos 5の外国籍ユーザー利用を停止指令。Anthropicは即日、両モデルを世界中で停止。他のClaudeモデルは影響なし。',
+    ai_summary:'',
+    simple_explanation:'Claudeの中でもFable 5とMythos 5という2モデルだけが、米政府の命令で海外（外国籍ユーザー）から使えなくなりました。原因は「コードを読ませて欠陥を直させる」操作でのジェイルブレイク（不正利用）の懸念です。他のClaudeモデルは普通に使えます。',
+    impact_summary:'Claude/Claude Codeを開発・三高産業・EC業務で使っている場合、Fable 5/Mythos 5に依存した作業が一時的に止まるリスク。影響を受けない他モデルへの切替や代替手段の確認が必要。',
+    action_suggestion:'①自分の利用がFable 5/Mythos 5に依存していないか確認 ②影響なしの他Claudeモデルへ切替できるよう準備 ③Anthropicの復旧アナウンスを追う。',
+    related_categories:['アプリ開発','三高産業','EC / 楽天 / LP制作','自動化'],
+    score:0, rank:'C', status:'unread', is_saved:false, memo:'',
+    created_at:nowISO(), updated_at:nowISO()
+  };
+  u.score = computeScore(u, tool); u.rank = rankFromScore(u.score);
+  return u;
+}
+
+const MIGRATIONS = [
+  { id:'2026-06-13-fable5-export', apply(d){ const u=buildFable5Update(d); if(u) d.updates.unshift(u); } },
+];
+function runMigrations(d){
+  d.applied_migrations = d.applied_migrations || [];
+  let changed=false;
+  MIGRATIONS.forEach(m=>{
+    if(!d.applied_migrations.includes(m.id)){
+      try{ m.apply(d); }catch(e){ console.warn('migration failed',m.id,e); }
+      d.applied_migrations.push(m.id); changed=true;
+    }
+  });
+  return changed;
+}
+
+/* ============================================================
+   services/aiSummary.ts 相当（差し替えポイント・初期はダミー）
+   ============================================================ */
+const AISummary = {
+  enabled:false,
+  generateJapaneseSummary(content){ return this.enabled? '' : 'AI要約は未実行です。詳細を確認してください。'; },
+  generateImpactSummary(content,toolName){ return this.enabled? '' : 'AI影響分析は未実行です。'; },
+  generateActionSuggestion(content,categories){ return this.enabled? '' : 'AIによる提案は未実行です。'; },
+};
+
+/* ============================================================
+   services/fetchUpdates.ts 相当
+   ※ブラウザCORS制約のため実RSS取得はベストエフォート。
+     取得できない場合はログに記録し、手動追加を案内（仕様書17章 エラー対応）。
+   ============================================================ */
+async function fetchToolUpdates(tool){
+  // 単一HTML版ではブラウザのCORS制約で多くのRSS/HTMLが直接取得不可。
+  // ここでは「取得を試行 → 失敗時はログ記録」というSupabase版と同じ流れだけ再現する。
+  const target = tool.rss_url || tool.release_notes_url;
+  if(!target){
+    return {tool_id:tool.id,status:'skip',message:`${tool.name}: 取得URL未設定`,fetched_count:0,error_message:'URL未設定'};
+  }
+  try{
+    // CORSプロキシ経由でベストエフォート取得（失敗しても全体は止めない）
+    const proxy = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(target);
+    const ctrl = new AbortController();
+    const tid = setTimeout(()=>ctrl.abort(), 8000);
+    const res = await fetch(proxy,{signal:ctrl.signal});
+    clearTimeout(tid);
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const text = await res.text();
+    const items = parseFeed(text, tool);
+    let added=0;
+    items.forEach(it=>{
+      const dup = getUpdates().some(u=>u.tool_id===tool.id && (u.source_url===it.source_url || u.title===it.title));
+      if(!dup){ saveUpdate(it); added++; }
+    });
+    const tl=toolById(tool.id); if(tl){ tl.last_fetched_at=nowISO(); DB.save(); }
+    return {tool_id:tool.id,status: added>0?'success':'success',
+            message:`${tool.name}: ${added}件の新着を取得`,fetched_count:added,error_message:''};
+  }catch(e){
+    return {tool_id:tool.id,status:'error',
+            message:`${tool.name}: 取得失敗（ブラウザのCORS制約の可能性）`,fetched_count:0,
+            error_message:String(e.message||e)};
+  }
+}
+// services/parseRss.ts / parseHtml.ts 相当
+function parseFeed(text, tool){
+  const out=[];
+  try{
+    const doc = new DOMParser().parseFromString(text,'text/xml');
+    let nodes = [...doc.querySelectorAll('item')];
+    if(!nodes.length) nodes = [...doc.querySelectorAll('entry')];
+    nodes.slice(0,8).forEach(n=>{
+      const get=(s)=>{const el=n.querySelector(s);return el?el.textContent.trim():'';};
+      const title = get('title'); if(!title) return;
+      let link = get('link');
+      if(!link){ const l=n.querySelector('link'); if(l) link=l.getAttribute('href')||''; }
+      const desc = (get('description')||get('summary')||get('content')).replace(/<[^>]+>/g,'').trim();
+      const pub = get('pubDate')||get('published')||get('updated');
+      out.push(makeUpdate(tool,{title,source_url:link||tool.release_notes_url,
+        published_at: pub?new Date(pub).toISOString():nowISO(),
+        excerpt: desc.slice(0,600)}));
+    });
+  }catch(e){/* parse失敗は無視 */}
+  return out;
+}
+function makeUpdate(tool, o){
+  return {
+    tool_id:tool.id,title:o.title,source_url:o.source_url||'',published_at:o.published_at||nowISO(),
+    fetched_at:nowISO(),raw_content:o.excerpt||'',raw_excerpt:o.excerpt||'',
+    manual_summary:'',ai_summary:'',simple_explanation:'',impact_summary:'',action_suggestion:'',
+    related_categories:tool.related_businesses?[...tool.related_businesses]:[],
+    score:0,rank:'C',status:'unread',is_saved:false,memo:''
+  };
+}
+
+/* ============================================================
+   Router & view rendering
+   ============================================================ */
+const NAV = [
+  {group:'メイン',items:[
+    {id:'home',label:'ホーム',icon:'home'},
+    {id:'updates',label:'アップデート',icon:'updates'},
+    {id:'categories',label:'事業別',icon:'category'},
+    {id:'try-list',label:'あとで試す',icon:'flask'},
+  ]},
+  {group:'管理',items:[
+    {id:'tools',label:'AIツール',icon:'tools'},
+    {id:'fetch',label:'取得実行',icon:'fetch'},
+  ]},
+];
+let route = {name:'home', param:null};
+
+function isMobile(){ return window.innerWidth<=760; }
+let navHistory=[];
+function go(name, param){
+  param=param||null;
+  if(route.name && !(route.name===name && route.param===param)){
+    navHistory.push({name:route.name, param:route.param});
+    if(navHistory.length>50) navHistory.shift();
+  }
+  _navigate(name, param);
+}
+function _navigate(name, param){
+  if(name==='update-detail') detailEdit=false;
+  route={name, param:param||null};
+  if(isMobile()) toggleMenu(false);
+  window.scrollTo(0,0); render();
+}
+function goBack(){
+  if(navHistory.length){ const prev=navHistory.pop(); _navigate(prev.name, prev.param); }
+  else if(route.name!=='home'){ _navigate('home', null); }
+}
+function toggleMenu(open){ document.getElementById('sidebar').classList.toggle('open',open); document.getElementById('scrim').classList.toggle('show',open); }
+
+function renderNav(){
+  const unread = getUpdates().filter(u=>u.status==='unread').length;
+  const tryN = getUpdates().filter(u=>u.status==='try_later').length;
+  let html='';
+  NAV.forEach(g=>{
+    html+=`<div class="nav-group-title">${g.group}</div>`;
+    g.items.forEach(it=>{
+      let badge='';
+      if(it.id==='updates'&&unread) badge=`<span class="badge">${unread}</span>`;
+      if(it.id==='try-list'&&tryN) badge=`<span class="badge">${tryN}</span>`;
+      const active = route.name===it.id || (route.name==='tool-form'&&it.id==='tools') || (route.name==='update-detail'&&it.id==='updates');
+      html+=`<button class="nav-item ${active?'active':''}" onclick="go('${it.id}')">${icon(it.icon)}<span>${it.label}</span>${badge}</button>`;
+    });
+  });
+  document.getElementById('nav').innerHTML=html;
+}
+
+const PAGE_META = {
+  home:['ホーム','重要なアップデートをひと目で'],
+  updates:['アップデート','すべての更新情報を検索・絞り込み'],
+  categories:['事業別','あなたの仕事カテゴリ別に表示'],
+  'try-list':['あとで試す','試す・試した・導入済みを管理'],
+  tools:['AIツール','登録ツールの管理'],
+  'tool-form':['ツール編集',''],
+  fetch:['取得実行','最新アップデートを取得'],
+  'update-detail':['アップデート詳細',''],
+};
+
+function render(){
+  renderNav();
+  const meta = PAGE_META[route.name]||['',''];
+  document.getElementById('pageTitle').textContent = meta[0];
+  document.getElementById('pageSub').textContent = meta[1];
+  document.getElementById('topActions').innerHTML='';
+  const v = document.getElementById('view');
+  ({
+    home:renderHome, updates:renderUpdates, categories:renderCategories,
+    'try-list':renderTryList, tools:renderTools, 'tool-form':renderToolForm,
+    fetch:renderFetch, 'update-detail':renderDetail,
+  }[route.name]||renderHome)(v);
+}
+
+/* ---------- helpers ---------- */
+function fmtDate(iso){ if(!iso)return '—'; const d=new Date(iso); return `${d.getFullYear()}/${d.getMonth()+1}/${d.getDate()}`; }
+function relDate(iso){
+  if(!iso)return '';
+  const diff=(Date.now()-new Date(iso))/86400000;
+  if(diff<1)return '今日'; if(diff<2)return '昨日';
+  if(diff<7)return Math.floor(diff)+'日前'; return fmtDate(iso);
+}
+function esc(s){ return (s==null?'':String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function rankBadge(r){ return `<span class="rank ${r}">${r}</span>`; }
+function statusBadge(s){ return `<span class="status ${s}">${STATUS_LABELS[s]||s}</span>`; }
+function catChips(cats,max){ cats=cats||[]; const shown=max?cats.slice(0,max):cats; let h=shown.map(c=>`<span class="chip cat">${esc(c)}</span>`).join(''); if(max&&cats.length>max)h+=`<span class="chip">+${cats.length-max}</span>`; return h; }
+
+function updateCard(u){
+  const tool=toolById(u.tool_id);
+  const color=toolColor(u.tool_id);
+  const sum=u.manual_summary||u.ai_summary||u.raw_excerpt||'要約はまだありません。';
+  return `<div class="ucard rk-${u.rank}" onclick="go('update-detail','${u.id}')">
+    <div class="ucard-top">
+      <div class="ucard-tool"><span class="tool-dot" style="background:${color}"></span><span>${esc(tool?tool.name:'不明')}</span></div>
+      <div style="margin-left:auto;display:flex;gap:6px;align-items:center">${rankBadge(u.rank)}</div>
+    </div>
+    <h3>${esc(u.title)}</h3>
+    <div class="summary">${esc(sum)}</div>
+    <div class="ucard-meta">
+      ${catChips(u.related_categories,2)}
+      ${statusBadge(u.status)}
+      ${u.status==='unread'?`<button class="mark-read" onclick="event.stopPropagation();markRead('${u.id}')">${icon('check')}既読にする</button>`:''}
+      <span class="ucard-date" style="margin-left:auto">${relDate(u.published_at)}</span>
+    </div>
+  </div>`;
+}
+
+/* ============================================================
+   HOME (/)  仕様書6-1
+   ============================================================ */
+function renderHome(v){
+  recomputeAll();
+  const ups=getUpdates();
+  const unread=ups.filter(u=>u.status==='unread');
+  const sRank=ups.filter(u=>u.rank==='S');
+  const aRank=ups.filter(u=>u.rank==='A');
+  const tryLater=ups.filter(u=>u.status==='try_later');
+  // 新しい順（公開日の新しいものが上）で並べた単一リスト（重複なし）
+  const list=[...ups].sort(byPub);
+
+  document.getElementById('topActions').innerHTML =
+    `<button class="btn btn-primary" onclick="go('fetch')">${icon('fetch')}取得実行</button>`;
+
+  let html = `<div class="grid cols-4" style="margin-bottom:6px">
+    ${statTile('未読アップデート',unread.length,'inbox','#4338ca',"openUpdatesFiltered({unreadOnly:true})")}
+    ${statTile('Sランク',sRank.length,'bolt','#e11d48',"openUpdatesFiltered({rank:'S'})")}
+    ${statTile('Aランク',aRank.length,'star','#ea580c',"openUpdatesFiltered({rank:'A'})")}
+    ${statTile('あとで試す',tryLater.length,'flask','#0891b2',"go('try-list')")}
+  </div>`;
+
+  // 単一のアップデート一覧（重要度順）
+  html+=sectionHead('アップデート', list.length+'件', `<button class="btn btn-sm" onclick="go('updates')">絞り込み・検索 ${icon('chevR','')}</button>`);
+  if(list.length){
+    html+=`<div class="grid cols-3">${list.map(updateCard).join('')}</div>`;
+  }else{
+    html+=emptyState('まだアップデートがありません','「取得実行」から最新情報を集めるか、アップデート画面から手動で追加できます。');
+  }
+
+  v.innerHTML=html;
+}
+function byPub(a,b){ return new Date(b.published_at)-new Date(a.published_at); }
+function statTile(label,value,ico,color,action){
+  const tag=action?'button':'div';
+  const go=action?` onclick="${action}"`:'';
+  const hint=action?`<span class="stat-go">${icon('chevR')}</span>`:'';
+  return `<${tag} class="stat${action?' is-link':''}"${go}><div class="label">${icon(ico)} ${label}</div><div class="value" style="color:${color}">${value}</div>${hint}</${tag}>`;
+}
+function sectionHead(title,count,right){
+  return `<div class="section-head"><h2>${title}</h2>${count?`<span class="count">${count}</span>`:''}<div class="spacer"></div>${right||''}</div>`;
+}
+function emptyState(title,desc){
+  return `<div class="card empty">${icon('inbox')}<h3>${title}</h3><p>${desc}</p></div>`;
+}
+
+/* ============================================================
+   UPDATES (/updates)  仕様書6-4
+   ============================================================ */
+let upFilter={q:'',tool:'',cat:'',rank:'',status:'',unreadOnly:false};
+// ホームの統計タイルから、絞り込み済みのアップデート一覧を開く
+function openUpdatesFiltered(patch){
+  upFilter={q:'',tool:'',cat:'',rank:'',status:'',unreadOnly:false};
+  Object.assign(upFilter, patch||{});
+  go('updates');
+}
+function renderUpdates(v){
+  recomputeAll();
+  const tools=getTools();
+  let list=getUpdates().slice().sort(byPub);
+  const f=upFilter;
+  if(f.q){const q=f.q.toLowerCase();list=list.filter(u=>(u.title+u.manual_summary+u.raw_excerpt).toLowerCase().includes(q));}
+  if(f.tool)list=list.filter(u=>u.tool_id===f.tool);
+  if(f.cat)list=list.filter(u=>(u.related_categories||[]).includes(f.cat));
+  if(f.rank)list=list.filter(u=>u.rank===f.rank);
+  if(f.status)list=list.filter(u=>u.status===f.status);
+  if(f.unreadOnly)list=list.filter(u=>u.status==='unread');
+
+  const unreadIds=list.filter(u=>u.status==='unread').map(u=>u.id);
+  document.getElementById('topActions').innerHTML =
+    `${unreadIds.length?`<button class="btn" onclick="markReadMany([${unreadIds.map(id=>"'"+id+"'").join(',')}])">${icon('check')}すべて既読 (${unreadIds.length})</button>`:''}
+     <button class="btn" onclick="openUpdateForm()">${icon('plus')}手動で追加</button>`;
+
+  let html=`<div class="filterbar">
+    <div class="search">${icon('search')}<input id="upSearch" placeholder="タイトル・要約を検索…" value="${esc(f.q)}" oninput="upFilter.q=this.value;debouncedUpdates()"></div>
+    <select class="filter" onchange="upFilter.tool=this.value;renderUpdates(document.getElementById('view'))">
+      <option value="">すべてのツール</option>${tools.map(t=>`<option value="${t.id}" ${f.tool===t.id?'selected':''}>${esc(t.name)}</option>`).join('')}</select>
+    <select class="filter" onchange="upFilter.cat=this.value;renderUpdates(document.getElementById('view'))">
+      <option value="">全カテゴリ</option>${BUSINESS_CATEGORIES.map(c=>`<option ${f.cat===c?'selected':''}>${esc(c)}</option>`).join('')}</select>
+    <select class="filter" onchange="upFilter.rank=this.value;renderUpdates(document.getElementById('view'))">
+      <option value="">全ランク</option>${['S','A','B','C'].map(r=>`<option ${f.rank===r?'selected':''}>${r}</option>`).join('')}</select>
+    <select class="filter" onchange="upFilter.status=this.value;renderUpdates(document.getElementById('view'))">
+      <option value="">全ステータス</option>${STATUS_ORDER.map(s=>`<option value="${s}" ${f.status===s?'selected':''}>${STATUS_LABELS[s]}</option>`).join('')}</select>
+    <label class="toggle-pill"><input type="checkbox" ${f.unreadOnly?'checked':''} onchange="upFilter.unreadOnly=this.checked;renderUpdates(document.getElementById('view'))">未読のみ</label>
+  </div>`;
+
+  if(!list.length){ v.innerHTML=html+emptyState('該当するアップデートがありません','フィルター条件を変えるか、取得実行から情報を集めてください。'); return; }
+
+  if(isMobile()){
+    // スマホ：横スクロールの表ではなくカードで見やすく
+    html+=`<div class="grid cols-1">${list.map(updateCard).join('')}</div>`;
+  }else{
+    html+=`<div class="table-wrap"><table>
+      <thead><tr><th style="width:46px">ランク</th><th>タイトル</th><th style="width:130px">ツール</th><th style="width:150px">カテゴリ</th><th style="width:90px">公開日</th><th style="width:160px">ステータス</th></tr></thead><tbody>`;
+    list.forEach(u=>{
+      const tool=toolById(u.tool_id);
+      html+=`<tr>
+        <td>${rankBadge(u.rank)}</td>
+        <td><span class="row-title" onclick="go('update-detail','${u.id}')">${esc(u.title)}</span></td>
+        <td><span style="display:inline-flex;align-items:center;gap:7px"><span class="tool-dot" style="background:${toolColor(u.tool_id)}"></span><span style="font-size:13px;color:var(--text-soft);font-weight:600">${esc(tool?tool.name:'—')}</span></span></td>
+        <td>${catChips(u.related_categories,1)}</td>
+        <td style="color:var(--text-mute);font-size:13px">${fmtDate(u.published_at)}</td>
+        <td><div style="display:flex;align-items:center;gap:7px;flex-wrap:wrap">${statusBadge(u.status)}${u.status==='unread'?`<button class="mark-read" onclick="event.stopPropagation();markRead('${u.id}')">${icon('check')}既読</button>`:''}</div></td>
+      </tr>`;
+    });
+    html+=`</tbody></table></div>`;
+  }
+  v.innerHTML=html;
+}
+let _upT; function debouncedUpdates(){ clearTimeout(_upT); _upT=setTimeout(()=>{ const el=document.getElementById('upSearch'); const pos=el?el.selectionStart:null; renderUpdates(document.getElementById('view')); const n=document.getElementById('upSearch'); if(n){n.focus(); if(pos!=null)n.setSelectionRange(pos,pos);} },200); }
+
+/* ============================================================
+   UPDATE DETAIL (/updates/[id])  仕様書6-5
+   ============================================================ */
+let detailEdit=false;
+function renderDetail(v){
+  const u=updateById(route.param);
+  if(!u){ v.innerHTML=emptyState('アップデートが見つかりません',''); return; }
+  if(u.status==='unread'){ setStatus(u.id,'read'); }
+  const tool=toolById(u.tool_id);
+  recomputeAll();
+  if(detailEdit) renderDetailEdit(v,u,tool); else renderDetailRead(v,u,tool);
+}
+
+/* 右サイド共通パネル（読み／編集 両モードで使用） */
+function detailSidebar(u,tool){
+  return `<div class="form-card">
+      <h3>${icon('bolt')} 重要度</h3>
+      <div class="score-ring">
+        ${rankBadge(u.rank).replace('class="rank','style="width:46px;height:42px;font-size:19px" class="rank')}
+        <div><div class="score-num">${u.score}<small style="font-size:16px;color:var(--text-mute)">点</small></div><div style="font-size:12px;color:var(--text-mute);font-weight:600">ルールベース自動計算</div></div>
+      </div>
+    </div>
+    <div class="form-card" style="margin-top:16px">
+      <h3>${icon('flask')} ステータス</h3>
+      <select class="filter" style="width:100%" id="d_status" onchange="quickStatus('${u.id}',this.value)">
+        ${STATUS_ORDER.map(s=>`<option value="${s}" ${u.status===s?'selected':''}>${STATUS_LABELS[s]}</option>`).join('')}
+      </select>
+      <div class="quick-status">
+        <button class="btn btn-sm" style="flex:1" onclick="quickStatus('${u.id}','try_later')">${icon('flask')}あとで試す</button>
+        <button class="btn btn-sm" style="flex:1" onclick="quickStatus('${u.id}','adopted')">${icon('check')}導入済み</button>
+      </div>
+    </div>
+    <div class="form-card" style="margin-top:16px">
+      <h3>${icon('updates')} 情報</h3>
+      <div class="meta-list">
+        <div class="row"><span class="k">対象ツール</span><span class="v">${esc(tool?tool.name:'—')}</span></div>
+        <div class="row"><span class="k">公開日</span><span class="v">${fmtDate(u.published_at)}</span></div>
+        <div class="row"><span class="k">取得日</span><span class="v">${fmtDate(u.fetched_at)}</span></div>
+        <div class="row"><span class="k">スコア</span><span class="v">${u.score}点</span></div>
+        <div class="row"><span class="k">ランク</span><span class="v">${u.rank}</span></div>
+      </div>
+      <button class="btn btn-danger btn-sm" style="width:100%;margin-top:14px" onclick="confirmDeleteUpdate('${u.id}')">${icon('trash')}このアップデートを削除</button>
+    </div>`;
+}
+
+/* 読みやすい1ブロック（内容があれば表示、無ければ「追加」ボタン） */
+function readBlock(id,label,text,iconName,color,bg,cls){
+  const has = text && String(text).trim();
+  if(!has){
+    return `<button class="read-add" onclick="enterDetailEdit('${id}')">${icon('plus')}${esc(label)}を追加</button>`;
+  }
+  return `<div class="read-block ${cls||''}">
+    <div class="rb-head"><span class="rb-ico" style="background:${bg};color:${color}">${icon(iconName)}</span><span class="rb-label">${esc(label)}</span></div>
+    <div class="rb-body">${esc(text)}</div>
+  </div>`;
+}
+
+/* ---- 読みモード（既定） ---- */
+function renderDetailRead(v,u,tool){
+  document.getElementById('topActions').innerHTML =
+    `<button class="btn btn-primary" onclick="enterDetailEdit('${u.id}')">${icon('edit')}編集</button>`;
+  const heroSum = (u.manual_summary||u.ai_summary||'').trim();
+  v.innerHTML = `<button class="back-link" onclick="go('updates')">${icon('arrowLeft')}一覧に戻る</button>
+  <div class="detail-grid">
+    <div>
+      <div class="detail-head">
+        <div class="detail-toprow">
+          ${rankBadge(u.rank).replace('class="rank','style="width:34px;height:30px;font-size:15px" class="rank')}
+          <span class="detail-tool"><span class="tool-dot" style="background:${toolColor(u.tool_id)}"></span>${esc(tool?tool.name:'')}</span>
+          <span style="color:var(--text-mute);font-size:13px;margin-left:auto">公開 ${fmtDate(u.published_at)}</span>
+        </div>
+        <div class="detail-title-lg">${esc(u.title)}</div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+          ${catChips(u.related_categories)}
+          ${u.source_url?`<a class="chip" href="${esc(u.source_url)}" target="_blank" rel="noopener" style="text-decoration:none">${icon('ext')} 情報元を開く</a>`:''}
+        </div>
+      </div>
+
+      ${heroSum?`<div class="read-hero">
+        <div class="rb-head"><span class="rb-ico">${icon('updates')}</span><span class="rb-label">かんたん要約</span></div>
+        <div class="rb-body">${esc(heroSum)}</div>
+      </div>`:`<button class="read-add" onclick="enterDetailEdit('${u.id}')">${icon('plus')}かんたん要約を追加</button>`}
+
+      ${readBlock(u.id,'何が変わったか',u.simple_explanation,'eye','#2563eb','#e7efff')}
+      ${readBlock(u.id,'仕事への影響',u.impact_summary,'bolt','#7c5cf6','#efeaff')}
+      ${readBlock(u.id,'次にやること',u.action_suggestion,'check','#16a34a','#e3f7ea','is-action')}
+      ${readBlock(u.id,'原文抜粋',u.raw_excerpt||u.raw_content,'updates','#64748b','#eef1f6','is-raw')}
+      ${u.memo&&u.memo.trim()?readBlock(u.id,'メモ',u.memo,'edit','#b45309','#fff2dd'):''}
+    </div>
+    <div>${detailSidebar(u,tool)}</div>
+  </div>`;
+}
+
+/* ---- 編集モード ---- */
+function renderDetailEdit(v,u,tool){
+  document.getElementById('topActions').innerHTML =
+    `<button class="btn btn-primary" onclick="saveDetail('${u.id}')">${icon('check')}保存</button>
+     <button class="btn btn-ghost" onclick="cancelDetailEdit()">キャンセル</button>`;
+  const ta=(id,val,ph,rows)=>`<textarea id="${id}" rows="${rows||3}" placeholder="${ph}">${esc(val)}</textarea>`;
+  v.innerHTML = `<button class="back-link" onclick="cancelDetailEdit()">${icon('arrowLeft')}読みモードに戻る</button>
+  <div class="detail-grid">
+    <div>
+      <div class="detail-toprow" style="margin-bottom:14px">
+        ${rankBadge(u.rank)}
+        <span class="detail-tool"><span class="tool-dot" style="background:${toolColor(u.tool_id)}"></span>${esc(tool?tool.name:'')}</span>
+        <span style="color:var(--brand);font-size:12.5px;font-weight:700;margin-left:auto">編集中</span>
+      </div>
+      <div class="detail-title" style="font-size:20px">${esc(u.title)}</div>
+      <div class="form-card">
+        <div class="field"><label>かんたん要約</label>${ta('d_manual',u.manual_summary,'このアップデートを一言で。')}</div>
+        <div class="field"><label>何が変わったか</label>${ta('d_simple',u.simple_explanation,'専門用語を避けて、何が新しくなったか。')}</div>
+        <div class="field"><label>仕事への影響</label>${ta('d_impact',u.impact_summary,'自分の仕事にどう役立つか。')}</div>
+        <div class="field"><label>次にやること</label>${ta('d_action',u.action_suggestion,'具体的な次のアクション。')}</div>
+        <div class="field"><label>メモ</label>${ta('d_memo',u.memo,'自由メモ')}</div>
+        <div class="field">
+          <label>関連カテゴリ</label>
+          <div class="checks" id="d_cats">${BUSINESS_CATEGORIES.map(c=>`<label class="check-pill ${(u.related_categories||[]).includes(c)?'on':''}" onclick="this.classList.toggle('on')"><input type="checkbox" ${(u.related_categories||[]).includes(c)?'checked':''} value="${esc(c)}">${esc(c)}</label>`).join('')}</div>
+          <div class="hint">カテゴリを変えて保存するとスコア・ランクが再計算されます。</div>
+        </div>
+      </div>
+      <div class="form-card">
+        <h3>${icon('updates')} 原文抜粋</h3>
+        <div class="raw-excerpt">${esc(u.raw_excerpt||u.raw_content||'原文はありません。')}</div>
+      </div>
+    </div>
+    <div>${detailSidebar(u,tool)}</div>
+  </div>`;
+}
+function enterDetailEdit(id){ detailEdit=true; render(); }
+function cancelDetailEdit(){ detailEdit=false; render(); }
+function quickStatus(id,s){ setStatus(id,s); const sel=document.getElementById('d_status'); if(sel)sel.value=s; toast('ステータスを「'+STATUS_LABELS[s]+'」に変更','ok'); renderNav(); }
+function saveDetail(id){
+  const u=updateById(id); if(!u)return;
+  u.manual_summary=val('d_manual'); u.simple_explanation=val('d_simple');
+  u.impact_summary=val('d_impact'); u.action_suggestion=val('d_action'); u.memo=val('d_memo');
+  u.related_categories=[...document.querySelectorAll('#d_cats input:checked')].map(c=>c.value);
+  saveUpdate(u);
+  detailEdit=false;
+  toast('保存しました','ok'); render();
+}
+function val(id){ const e=document.getElementById(id); return e?e.value.trim():''; }
+function confirmDeleteUpdate(id){
+  modal('アップデートを削除','このアップデートを削除します。元に戻せません。',()=>{ deleteUpdate(id); toast('削除しました','ok'); go('updates'); },'削除する',true);
+}
+
+/* ============================================================
+   手動アップデート追加モーダル
+   ============================================================ */
+function openUpdateForm(){
+  const tools=getTools();
+  const body=`
+    <div class="field"><label>タイトル<span class="req">*</span></label><input type="text" id="nu_title" placeholder="アップデートのタイトル"></div>
+    <div class="field"><label>対象ツール<span class="req">*</span></label>
+      <select id="nu_tool" class="filter" style="width:100%">${tools.map(t=>`<option value="${t.id}">${esc(t.name)}</option>`).join('')}</select></div>
+    <div class="field"><label>情報元URL</label><input type="url" id="nu_url" placeholder="https://"></div>
+    <div class="field"><label>公開日</label><input type="date" id="nu_date" value="${new Date().toISOString().slice(0,10)}"></div>
+    <div class="field"><label>原文抜粋 / 内容</label><textarea id="nu_excerpt" rows="4" placeholder="本文の抜粋。スコア計算にも使われます。"></textarea></div>
+    <div class="field"><label>日本語要約</label><textarea id="nu_summary" rows="2" placeholder="一言で。"></textarea></div>
+    <div class="field"><label>関連カテゴリ</label>
+      <div class="checks" id="nu_cats">${BUSINESS_CATEGORIES.map(c=>`<label class="check-pill" onclick="this.classList.toggle('on')"><input type="checkbox" value="${esc(c)}">${esc(c)}</label>`).join('')}</div></div>
+  `;
+  modalForm('アップデートを手動で追加',body,()=>{
+    const title=val('nu_title'); if(!title){ toast('タイトルを入力してください','err'); return false; }
+    const date=val('nu_date');
+    const u={
+      tool_id:document.getElementById('nu_tool').value,title,source_url:val('nu_url'),
+      published_at: date? new Date(date).toISOString():nowISO(),fetched_at:nowISO(),
+      raw_content:val('nu_excerpt'),raw_excerpt:val('nu_excerpt'),manual_summary:val('nu_summary'),
+      ai_summary:'',simple_explanation:'',impact_summary:'',action_suggestion:'',
+      related_categories:[...document.querySelectorAll('#nu_cats input:checked')].map(c=>c.value),
+      score:0,rank:'C',status:'unread',is_saved:false,memo:''
+    };
+    saveUpdate(u); toast('アップデートを追加しました','ok'); render(); return true;
+  },'追加する');
+}
+
+/* ============================================================
+   TOOLS (/tools)  仕様書6-2
+   ============================================================ */
+function renderTools(v){
+  document.getElementById('topActions').innerHTML =
+    `<button class="btn btn-primary" onclick="go('tool-form','new')">${icon('plus')}ツールを追加</button>`;
+  const tools=getTools();
+  if(!tools.length){ v.innerHTML=emptyState('ツールがありません','右上の「ツールを追加」から登録してください。'); return; }
+
+  let html=`<div class="table-wrap"><table>
+    <thead><tr><th>ツール名</th><th style="width:120px">カテゴリ</th><th style="width:56px">優先</th><th style="width:90px">使用中</th><th style="width:150px">関連事業</th><th style="width:96px">最終取得</th><th style="width:80px">状態</th><th style="width:96px"></th></tr></thead><tbody>`;
+  tools.forEach((t,i)=>{
+    html+=`<tr>
+      <td><span style="display:inline-flex;align-items:center;gap:9px"><span class="tool-dot" style="background:${TOOL_COLORS[i%TOOL_COLORS.length]}"></span><span style="font-weight:700">${esc(t.name)}</span></span>
+        <div style="font-size:11.5px;color:var(--text-mute);margin-left:18px;margin-top:2px">${t.official_url?`<a href="${esc(t.official_url)}" target="_blank" rel="noopener" style="color:var(--text-mute)">${esc(t.official_url.replace(/^https?:\/\//,''))}</a>`:'—'}</div>
+      </td>
+      <td><span class="chip">${esc(t.category||'—')}</span></td>
+      <td><span class="pri ${t.priority}">${t.priority}</span></td>
+      <td>${t.is_using?`<span class="tool-on">${icon('check')}使用中</span>`:`<span class="tool-off">—</span>`}</td>
+      <td style="font-size:12px;color:var(--text-soft)">${(t.related_businesses||[]).slice(0,2).map(esc).join('、')||'—'}${(t.related_businesses||[]).length>2?' …':''}</td>
+      <td style="font-size:12.5px;color:var(--text-mute)">${t.last_fetched_at?relDate(t.last_fetched_at):'未取得'}</td>
+      <td>${t.is_active?`<span class="status adopted" style="padding:3px 9px">有効</span>`:`<span class="status ignored" style="padding:3px 9px">無効</span>`}</td>
+      <td><div style="display:flex;gap:5px">
+        <button class="btn btn-icon btn-sm" title="編集" onclick="go('tool-form','${t.id}')">${icon('edit')}</button>
+        <button class="btn btn-icon btn-sm btn-danger" title="削除" onclick="confirmDeleteTool('${t.id}')">${icon('trash')}</button>
+      </div></td>
+    </tr>`;
+  });
+  html+=`</tbody></table></div>`;
+  v.innerHTML=html;
+}
+function confirmDeleteTool(id){
+  const t=toolById(id); const n=getUpdates().filter(u=>u.tool_id===id).length;
+  modal('ツールを削除',`「${esc(t.name)}」を削除します。${n?`関連する${n}件のアップデートも削除されます。`:''}`,()=>{ deleteTool(id); toast('削除しました','ok'); render(); },'削除する',true);
+}
+
+/* ============================================================
+   TOOL FORM (/tools/new, /tools/[id]/edit)  仕様書6-3
+   ============================================================ */
+function renderToolForm(v){
+  const isNew = route.param==='new';
+  const t = isNew ? {name:'',category:'',official_url:'',release_notes_url:'',rss_url:'',x_url:'',priority:'B',is_using:false,related_businesses:[],memo:'',is_active:true}
+                  : Object.assign({},toolById(route.param));
+  if(!t){ v.innerHTML=emptyState('ツールが見つかりません',''); return; }
+  document.getElementById('pageTitle').textContent = isNew?'ツールを追加':'ツールを編集';
+
+  v.innerHTML = `<button class="back-link" onclick="go('tools')">${icon('arrowLeft')}ツール一覧に戻る</button>
+  <div style="max-width:760px">
+    <div class="form-card">
+      <h3>${icon('tools')} 基本情報</h3>
+      <div class="field"><label>ツール名<span class="req">*</span></label><input type="text" id="tf_name" value="${esc(t.name)}" placeholder="例：ChatGPT / OpenAI"></div>
+      <div class="field-row">
+        <div class="field"><label>カテゴリ</label><input type="text" id="tf_category" value="${esc(t.category)}" placeholder="例：総合AI"></div>
+        <div class="field"><label>優先度</label>
+          <select id="tf_priority" class="filter" style="width:100%">${['A','B','C'].map(p=>`<option ${t.priority===p?'selected':''}>${p}</option>`).join('')}</select></div>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <h3>${icon('updates')} 情報源URL</h3>
+      <div class="field"><label>公式サイトURL</label><input type="url" id="tf_official" value="${esc(t.official_url)}" placeholder="https://"></div>
+      <div class="field"><label>Release Notes URL</label><input type="url" id="tf_release" value="${esc(t.release_notes_url)}" placeholder="https://"></div>
+      <div class="field"><label>RSS URL</label><input type="url" id="tf_rss" value="${esc(t.rss_url)}" placeholder="https://（あれば取得に優先利用）"></div>
+      <div class="field"><label>X (Twitter) URL</label><input type="url" id="tf_x" value="${esc(t.x_url)}" placeholder="https://x.com/"></div>
+    </div>
+
+    <div class="form-card">
+      <h3>${icon('category')} 分類・設定</h3>
+      <div class="field"><label>関連事業カテゴリ</label>
+        <div class="checks" id="tf_biz">${BUSINESS_CATEGORIES.map(c=>`<label class="check-pill ${t.related_businesses.includes(c)?'on':''}" onclick="this.classList.toggle('on')"><input type="checkbox" value="${esc(c)}" ${t.related_businesses.includes(c)?'checked':''}>${esc(c)}</label>`).join('')}</div>
+      </div>
+      <div class="field"><label>メモ</label><textarea id="tf_memo" rows="2" placeholder="自由メモ">${esc(t.memo)}</textarea></div>
+      <div class="field-row" style="margin-top:15px">
+        <label class="switch"><input type="checkbox" id="tf_using" ${t.is_using?'checked':''}>現在使っているツール</label>
+        <label class="switch"><input type="checkbox" id="tf_active" ${t.is_active?'checked':''}>有効（取得対象にする）</label>
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <button class="btn btn-primary" onclick="submitTool('${isNew?'':t.id}')">${icon('check')}${isNew?'追加する':'保存する'}</button>
+      <button class="btn btn-ghost" onclick="go('tools')">キャンセル</button>
+    </div>
+  </div>`;
+}
+function submitTool(id){
+  const name=val('tf_name'); if(!name){ toast('ツール名を入力してください','err'); return; }
+  const t = id ? Object.assign({},toolById(id)) : {};
+  t.name=name; t.category=val('tf_category'); t.priority=document.getElementById('tf_priority').value;
+  t.official_url=val('tf_official'); t.release_notes_url=val('tf_release'); t.rss_url=val('tf_rss'); t.x_url=val('tf_x');
+  t.related_businesses=[...document.querySelectorAll('#tf_biz input:checked')].map(c=>c.value);
+  t.memo=val('tf_memo'); t.is_using=document.getElementById('tf_using').checked; t.is_active=document.getElementById('tf_active').checked;
+  if(id)t.id=id;
+  saveTool(t); recomputeAll();
+  toast(id?'保存しました':'ツールを追加しました','ok'); go('tools');
+}
+
+/* ============================================================
+   CATEGORIES (/categories)  仕様書6-6
+   ============================================================ */
+let catView=null;
+function renderCategories(v){
+  recomputeAll();
+  const ups=getUpdates();
+  if(catView){
+    const list=ups.filter(u=>(u.related_categories||[]).includes(catView)).sort((a,b)=>b.score-a.score);
+    document.getElementById('topActions').innerHTML='';
+    v.innerHTML=`<button class="back-link" onclick="catView=null;renderCategories(document.getElementById('view'))">${icon('arrowLeft')}カテゴリ一覧に戻る</button>
+      ${sectionHead(catView, list.length+'件')}
+      ${list.length?`<div class="grid cols-3">${list.map(updateCard).join('')}</div>`:emptyState('このカテゴリのアップデートはまだありません','')}`;
+    document.getElementById('pageTitle').textContent=catView;
+    return;
+  }
+  const max=Math.max(1,...BUSINESS_CATEGORIES.map(c=>ups.filter(u=>(u.related_categories||[]).includes(c)).length));
+  let html=`<div class="grid cols-3">`;
+  BUSINESS_CATEGORIES.forEach((c,i)=>{
+    const items=ups.filter(u=>(u.related_categories||[]).includes(c));
+    const top=items.filter(u=>u.rank==='S'||u.rank==='A').length;
+    html+=`<div class="cat-tile" onclick="catView='${c.replace(/'/g,"\\'")}';renderCategories(document.getElementById('view'))">
+      <div class="ct-top"><div class="ct-name">${esc(c)}</div><div class="ct-num" style="color:${TOOL_COLORS[i%TOOL_COLORS.length]}">${items.length}</div></div>
+      <div style="font-size:12.5px;color:var(--text-mute);font-weight:600">重要(S/A) ${top}件</div>
+      <div class="ct-bar"><i style="width:${Math.round(items.length/max*100)}%"></i></div>
+    </div>`;
+  });
+  html+=`</div>`;
+  v.innerHTML=html;
+}
+
+/* ============================================================
+   TRY LIST (/try-list)  仕様書6-7
+   ============================================================ */
+let tryTab='try_later';
+function renderTryList(v){
+  recomputeAll();
+  const ups=getUpdates();
+  const counts={try_later:0,tried:0,adopted:0};
+  ups.forEach(u=>{ if(counts[u.status]!=null)counts[u.status]++; });
+  document.getElementById('topActions').innerHTML='';
+
+  const tabs=[['try_later','あとで試す'],['tried','試した'],['adopted','導入済み']];
+  let html=`<div class="seg" style="margin-bottom:18px">${tabs.map(([k,l])=>`<button class="${tryTab===k?'on':''}" onclick="tryTab='${k}';renderTryList(document.getElementById('view'))">${l} <span style="opacity:.6">${counts[k]}</span></button>`).join('')}</div>`;
+
+  const list=ups.filter(u=>u.status===tryTab).sort((a,b)=>b.score-a.score);
+  if(!list.length){ v.innerHTML=html+emptyState('ここにはまだありません','アップデート詳細で「あとで試す」「導入済み」に設定すると表示されます。'); return; }
+
+  html+=`<div class="grid cols-2">`;
+  list.forEach(u=>{
+    const tool=toolById(u.tool_id);
+    html+=`<div class="card" style="padding:16px 18px;display:flex;flex-direction:column;gap:11px">
+      <div style="display:flex;align-items:center;gap:9px">
+        ${rankBadge(u.rank)}
+        <span style="display:inline-flex;align-items:center;gap:6px"><span class="tool-dot" style="background:${toolColor(u.tool_id)}"></span><span style="font-size:12.5px;font-weight:700;color:var(--text-soft)">${esc(tool?tool.name:'')}</span></span>
+        <span style="margin-left:auto;font-size:12px;color:var(--text-mute)">${relDate(u.published_at)}</span>
+      </div>
+      <div style="font-weight:700;font-size:15px;line-height:1.4;cursor:pointer" onclick="go('update-detail','${u.id}')">${esc(u.title)}</div>
+      <div style="font-size:13px;color:var(--text-soft);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">${esc(u.action_suggestion||u.manual_summary||u.raw_excerpt||'')}</div>
+      <div style="display:flex;gap:7px;margin-top:2px;flex-wrap:wrap">
+        ${tryTab!=='try_later'?`<button class="btn btn-sm" onclick="quickStatus('${u.id}','try_later');renderTryList(document.getElementById('view'))">${icon('flask')}あとで試す</button>`:''}
+        ${tryTab!=='tried'?`<button class="btn btn-sm" onclick="quickStatus('${u.id}','tried');renderTryList(document.getElementById('view'))">${icon('check')}試した</button>`:''}
+        ${tryTab!=='adopted'?`<button class="btn btn-sm" onclick="quickStatus('${u.id}','adopted');renderTryList(document.getElementById('view'))">${icon('star')}導入済み</button>`:''}
+        <button class="btn btn-sm btn-ghost" style="margin-left:auto" onclick="quickStatus('${u.id}','ignored');renderTryList(document.getElementById('view'))">外す</button>
+      </div>
+    </div>`;
+  });
+  html+=`</div>`;
+  v.innerHTML=html;
+}
+
+/* ============================================================
+   FETCH (/fetch)  仕様書6-8
+   ============================================================ */
+let fetchRunning=false;
+function renderFetch(v){
+  const tools=getTools().filter(t=>t.is_active);
+  document.getElementById('topActions').innerHTML='';
+  let html=`<div class="card" style="padding:20px 22px;margin-bottom:18px">
+    <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+      <div style="flex:1;min-width:200px">
+        <div style="font-weight:800;font-size:15px;margin-bottom:3px">アップデートを取得</div>
+        <div style="font-size:13px;color:var(--text-soft)">有効な${tools.length}件のツールから最新情報を取得します。RSSがあれば優先、なければRelease Notesを取得します。</div>
+      </div>
+      <button class="btn btn-primary" id="fetchAllBtn" onclick="runFetchAll()">${icon('fetch')}全ツール取得</button>
+    </div>
+    <label class="switch" style="margin-top:14px">
+      <input type="checkbox" ${getSettings().autoFetch?'checked':''} onchange="setSetting('autoFetch',this.checked);toast(this.checked?'アプリを開くたびに自動取得します':'自動取得をオフにしました','ok')">
+      <span>アプリを開くたびに最新情報を自動で読み込む</span>
+    </label>
+    <div style="margin-top:14px;padding:11px 13px;background:var(--ok-bg);border-radius:10px;font-size:12.5px;color:#14633a;line-height:1.6">
+      ✅ <b>自動更新の仕組み</b>：GitHubが毎日決まった時刻に各ツールの最新ニュース（GoogleニュースRSS等）を集めて <code>data.json</code> を更新し、Netlifyが自動で再公開します。アプリは開くたびにその <code>data.json</code> を読み込むので、ブラウザのCORS制約を受けず確実に最新が入ります。下の「全ツール取得」ボタンはブラウザから直接取りに行く予備手段で、環境により失敗することがあります。
+    </div>
+  </div>`;
+
+  html+=`<div class="section-head"><h2>ツール別に取得</h2></div>`;
+  html+=`<div class="table-wrap"><table><thead><tr><th>ツール</th><th style="width:140px">取得URL</th><th style="width:110px">最終取得</th><th style="width:110px"></th></tr></thead><tbody>`;
+  tools.forEach((t,i)=>{
+    const url=t.rss_url||t.release_notes_url;
+    html+=`<tr>
+      <td><span style="display:inline-flex;align-items:center;gap:9px"><span class="tool-dot" style="background:${TOOL_COLORS[getTools().indexOf(t)%TOOL_COLORS.length]}"></span><span style="font-weight:700">${esc(t.name)}</span></span></td>
+      <td style="font-size:12px;color:var(--text-mute)">${url?(t.rss_url?'RSS':'HTML'):'未設定'}</td>
+      <td style="font-size:12.5px;color:var(--text-mute)">${t.last_fetched_at?relDate(t.last_fetched_at):'未取得'}</td>
+      <td><button class="btn btn-sm" onclick="runFetchOne('${t.id}')">${icon('fetch')}取得</button></td>
+    </tr>`;
+  });
+  html+=`</tbody></table></div>`;
+
+  // ログ表示
+  const logs=getLogs();
+  html+=`<div class="section-head"><h2>取得ログ</h2><span class="count">${logs.length}件</span><div class="spacer"></div>${logs.length?`<button class="btn btn-sm btn-ghost" onclick="clearLogs()">クリア</button>`:''}</div>`;
+  if(logs.length){
+    html+=`<div class="table-wrap"><div id="logList">`+logs.map(logLine).join('')+`</div></div>`;
+  }else{
+    html+=`<div class="card empty" style="padding:36px">${icon('fetch')}<h3>まだ取得ログはありません</h3><p>「全ツール取得」または各ツールの「取得」を押すと、結果がここに記録されます。</p></div>`;
+  }
+  v.innerHTML=html;
+}
+function logLine(l){
+  const ico = l.status==='success'?'ok':(l.status==='skip'?'skip':'err');
+  const sym = l.status==='success'?'check':(l.status==='skip'?'x':'x');
+  const tm = new Date(l.created_at);
+  return `<div class="log-line"><span class="log-ico ${ico}">${icon(sym)}</span><span class="msg">${esc(l.message)}${l.error_message?` <span style="color:var(--text-mute)">(${esc(l.error_message)})</span>`:''}</span><span class="tm">${tm.getHours()}:${String(tm.getMinutes()).padStart(2,'0')}</span></div>`;
+}
+function clearLogs(){ DB.load().fetch_logs.length=0; DB.save(); render(); }
+
+async function runFetchOne(id){
+  const t=toolById(id); if(!t)return;
+  toast(`${t.name} を取得中…`);
+  const r=await fetchToolUpdates(t);
+  addLog(r);
+  recomputeAll();
+  toast(r.status==='success'?`${r.fetched_count}件取得しました`:'取得できませんでした', r.status==='success'?'ok':'err');
+  if(route.name==='fetch')render();
+}
+async function runFetchAll(){
+  if(fetchRunning)return; fetchRunning=true;
+  const btn=document.getElementById('fetchAllBtn'); if(btn){btn.disabled=true;btn.style.opacity=.6;btn.innerHTML=icon('fetch')+'取得中…';}
+  const tools=getTools().filter(t=>t.is_active);
+  let total=0,ok=0;
+  for(const t of tools){
+    const r=await fetchToolUpdates(t);
+    addLog(r); total+=r.fetched_count; if(r.status==='success')ok++;
+    if(route.name==='fetch'){ const ll=document.getElementById('logList'); }
+  }
+  recomputeAll();
+  fetchRunning=false;
+  toast(`取得完了：${ok}/${tools.length}ツール成功・新着${total}件`, total>0?'ok':'err');
+  if(route.name==='fetch')render();
+}
+
+/* ---- 設定（開くたびの自動取得など） ---- */
+function getSettings(){ const d=DB.load(); if(!d.settings) d.settings={autoFetch:true}; if(typeof d.settings.autoFetch!=='boolean') d.settings.autoFetch=true; return d.settings; }
+function setSetting(k,v){ const s=getSettings(); s[k]=v; DB.save(); }
+function setAutoStatus(on){
+  const el=document.getElementById('autoStatus'); if(!el)return;
+  el.style.display=on?'inline-flex':'none';
+  el.innerHTML=on?'<span class="spin"></span>最新情報を確認中…':'';
+}
+
+/* ---- 開くたびに最新情報を自動取得（ベストエフォート） ---- */
+let _autoFetchDone=false;
+async function autoFetchOnOpen(){
+  if(_autoFetchDone) return;            // 1回の起動につき1回だけ
+  _autoFetchDone=true;
+  if(!getSettings().autoFetch) return;  // 設定でOFFなら何もしない
+  if(fetchRunning) return;
+  const tools=getTools().filter(t=>t.is_active && (t.rss_url||t.release_notes_url));
+  if(!tools.length) return;
+  fetchRunning=true; setAutoStatus(true);
+  // 全ツールを並列取得（待ち時間を短縮）。失敗は静かに記録のみ。
+  const counts=await Promise.all(tools.map(t=>
+    fetchToolUpdates(t).then(r=>{ addLog(r); return r.fetched_count||0; }).catch(()=>0)
+  ));
+  const total=counts.reduce((a,b)=>a+b,0);
+  fetchRunning=false; setAutoStatus(false);
+  recomputeAll();
+  if(total>0){ toast(`最新情報を${total}件取得しました`,'ok'); render(); }
+  // 0件・失敗時はトーストを出さず静かに終了（毎回の通知を避ける）
+}
+
+/* ---- 開くたびに data.json（GitHubが毎日自動更新）を読み込む ---- */
+/* data.json は同一オリジンなのでCORSが起きず確実に読める。無ければ静かに無視。 */
+let _syncDone=false;
+async function syncFromDataJson(){
+  if(_syncDone) return; _syncDone=true;
+  if(!getSettings().autoFetch) return;
+  try{
+    setAutoStatus(true);
+    const res=await fetch('./data.json?_='+Date.now(),{cache:'no-store'});
+    if(!res.ok){ setAutoStatus(false); return; }
+    const items=await res.json();
+    setAutoStatus(false);
+    if(!Array.isArray(items)||!items.length) return;
+    let added=0;
+    items.forEach(it=>{
+      if(!it||!it.title) return;
+      const tool=getTools().find(t=>t.name===it.tool)||getTools().find(t=>t.slug===it.tool);
+      if(!tool) return;
+      const dup=getUpdates().some(u=>(it.source_url&&u.source_url===it.source_url)||(u.tool_id===tool.id&&u.title===it.title));
+      if(dup) return;
+      const ex=(it.raw_excerpt||it.summary||'').toString();
+      saveUpdate({
+        tool_id:tool.id, title:it.title, source_url:it.source_url||'',
+        published_at:it.published_at||nowISO(), fetched_at:nowISO(),
+        raw_content:ex, raw_excerpt:ex, manual_summary:'', ai_summary:'',
+        simple_explanation:'', impact_summary:'', action_suggestion:'',
+        related_categories:(Array.isArray(it.related_categories)&&it.related_categories.length)?it.related_categories:(tool.related_businesses?[...tool.related_businesses]:[]),
+        score:0, rank:'C', status:'unread', is_saved:false, memo:''
+      });
+      added++;
+    });
+    if(added>0){ recomputeAll(); toast(`最新ニュースを${added}件取り込みました`,'ok'); renderNav(); render(); }
+  }catch(e){ setAutoStatus(false); /* data.json無し・ローカル等は静かに無視 */ }
+}
+
+/* ============================================================
+   Toast & Modal
+   ============================================================ */
+function toast(msg,type){
+  const wrap=document.getElementById('toasts');
+  const el=document.createElement('div');
+  el.className='toast '+(type||'');
+  el.innerHTML=(type==='ok'?icon('check'):type==='err'?icon('x'):icon('bolt'))+`<span>${esc(msg)}</span>`;
+  wrap.appendChild(el);
+  setTimeout(()=>{ el.style.transition='.3s'; el.style.opacity='0'; el.style.transform='translateY(8px)'; setTimeout(()=>el.remove(),300); },2600);
+}
+function modal(title,desc,onYes,yesLabel,danger){
+  const root=document.getElementById('modalRoot');
+  root.innerHTML=`<div class="modal-bg" onclick="if(event.target===this)closeModal()">
+    <div class="modal"><h3>${esc(title)}</h3><p>${esc(desc)}</p>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" onclick="closeModal()">キャンセル</button>
+      <button class="btn ${danger?'btn-danger':'btn-primary'}" id="modalYes">${esc(yesLabel||'OK')}</button>
+    </div></div></div>`;
+  document.getElementById('modalYes').onclick=()=>{ onYes&&onYes(); closeModal(); };
+}
+function modalForm(title,bodyHtml,onSubmit,submitLabel){
+  const root=document.getElementById('modalRoot');
+  root.innerHTML=`<div class="modal-bg" onclick="if(event.target===this)closeModal()">
+    <div class="modal" style="max-width:520px;max-height:88vh;overflow-y:auto"><h3 style="margin-bottom:16px">${esc(title)}</h3>
+    <div class="form">${bodyHtml}</div>
+    <div class="modal-actions" style="margin-top:20px">
+      <button class="btn btn-ghost" onclick="closeModal()">キャンセル</button>
+      <button class="btn btn-primary" id="modalSubmit">${esc(submitLabel||'保存')}</button>
+    </div></div></div>`;
+  document.getElementById('modalSubmit').onclick=()=>{ if(onSubmit()!==false)closeModal(); };
+}
+function closeModal(){ document.getElementById('modalRoot').innerHTML=''; }
+
+/* ============================================================
+   PWA: ホーム画面追加用のアイコン・マニフェストを実行時生成
+   （単一HTMLのまま、スマホで「アプリ」として追加できるようにする）
+   ============================================================ */
+function roundRect(x,a,b,w,h,r){ x.beginPath(); x.moveTo(a+r,b); x.arcTo(a+w,b,a+w,b+h,r); x.arcTo(a+w,b+h,a,b+h,r); x.arcTo(a,b+h,a,b,r); x.arcTo(a,b,a+w,b,r); x.closePath(); }
+function makeIcon(size){
+  const c=document.createElement('canvas'); c.width=c.height=size;
+  const x=c.getContext('2d'), cx=size/2, cy=size/2;
+  const g=x.createLinearGradient(0,0,size,size);
+  g.addColorStop(0,'#6366f1'); g.addColorStop(.55,'#7c5cf6'); g.addColorStop(1,'#a855f7');
+  x.fillStyle=g; roundRect(x,0,0,size,size,size*0.22); x.fill();
+  x.strokeStyle='rgba(255,255,255,.92)'; x.lineWidth=size*0.045; x.lineCap='round';
+  x.beginPath(); x.arc(cx,cy,size*0.28,0,Math.PI*2); x.stroke();
+  x.globalAlpha=.65; x.beginPath(); x.arc(cx,cy,size*0.165,0,Math.PI*2); x.stroke(); x.globalAlpha=1;
+  x.beginPath(); x.moveTo(cx,cy); x.lineTo(cx+size*0.28*Math.cos(-Math.PI/4), cy+size*0.28*Math.sin(-Math.PI/4)); x.stroke();
+  x.fillStyle='#fff'; x.beginPath(); x.arc(cx,cy,size*0.052,0,Math.PI*2); x.fill();
+  return c.toDataURL('image/png');
+}
+function setupPWA(){
+  try{
+    const i180=makeIcon(180), i192=makeIcon(192), i512=makeIcon(512);
+    const add=(rel,href,extra)=>{ const l=document.createElement('link'); l.rel=rel; l.href=href; if(extra)Object.assign(l,extra); document.head.appendChild(l); };
+    add('apple-touch-icon', i180);
+    add('icon', i192, {type:'image/png'});
+    const manifest={
+      name:'AI進化レーダー', short_name:'AI進化レーダー',
+      start_url: location.href, scope:'./', display:'standalone',
+      background_color:'#eef0f9', theme_color:'#101426', lang:'ja',
+      icons:[{src:i192,sizes:'192x192',type:'image/png'},{src:i512,sizes:'512x512',type:'image/png',purpose:'any maskable'}]
+    };
+    const url=URL.createObjectURL(new Blob([JSON.stringify(manifest)],{type:'application/json'}));
+    add('manifest', url);
+  }catch(e){ /* PWA設定失敗は無視（本体は動く） */ }
+}
+
+/* ============================================================
+   Boot
+   ============================================================ */
+DB.load();
+render();
+setupPWA();
+syncFromDataJson();  // 開くたびに data.json（GitHubが毎日更新）から最新を取り込む
+window.addEventListener('keydown',e=>{ if(e.key==='Escape')closeModal(); });
+
+// 画面幅がスマホ/PCの境界をまたいだら再描画（カード⇔表の切替）
+let _wasMobile=isMobile(), _rzT;
+window.addEventListener('resize',()=>{
+  clearTimeout(_rzT);
+  _rzT=setTimeout(()=>{ if(isMobile()!==_wasMobile){ _wasMobile=isMobile(); render(); } },200);
+});
+
+// 横フリック（右へスワイプ）で前の画面に戻る
+let _swX=0,_swY=0,_swT=0;
+document.addEventListener('touchstart',e=>{
+  if(e.touches.length!==1)return;
+  const t=e.touches[0]; _swX=t.clientX; _swY=t.clientY; _swT=Date.now();
+},{passive:true});
+document.addEventListener('touchend',e=>{
+  if(document.getElementById('modalRoot').children.length)return; // モーダル表示中は無効
+  if(document.getElementById('sidebar').classList.contains('open'))return; // メニュー表示中は無効
+  const t=e.changedTouches[0]; if(!t)return;
+  const dx=t.clientX-_swX, dy=t.clientY-_swY, dt=Date.now()-_swT;
+  // 右方向へ十分に・水平に・素早く動いたら「戻る」
+  if(dx>80 && Math.abs(dy)<55 && Math.abs(dx)>Math.abs(dy)*1.8 && dt<800){ goBack(); }
+},{passive:true});
+</script>
+</body>
+</html>
