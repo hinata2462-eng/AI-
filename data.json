@@ -1,38 +1,234 @@
 [
   {
     "tool": "Claude / Claude Code",
-    "title": "v2.1.183",
-    "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.183",
-    "published_at": "2026-06-19T01:20:50.000Z",
-    "raw_excerpt": "What's changed Improved auto mode safety: destructive git commands ( git reset --hard , git checkout -- . , git clean -fd , git stash drop ) are now blocked when you didn't ask to discard local work, git commit --amend is blocked when the commit wasn't made by the agent this session, and terraform destroy / pulumi destroy / cdk destroy are blocked unless you asked for the specific stack Added a warning when the requested model is deprecated or automatically updated to a newer model, shown on std"
+    "title": "アオキスーパー、Anthropic社の生成AI「Claude Pro」を本格導入 - ダイヤモンド・チェーンストアオンライン",
+    "source_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB0UHd4RG1rY0NNT3c1QUhCUm5ELW4wSnJJb2ZjNnBpMGw3MTE5aFpfQkJabWhvV1hjZHFSdjRMTklaUVBuakU0R21IbV9sb19XVlc4?oc=5",
+    "published_at": "2026-06-20T06:35:08.000Z",
+    "raw_excerpt": "アオキスーパー、Anthropic社の生成AI「Claude Pro」を本格導入 ダイヤモンド・チェーンストアオンライン"
   },
   {
     "tool": "ChatGPT / OpenAI",
-    "title": "New usage analytics and updated spend controls for enterprises",
-    "source_url": "https://openai.com/index/chatgpt-enterprise-spend-controls",
-    "published_at": "2026-06-18T17:00:00.000Z",
-    "raw_excerpt": "OpenAI introduces new spend controls and usage analytics for ChatGPT Enterprise, helping organizations manage costs and scale AI with confidence."
+    "title": "なぜAnthropicは広告を拒み、OpenAIは導入するのか ChatGPT広告の日本上陸で考える生成AI各社の“哲学” (リアルサウンド) - Yahoo!ニュース",
+    "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNYkRrZXFpbXgzQUZKRFlRSFFZSUJ1Nzk3UFlDZUJTVXFaU3Vicl80SUUtRUNMNmZPdzNwXzFXX0k1NkV0cXNaOXlacEQ1NHExQnZ5X0hVVHkxNTJoZlZQQ1lCUFNlVzRZV3JxQVlmMGh4M3BOZTN3aTlWUnM0LXFJWlA2VUs4NW83WDdibXB3?oc=5",
+    "published_at": "2026-06-20T04:49:19.000Z",
+    "raw_excerpt": "なぜAnthropicは広告を拒み、OpenAIは導入するのか ChatGPT広告の日本上陸で考える生成AI各社の“哲学” (リアルサウンド) Yahoo!ニュース"
+  },
+  {
+    "tool": "Suno",
+    "title": "【1.4兆円訴訟が激変】AI音楽生成の「言い逃れ」を封じた、あるメディアの“狙い澄まされた暴露”の正体 - t.co",
+    "source_url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTFBhMHg1ZnJjdEdLZmI4U2t2UmdydU9Cc1dlYjJPcUxkNzhDb0VQOFFvZjhBRVRLVGZCMTNN?oc=5",
+    "published_at": "2026-06-20T02:50:29.000Z",
+    "raw_excerpt": "【1.4兆円訴訟が激変】AI音楽生成の「言い逃れ」を封じた、あるメディアの“狙い澄まされた暴露”の正体 t.co"
   },
   {
     "tool": "Gemini",
-    "title": "Powering the world’s first AI arts museum",
-    "source_url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/dataland-ai-art-museum/",
-    "published_at": "2026-06-18T15:00:00.000Z",
-    "raw_excerpt": "Refik Anadol Studio opens Dataland, the first museum of AI arts, powered by Google Cloud and supported by Google Arts & Culture."
+    "title": "ChatGPT、利用者シェアで初の50％割れ Gemini・Claude台頭で生成AIアシスタント市場に変化 - Ledge.ai",
+    "source_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE44WmdtdTN2N0xObHNIVi1hVTY5dHExMUJQU1hGaks3R0c5Z2NSdEJMdVpIcjVwdllFcTJZWU1QdUlENW1SZDlKeTFGazFvd3RPNzNVVDRoUXFWbEdQdGlnQWhZZ3J0Y3Z6V3Vn?oc=5",
+    "published_at": "2026-06-20T00:03:18.000Z",
+    "raw_excerpt": "ChatGPT、利用者シェアで初の50％割れ Gemini・Claude台頭で生成AIアシスタント市場に変化 Ledge.ai"
+  },
+  {
+    "tool": "Suno",
+    "title": "サウンドハウンドAI【SOUN】：株価・株式情報 - Yahoo!ファイナンス",
+    "source_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5POFUyVFFfLUtSY1I5NVZNdzB2Y3JfMzlPUG1OdHI2M2Y3SGJYc1gtY3E2S1JOelJNZmV6STFrUWRjcDVHTElxUG5qRU41VGc?oc=5",
+    "published_at": "2026-06-19T23:54:18.000Z",
+    "raw_excerpt": "サウンドハウンドAI【SOUN】：株価・株式情報 Yahoo!ファイナンス"
+  },
+  {
+    "tool": "Runway",
+    "title": "AI's data explosion creates a multi-year growth runway for Seagate - MSN",
+    "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRWN4eVJKZkxwY2cwakhyRXZlYUgzRDMwa2dxOHF0MkZTeWstNUVBbkFyeklkQlN0MnZJeUF0UUoyemFjTDh3SWRjQ3REN3dBVnpoQ3gwckVwbk5fWS01M1NiU0Mxc2g1NHlod1FsbDhrY3hQQm1kdkwzV2UtdFJIUmFvQWpydXJ2eXMxTkZDQWdyZ0Y0YTVQVDAwcnBJc0dPNGxLZlFIVUxoRTNpNE4wdF9EdW82NUEya2lFRA?oc=5",
+    "published_at": "2026-06-19T19:26:21.000Z",
+    "raw_excerpt": "AI's data explosion creates a multi-year growth runway for Seagate MSN"
+  },
+  {
+    "tool": "Claude / Claude Code",
+    "title": "ドメイン知識こそがAI時代の開発力になる──Anthropic「Code with Claude」で語られたソフトウェア民主化の現在地 - CodeZine",
+    "source_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9saVBhQmRHenJNQ3g2aGZ0RjFLUTJLT0ZvaXhFOWgwdEh5NFpzcWRrWmU0blU0V1BDMVNTUVAya3psQWo1S3RFczhXYldkOXAxZVE?oc=5",
+    "published_at": "2026-06-19T15:47:20.000Z",
+    "raw_excerpt": "ドメイン知識こそがAI時代の開発力になる──Anthropic「Code with Claude」で語られたソフトウェア民主化の現在地 CodeZine"
+  },
+  {
+    "tool": "Claude / Claude Code",
+    "title": "Anthropicが「Claude Design」を機能強化、Claude Codeとの連携を開始 (ビジネス＋IT) - Yahoo!ニュース",
+    "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNclhza1REbVQxY1ZhcHJhTzVDelAzNXVQUGl1YjBTN0RDU0tQcENpZDRlUVp4UGxNZGZyLTNYa3hOOGg2WmpSbnktYmNqNmpBM1U3bE9yRXhJNzN6WFZUdmIyYVpqTE9wSldUOWtYUUk0ZmlGa0EwaWdHSE1lbGpBSUltSGprLWtpZkVzQkpB?oc=5",
+    "published_at": "2026-06-19T15:46:14.000Z",
+    "raw_excerpt": "Anthropicが「Claude Design」を機能強化、Claude Codeとの連携を開始 (ビジネス＋IT) Yahoo!ニュース"
   },
   {
     "tool": "ChatGPT / OpenAI",
-    "title": "Improving health intelligence in ChatGPT",
-    "source_url": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
-    "published_at": "2026-06-18T11:00:00.000Z",
-    "raw_excerpt": "Learn how GPT-5.5 Instant improves ChatGPT’s health and wellness responses with stronger reasoning, better context, clearer communication, and physician-informed evaluations."
+    "title": "「GPTs」ノーコードで「ChatGPT」をカスタマイズできる機能 - 窓の杜",
+    "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAxZ1VPQ3FEdFVVYjk5LURJSjUwNVNhaEM4VzRyUW5oRUdyUWVnSU5nSUo0YWJmRE5jdEgxeW5CVEt3Q2lGUG9NOGFjQ2lPaGw3NjZsOXNTeUFzdlFMVlpYWFgyMjVyLXp5?oc=5",
+    "published_at": "2026-06-19T15:05:00.000Z",
+    "raw_excerpt": "「GPTs」ノーコードで「ChatGPT」をカスタマイズできる機能 窓の杜"
+  },
+  {
+    "tool": "Runway",
+    "title": "Runway to Success - WNEM",
+    "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBBY3RudFI5dGg3UzZHM09xZHFDa3k4aEJxX1RCR3FtNlhqQ3RUUGY0azFUWks5MnlJNTJBOTh2SmdzT3dPU1hEREVLSXZrNXZuTDl0clZZRmFiYkF3eXhuaWVaUQ?oc=5",
+    "published_at": "2026-06-19T14:03:00.000Z",
+    "raw_excerpt": "Runway to Success WNEM"
+  },
+  {
+    "tool": "Runway",
+    "title": "Aviation officials turn to AI for combating runway issues - Politico",
+    "source_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFByUE01TXg5WlpjM2JSaldreWtic0JKN0dLcDZuRWltU0x3Ni03RUJlNVN4OVoyWWRiRG9EWGpsemNjYUx2aHhydGQtYnl1ck9YMV9VdUdxalhDSEJIN045MFkyMFFVaVdVSXM4QUxNSzNvMlhSQnFn?oc=5",
+    "published_at": "2026-06-19T14:00:00.000Z",
+    "raw_excerpt": "Aviation officials turn to AI for combating runway issues Politico"
+  },
+  {
+    "tool": "Gemini",
+    "title": "グーグル、世界初のAI美術館「Dataland」を20日LAに開館——Geminiが芸術に - finance.biggo.jp",
+    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE96d2p3M1RIbklFcDUyWS1Bd2NuVGotTFNVeDZGX3JuU0k4aWVLSlZWbEFMbnE0eGFhanZqRUZ5N1pQNk9tcmZjLV9JTEZOYkdjZnVYcUZGRVRhWHAzNkViQkUzVkRLVFAxRjlWb243OEhzemUt?oc=5",
+    "published_at": "2026-06-19T13:35:00.000Z",
+    "raw_excerpt": "グーグル、世界初のAI美術館「Dataland」を20日LAに開館——Geminiが芸術に finance.biggo.jp"
   },
   {
     "tool": "ChatGPT / OpenAI",
-    "title": "Using AI to help physicians diagnose rare genetic diseases affecting children",
-    "source_url": "https://openai.com/index/diagnose-rare-childhood-diseases",
-    "published_at": "2026-06-18T08:00:00.000Z",
-    "raw_excerpt": "Researchers used an OpenAI reasoning model to help diagnose rare diseases, identifying 18 new diagnoses in previously unsolved cases."
+    "title": "ロレアルとOpenAI、AIを活用したビューティー領域の変革に向けて協業を発表 - ニコニコニュース",
+    "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1XYm1nVjc4UlBCQXVreUtYSE1pcEZ2eHV3UXJub0pwY29rMlFIdTh4SUJrNXJwMkUwQ2NmbGQ4T2VwM3paMFEtTWVySmlwVnp0WHBNaQ?oc=5",
+    "published_at": "2026-06-19T13:15:31.000Z",
+    "raw_excerpt": "ロレアルとOpenAI、AIを活用したビューティー領域の変革に向けて協業を発表 ニコニコニュース"
+  },
+  {
+    "tool": "Claude / Claude Code",
+    "title": "最強AIモデル『Claude Fable 5』はなぜ3日で停止されたのか 国家安全保障問題へ発展したAI騒動を追う（リアルサウンド） - Yahoo!ニュース",
+    "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1JWDk4WnR5OWIwdHNUUnp2S05BSmk0M0xpT1BSVlRkYm9CcFo0aUxZMlUxNjlNZnpSMHFfYmc4cUs0UDRja0tQOEVoWVlmQ3NSako0OUZFZ05kYnEweHVqWFoyeE9YVXZRb0RmUm51ZDlXTC1HOWhHS1lxQmlrTmM?oc=5",
+    "published_at": "2026-06-19T13:09:47.000Z",
+    "raw_excerpt": "最強AIモデル『Claude Fable 5』はなぜ3日で停止されたのか 国家安全保障問題へ発展したAI騒動を追う（リアルサウンド） Yahoo!ニュース"
+  },
+  {
+    "tool": "NotebookLM",
+    "title": "NotebookLM、多言語リサーチが評価5軸入り｜日本のライターが原典に当たる新手段 - innovaTopia",
+    "source_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAzcml6NDVqbF9hT0lFMDlhcER2dG85T3EybkV5WW1HYmNxOTBFSjdWM2FRb09iNUxNMkxVb05ZVG5PbWpZSjVNMV9yUU93WnVYdlBV?oc=5",
+    "published_at": "2026-06-19T12:11:42.000Z",
+    "raw_excerpt": "NotebookLM、多言語リサーチが評価5軸入り｜日本のライターが原典に当たる新手段 innovaTopia"
+  },
+  {
+    "tool": "Gemini",
+    "title": "画像：はじめに：『グーグルの最強AI Gemini活用術（日経文庫ビジュアル）』 - 日経BOOKプラス",
+    "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxONGtLRTF6TVhEYnJnYWNXVFAwXzY1QjhMOHEwbTE3dGJVbWZqU2V1U3RSTE91Q3BGN295cWN3WnRqV2FXcm14M05Id0xocTNkQ2lGY1l5UE16dlJyaFRsYjZPS21ZS0Jub2lxR3R2ck9BSE43UTRJVGJFSzFoRWtsY1c5dUVYcjh2eTVJUE5B?oc=5",
+    "published_at": "2026-06-19T11:47:18.000Z",
+    "raw_excerpt": "画像：はじめに：『グーグルの最強AI Gemini活用術（日経文庫ビジュアル）』 日経BOOKプラス"
+  },
+  {
+    "tool": "Runway",
+    "title": "How AI Fashion Campaigns Are Transforming Runway Visuals and Brand Storytelling - INSCMagazine",
+    "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNmxOTlRaZTBfYndFQUNpRENaYWY3QmFONFhlRXl6TUZJNTBPQV96akVNZWpQVlppYmRJRTczenphckdEOEtzcERCMjJ6aGlwNXVTTEo2VmpYWmZFa2VNejlrWUxLcnI0N2pSU0VxeXlOTlRBV1FxSXVfNXhUc2JZY21OWnA1Q244SzJQZElMWkhmYUwyWWoxMVhlcFVPUU54ejJiTEJyZDdwaEJZ?oc=5",
+    "published_at": "2026-06-19T11:35:45.000Z",
+    "raw_excerpt": "How AI Fashion Campaigns Are Transforming Runway Visuals and Brand Storytelling INSCMagazine"
+  },
+  {
+    "tool": "Gemini",
+    "title": "【今さら聞けないGoogle AI】業務への活用方法をデモを見ながら学ぶ！7/8（水）好評セミナー「Gemini＋NotebookLM入門」のアーカイブ映像を無料配信!! - PR TIMES",
+    "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5XOHpUa2lOMWwxbC00M1dXR0Zxc2t4ZUNxU1JNVzVpN3JWd3hPbU5WTGR3MDl4NkI4MUJDQVNYSm94aHladE85b3h4eFJLcXZWNWVpZXlEUGFJS0o4T2hNNWk5ZEhQLUxqalE?oc=5",
+    "published_at": "2026-06-19T11:00:01.000Z",
+    "raw_excerpt": "【今さら聞けないGoogle AI】業務への活用方法をデモを見ながら学ぶ！7/8（水）好評セミナー「Gemini＋NotebookLM入門」のアーカイブ映像を無料配信!! PR TIMES"
+  },
+  {
+    "tool": "NotebookLM",
+    "title": "【今さら聞けないGoogle AI】業務への活用方法をデモを見ながら学ぶ！7/8（水）好評セミナー「Gemini＋NotebookLM入門」のアーカイブ映像を無料配信!! - PR TIMES",
+    "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5XOHpUa2lOMWwxbC00M1dXR0Zxc2t4ZUNxU1JNVzVpN3JWd3hPbU5WTGR3MDl4NkI4MUJDQVNYSm94aHladE85b3h4eFJLcXZWNWVpZXlEUGFJS0o4T2hNNWk5ZEhQLUxqalE?oc=5",
+    "published_at": "2026-06-19T11:00:01.000Z",
+    "raw_excerpt": "【今さら聞けないGoogle AI】業務への活用方法をデモを見ながら学ぶ！7/8（水）好評セミナー「Gemini＋NotebookLM入門」のアーカイブ映像を無料配信!! PR TIMES"
+  },
+  {
+    "tool": "Claude / Claude Code",
+    "title": "Anthropicが「Claude Design」を機能強化、Claude Codeとの連携を開始 デザインからコーディングまでを統合したワークフロー - ビジネス+IT",
+    "source_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0zSS1FbUJjVk15QURLcjZ1SVA1aHFGanE2OGd1Yk1BMmJLcVpWLU1IWEhpakRxSjJURHlrNEgwUTdidTJJSHc4Ulg0a1JzTFRVUlVN?oc=5",
+    "published_at": "2026-06-19T11:00:00.000Z",
+    "raw_excerpt": "Anthropicが「Claude Design」を機能強化、Claude Codeとの連携を開始 デザインからコーディングまでを統合したワークフロー ビジネス+IT"
+  },
+  {
+    "tool": "ChatGPT / OpenAI",
+    "title": "なぜAnthropicは広告を拒み、OpenAIは導入するのか ChatGPT広告の日本上陸で考える生成AI各社の“哲学” - MSN",
+    "source_url": "https://news.google.com/rss/articles/CBMiowRBVV95cUxQdkRwdS1fT1NxcmhEWlhIVHF6VDBjUmlxbktqc2RkRmFzNHdrX1RBUDNqQmt4ejBua1JFRFdQdjQ0aEdkTE9mOEFld2RkSWJYcGF2REpFYU9ST3N0YlBDV2w2ekdYU245dHdDZFdLWVo0ZnVmZDhMaE9TUkdOMG1sRTRGVlVkLWsxdG0yYXZKcDdfVGRRWjFqM1hBcHVPQkI4bVR0M2pNTi1nRVVLWkFvTzROSEI3SXM4ZXlsUnJTcF9UVnlWcXBhV21BUnFaMVktblNqOUZVd2ppUmxKeVQyRVBRMTBXZ3FVMHJHdDFHQkV6MGMzYzNHbnptZVRzMWI0WGRsN0VSZmpBNGFud2x5cWhZWG9vSHBQcmFLOFZZSU1kUzV6LWJSa3lfdmo0NzNNb2g2OXh6NUc2dFRpaHZUTVBVXy0yM1pmXzA3UWlpQU5PbVRDcWlYdlJYQ0x3aDVJUlJjSFhNNUlMTXpObi1WeDRMN3NGSkxyMzNzRldWbFRBeHhtR3RDWmQ0ZEJGZWhQazUwc3pSejM1M3pySnBubHFFVHdBU191R0gzYXFMejJwMUl0VXJZRVhaMFdlbGFPbERidF9Cd3lLVk1fYXYyb29Cemh0UnlPWGVPOWxIaWZQMU5vRHZ5SW1TT2ptV05XVnFwNmRZaTQ4Yy1sd2V5ODBTMi1PbnRidFBsQ2lBYklpdEJJLUFFTVkzVUNiaVNpWnB3?oc=5",
+    "published_at": "2026-06-19T10:44:40.000Z",
+    "raw_excerpt": "なぜAnthropicは広告を拒み、OpenAIは導入するのか ChatGPT広告の日本上陸で考える生成AI各社の“哲学” MSN"
+  },
+  {
+    "tool": "ChatGPT / OpenAI",
+    "title": "ChatGPTに定期タスク実行の新機能「スケジュール」、入荷確認や毎朝のまとめを自動化して通知 使い方はかんたん - MSN",
+    "source_url": "https://news.google.com/rss/articles/CBMikwVBVV95cUxQU2xHakNRcnZFN0ZWcm9WTlIydXkxWkd6OWpCV3l3SW1UVTJOME9PWU9PdkdPZ2o2aXl6Z2gyLV9uQ0F6b01PT292VW5EUDJ2eEM4QWdlSkNqejV3cmxaQXUzOHFPQkg3UVNLelRKUVpnb3JNZ3dzX3dvY1hxbW1LeHM2bkdsWXE4VWY4WGM4TGJmRlFtUDAzQk05NmxYRzd0QkoyT0ZablBLeXRIempJSmlKUnhwQWQzMUllVWZkekhzcUdrbGREMG9pMWZHcnhxQUVGU2MwWGVfaGd3eXhmRTFjY0FpYm9BRVliQjdKbXFZbkxIMVhoekpsUXRla3cyQUh2emZJYmp4dmd6bVIzWnRzY2pTNldSRlBZaENuV3RjY2ZJSVBObHBXZVNOcGRuRmo3akliTDdCMWdiVU5iVjRsMEF4Uk8tQUMzSEh0d2picGlLdDhQa2dHUWx6cGlmM3lNX1BMZFF3bC12dDNNY25GZGdISzU2RXVWNU1icnlmSVBvUF8xYTVRbU9wVWlDZFlRR2MwUzBwRFYzV3ZzMVhDMXI2VktKRGRyTjIzQlJBaEhuTHp2NzE2aVdCd0pNTW5YVjcwMkkyWmsxWkVIc1ZmaUVPdUxPWU9FUUI3ZnJUMHlOQldMaE53SjZpNjVrV05kYWRGeTNfYUd6UnMxVEgzRmlmRlF5YUZ6b3VOeTRXQXRzaXhCU3M2MFV5WDJHNFROcHloWkVVbkliaUlFNGV3dWZMVkJubHZnVGp6OHdFbm5CNVNUVGFmM3E1ZDd0S014ZlA4OGNtbTdVbmJoV1dISlprcjhTVVZMb2RwVFBqUXpNTmE4Z2JaazRkSElhVGFDcDV6ZFBibmhsVGQ1SWt3cw?oc=5",
+    "published_at": "2026-06-19T10:07:15.000Z",
+    "raw_excerpt": "ChatGPTに定期タスク実行の新機能「スケジュール」、入荷確認や毎朝のまとめを自動化して通知 使い方はかんたん MSN"
+  },
+  {
+    "tool": "ChatGPT / OpenAI",
+    "title": "なぜAnthropicは広告を拒み、OpenAIは導入するのか ChatGPT広告の日本上陸で考える生成AI各社の“哲学” | チバテレ＋プラス - 千葉テレビ放送株式会社",
+    "source_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBlMjVYWTc2ZEFqMnN0ejE5d1IyZ0dvV1gyTWZfSUJJdXBuYVZqSDdwbUJrc0FtTkF4dlVwaVZJNjJtZ3lTd29tZ25DLWNVa01yd1pOMDBOd2RkSDc0Rmx6ejB4alrSAWRBVV95cUxQZTI1WFk3NmRBajJzdHoxOXdSMmdHb1dYMk1mX0lCSXVwbmFWakg3cG1Ca3NBbU5BeHZVcGlWSTYybWd5U3dvbWduQy1jVWtNcndaTjAwTndkZEg3NEZsenoweGpa?oc=5",
+    "published_at": "2026-06-19T10:06:27.000Z",
+    "raw_excerpt": "なぜAnthropicは広告を拒み、OpenAIは導入するのか ChatGPT広告の日本上陸で考える生成AI各社の“哲学” | チバテレ＋プラス 千葉テレビ放送株式会社"
+  },
+  {
+    "tool": "Runway",
+    "title": "I went to Runway's AI film festival. I was skeptical, but the crowd ate it up - MSN",
+    "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPaFk3QXNQVm5pcjV3MGFpLWVmMTNCemk3UUdmdjBDS3VqbE0yOGNBbElXaWluZnhuVmV5WDZYVXJTMHdkTExTQ1N5ekRGUXE1eW5iQnRFLWNuMENpb2FfY2hXQktvS0pOeTVfR3Mxai1UbFBSSWZBR21tdEw1Uk83YXZQSTlTdTY3eHlGdXJLbl9hQVk0TjNiOUpaMlgzbWNlLXdEMlVxUmVuVG43NUdBQTBLZThQTnBGR3BwaE5GaHZVd28?oc=5",
+    "published_at": "2026-06-19T09:43:56.000Z",
+    "raw_excerpt": "I went to Runway's AI film festival. I was skeptical, but the crowd ate it up MSN"
+  },
+  {
+    "tool": "Claude / Claude Code",
+    "title": "Claude Codeで誤った利用制限が表示される不具合、影響ユーザーにリセット対応 - finance.biggo.jp",
+    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9JdkFpd0VEY3lBek9OTzdQeEhBRkZLcTgwbDZGdExyZjhkS1VST3NsN1N6UzdrdEYzNVRqMDRCOWZFTWN3NmJIY3NJOUdPLXpEZkpoWTRXUEwxLTA4OWJkM0lNMjlsRUd2LTdkaklYQ1BLTklh?oc=5",
+    "published_at": "2026-06-19T09:25:00.000Z",
+    "raw_excerpt": "Claude Codeで誤った利用制限が表示される不具合、影響ユーザーにリセット対応 finance.biggo.jp"
+  },
+  {
+    "tool": "Runway",
+    "title": "I went to Runway's AI film festival. I was skeptical, but the crowd ate it up. - AOL.com",
+    "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5iZndnekFMXzR0VzZmT2cxa0RZZnhQWExEVEl4QkVBZUlqNU0tNkJfa3lueUNGanM1bUNkamRxX1JRbnI3UDQ1WGJqelRONTkyVERfMlZWN3pEcDBjRlNkcDRvUWpERnV3Ym1SYTNLMkJqODFXeHZGRGRvVkE4QQ?oc=5",
+    "published_at": "2026-06-19T08:48:39.000Z",
+    "raw_excerpt": "I went to Runway's AI film festival. I was skeptical, but the crowd ate it up. AOL.com"
+  },
+  {
+    "tool": "v0",
+    "title": "Vercel unveils agent tools as deployments turn AI-led - IT Brief UK",
+    "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPanhvX2ZyQUZlbmVPRTZxdkdLTDBQVGtTLXl1dzk1MlJrSWtiM01LZm9KUjNCQTM5VFJSdVlmXzJmLWh1bGNDTlpzQkxfT3VVamlTUk5KWlg0V19RLVhRdDF5SE43N25pRjZXMFc1eUNHUUMxdHZNanUtQTBqV3RCLWZqTkliWU9T?oc=5",
+    "published_at": "2026-06-19T08:45:00.000Z",
+    "raw_excerpt": "Vercel unveils agent tools as deployments turn AI-led IT Brief UK"
+  },
+  {
+    "tool": "Gemini",
+    "title": "Google、AI悪用の詐欺ネットワーク「Outsider Enterprise」を提訴 偽SMSやフィッシングサイト生成にGeminiを悪用か - Ledge.ai",
+    "source_url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBDNUZyN3dkZHluNmNaWmdLQ2dkVmtORDNHWlVlS1podHFmQS1xMlZOT1lMbDdGbkhiS0JZb1hZUkxUVzItS3FISk9IaUhKVzFMWW84MzZOTDBQSkR6VF93UjV1MmVXZkU1YVAxV0NuMXFnUQ?oc=5",
+    "published_at": "2026-06-19T06:06:14.000Z",
+    "raw_excerpt": "Google、AI悪用の詐欺ネットワーク「Outsider Enterprise」を提訴 偽SMSやフィッシングサイト生成にGeminiを悪用か Ledge.ai"
+  },
+  {
+    "tool": "Gemini",
+    "title": "Google ClassroomとGeminiが連携 Geminiをより教育に利用しやすく - 株式会社インプレス",
+    "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5XUkR1cXMwRmJrbkFLQW9QejJOZVlCcWpBeWtYWFdSdXctY0ZPVDliNFpsSUpZZk01UXoyYTZSeDJsZzhVRjl5TnZ0NFJqNDkteHNxd1ZVRmxHZzY3em5xY014SQ?oc=5",
+    "published_at": "2026-06-19T05:36:06.000Z",
+    "raw_excerpt": "Google ClassroomとGeminiが連携 Geminiをより教育に利用しやすく 株式会社インプレス"
+  },
+  {
+    "tool": "Canva",
+    "title": "Canva Japan初の全編アニメ新TVCM公開！声優・前田佳織里が主人公を熱演Hump Back「拝啓、少年よ」が彩る女子バンドの地方創生と青春のストーリー - PR TIMES",
+    "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAtRGpXX1FTekdWeW01S3J6WVJ4RzNMRTBBdTFPYk1PTVFhMGFVcjY2dTZIVkM1Ql92V0NoUEQzS1NzaFJBa0VvaGh1RHRqSGpwcHZLbUM4bmxoOVZaSDlOSFZmYXlpSWdSUVE?oc=5",
+    "published_at": "2026-06-19T02:00:02.000Z",
+    "raw_excerpt": "Canva Japan初の全編アニメ新TVCM公開！声優・前田佳織里が主人公を熱演Hump Back「拝啓、少年よ」が彩る女子バンドの地方創生と青春のストーリー PR TIMES"
+  },
+  {
+    "tool": "NotebookLM",
+    "title": "【待望】Geminiに「ノートブック」機能が登場！AI作業が激変する神アプデ解説 | NotebookLM・作業フォルダ・プロジェクト管理 Cwu (CSZoQjPS8N) - Mshale",
+    "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBkbndIdkpydTNhQlVtSmFWbWJfYUtVcjJBYzlrTXJKUk5pNGgtY2pVSW5hRjlkV2pIU1lRTHc1OVpXcV9MM2d3a0NQRmZPUkcyeEpaaEV2bGktdGs?oc=5",
+    "published_at": "2026-06-19T01:40:50.000Z",
+    "raw_excerpt": "【待望】Geminiに「ノートブック」機能が登場！AI作業が激変する神アプデ解説 | NotebookLM・作業フォルダ・プロジェクト管理 Cwu (CSZoQjPS8N) Mshale"
+  },
+  {
+    "tool": "Canva",
+    "title": "エクシード、「夏期講習バナーをClaude Design × Canva MCPで量産する」29日開催 - ICT教育ニュース",
+    "source_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBzdlRBVUhMSmE3ZjdxNFZ3WV9MZ3h3OFJCSjYxa1VyS1lwdVNyamMtLVNFZlVtYmU0VTQwWm5vMjdxbHhXZmVKX25IclpVVzQ?oc=5",
+    "published_at": "2026-06-18T23:24:54.000Z",
+    "raw_excerpt": "エクシード、「夏期講習バナーをClaude Design × Canva MCPで量産する」29日開催 ICT教育ニュース"
+  },
+  {
+    "tool": "Suno",
+    "title": "「AIが作った曲」もお金になる？ JASRACの新ルール＆「人間がどこまで作ったか」の境界線、弁理士が解説 - ニコニコニュース",
+    "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA3OHJDZjJmYUJNQlR6UTZjWks0bWFGRzFMeTJhVzFJVF9TVlBJX0lMNXRhVDd6bDdhN3FwR0NReVNORmo3Y2g1YVBSMkdEYUloVTNjcw?oc=5",
+    "published_at": "2026-06-18T22:24:20.000Z",
+    "raw_excerpt": "「AIが作った曲」もお金になる？ JASRACの新ルール＆「人間がどこまで作ったか」の境界線、弁理士が解説 ニコニコニュース"
   },
   {
     "tool": "Cursor",
@@ -42,11 +238,18 @@
     "raw_excerpt": "Cursor Automations save you time by automating repetitive tasks with always-on agents. This release introduces the **/automate** skill, new triggers for GitHub and Slack, and support for computer use."
   },
   {
-    "tool": "Claude / Claude Code",
-    "title": "v2.1.181",
-    "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.181",
-    "published_at": "2026-06-17T22:07:41.000Z",
-    "raw_excerpt": "What's changed Added /config key=value syntax to set any setting from the prompt (e.g. /config thinking=false ) — works in interactive, -p , and Remote Control Added sandbox.allowAppleEvents opt-in setting that lets sandboxed commands send Apple Events on macOS Added CLAUDE_CLIENT_PRESENCE_FILE environment variable: point it at a marker file to suppress mobile push notifications while you're at the machine Upgraded the bundled Bun runtime to 1.4 Improved streaming of long paragraphs: text now ap"
+    "tool": "Canva",
+    "title": "Anthropic、デザインツール「Claude Design」を強化 Codeとの双方向連携やCanvaなどへの出力をサポート (ITmedia NEWS) - Yahoo!ニュース",
+    "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNUGtTM2NvUGdILWZ0MmVSakNQSkhVY01JWnVuY2tLS1BqNmhIS0FNQ3R5dURjZ3lxUmFjcHNjaFVqbUgyS3FfSTVYelJTRmdfQUxaUUFyVW96NlZBUjVGSWQ4Z3hKX2VCQ3VPVm5Td29lNVhodGN0R2tlQlIya1k3MElISTNjM1Myd0tMUXNn?oc=5",
+    "published_at": "2026-06-17T21:27:19.000Z",
+    "raw_excerpt": "Anthropic、デザインツール「Claude Design」を強化 Codeとの双方向連携やCanvaなどへの出力をサポート (ITmedia NEWS) Yahoo!ニュース"
+  },
+  {
+    "tool": "Canva",
+    "title": "Anthropic、デザインツール「Claude Design」を強化 Codeとの双方向連携やCanvaなどへの出力をサポート - ITmedia",
+    "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5RZWtVWUx1WmV0dlZEaktLRDlUMy1ZQTRLVnUtUG9PVTdwMHMzdU96QnpNQ21VMXg5bVVGUkl2MnJKWWdlbUZUdnE3ZTZOSHpPMlozUVFlcWliY1k5TURuOW9jNEEwcTNJc0FFZg?oc=5",
+    "published_at": "2026-06-17T21:25:34.000Z",
+    "raw_excerpt": "Anthropic、デザインツール「Claude Design」を強化 Codeとの双方向連携やCanvaなどへの出力をサポート ITmedia"
   },
   {
     "tool": "v0",
@@ -56,11 +259,32 @@
     "raw_excerpt": "For a decade, Vercel has shaped how the web is built. Now, we’re doing the same for agents. The companies that win the next decade will build on infrastructure designed for agents from the start, and over 2,500 people gathered in London this week to do just that at Vercel Ship 2026. Agentic infrastructure Guillermo kicked off Ship by sharing his vision for Vercel: a true full-stack platform where you can deploy anything, including software that can think. Agentic infrastructure has three parts: "
   },
   {
-    "tool": "ChatGPT / OpenAI",
-    "title": "A near-autonomous AI chemist improves a challenging reaction in medicinal chemistry",
-    "source_url": "https://openai.com/index/ai-chemist-improves-reaction",
-    "published_at": "2026-06-17T10:00:00.000Z",
-    "raw_excerpt": "OpenAI and Molecule.one show how a near-autonomous AI chemist using GPT-5.4 improved a key drug-making reaction, advancing medicinal chemistry research."
+    "tool": "v0",
+    "title": "Vercel Brings New Agent Framework, Full-Stack Capabilities, and Enterprise Controls to Its Agentic Infrastructure Platform - Via TT",
+    "source_url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQOGlIMVR6cERQcGJ5cFkybWJhRFdPSUo2bEJjeU1idEd2VGpFb3N1OVc3aHpTOHg5V1JiLUNCOUt6dWY5TndrbFk2UGQtLXdSR2NuaWV6aW81b1FPdDVrY19Zc2pMTnZUbFNMUWNSLXdva2lqVWhMblFwNjlOZnFVM1E0NzVRVzBickFudHhESElJU0dSU1lTRHIyWHZLUVc4N3lzN3l1NWIwcUtyYjJLZmFUUWRZV0JVTEE1Z19qVkhTTUNrVm5KM2VqRzVQbUVQdGQteDRYRVFaTkhyWGJrSEJBXzNKcE5sOG5jdDE1YVlwMGtPNnFLRVd4Y3BrcG9td3pnLVNOTm5Jcm54MEtPNW0yeE9CQjg5?oc=5",
+    "published_at": "2026-06-17T10:13:00.000Z",
+    "raw_excerpt": "Vercel Brings New Agent Framework, Full-Stack Capabilities, and Enterprise Controls to Its Agentic Infrastructure Platform Via TT"
+  },
+  {
+    "tool": "Cursor",
+    "title": "Cursor、Gitホスティング「Origin」発表 SpaceXによる買収発表直後に - ITmedia",
+    "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBwYndmc01QTEIzSEI3eGN3SlR3QnN1WTBPcmk3cTJ3OWNCLWEtWFRndlQ2MkZGY3BfOVFOaGI4Yzc0MFp5MWNfMGhxUTZrNXJ1T20zQ3dNdnpMMG1uUGdkbUs1M3EzOTFoY2dKWQ?oc=5",
+    "published_at": "2026-06-17T08:51:12.000Z",
+    "raw_excerpt": "Cursor、Gitホスティング「Origin」発表 SpaceXによる買収発表直後に ITmedia"
+  },
+  {
+    "tool": "Cursor",
+    "title": "SpaceX、AIコーディングツール「Cursor」運営会社を600億ドルで買収へ 上場直後の大型AI投資 - Ledge.ai",
+    "source_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE16b3NKdzlDSWEyUlBWRVZjWGVQdV8tQm0yQTlXMlVxTThHS1labHFqMzNPYWRHSFA0TEZXaElRRWhScnJaRVF5eC1ua29PQkN1RFZBNU9HM21QM1BBekpUOW4zOGk2QU1qYW9UWm5naFl3M1E?oc=5",
+    "published_at": "2026-06-17T07:51:00.000Z",
+    "raw_excerpt": "SpaceX、AIコーディングツール「Cursor」運営会社を600億ドルで買収へ 上場直後の大型AI投資 Ledge.ai"
+  },
+  {
+    "tool": "Cursor",
+    "title": "Cursor、AIエージェント向けコードホスティング「Origin」発表──コードインフラを根本から再構築 - finance.biggo.jp",
+    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5GR05qM3VsSXFncFdQN3R1VkdycEdHRkhMdzBTTm9GRmxXQURrcFRXQlNaZkZiZjA1VnY3XzRsZm1aZ0UweG1yd0c1ZGhOSDd5NXJ4dGotS0d4TzMySGY5TlFrNFo2eUFvMmt1Qk5vNG1uTUt4?oc=5",
+    "published_at": "2026-06-17T07:45:00.000Z",
+    "raw_excerpt": "Cursor、AIエージェント向けコードホスティング「Origin」発表──コードインフラを根本から再構築 finance.biggo.jp"
   },
   {
     "tool": "v0",
@@ -84,25 +308,11 @@
     "raw_excerpt": "Today, we are proud to introduce eve , an open-source agent framework for building, running, and scaling agents. eve is designed around the idea that building an agent should mean defining what it does without assembling all of the pieces that it needs to run in production. Instead, eve comes with production already built in: Durable execution Sandboxed compute Human-in-the-loop approvals Subagents Evals And more eve is the framework that we build and run our own agents on. Agents today are wher"
   },
   {
-    "tool": "ChatGPT / OpenAI",
-    "title": "Introducing LifeSciBench",
-    "source_url": "https://openai.com/index/introducing-life-sci-bench",
-    "published_at": "2026-06-17T00:00:00.000Z",
-    "raw_excerpt": "Introducing LifeSciBench, an expert-authored, expert-reviewed benchmark for evaluating how AI systems handle real-world life science research tasks and decisions."
-  },
-  {
-    "tool": "v0",
-    "title": "CLI deployment limits removed",
-    "source_url": "https://vercel.com/changelog/cli-deployment-limits-removed",
-    "published_at": "2026-06-17T00:00:00.000Z",
-    "raw_excerpt": "We've removed CLI-specific deployment limits, making it easier to deploy from local machine and external CI/CD pipelines with instant feedback. Teams and AI agents can now deploy at the pace their workflows demand. Learn more about limits in the Documentation . Read more"
-  },
-  {
-    "tool": "v0",
-    "title": "Vercel Passport is now in Public Beta",
-    "source_url": "https://vercel.com/changelog/vercel-passport-is-now-in-public-beta",
-    "published_at": "2026-06-17T00:00:00.000Z",
-    "raw_excerpt": "Enterprise teams can now control access to their Vercel deployments with Vercel Passport , using their own identity provider. Visitors authenticate through providers like Okta, Auth0, or any compatible OIDC provider before they can view a protected deployment. Use Passport to: Reuse an OIDC application across multiple projects Set a team default that applies to new projects automatically Assign Passport to existing projects in bulk After Passport authenticates a visitor, Vercel injects a signed "
+    "tool": "Cursor",
+    "title": "SpaceX、AIコーディングツール「Cursor」を買収 ～全株取引でAnysphereを取得 - 窓の杜",
+    "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1sS1NQSG15X05yU3g1eThLclRSVlVnYXl0MmtLUWgwZEw2bENXRGRMS05wLUtYcjd1WG9MWHJtRHB0eVd0NllpSGs4dzJmby1wdG11RVh0Skd2ZXdZXzJaYnJEdWIwbGk4?oc=5",
+    "published_at": "2026-06-17T00:14:00.000Z",
+    "raw_excerpt": "SpaceX、AIコーディングツール「Cursor」を買収 ～全株取引でAnysphereを取得 窓の杜"
   },
   {
     "tool": "Cursor",
@@ -112,143 +322,59 @@
     "raw_excerpt": "This release introduces updates to cloud agents in the Agents Window of the Cursor desktop app."
   },
   {
-    "tool": "Claude / Claude Code",
-    "title": "v2.1.179",
-    "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.179",
-    "published_at": "2026-06-16T20:22:14.000Z",
-    "raw_excerpt": "What's changed Fixed mid-stream connection drops: partial responses are now preserved instead of showing a raw error, and the spinner no longer gets stuck at \"running tool\" Fixed mouse-wheel scrolling in WSL2 under Windows Terminal and VS Code (regression in 2.1.172) Fixed a sandbox denyRead / allowRead glob over a large directory tree making the Bash tool description enormous and the session unusable on Linux Fixed the feedback survey capturing a single-digit reply as a session rating immediate"
+    "tool": "NotebookLM",
+    "title": "NotebookLMがドキュメント、シート、スライドをリアルタイムで同期 - Foro3D",
+    "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPUFR4blVwd3oyMG4yQnFoaGw2d2NmVk1xVnVPT3lyV1dqS1RTZXdjeTNWVm9YYkF3VlZtdTNvbDBxdjRTZVFKOFAzWERTeDlONjBydnRjNXUxQlpxLVRhNk1Xc09FTElpbmpZWDNyWFJPN2FXbWxHQ3Fhb0ZjZjF6Vk1VQjdaOU9xSTNKSUdsUGNKWk1wRjZzNTUyNm9fc1E?oc=5",
+    "published_at": "2026-06-16T08:09:38.000Z",
+    "raw_excerpt": "NotebookLMがドキュメント、シート、スライドをリアルタイムで同期 Foro3D"
   },
   {
-    "tool": "Gemini",
-    "title": "June Pixel Drop: New features for creators, Gemini upgrades and more",
-    "source_url": "https://blog.google/products-and-platforms/devices/pixel/june-2026-pixel-drop/",
-    "published_at": "2026-06-16T18:00:00.000Z",
-    "raw_excerpt": "Get new screen recording feature, text-to-video tools with Gemini Omni, and better multitasking on your Pixel devices."
+    "tool": "Suno",
+    "title": "6/16(火) レコレール・アップデーツ - JFN Pods",
+    "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE50STY0blpFYmdhSXRfR0w0T3cyaU9sSmhFbE4xdFZfYmJKcWVSdGhUR1NmdnBOVm5meDNIUUVybkRNUDh1ZXI3X1RpQzA2NFl6WXBaSkxJZ1BjMEM4ZzRlVEI0Ml9zdGlS?oc=5",
+    "published_at": "2026-06-16T08:01:31.000Z",
+    "raw_excerpt": "6/16(火) レコレール・アップデーツ JFN Pods"
   },
   {
-    "tool": "ChatGPT / OpenAI",
-    "title": "Predicting model behavior before release by simulating deployment",
-    "source_url": "https://openai.com/index/deployment-simulation",
+    "tool": "NotebookLM",
+    "title": "【2026年最新】NotebookLMウォーターマークを削除する方法｜スライドをきれいに保存 - RBB TODAY",
+    "source_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE0tMUFaNmNFTTlYNVRwaC1wbG1HTnFRaEhLWENwY2R2OFNsREF0VzQxdnpMMXppbm5FX1ViMk1oaEIydjRqZkY4VkJaOU5EUUZac1AtYVlzZFhESVl5bE40T2ctb3NhTEhmdTdvREZYSDhYUQ?oc=5",
     "published_at": "2026-06-16T00:00:00.000Z",
-    "raw_excerpt": "OpenAI introduces Deployment Simulation, a method to predict AI model behavior before deployment using real conversation data to improve safety and evaluation accuracy."
+    "raw_excerpt": "【2026年最新】NotebookLMウォーターマークを削除する方法｜スライドをきれいに保存 RBB TODAY"
   },
   {
-    "tool": "Claude / Claude Code",
-    "title": "v2.1.178",
-    "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.178",
-    "published_at": "2026-06-15T21:35:55.000Z",
-    "raw_excerpt": "What's changed Added Tool(param:value) syntax for permission rules to match a tool's input parameters (with * wildcard), e.g. Agent(model:opus) to block Opus subagents Skills in nested .claude/skills directories now load when working on files there; on a name clash, the nested skill appears as : so both stay available Nested .claude/ directories: the agent, workflow, and output-style closest to the working directory now wins when names collide; project-scope workflow saves now target the closest"
+    "tool": "Suno",
+    "title": "絢香 - みんな空の下をハスキーハイトーンで歌わせてみた☻ / アイコニーの音楽室 Justin Crawford (0kePnRMdk8) - Fathom Journal",
+    "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1jVjkySTBoaTJtQlp0SlFLNGxsTmZBSWdTUnNuaFZmLUdIcjJsaVhwT2FtODJlUko0TWV0Umt5dWx1R3lvbkFvMnVibVY1elVtbW9pc21UT2liQjh0VF9HRGpwTm84bEhyQUE?oc=5",
+    "published_at": "2026-06-15T12:19:17.000Z",
+    "raw_excerpt": "絢香 - みんな空の下をハスキーハイトーンで歌わせてみた☻ / アイコニーの音楽室 Justin Crawford (0kePnRMdk8) Fathom Journal"
   },
   {
-    "tool": "Claude / Claude Code",
-    "title": "v2.1.177",
-    "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.177",
-    "published_at": "2026-06-13T01:25:15.000Z",
-    "raw_excerpt": "No content."
+    "tool": "Canva",
+    "title": "「ChatGPT」と「Gemini」で「Canva」のマジックレイヤーが利用可能に／“フラットな”1枚のAI生成画像をパーツごとにレイヤー化された「Canva」デザインに - MSN",
+    "source_url": "https://news.google.com/rss/articles/CBMi2AVBVV95cUxPR2VhZF84Mk0wZ3paOS0waVlCclJDMGZRcEZnakIyX25KVnJQRzZjSjR5cWZnaWZJYk1YT042YW1tcThFcEg4LWF3Tm5NSjFyc1pvZzlRRHo4Z0dMMGVIZVpPMnBRZlJFckxfdXBleHQ3dklZR2pwaXNNTW1ab29RWXBCNmRnSTVxVTY1MFRkM3VQczhIcm0yMndDeFlNRnNFY2FHblBubmFLdV9TcXVzOTl2dlp0cmFMNHBNZGRQY0RXRmRja0NVWG5EZXhPSHU2d2NjVmZFQ0RXeHNsQk1KcGJUbWE5S1NqT1A5UG41cU16YUNNNWUtWjQ4ampSYmVTQ2k3UWVsQV9tTjZfNWdCSXdVVm8wQUlKOTJCUWxaSk5lLS1raGphSlFNWEg1cVBGYTQ3Q0ZwemdNRXZiTEJfWWVyQllraTdTN2ItaXljLUF6Y3cxZVM4QmdVN01hWUFtYkdlaFRzSlA5UmFSR2U1VjVYNzRxOXRycW1rTy1UVnZWT004Q0d5ektrWndYcHV3cng4ZW9XMDNDZ19nM3A4V1NTUjJ0TEVEMm5xMFpralhYOElOM0VObWI1eEFwZHQ5cHlpTlloVDBuMFExNXF4YXVCNGZfb2hTZHh1cUVCSjh5eGFXUU1Tck0telRWazk1YVptS1lBTWlqY21SaDVSQjFNV1lPclRldFRrdjZNWk1NcFFTZnc5NVQwMEdJZEozLWREVHZlclYzYnZKTkk0d1cxVGJ2bVlxbnhwZjVuTkpJNUlNbDA0cHJuWEFxQV8yazFEZW5VV1JhTF92RTRDM3ExZmlNTUhYVWdmS3ljd19fRDgteld0cVl3clhqS0RQOVZ6QkY4TlBuX0VGXzJpeDBYRE8teXZwanBoalNMQ3dlOGV1V3RldERMRTgwQVAzSW9NSHgxZVFQaWIyOExEbm93eDBoVUJ0cjQ0bFJvWXViTElyRHdaeQ?oc=5",
+    "published_at": "2026-06-15T09:33:44.000Z",
+    "raw_excerpt": "「ChatGPT」と「Gemini」で「Canva」のマジックレイヤーが利用可能に／“フラットな”1枚のAI生成画像をパーツごとにレイヤー化された「Canva」デザインに MSN"
   },
   {
-    "tool": "Claude / Claude Code",
-    "title": "v2.1.176",
-    "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.176",
-    "published_at": "2026-06-12T21:53:27.000Z",
-    "raw_excerpt": "What's changed Session titles are now generated in the language of your conversation (set the language setting to pin a specific language) Added footerLinksRegexes setting for regex-matched link badges in the footer row, configurable via user or managed settings Improved Bedrock credential caching: credentials from awsCredentialExport are now cached until their Expiration instead of a fixed 1 hour Fixed availableModels enforcement: alias model picks can no longer be redirected to a blocked model"
+    "tool": "Suno",
+    "title": "ワーナー・ミュージック、AI著作権帰属・収益化プラットフォーム「Sureel」買収 - 音楽業界総合情報サイト",
+    "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5XVFo3aS1HaTE4S01BQ0VuVEs1dDNfT1pIRFdzQ0otUDBaT3NGVjJlbk55WUZvS29TZm9GTFVwa0pmMUs1V2liT3dLX3kzYllZdmYyWA?oc=5",
+    "published_at": "2026-06-15T08:40:47.000Z",
+    "raw_excerpt": "ワーナー・ミュージック、AI著作権帰属・収益化プラットフォーム「Sureel」買収 音楽業界総合情報サイト"
   },
   {
-    "tool": "Gemini",
-    "title": "Save time and grow your business with new Gemini tools",
-    "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-features-for-businesses/",
-    "published_at": "2026-06-10T15:00:00.000Z",
-    "raw_excerpt": "An overview of new features in the Gemini app designed specifically to support businesses and entrepreneurs."
-  },
-  {
-    "tool": "Cursor",
-    "title": "Bugbot is now over 3x faster, 22% cheaper, and finds 10% more bugs",
-    "source_url": "https://cursor.com/changelog/bugbot-updates-june-2026",
-    "published_at": "2026-06-10T00:00:00.000Z",
-    "raw_excerpt": "Bugbot is now over 3x faster, 22% cheaper, and finds 10% more bugs per review, plus a new /review command to run reviews before you push."
-  },
-  {
-    "tool": "Gemini",
-    "title": "Fluid, natural voice translation with Gemini 3.5 Live Translate",
-    "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-live-3-5-translate/",
-    "published_at": "2026-06-09T15:00:00.000Z",
-    "raw_excerpt": "Gemini 3.5 Live Translate brings near real-time, natural speech translation to Google AI Studio, Google Translate and Google Meet."
+    "tool": "Canva",
+    "title": "「ChatGPT」と「Gemini」で「Canva」のマジックレイヤーが利用可能に／“フラットな”1枚のAI生成画像をパーツごとにレイヤー化された「Canva」デザインに - 千葉テレビ放送株式会社",
+    "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9YTEdUVG9RRkNDQ2ctQTJ3WThsVUVKWGptNjFhY3MwQkZNTldkRU9UaHFNVTdJZnVlRVQ4Q3pDU1ZpOG5OQUktV0V5Ujl4YV91ZFFuVUNPcXBIcnRtZVBj?oc=5",
+    "published_at": "2026-06-15T08:26:17.000Z",
+    "raw_excerpt": "「ChatGPT」と「Gemini」で「Canva」のマジックレイヤーが利用可能に／“フラットな”1枚のAI生成画像をパーツごとにレイヤー化された「Canva」デザインに 千葉テレビ放送株式会社"
   },
   {
     "tool": "NotebookLM",
-    "title": "Do better research with NotebookLM",
-    "source_url": "https://blog.google/innovation-and-ai/products/notebooklm/better-research-notebooklm/",
-    "published_at": "2026-06-08T16:00:00.000Z",
-    "raw_excerpt": "NotebookLM’s latest upgrades deliver new agentic capabilities and more advanced reasoning to tackle complex research projects."
-  },
-  {
-    "tool": "Gemini",
-    "title": "4 ways soccer fans can catch every moment of the tournament",
-    "source_url": "https://blog.google/products-and-platforms/products/search/soccer-tournament-google-tools-2026/",
-    "published_at": "2026-06-08T13:00:00.000Z",
-    "raw_excerpt": "Google tools — like Maps, Gemini and AI Mode in Search — can help guide you from the first whistle to the final goal."
-  },
-  {
-    "tool": "Gemini",
-    "title": "The latest AI news we announced in May 2026",
-    "source_url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-may-2026/",
-    "published_at": "2026-06-05T14:45:00.000Z",
-    "raw_excerpt": "Here are Google’s latest AI updates from May 2026"
-  },
-  {
-    "tool": "Cursor",
-    "title": "Design Mode Improvements",
-    "source_url": "https://cursor.com/changelog/design-mode-improvements",
-    "published_at": "2026-06-05T00:00:00.000Z",
-    "raw_excerpt": "With Design Mode in the Cursor browser, you can click, draw, or describe changes by voice to help agents update your UI."
-  },
-  {
-    "tool": "Cursor",
-    "title": "Custom stores, custom tools, and auto-review for the Cursor SDK",
-    "source_url": "https://cursor.com/changelog/sdk-updates-jun-2026",
-    "published_at": "2026-06-04T00:00:00.000Z",
-    "raw_excerpt": "New stores, custom tools, auto-review, and nested subagents for the TypeScript and Python SDKs, plus run correlation IDs, lighter imports, and reliability fixes."
-  },
-  {
-    "tool": "Cursor",
-    "title": "Canvas Design Mode and Context Usage Report",
-    "source_url": "https://cursor.com/changelog/canvas-improvements",
-    "published_at": "2026-06-04T00:00:00.000Z",
-    "raw_excerpt": "With canvases , agents can create interactive artifacts like dashboards, reports, and internal tools that you can share with your team ."
-  },
-  {
-    "tool": "NotebookLM",
-    "title": "Dive deeper into I/O 2026 with NotebookLM.",
-    "source_url": "https://blog.google/innovation-and-ai/products/notebooklm/notebooklm-google-io-2026/",
-    "published_at": "2026-05-27T16:00:00.000Z",
-    "raw_excerpt": "Find out what you might have missed and go deeper on all the big announcements from Google I/O 2026 using NotebookLM."
-  },
-  {
-    "tool": "NotebookLM",
-    "title": "Explore Benjamin Franklin’s scientific discoveries on NotebookLM",
-    "source_url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/benjamin-franklin-notebooklm/",
-    "published_at": "2026-03-30T20:48:00.000Z",
-    "raw_excerpt": "Benjamin Franklin’s scientific legacy and diplomatic career as seen through original Royal Society documents."
-  },
-  {
-    "tool": "NotebookLM",
-    "title": "Generate your own Cinematic Video Overviews in NotebookLM.",
-    "source_url": "https://blog.google/innovation-and-ai/products/notebooklm/generate-your-own-cinematic-video-overviews-in-notebooklm/",
-    "published_at": "2026-03-04T17:00:00.000Z",
-    "raw_excerpt": "NotebookLM is introducing Cinematic Video Overviews, a major update to its AI-powered video creation capabilities. This new feature moves beyond narrated slides in Video…"
-  },
-  {
-    "tool": "NotebookLM",
-    "title": "Organize your insights with Data Tables in NotebookLM.",
-    "source_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/notebooklm-data-tables/",
-    "published_at": "2025-12-18T21:00:00.000Z",
-    "raw_excerpt": "Valuable information is rarely neat. Key facts are often scattered, making manual compilation tedious.Today, we’re making that simpler with Data Tables. NotebookLM now s…"
-  },
-  {
-    "tool": "NotebookLM",
-    "title": "NotebookLM adds Deep Research and support for more source types",
-    "source_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/notebooklm-deep-research-file-types/",
-    "published_at": "2025-11-13T17:00:00.000Z",
-    "raw_excerpt": "NotebookLM adds \"Deep Research\" for discovering sources, support for Word and PDFs, and a preview of Sheets."
+    "title": "NotebookLM「音声解説」、プロンプトを加えるだけで別物になる - ライフハッカー・ジャパン",
+    "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOSk1ITHhudWhLVDVsZXV6dWE5ZWYwMzkxaEh1dHV0U2lPQTdSU2dYbnpzaDNyVy10MWlmckpFOU9Oc0tENml4N2JqNzktTW81REtuX1kzckdid3IxMC1Jeko2YWVIZFQwanNVb1RhU3FyckZSOVZKZEZZcV9JNGxUSWRKV0lJcW1pVzBoU2Zzby1iOW5SZWRBQnNROEtEUDZNVlUySDNjcm1IV3pxYy1TTjd1SUVUQTNaVHFZZHgwMA?oc=5",
+    "published_at": "2026-06-14T07:00:00.000Z",
+    "raw_excerpt": "NotebookLM「音声解説」、プロンプトを加えるだけで別物になる ライフハッカー・ジャパン"
   }
 ]
