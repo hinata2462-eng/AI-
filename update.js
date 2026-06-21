@@ -68,7 +68,7 @@ async function callClaude(system, user) {
     },
     body: JSON.stringify({
       model: AI_MODEL,
-      max_tokens: 4000,
+      max_tokens: 8000,
       system,
       messages: [{ role: "user", content: user }],
     }),
@@ -89,7 +89,7 @@ function parseJsonArray(text) {
 
 async function aiCurate(items) {
   if (!process.env.ANTHROPIC_API_KEY) { console.error("ANTHROPIC_API_KEY 未設定 → AI厳選スキップ（ルール厳選のまま）"); return null; }
-  const list = items.map((it, i) => ({ i, tool: it.tool, title: it.title }));
+  const list = items.map((it, i) => ({ i, tool: it.tool, title: it.title, excerpt: (it.raw_excerpt || "").toString().slice(0, 180) }));
   const system =
     "あなたは新井さん専属のAIニュース編集者です。新井さんの仕事は次の通り: " +
     "EC/楽天/LP制作、三高産業の業務改善、Kiki Toaの音楽制作・YouTube運用、アプリ開発、画像生成・動画生成、営業資料や社内文書の作成、業務の自動化・効率化。" +
@@ -99,8 +99,8 @@ async function aiCurate(items) {
   const user =
     "次のAI関連ニュース候補(JSON)から、新井さんの仕事に本当に役立つものだけを重要な順に最大" + AI_MAX + "件選んでください。\n" +
     "出力は次の形式のJSON配列だけ（前置き・説明・コードフェンスは一切不要）:\n" +
-    '[{"i":元番号, "title_ja":"日本語の短いタイトル", "summary_ja":"30〜70字の日本語要約", "importance":"S|A|B"}]\n' +
-    "英語の見出しは必ず自然な日本語に翻訳すること。役立たないものは選ばない。\n候補:\n" +
+    '[{"i":元番号, "title_ja":"日本語の短いタイトル", "summary_ja":"30〜70字の日本語の一言要約", "detail_ja":"中学生にも分かるやさしい日本語で、何のニュースか・何が新しいか・新井さんの仕事にどう役立つかを2〜4文で解説。専門用語は避け噛み砕く", "importance":"S|A|B"}]\n' +
+    "英語は必ず自然な日本語に翻訳。detail_jaは題名とexcerpt、あなたのAIツールの知識をもとに書く。ただし元記事に無い具体的な数字・日付・固有名詞は創作しない。役立たないものは選ばない。\n候補:\n" +
     JSON.stringify(list);
 
   let text;
@@ -118,7 +118,8 @@ async function aiCurate(items) {
     const src = items[idx];
     const titleJa = (e.title_ja || "").toString().trim() || src.title;
     const sumJa = (e.summary_ja || "").toString().trim();
-    out.push({ tool: src.tool, title: titleJa, source_url: src.source_url, published_at: src.published_at, raw_excerpt: sumJa || src.raw_excerpt });
+    const detailJa = (e.detail_ja || "").toString().trim();
+    out.push({ tool: src.tool, title: titleJa, source_url: src.source_url, published_at: src.published_at, raw_excerpt: sumJa || src.raw_excerpt, detail: detailJa });
   }
   console.error("AI厳選: " + out.length + "件に厳選・翻訳（model=" + AI_MODEL + "）");
   return out.length ? out : null;

@@ -514,6 +514,116 @@
     .table-wrap{overflow-x:auto}
     table{min-width:680px}
   }
+
+  /* ============================================================
+     未来的・AI的 ダークテーマ（全面オーバーライド）
+     ============================================================ */
+  :root{
+    --bg:#070b16;
+    --surface:rgba(18,24,48,.78);
+    --surface-2:rgba(30,38,68,.66);
+    --border:rgba(125,150,255,.16);
+    --border-strong:rgba(125,150,255,.30);
+    --text:#e9edff;
+    --text-soft:#aab4dc;
+    --text-mute:#7b85ad;
+    --brand:#5da8ff;
+    --brand-2:#a855f7;
+    --brand-soft:rgba(93,168,255,.14);
+    --brand-ink:#bcd4ff;
+    --brand-grad:linear-gradient(120deg,#22d3ee 0%,#6366f1 48%,#b15cff 100%);
+    --shadow:0 10px 34px rgba(0,0,0,.5);
+    --shadow-sm:0 6px 18px rgba(0,0,0,.42);
+    --shadow-lg:0 18px 50px rgba(0,0,0,.55), 0 0 42px rgba(120,90,255,.18);
+    --radius:18px;
+    --rank-s:#ff5d8f; --rank-s-bg:rgba(255,70,120,.16);
+    --rank-a:#ffaf57; --rank-a-bg:rgba(255,160,70,.15);
+    --rank-b:#5da8ff; --rank-b-bg:rgba(93,168,255,.16);
+    --rank-c:#93a3c6; --rank-c-bg:rgba(140,160,205,.12);
+    --ok:#34e0a1; --ok-bg:rgba(52,224,161,.13);
+    --warn:#ffc247; --warn-bg:rgba(255,194,71,.13);
+    --err:#ff6b6b; --err-bg:rgba(255,107,107,.13);
+    --side-bg:#080c1a; --side-bg-2:#0d1330;
+    --side-text:rgba(226,233,255,.72); --side-mute:rgba(226,233,255,.42);
+  }
+  body{
+    background:
+      radial-gradient(1200px 620px at 85% -12%, rgba(120,90,255,.24), transparent 60%),
+      radial-gradient(1000px 560px at -8% 16%, rgba(34,211,238,.15), transparent 55%),
+      radial-gradient(900px 620px at 60% 118%, rgba(236,72,153,.13), transparent 55%),
+      #070b16 !important;
+    background-attachment:fixed;
+    color:var(--text);
+  }
+  body::before{ /* 未来的グリッド */
+    content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+    background-image:
+      linear-gradient(rgba(125,150,255,.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(125,150,255,.05) 1px, transparent 1px);
+    background-size:46px 46px;
+    -webkit-mask-image:radial-gradient(ellipse 80% 60% at 50% 0%, #000 35%, transparent 80%);
+    mask-image:radial-gradient(ellipse 80% 60% at 50% 0%, #000 35%, transparent 80%);
+  }
+  .app{position:relative;z-index:1}
+  ::selection{background:rgba(93,168,255,.4);color:#fff}
+  ::-webkit-scrollbar-thumb{background:rgba(125,150,255,.28);border:2px solid transparent;background-clip:content-box}
+  ::-webkit-scrollbar-thumb:hover{background:rgba(125,150,255,.45);border:2px solid transparent;background-clip:content-box}
+
+  /* 半透明ダークパネル（重いブラーは使わず軽量に） */
+  .card,.ucard,.stat,.form-card,.table-wrap,.read-block,.cat-tile,.modal{
+    background:var(--surface)!important;
+    border-color:var(--border)!important;
+  }
+  .topbar{background:rgba(8,12,26,.82)!important;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom-color:var(--border)!important}
+  .ucard:hover{border-color:rgba(125,160,255,.5)!important;box-shadow:var(--shadow-lg)!important}
+  .ucard.rk-S{background:linear-gradient(135deg,rgba(255,70,120,.08),var(--surface))!important}
+  .ucard.rk-S::before{background:linear-gradient(180deg,#ff5d8f,#ff2d6d)!important;box-shadow:0 0 14px rgba(255,93,143,.7)}
+  .ucard.rk-A::before{box-shadow:0 0 12px rgba(255,160,80,.6)}
+  tbody tr:hover{background:rgba(125,150,255,.07)!important}
+  th{background:rgba(125,150,255,.05)!important;color:var(--text-mute)!important;border-bottom-color:var(--border)!important}
+  td{border-bottom-color:var(--border)!important}
+
+  /* 見出し・本文を明るく */
+  .topbar h1,.section-head h2,.ucard h3,.row-title,.detail-title-lg,.cat-tile .ct-name,.form-card h3,.stat .value{color:#f3f6ff!important}
+  .read-hero{background:linear-gradient(135deg,rgba(99,102,241,.22),rgba(168,85,247,.14))!important;border:1px solid rgba(150,130,255,.34)!important}
+  .read-hero .rb-label{color:#cdd6ff!important}
+  .read-hero .rb-body{color:#eef2ff!important}
+  .read-block .rb-body,.raw-excerpt{color:var(--text-soft)!important}
+  .read-block.is-action{background:linear-gradient(135deg,rgba(52,224,161,.13),rgba(52,224,161,.05))!important;border-color:rgba(52,224,161,.3)!important}
+  .read-block.is-easy{background:linear-gradient(135deg,rgba(52,224,161,.13),var(--surface))!important;border-color:rgba(52,224,161,.28)!important}
+  .read-block.is-raw{background:rgba(125,150,255,.06)!important}
+
+  /* ボタン: ネオン */
+  .btn{background:rgba(125,150,255,.08)!important;border-color:var(--border-strong)!important;color:var(--text)!important}
+  .btn:hover{background:rgba(125,150,255,.16)!important;border-color:rgba(125,160,255,.5)!important}
+  .btn-primary{background:var(--brand-grad)!important;border:none!important;color:#fff!important;box-shadow:0 6px 20px rgba(99,102,241,.45),0 0 0 1px rgba(180,200,255,.25) inset!important}
+  .btn-primary:hover{filter:brightness(1.1)}
+  .btn-ghost{background:transparent!important;border-color:transparent!important;color:var(--text-soft)!important}
+  .btn-danger{color:var(--err)!important;border-color:rgba(255,107,107,.35)!important}
+
+  /* バッジ・チップ・ステータス */
+  .rank{box-shadow:none!important}
+  .rank.S{box-shadow:0 0 14px rgba(255,93,143,.45),inset 0 0 0 1px rgba(255,93,143,.6)!important}
+  .rank.A{box-shadow:inset 0 0 0 1px rgba(255,175,87,.55)!important}
+  .rank.B{box-shadow:inset 0 0 0 1px rgba(93,168,255,.55)!important}
+  .chip{background:rgba(125,150,255,.10)!important;border-color:var(--border)!important;color:var(--text-soft)!important}
+  .chip.cat{background:rgba(124,92,246,.16)!important;border-color:rgba(150,130,255,.3)!important;color:#d2c2ff!important}
+  .status.unread{color:#9fc2ff;background:rgba(93,168,255,.16)}
+  .status.read{color:#aeb6dc;background:rgba(150,165,220,.12)}
+  .status.try_later{color:#ffc870;background:rgba(255,194,71,.15)}
+  .status.tried{color:#5ad7f0;background:rgba(56,200,230,.14)}
+  .status.adopted{color:#42e6a4;background:rgba(52,224,161,.15)}
+  .status.ignored{color:#8a93b8;background:rgba(140,150,190,.1)}
+  .mark-read{background:rgba(125,150,255,.08)!important;border-color:var(--border-strong)!important;color:var(--text-soft)!important}
+  .mark-read:hover{border-color:var(--ok)!important;color:var(--ok)!important;background:var(--ok-bg)!important}
+  .auto-status{background:var(--brand-soft)!important;border-color:rgba(125,160,255,.3)!important;color:#bcd4ff!important}
+  .auto-status .spin{border-color:rgba(125,160,255,.35);border-top-color:#5da8ff}
+
+  /* 入力欄 */
+  .search,select.filter,.field input,.field select,.field textarea,.toggle-pill,.check-pill{background:rgba(10,14,30,.5)!important;border-color:var(--border-strong)!important;color:var(--text)!important}
+  .field label,.field .hint,.page-sub,.empty p{color:var(--text-soft)!important}
+  input,select,textarea{color:var(--text)}
+  ::placeholder{color:var(--text-mute)!important}
 </style>
 </head>
 <body>
@@ -678,6 +788,24 @@ function recomputeAll(){
   const d=DB.load();
   d.updates.forEach(u=>{ const t=toolById(u.tool_id); u.score=computeScore(u,t); u.rank=rankFromScore(u.score); });
   DB.save();
+}
+
+/* 公開から3日より古いアップデートを自動削除（常に最新3日分だけ表示）。
+   ただし「あとで試す/試した/導入済み・メモ付き」は消さない（自分で残したものは保持）。 */
+const PRUNE_DAYS = 3;
+const KEEP_STATUS = ['try_later','tried','adopted'];
+function isRecent(u){
+  const t = new Date(u.published_at).getTime();
+  if(isNaN(t)) return true;                       // 日付不明は残す
+  return t >= Date.now() - PRUNE_DAYS*86400000;   // 過去3日以内なら残す
+}
+function pruneOld(){
+  const d=DB.load();
+  const before=d.updates.length;
+  d.updates=d.updates.filter(u=>
+    isRecent(u) || u.is_saved || KEEP_STATUS.includes(u.status) || (u.memo&&u.memo.trim())
+  );
+  if(d.updates.length!==before){ DB.save(); }
 }
 
 /* ============================================================
@@ -1221,7 +1349,12 @@ function renderDetailRead(v,u,tool){
         <div class="rb-body">${esc(heroSum)}</div>
       </div>`:''}
 
-      ${u.source_url?`<a class="btn btn-primary" href="${esc(u.source_url)}" target="_blank" rel="noopener" style="text-decoration:none;display:inline-flex;width:fit-content;margin-bottom:14px">${icon('ext')}元記事を読む（情報元）</a>`:''}
+      ${u.easy_summary&&u.easy_summary.trim()?`<div class="read-block is-easy">
+        <div class="rb-head"><span class="rb-ico" style="background:#e9f9f0;color:#16a34a">${icon('eye')}</span><span class="rb-label">やさしい解説（AIが要約）</span></div>
+        <div class="rb-body">${esc(u.easy_summary)}</div>
+      </div>`:''}
+
+      ${u.source_url?`<a class="btn btn-primary" href="${esc(u.source_url)}" target="_blank" rel="noopener" style="text-decoration:none;display:inline-flex;width:fit-content;margin-bottom:14px">${icon('ext')}元記事を読む（証拠・全文）</a>`:''}
 
       ${readBlock(u.id,'何が変わったか',u.simple_explanation,'eye','#2563eb','#e7efff')}
       ${readBlock(u.id,'仕事への影響',u.impact_summary,'bolt','#7c5cf6','#efeaff')}
@@ -1609,6 +1742,8 @@ async function syncFromDataJson(){
     let added=0;
     items.forEach(it=>{
       if(!it||!it.title) return;
+      // 3日より古いニュースは取り込まない（常に最新3日分だけ）
+      if(it.published_at && !isRecent({published_at:it.published_at})) return;
       const tool=getTools().find(t=>t.name===it.tool)||getTools().find(t=>t.slug===it.tool);
       if(!tool) return;
       const dup=getUpdates().some(u=>(it.source_url&&u.source_url===it.source_url)||(u.tool_id===tool.id&&u.title===it.title));
@@ -1618,12 +1753,14 @@ async function syncFromDataJson(){
         tool_id:tool.id, title:it.title, source_url:it.source_url||'',
         published_at:it.published_at||nowISO(), fetched_at:nowISO(),
         raw_content:'', raw_excerpt:'', manual_summary:'', ai_summary:ex, // 要約は「かんたん要約」に表示
+        easy_summary:(it.detail||'').toString(),                          // AIのやさしい解説
         simple_explanation:'', impact_summary:'', action_suggestion:'',
         related_categories:(Array.isArray(it.related_categories)&&it.related_categories.length)?it.related_categories:(tool.related_businesses?[...tool.related_businesses]:[]),
         score:0, rank:'C', status:'unread', is_saved:false, memo:''
       });
       added++;
     });
+    pruneOld(); // 3日より古いものを掃除
     if(added>0){ recomputeAll(); toast(`最新ニュースを${added}件取り込みました`,'ok'); renderNav(); render(); }
   }catch(e){ setAutoStatus(false); /* data.json無し・ローカル等は静かに無視 */ }
 }
@@ -1701,6 +1838,7 @@ function setupPWA(){
    Boot
    ============================================================ */
 DB.load();
+pruneOld();          // 3日より古いアップデートを自動削除（保存/試す系・メモ付きは残す）
 render();
 setupPWA();
 syncFromDataJson();  // 開くたびに data.json（GitHubが毎日更新）から最新を取り込む
