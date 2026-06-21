@@ -49,6 +49,81 @@ function keep(item, tool) {
   return true;
 }
 
+/* =====================================================================
+ * ②AI厳選（Claude API・任意）
+ * GitHub Secret の ANTHROPIC_API_KEY があれば、Claudeが各記事を
+ * 「新井さんの仕事に役立つか」判定→不要を除外→日本語に翻訳＋要約。
+ * 鍵が無い/失敗した場合は静かにスキップし、ルール厳選の結果をそのまま使う。
+ * ===================================================================== */
+const AI_MODEL = process.env.ANTHROPIC_MODEL || "claude-opus-4-8"; // 安く済ませたいなら "claude-haiku-4-5"
+const AI_MAX = 12; // AIが選ぶ最大件数
+
+async function callClaude(system, user) {
+  const res = await fetch("https://api.anthropic.com/v1/messages", {
+    method: "POST",
+    headers: {
+      "x-api-key": process.env.ANTHROPIC_API_KEY,
+      "anthropic-version": "2023-06-01",
+      "content-type": "application/json",
+    },
+    body: JSON.stringify({
+      model: AI_MODEL,
+      max_tokens: 4000,
+      system,
+      messages: [{ role: "user", content: user }],
+    }),
+  });
+  if (!res.ok) throw new Error("Anthropic HTTP " + res.status + ": " + (await res.text()).slice(0, 300));
+  const data = await res.json();
+  if (data.stop_reason === "refusal") throw new Error("refusal");
+  return (data.content || []).filter(b => b.type === "text").map(b => b.text).join("");
+}
+
+function parseJsonArray(text) {
+  if (!text) return null;
+  const a = text.indexOf("["), b = text.lastIndexOf("]");
+  if (a < 0 || b <= a) return null;
+  try { const arr = JSON.parse(text.slice(a, b + 1)); return Array.isArray(arr) ? arr : null; }
+  catch (e) { return null; }
+}
+
+async function aiCurate(items) {
+  if (!process.env.ANTHROPIC_API_KEY) { console.error("ANTHROPIC_API_KEY 未設定 → AI厳選スキップ（ルール厳選のまま）"); return null; }
+  const list = items.map((it, i) => ({ i, tool: it.tool, title: it.title }));
+  const system =
+    "あなたは新井さん専属のAIニュース編集者です。新井さんの仕事は次の通り: " +
+    "EC/楽天/LP制作、三高産業の業務改善、Kiki Toaの音楽制作・YouTube運用、アプリ開発、画像生成・動画生成、営業資料や社内文書の作成、業務の自動化・効率化。" +
+    "よく使うAIツール: ChatGPT/OpenAI、Claude/Claude Code、Gemini、v0、Suno、Canva。" +
+    "新井さんの仕事に実際に役立つ『製品アップデート・新機能・使い方・料金変更』を重視し、" +
+    "地政学・株価・無関係な広告・別ツールの誤ヒット・中身の薄い一般記事は除外してください。";
+  const user =
+    "次のAI関連ニュース候補(JSON)から、新井さんの仕事に本当に役立つものだけを重要な順に最大" + AI_MAX + "件選んでください。\n" +
+    "出力は次の形式のJSON配列だけ（前置き・説明・コードフェンスは一切不要）:\n" +
+    '[{"i":元番号, "title_ja":"日本語の短いタイトル", "summary_ja":"30〜70字の日本語要約", "importance":"S|A|B"}]\n' +
+    "英語の見出しは必ず自然な日本語に翻訳すること。役立たないものは選ばない。\n候補:\n" +
+    JSON.stringify(list);
+
+  let text;
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try { text = await callClaude(system, user); break; }
+    catch (e) { console.error("AI厳選 試行" + (attempt + 1) + " 失敗:", String(e.message || e).slice(0, 200)); }
+  }
+  const arr = parseJsonArray(text);
+  if (!arr || !arr.length) return null;
+
+  const out = [];
+  for (const e of arr) {
+    const idx = Number(e && e.i);
+    if (!Number.isInteger(idx) || idx < 0 || idx >= items.length) continue;
+    const src = items[idx];
+    const titleJa = (e.title_ja || "").toString().trim() || src.title;
+    const sumJa = (e.summary_ja || "").toString().trim();
+    out.push({ tool: src.tool, title: titleJa, source_url: src.source_url, published_at: src.published_at, raw_excerpt: sumJa || src.raw_excerpt });
+  }
+  console.error("AI厳選: " + out.length + "件に厳選・翻訳（model=" + AI_MODEL + "）");
+  return out.length ? out : null;
+}
+
 function decode(s) {
   s = s.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1");
   const map = { "&lt;": "<", "&gt;": ">", "&quot;": '"', "&#39;": "'", "&apos;": "'", "&#x27;": "'", "&amp;": "&" };
@@ -110,6 +185,19 @@ async function fetchText(url) {
     console.error("OK", t.name, "kept", Math.min(items.length, PER_TOOL), "/ fetched", before);
   }
   out.sort((a, b) => new Date(b.published_at) - new Date(a.published_at));
-  fs.writeFileSync("data.json", JSON.stringify(out, null, 2));
-  console.error("WROTE data.json with", out.length, "items");
+
+  // ②AI厳選（任意・失敗時はルール厳選のまま）
+  let final = out;
+  try {
+    const curated = await aiCurate(out);
+    if (curated && curated.length) {
+      curated.sort((a, b) => new Date(b.published_at) - new Date(a.published_at));
+      final = curated;
+    }
+  } catch (e) {
+    console.error("AI厳選で例外（ルール厳選のまま）:", String(e.message || e).slice(0, 200));
+  }
+
+  fs.writeFileSync("data.json", JSON.stringify(final, null, 2));
+  console.error("WROTE data.json with", final.length, "items");
 })();
