@@ -1187,9 +1187,7 @@ function detailSidebar(u,tool){
 /* 読みやすい1ブロック（内容があれば表示、無ければ「追加」ボタン） */
 function readBlock(id,label,text,iconName,color,bg,cls){
   const has = text && String(text).trim();
-  if(!has){
-    return `<button class="read-add" onclick="enterDetailEdit('${id}')">${icon('plus')}${esc(label)}を追加</button>`;
-  }
+  if(!has){ return ''; } // 空の項目は表示しない（メモ等は右上「編集」から追加できる）
   return `<div class="read-block ${cls||''}">
     <div class="rb-head"><span class="rb-ico" style="background:${bg};color:${color}">${icon(iconName)}</span><span class="rb-label">${esc(label)}</span></div>
     <div class="rb-body">${esc(text)}</div>
@@ -1200,7 +1198,9 @@ function readBlock(id,label,text,iconName,color,bg,cls){
 function renderDetailRead(v,u,tool){
   document.getElementById('topActions').innerHTML =
     `<button class="btn btn-primary" onclick="enterDetailEdit('${u.id}')">${icon('edit')}編集</button>`;
-  const heroSum = (u.manual_summary||u.ai_summary||'').trim();
+  const heroSum = (u.manual_summary||u.ai_summary||u.raw_excerpt||'').trim();
+  const rawText = (u.raw_excerpt||u.raw_content||'').trim();
+  const showRaw = rawText && rawText!==heroSum; // 原文が要約と同じなら重複表示しない
   v.innerHTML = `<button class="back-link" onclick="go('updates')">${icon('arrowLeft')}一覧に戻る</button>
   <div class="detail-grid">
     <div>
@@ -1213,19 +1213,20 @@ function renderDetailRead(v,u,tool){
         <div class="detail-title-lg">${esc(u.title)}</div>
         <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
           ${catChips(u.related_categories)}
-          ${u.source_url?`<a class="chip" href="${esc(u.source_url)}" target="_blank" rel="noopener" style="text-decoration:none">${icon('ext')} 情報元を開く</a>`:''}
         </div>
       </div>
 
       ${heroSum?`<div class="read-hero">
         <div class="rb-head"><span class="rb-ico">${icon('updates')}</span><span class="rb-label">かんたん要約</span></div>
         <div class="rb-body">${esc(heroSum)}</div>
-      </div>`:`<button class="read-add" onclick="enterDetailEdit('${u.id}')">${icon('plus')}かんたん要約を追加</button>`}
+      </div>`:''}
+
+      ${u.source_url?`<a class="btn btn-primary" href="${esc(u.source_url)}" target="_blank" rel="noopener" style="text-decoration:none;display:inline-flex;width:fit-content;margin-bottom:14px">${icon('ext')}元記事を読む（情報元）</a>`:''}
 
       ${readBlock(u.id,'何が変わったか',u.simple_explanation,'eye','#2563eb','#e7efff')}
       ${readBlock(u.id,'仕事への影響',u.impact_summary,'bolt','#7c5cf6','#efeaff')}
       ${readBlock(u.id,'次にやること',u.action_suggestion,'check','#16a34a','#e3f7ea','is-action')}
-      ${readBlock(u.id,'原文抜粋',u.raw_excerpt||u.raw_content,'updates','#64748b','#eef1f6','is-raw')}
+      ${showRaw?readBlock(u.id,'原文抜粋',rawText,'updates','#64748b','#eef1f6','is-raw'):''}
       ${u.memo&&u.memo.trim()?readBlock(u.id,'メモ',u.memo,'edit','#b45309','#fff2dd'):''}
     </div>
     <div>${detailSidebar(u,tool)}</div>
@@ -1616,7 +1617,7 @@ async function syncFromDataJson(){
       saveUpdate({
         tool_id:tool.id, title:it.title, source_url:it.source_url||'',
         published_at:it.published_at||nowISO(), fetched_at:nowISO(),
-        raw_content:ex, raw_excerpt:ex, manual_summary:'', ai_summary:'',
+        raw_content:'', raw_excerpt:'', manual_summary:'', ai_summary:ex, // 要約は「かんたん要約」に表示
         simple_explanation:'', impact_summary:'', action_suggestion:'',
         related_categories:(Array.isArray(it.related_categories)&&it.related_categories.length)?it.related_categories:(tool.related_businesses?[...tool.related_businesses]:[]),
         score:0, rank:'C', status:'unread', is_saved:false, memo:''
