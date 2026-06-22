@@ -1,98 +1,90 @@
 [
   {
+    "tool": "Claude / Claude Code",
+    "title": "Claude Codeへの指示「7つの方法」を公式解説",
+    "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5MR200V3VyWWJRbURUX1FQYUpubzdoTF9xM2tvTmludzlWZDFIZTBGbWJtbzdfcS1tQ3FUdGF4RlE0b2tsN19SZkREMEFCTk9PVVgtM2EyVlA2ZHQ1RVlETkkxQlNMQURRYTFBOQ?oc=5",
+    "published_at": "2026-06-22T10:47:34.000Z",
+    "raw_excerpt": "Anthropicが公式にClaude Codeへの指示の出し方7パターンと使い分けを解説",
+    "detail": "AIにコードを書かせるClaude Codeで、どう指示を出せば効率よく作業できるかを公式が7つの方法に整理して説明した記事です。アプリ開発や業務自動化のスクリプト作りで指示の出し方を工夫すれば、思った通りの結果が早く得られます。新井さんのアプリ開発や効率化作業に直結する実践ノウハウです。"
+  },
+  {
+    "tool": "Canva",
+    "title": "ソフトバンクのAIがCanvaと連携し資料作成支援",
+    "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE00RW11SE10RkxUSEtrbnE5ZDRVYjJhdzVUUVJUSGlFM3NPYVhpblhpaU1KZk1JTXNEOTU5N1JWTzFSTXNHWW9WVDNlbUdtVnhUYXVEV2VLTGRETDRDaUU4SHJzTXUtOWxF?oc=5",
+    "published_at": "2026-06-22T07:45:00.000Z",
+    "raw_excerpt": "AIエージェントAGENTIC STARがCanvaと連携、資料作成を自動支援",
+    "detail": "ソフトバンクのAIエージェントがCanvaとつながり、AIがデザイン資料の作成を手伝う仕組みです。MCPという仕組みでAIとCanvaが連携し、資料作りの自動化が進みます。営業資料や社内文書をCanvaで作る新井さんに、今後の効率化の方向性を示します。"
+  },
+  {
+    "tool": "Claude / Claude Code",
+    "title": "Claude Code利用40万件分析で成果の差を解明",
+    "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1HNjVya3dMc3FJLVFqSWFxbkdEbjJjeVdub2ZlMHR1MVNBY0VHeFZKTGl0Tzd6TkVKNDBBem5XdVdPQ3pRXzBZNG9HeXVOQWtnRGVLSF9mRjdVbGZ6d25qWjNhaw?oc=5",
+    "published_at": "2026-06-22T06:03:15.000Z",
+    "raw_excerpt": "Anthropicが利用データ40万件を分析し、成果が出る使い方を明らかに",
+    "detail": "Anthropicが実際のClaude Codeの使われ方を大量に調べ、どんな使い方をすると成果が出やすいかを分析した記事です。自分の使い方が効率的かを見直すヒントになります。アプリ開発や自動化でClaude Codeを使う新井さんの参考になります。"
+  },
+  {
     "tool": "Gemini",
-    "title": "生成AIの勢力図が三国時代に",
-    "source_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE84Z3VMdG1sMWhNaXFGN2hHVVhRWnE1bXpwSXhEakJSdzBPN0EyUzczV3NVc0VseHZELWhGNXp6YkdYc2F6bTdpdkhUUFZrWk95dGpwOGhnSW4tbW04Z2c?oc=5",
-    "published_at": "2026-06-21T11:00:00.000Z",
-    "raw_excerpt": "ChatGPTのシェアが初の50%割れ、Gemini・Claudeが台頭",
-    "detail": "これまで圧倒的だったChatGPTの利用シェアが初めて50%を下回り、GeminiやClaudeが追い上げる「三つどもえ」の状況になってきました。各社が競って機能を伸ばしている証拠です。新井さんが用途ごとにツールを使い分ける判断の参考になります。"
+    "title": "GeminiのCanvas機能でコード不要のアプリ作成",
+    "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9oZ0ctSzExc2Z5emxjOFJzdWpXLXh2UFVweDZjU0RDdFZycjhYWmU3RjZFMkdCTC11ZDVFWms4MmNuOWxLWF95ZVlFX1JhMUlIUVZkU1ZpRkdKLVk?oc=5",
+    "published_at": "2026-06-22T05:44:40.000Z",
+    "raw_excerpt": "GeminiのCanvas機能を使えばコードなしでアプリが作れると紹介",
+    "detail": "GeminiのCanvas機能を使うと、プログラミングの知識がなくても会話だけで簡単なアプリが作れるという紹介です。アイデアをすぐ形にして試せます。アプリ開発の試作やプロトタイプ作りを手軽に始めたい新井さんに向いています。"
   },
   {
     "tool": "ChatGPT / OpenAI",
-    "title": "ChatGPT Enterpriseにコスト管理ツール追加",
-    "source_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5DazhLVGpUYkt6dF9LMy1nVURRcXBmc0o0QVRNa3JtcXRlLVU5bkNBTEdTUmZYSnBKT3N1bmRwSWY2X0YweWZGZ0FWX2hUWHA2amc?oc=5",
-    "published_at": "2026-06-21T10:13:53.000Z",
-    "raw_excerpt": "AI利用量を見える化し費用を抑えるツールをOpenAIが投入",
-    "detail": "OpenAIが企業向けChatGPTに、どれだけAIを使ったか（クレジット消費）を見える化し、コストを管理できるツールを追加しました。チームでの使いすぎを防ぎ、予算内に収めやすくなります。社内でAI活用を広げる際のコスト管理に役立ちます。"
+    "title": "GPT-5.6を非公開テストか、生成品質が向上",
+    "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQNU1QUmlIVWVURjR2dklnX3FqRWNOVUdBdU1lRXBlVU1PcWpPcERoSTdUc3B3UUZYYjN3ZkFqUGgxdWUzZkRYNWRLTFpYU2Y1NFo1N25OeTVyZzdKSlZhbjZHTy10a0pKNHdmZkdsNVgwU3h6UkRuQVZ6cF9GRW5DY0dSYkRfLXlPNmJsZDdUZnRrbEk1eHFrNGpad2dsRTRLOVBqemRmenBZVnRvU19MWW9DUlA?oc=5",
+    "published_at": "2026-06-22T04:51:00.000Z",
+    "raw_excerpt": "ChatGPTで次期モデルGPT-5.6とみられる生成品質向上が観測された",
+    "detail": "ChatGPTの裏で次のモデル「GPT-5.6」とみられるものがテストされ、文章や回答の質が上がっているという観測です。まだ正式発表ではありませんが、近い将来ChatGPTがさらに賢くなる可能性があります。文書作成やアイデア出しで使う新井さんの作業精度向上が期待できます。"
+  },
+  {
+    "tool": "ChatGPT / OpenAI",
+    "title": "OpenAIがGetty Imagesと提携、ChatGPTに権利処理済み画像",
+    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9NMnZzWFZQdnFrZ1YteWNPSDJsb0RiclN3a3l4TUZGcE5HeWs0N2puc0hnX3A4TzZNaVNyVWdlOURiTDJWdEM5THlzTTNuejRPVjNSUVhBaUcxRHMwV3FQTkRKeHJBMWkzRlh0SUMwYmt3VWJ1?oc=5",
+    "published_at": "2026-06-22T03:55:00.000Z",
+    "raw_excerpt": "ChatGPTにライセンス管理された画像が表示され視覚検索が強化",
+    "detail": "OpenAIが画像大手Getty Imagesと組み、ChatGPT上で著作権処理済みの画像を表示できるようになります。権利の心配が少ない画像を探しやすくなる動きです。LPや資料に使う画像選びで、安心して使える素材を見つける助けになります。"
+  },
+  {
+    "tool": "NotebookLM",
+    "title": "NotebookLMでスライドが作れない時の対処法",
+    "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9Sb2lhTU5ZNzQ1VkEzRjd3Qzk1T1pYSHJ3d0dHdVd5X2NvR1NfVWpfUGZGV3A3V3ktNl9PTnVtNW1ReFYtOEl4ZGQxcjl2bUMzdVF0cWFUaE96NlU1N1dfQ19OUjlyb2JJMjI3Sw?oc=5",
+    "published_at": "2026-06-22T00:00:00.000Z",
+    "raw_excerpt": "NotebookLMのスライド生成がうまくいかない原因と解決法を解説",
+    "detail": "NotebookLMでスライドが作れないときの主な原因と直し方をまとめた記事です。設定や入力データを見直すことで生成できるようになります。資料づくりでNotebookLMを使う際のトラブル解決に役立ちます。"
   },
   {
     "tool": "Canva",
     "title": "Canvaの会話AIが日本語に本格対応",
     "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBBdmZJekNCXzU3UXNBSWY5aDQyNVVKUTVMa3djVUN1UHNnNmdEbzVMRm03MFZnUGJ3M2kweFJjZGtmYUd2Nnpock15cGNaYVlhZlZaRQ?oc=5",
     "published_at": "2026-06-21T07:32:08.000Z",
-    "raw_excerpt": "話すだけでデザインが作れるCanvaの会話型AIが日本語に正式対応",
-    "detail": "Canvaに搭載された、文章で「こういうものを作りたい」と話しかけるだけでデザインを生成するAI機能が、日本語に本格対応しました。これまで英語中心だった操作が日本語でスムーズに使えるようになります。LP制作や営業資料、バナー作成を素早く下書きでき、新井さんのデザイン業務の時短に直結します。"
+    "raw_excerpt": "「こう作りたい」と話すだけでデザインできるCanvaの会話AIが日本語対応",
+    "detail": "Canvaのチャット型AIが日本語にしっかり対応し、作りたいイメージを言葉で伝えるだけでデザインを作れるようになりました。LP用バナーや営業資料、YouTubeサムネ作りで、細かい操作を覚えなくても会話だけで形にできます。資料作成やKiki Toaの宣伝画像づくりの時短に役立ちます。"
   },
   {
-    "tool": "ChatGPT / OpenAI",
-    "title": "ChatGPTの誤回答が大幅減、最新モデルで精度向上",
-    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9aNkY5aVNUcXJhSUxPeDd3VHU2YU5RM012bkdJbnR4SE5iLV82a0FrMWVPeDNiTHFndTdLQmhaLUdldnVfeXpXaGRZUzd3TXZJc2pjdm9zc3MtWTk5b3dKRGpQaUpsZ05PUjZ1QmRVU1RWZ1pk?oc=5",
-    "published_at": "2026-06-21T02:25:00.000Z",
-    "raw_excerpt": "健康相談での誤回答が71%減と最新モデルの信頼性が向上",
-    "detail": "ChatGPTの最新モデルで、健康相談などの誤った回答が大きく減ったと報告されました。AIの答えの正確さが着実に上がっていることを示します。資料作成や調べ物でChatGPTを使う際、より安心して活用できる材料になります。"
-  },
-  {
-    "tool": "Gemini",
+    "tool": "NotebookLM",
     "title": "GeminiとNotebookLMに大型アップデート",
     "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1keTZXQzJLR1Y3NS1lRkJYbzhJbS1pVzNrdGg5TUtKYlBSZWdJaFJJYzhHeWozam5HaDlKcUhtN3hqSzdnM1NQSGR1MEFNU1FtZUFCSE5HRVVhbVU?oc=5",
     "published_at": "2026-06-20T13:52:48.000Z",
-    "raw_excerpt": "両ツールに新機能が追加され作業効率が向上",
-    "detail": "GoogleのGeminiとNotebookLMに大きなアップデートが入り、機能が強化されたと解説されています。資料整理や情報のまとめがより便利になります。日々の文書作成や調査でこれらを使う新井さんが、新機能を取り入れて効率化できます。"
-  },
-  {
-    "tool": "Gemini",
-    "title": "Googleドライブに「プロジェクト」機能登場",
-    "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5oNGFOXzJCT0EzbTR3QmhpUjk4T0FLZXZZRFUtOXFLSmZ4dnFHUXQyT2pwai1KNmRkcV9TbVJRTXRNUVd3TTcwT2NMci1XbDFDVnRmWlVuT3cxMEU?oc=5",
-    "published_at": "2026-06-20T10:54:42.000Z",
-    "raw_excerpt": "Geminiと連携し資料整理が一気にラクになる新機能",
-    "detail": "Googleドライブに「プロジェクト」という新機能が登場し、関連ファイルをまとめて整理しながらGeminiで活用できるようになりました。散らかった資料をテーマごとに整え、AIに質問しやすくなります。社内文書や営業資料が多い新井さんの整理・検索作業がスムーズになります。"
+    "raw_excerpt": "GoogleのGeminiとNotebookLMの新機能をまとめて解説した動画",
+    "detail": "GoogleのAI「Gemini」と資料整理AI「NotebookLM」に新機能が加わり、その内容を解説した動画です。両ツールの最新の使い方がまとめて分かります。資料作成や情報整理にGoogle系AIを使う新井さんの参考になります。"
   },
   {
     "tool": "NotebookLM",
-    "title": "NotebookLMの多言語リサーチが評価軸入り",
+    "title": "NotebookLMの多言語リサーチ機能が強化",
     "source_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAzcml6NDVqbF9hT0lFMDlhcER2dG85T3EybkV5WW1HYmNxOTBFSjdWM2FRb09iNUxNMkxVb05ZVG5PbWpZSjVNMV9yUU93WnVYdlBV?oc=5",
     "published_at": "2026-06-19T12:13:18.000Z",
-    "raw_excerpt": "外国語の原典に当たれるNotebookLMの調査機能が評価強化",
-    "detail": "NotebookLMの多言語リサーチ機能が見直され、信頼性などの評価が5つの観点で示されるようになりました。日本語以外の元資料にも当たりやすくなります。海外のAI最新情報や英語資料を調べる場面で、原文を確認しながら効率よく情報収集できます。"
-  },
-  {
-    "tool": "Canva",
-    "title": "Claude Design×Canvaでバナー量産セミナー",
-    "source_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBzdlRBVUhMSmE3ZjdxNFZ3WV9MZ3h3OFJCSjYxa1VyS1lwdVNyamMtLVNFZlVtYmU0VTQwWm5vMjdxbHhXZmVKX25IclpVVzQ?oc=5",
-    "published_at": "2026-06-18T23:24:54.000Z",
-    "raw_excerpt": "夏期講習バナーをAI連携で大量生産する手法を紹介するイベント",
-    "detail": "教育系企業エクシードが、Claude DesignとCanva MCP（連携機能）を組み合わせてバナーを量産する手法を実演するセミナーを開催します。同じテイストのバナーを大量に作る具体的なやり方が学べます。楽天やECのLP・バナーを数多く作る新井さんに、実践的な効率化のヒントになります。"
+    "raw_excerpt": "NotebookLMが多言語リサーチ対応で、海外原典に当たりやすくなった",
+    "detail": "Googleの資料整理AI「NotebookLM」が複数の言語での調べ物に強くなり、海外の元資料を直接調べやすくなりました。海外のAIツール情報や英語記事を読み込んで要約させれば、リサーチが速くなります。営業資料の根拠集めや情報収集に役立ちます。"
   },
   {
     "tool": "Cursor",
-    "title": "Cursorの自動化機能が強化",
+    "title": "Cursorの自動化機能が強化、繰り返し作業を自動化",
     "source_url": "https://cursor.com/changelog/06-18-26",
     "published_at": "2026-06-18T00:00:00.000Z",
-    "raw_excerpt": "GitHubやSlack連携で繰り返し作業を自動化するスキル追加",
-    "detail": "AIコーディングツールCursorの自動化機能が強化され、新しい「/automate」スキルや、GitHub・Slackをきっかけに自動で動く仕組みが追加されました。常時動くAIが繰り返し作業を肩代わりします。アプリ開発や業務自動化を進める新井さんの開発効率アップに役立ちます。"
-  },
-  {
-    "tool": "Canva",
-    "title": "Claude Designが強化、Canvaなどへの出力に対応",
-    "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5RZWtVWUx1WmV0dlZEaktLRDlUMy1ZQTRLVnUtUG9PVTdwMHMzdU96QnpNQ21VMXg5bVVGUkl2MnJKWWdlbUZUdnE3ZTZOSHpPMlozUVFlcWliY1k5TURuOW9jNEEwcTNJc0FFZg?oc=5",
-    "published_at": "2026-06-17T21:25:34.000Z",
-    "raw_excerpt": "AnthropicのデザインツールがCodeと連携しCanvaへ出力可能に",
-    "detail": "AnthropicがデザインツールClaude Designを強化し、Claude Codeとの双方向連携や、Canvaなど外部ツールへの出力に対応しました。AIで作ったデザインをそのままCanvaに持ち込んで仕上げられます。新井さんが使うClaudeとCanvaがつながり、バナーや資料の制作フローが一本化できます。"
-  },
-  {
-    "tool": "NotebookLM",
-    "title": "NotebookLMがGoogle文書類とリアルタイム同期",
-    "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPUFR4blVwd3oyMG4yQnFoaGw2d2NmVk1xVnVPT3lyV1dqS1RTZXdjeTNWVm9YYkF3VlZtdTNvbDBxdjRTZVFKOFAzWERTeDlONjBydnRjNXUxQlpxLVRhNk1Xc09FTElpbmpZWDNyWFJPN2FXbWxHQ3Fhb0ZjZjF6Vk1VQjdaOU9xSTNKSUdsUGNKWk1wRjZzNTUyNm9fc1E?oc=5",
-    "published_at": "2026-06-16T08:09:38.000Z",
-    "raw_excerpt": "ドキュメント・シート・スライドの変更が自動で反映",
-    "detail": "GoogleのAIメモツールNotebookLMが、ドキュメント・スプレッドシート・スライドの内容をリアルタイムで同期するようになりました。元ファイルを直すとNotebookLM側も自動更新されます。常に最新の資料をもとにAIへ質問・要約でき、社内文書づくりの手間が減ります。"
-  },
-  {
-    "tool": "Canva",
-    "title": "ChatGPT・GeminiでCanvaのマジックレイヤーが利用可能に",
-    "source_url": "https://news.google.com/rss/articles/CBMi2AVBVV95cUxPR2VhZF84Mk0wZ3paOS0waVlCclJDMGZRcEZnakIyX25KVnJQRzZjSjR5cWZnaWZJYk1YT042YW1tcThFcEg4LWF3Tm5NSjFyc1pvZzlRRHo4Z0dMMGVIZVpPMnBRZlJFckxfdXBleHQ3dklZR2pwaXNNTW1ab29RWXBCNmRnSTVxVTY1MFRkM3VQczhIcm0yMndDeFlNRnNFY2FHblBubmFLdV9TcXVzOTl2dlp0cmFMNHBNZGRQY0RXRmRja0NVWG5EZXhPSHU2d2NjVmZFQ0RXeHNsQk1KcGJUbWE5S1NqT1A5UG41cU16YUNNNWUtWjQ4ampSYmVTQ2k3UWVsQV9tTjZfNWdCSXdVVm8wQUlKOTJCUWxaSk5lLS1raGphSlFNWEg1cVBGYTQ3Q0ZwemdNRXZiTEJfWWVyQllraTdTN2ItaXljLUF6Y3cxZVM4QmdVN01hWUFtYkdlaFRzSlA5UmFSR2U1VjVYNzRxOXRycW1rTy1UVnZWT004Q0d5ektrWndYcHV3cng4ZW9XMDNDZ19nM3A4V1NTUjJ0TEVEMm5xMFpralhYOElOM0VObWI1eEFwZHQ5cHlpTlloVDBuMFExNXF4YXVCNGZfb2hTZHh1cUVCSjh5eGFXUU1Tck0telRWazk1YVptS1lBTWlqY21SaDVSQjFNV1lPclRldFRrdjZNWk1NcFFTZnc5NVQwMEdJZEozLWREVHZlclYzYnZKTkk0d1cxVGJ2bVlxbnhwZjVuTkpJNUlNbDA0cHJuWEFxQV8yazFEZW5VV1JhTF92RTRDM3ExZmlNTUhYVWdmS3ljd19fRDgteld0cVl3clhqS0RQOVZ6QkY4TlBuX0VGXzJpeDBYRE8teXZwanBoalNMQ3dlOGV1V3RldERMRTgwQVAzSW9NSHgxZVFQaWIyOExEbm93eDBoVUJ0cjQ0bFJvWXViTElyRHdaeQ?oc=5",
-    "published_at": "2026-06-15T10:33:44.000Z",
-    "raw_excerpt": "1枚のAI生成画像をパーツごとに分けて編集できる機能が追加",
-    "detail": "ChatGPTやGeminiから、Canvaの「マジックレイヤー」が使えるようになりました。これまで1枚のベタッとした画像だったAI生成画像を、文字・背景・人物などパーツごとに分解して個別に編集できます。バナーやLP用の素材を後から細かく直せるので、画像生成と制作作業がぐっと楽になります。"
+    "raw_excerpt": "Cursorに/automateスキルやGitHub・Slack連携の新トリガーが追加",
+    "detail": "AIコーディングツールCursorが、繰り返しの作業を常時動くAIに任せる自動化機能を強化しました。GitHubやSlackと連携して作業を自動で進められます。アプリ開発や定型作業の自動化を考える新井さんに役立つ更新です。"
   }
 ]
