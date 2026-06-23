@@ -1,90 +1,98 @@
 [
   {
-    "tool": "Claude / Claude Code",
-    "title": "Claude Codeへの指示「7つの方法」を公式解説",
-    "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5MR200V3VyWWJRbURUX1FQYUpubzdoTF9xM2tvTmludzlWZDFIZTBGbWJtbzdfcS1tQ3FUdGF4RlE0b2tsN19SZkREMEFCTk9PVVgtM2EyVlA2ZHQ1RVlETkkxQlNMQURRYTFBOQ?oc=5",
-    "published_at": "2026-06-22T10:47:34.000Z",
-    "raw_excerpt": "Anthropicが公式にClaude Codeへの指示の出し方7パターンと使い分けを解説",
-    "detail": "AIにコードを書かせるClaude Codeで、どう指示を出せば効率よく作業できるかを公式が7つの方法に整理して説明した記事です。アプリ開発や業務自動化のスクリプト作りで指示の出し方を工夫すれば、思った通りの結果が早く得られます。新井さんのアプリ開発や効率化作業に直結する実践ノウハウです。"
-  },
-  {
     "tool": "Canva",
-    "title": "ソフトバンクのAIがCanvaと連携し資料作成支援",
-    "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE00RW11SE10RkxUSEtrbnE5ZDRVYjJhdzVUUVJUSGlFM3NPYVhpblhpaU1KZk1JTXNEOTU5N1JWTzFSTXNHWW9WVDNlbUdtVnhUYXVEV2VLTGRETDRDaUU4SHJzTXUtOWxF?oc=5",
-    "published_at": "2026-06-22T07:45:00.000Z",
-    "raw_excerpt": "AIエージェントAGENTIC STARがCanvaと連携、資料作成を自動支援",
-    "detail": "ソフトバンクのAIエージェントがCanvaとつながり、AIがデザイン資料の作成を手伝う仕組みです。MCPという仕組みでAIとCanvaが連携し、資料作りの自動化が進みます。営業資料や社内文書をCanvaで作る新井さんに、今後の効率化の方向性を示します。"
+    "title": "CanvaがAIエージェント「AGENTIC STAR」と連携、資料作成を自動化",
+    "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB0cExYVVdaVkMxUWV6bmN6MmdZWEpVNm5wRzMzdjlwTVNBaDZadnRwVldhTnlHa0RzM0dQcWgzSmVJdi1IUzJXQXAzMTRlcnNUeVQxNVl5WHAzTHFtOUZKNFc4c05RMnIySUNZV3Bia0JxMTF4Z1hwUGkzdlRYXzQ?oc=5",
+    "published_at": "2026-06-23T08:17:00.000Z",
+    "raw_excerpt": "ソフトバンクのAIエージェントがCanvaとMCP連携し、資料作成を自動化・効率化",
+    "detail": "ソフトバンクのAIエージェント「AGENTIC STAR」がCanvaと技術連携し、AIが資料を自動で作れるようになりました。営業資料や社内文書を作るときに、指示するだけでデザイン付きの資料が生まれる仕組みです。新井さんの営業資料・社内文書づくりが大きく時短できる可能性があります。"
+  },
+  {
+    "tool": "ChatGPT / OpenAI",
+    "title": "メルカリがChatGPT上で商品検索・出品準備できる公式アプリ提供",
+    "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOTEJjNEQ0djliYkFGQWpmRTh5ZFhwR1JiaFJicGY5WUZXdHRrWWkzeUsyZUgxNFJNTDAyakJlSkVyNnBGc1NOMllYSXBhRUdsRnBCWVpNM2xVMWlZN3h1VVBfVlR0NWFvTEdRS1hCWGpxbnRFOGxyZkxCR3lRdEZrcVp1aWY5dw?oc=5",
+    "published_at": "2026-06-23T08:02:48.000Z",
+    "raw_excerpt": "ChatGPT内でメルカリの商品検索や出品準備が可能になる公式アプリが登場",
+    "detail": "メルカリがChatGPTの中で使える公式アプリを出し、ChatGPTから商品を探したり出品の準備ができるようになりました。AIが買い物や販売の入り口になる流れが進んでいます。EC運営をする新井さんにとって、今後の販売チャネルの変化を知る重要な動きです。"
+  },
+  {
+    "tool": "ChatGPT / OpenAI",
+    "title": "OpenAIがGetty Imagesと提携、ChatGPTの画像を強化",
+    "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9fZmlJT3Q1OFBrWVBoOTNIOVpYM01iSldsMExlQ08yZVcwUV8yQ28wU0djbF9VUFRSNDNweHA3OVFjUlpyWmU1Rms3MFJORlFpZTVBU2tVMjlubUNsZzNJ0gFkQVVfeXFMTjc4a1otQ2k4bFpRM2Q3UmlhYWxSeTN0YUZmTjNIc3VfTm45ZWZGcTB3aUxORU8zV1E3LS1GNjBscDlsejNMX0x1NlR1Q2JxR0t5clU3UjFoSWFUanliUUlpcF9zYw?oc=5",
+    "published_at": "2026-06-23T06:36:24.000Z",
+    "raw_excerpt": "ChatGPTにライセンス済みの正規画像が使えるようになる提携",
+    "detail": "OpenAIが大手写真サービスGetty Imagesと契約し、ChatGPTで権利のクリアな画像を扱えるようになります。安心して使える画像が増える見込みです。画像生成や資料・LP制作で画像を使う新井さんにとって、権利面の安心材料になります。"
   },
   {
     "tool": "Claude / Claude Code",
-    "title": "Claude Code利用40万件分析で成果の差を解明",
-    "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1HNjVya3dMc3FJLVFqSWFxbkdEbjJjeVdub2ZlMHR1MVNBY0VHeFZKTGl0Tzd6TkVKNDBBem5XdVdPQ3pRXzBZNG9HeXVOQWtnRGVLSF9mRjdVbGZ6d25qWjNhaw?oc=5",
-    "published_at": "2026-06-22T06:03:15.000Z",
-    "raw_excerpt": "Anthropicが利用データ40万件を分析し、成果が出る使い方を明らかに",
-    "detail": "Anthropicが実際のClaude Codeの使われ方を大量に調べ、どんな使い方をすると成果が出やすいかを分析した記事です。自分の使い方が効率的かを見直すヒントになります。アプリ開発や自動化でClaude Codeを使う新井さんの参考になります。"
+    "title": "Claude Codeに自動化機能「Routines」が登場",
+    "source_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9GdDd3Uktjc1R0MWRfclhXOTZzZnplbkpUeFAzTzh0OHZBS0NlU1ZtRjk0aURYcW1XSjJpU2lKRXRHYTUyOHFvSDcxdjlpOE5kajZyN29zVEU4ZGQtOWpseG9JblRHU3AxMmc4dC1NRzdGUQ?oc=5",
+    "published_at": "2026-06-23T06:32:45.000Z",
+    "raw_excerpt": "AnthropicがClaude Codeの作業を自動化するRoutinesを導入",
+    "detail": "Claude Codeに、決まった手順の作業を自動で繰り返してくれる「Routines」という機能が追加されました。毎回同じ指示を出さなくても、AIが定型作業をこなしてくれます。アプリ開発や業務自動化に取り組む新井さんの効率アップに直結します。"
   },
   {
     "tool": "Gemini",
-    "title": "GeminiのCanvas機能でコード不要のアプリ作成",
-    "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9oZ0ctSzExc2Z5emxjOFJzdWpXLXh2UFVweDZjU0RDdFZycjhYWmU3RjZFMkdCTC11ZDVFWms4MmNuOWxLWF95ZVlFX1JhMUlIUVZkU1ZpRkdKLVk?oc=5",
-    "published_at": "2026-06-22T05:44:40.000Z",
-    "raw_excerpt": "GeminiのCanvas機能を使えばコードなしでアプリが作れると紹介",
-    "detail": "GeminiのCanvas機能を使うと、プログラミングの知識がなくても会話だけで簡単なアプリが作れるという紹介です。アイデアをすぐ形にして試せます。アプリ開発の試作やプロトタイプ作りを手軽に始めたい新井さんに向いています。"
+    "title": "Geminiがスプレッドシートの数式エラーを解決可能に",
+    "source_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE55b2NObUdfLUhPOXNHQWdGdDZmY2NGdHpDb1pfLXBUbHRlcGdtTTgwSHdpaVo1bkw4XzM2cXI4VER5RXpiVTdqN09oMENwT1V3aExuTDUxcHR4OXJoRzBxZm5ENWQ0Z2s?oc=5",
+    "published_at": "2026-06-23T03:40:44.000Z",
+    "raw_excerpt": "GoogleのGeminiが表計算ソフトの数式エラーを直してくれる機能に対応",
+    "detail": "Geminiがスプレッドシート（表計算ソフト）の数式の間違いを見つけて直せるようになりました。エラーの原因が分からず困っていたときも、AIが説明・修正してくれます。業務改善や集計作業を行う新井さんの手間を減らせます。"
   },
   {
-    "tool": "ChatGPT / OpenAI",
-    "title": "GPT-5.6を非公開テストか、生成品質が向上",
-    "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQNU1QUmlIVWVURjR2dklnX3FqRWNOVUdBdU1lRXBlVU1PcWpPcERoSTdUc3B3UUZYYjN3ZkFqUGgxdWUzZkRYNWRLTFpYU2Y1NFo1N25OeTVyZzdKSlZhbjZHTy10a0pKNHdmZkdsNVgwU3h6UkRuQVZ6cF9GRW5DY0dSYkRfLXlPNmJsZDdUZnRrbEk1eHFrNGpad2dsRTRLOVBqemRmenBZVnRvU19MWW9DUlA?oc=5",
-    "published_at": "2026-06-22T04:51:00.000Z",
-    "raw_excerpt": "ChatGPTで次期モデルGPT-5.6とみられる生成品質向上が観測された",
-    "detail": "ChatGPTの裏で次のモデル「GPT-5.6」とみられるものがテストされ、文章や回答の質が上がっているという観測です。まだ正式発表ではありませんが、近い将来ChatGPTがさらに賢くなる可能性があります。文書作成やアイデア出しで使う新井さんの作業精度向上が期待できます。"
-  },
-  {
-    "tool": "ChatGPT / OpenAI",
-    "title": "OpenAIがGetty Imagesと提携、ChatGPTに権利処理済み画像",
-    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9NMnZzWFZQdnFrZ1YteWNPSDJsb0RiclN3a3l4TUZGcE5HeWs0N2puc0hnX3A4TzZNaVNyVWdlOURiTDJWdEM5THlzTTNuejRPVjNSUVhBaUcxRHMwV3FQTkRKeHJBMWkzRlh0SUMwYmt3VWJ1?oc=5",
-    "published_at": "2026-06-22T03:55:00.000Z",
-    "raw_excerpt": "ChatGPTにライセンス管理された画像が表示され視覚検索が強化",
-    "detail": "OpenAIが画像大手Getty Imagesと組み、ChatGPT上で著作権処理済みの画像を表示できるようになります。権利の心配が少ない画像を探しやすくなる動きです。LPや資料に使う画像選びで、安心して使える素材を見つける助けになります。"
+    "tool": "Gemini",
+    "title": "GoogleがInteractions APIを正式提供、Geminiをエージェント標準に",
+    "source_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5hSFhlcDUtYVZXSXlzTTZ4MVBOUTJKSzRXRGpObTlWaTVEU0hCcE5zVm5HX1NlZ2tvSmNTZnk2eTluNjJBWWFWSmlyQ2xnZkhsX1Zn?oc=5",
+    "published_at": "2026-06-23T01:33:23.000Z",
+    "raw_excerpt": "Geminiをアプリ連携の標準にする新APIが正式提供へ",
+    "detail": "Googleが、Geminiを使ってアプリやサービスを連携させる「Interactions API」を正式に提供します。AIが他のツールと協調して自動で動く土台になります。業務自動化やアプリ開発を進める新井さんの将来の選択肢になります。"
   },
   {
     "tool": "NotebookLM",
-    "title": "NotebookLMでスライドが作れない時の対処法",
-    "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9Sb2lhTU5ZNzQ1VkEzRjd3Qzk1T1pYSHJ3d0dHdVd5X2NvR1NfVWpfUGZGV3A3V3ktNl9PTnVtNW1ReFYtOEl4ZGQxcjl2bUMzdVF0cWFUaE96NlU1N1dfQ19OUjlyb2JJMjI3Sw?oc=5",
+    "title": "NotebookLMのフラッシュカードが完全カスタマイズ対応",
+    "source_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTXNEUHMwWTVFVGhZUlFtbWtGa2dEazdOZldHWUMxdGZnQ0YzSEdWS3g5cU5YUV92TFBxSDNfR1N6UG1aV2l4Smlwa1J0ZHFSdzE5OVVLanUwQi1xZXVEb2FpcDJtR082TVZ2RjZjSEs1VHQ5STNsb2RFYW5Bd29MSg?oc=5",
+    "published_at": "2026-06-23T00:57:23.000Z",
+    "raw_excerpt": "NotebookLMの暗記カード機能を自由にカスタマイズできるように",
+    "detail": "GoogleのNotebookLMで作れるフラッシュカード（暗記カード）を、内容や形を自由に調整できるようになりました。資料から要点をカード化して学べます。社内マニュアルや資料整理に使う新井さんの情報まとめに活用できます。"
+  },
+  {
+    "tool": "v0",
+    "title": "Claude DesignからVercelへ直接デプロイ可能に",
+    "source_url": "https://vercel.com/changelog/claude-design-and-vercel",
+    "published_at": "2026-06-23T00:00:00.000Z",
+    "raw_excerpt": "Claudeで作ったデザインをそのまま公開URLにできる機能が登場",
+    "detail": "Claude Designで作ったデザインを、画面を離れずにVercelへ送って公開用URLをすぐ受け取れるようになりました。デザインから実際のWebページ公開までが一気通貫でできます。LP制作やアプリ開発をする新井さんの作業を短縮できます。"
+  },
+  {
+    "tool": "Gemini",
+    "title": "GoogleビジネスプロフィールとGeminiが連携、口コミ返信を自動作成",
+    "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4ycU5GZkVrU3BXY2w3MmpUX2dYdnc1V09RTUVwMkJFSk5LTTEyVkl3aGc3emZiTUZ6elFqU2t1SFVzN05xVV9nSFVpd0dHYmZrQU1sLWNaT0xRQVE?oc=5",
+    "published_at": "2026-06-22T22:01:48.000Z",
+    "raw_excerpt": "Geminiが口コミ返信の下書きや投稿作成をAIで支援",
+    "detail": "GoogleビジネスプロフィールにGeminiが連携し、お店への口コミ返信の下書きや投稿文をAIが作ってくれるようになりました。文章を一から考える手間が省けます。三高産業など店舗・事業の情報発信や口コミ対応の効率化に役立ちます。"
+  },
+  {
+    "tool": "v0",
+    "title": "VercelがWebSocket対応、リアルタイム機能を実現",
+    "source_url": "https://vercel.com/changelog/websocket-support-is-now-in-public-beta",
     "published_at": "2026-06-22T00:00:00.000Z",
-    "raw_excerpt": "NotebookLMのスライド生成がうまくいかない原因と解決法を解説",
-    "detail": "NotebookLMでスライドが作れないときの主な原因と直し方をまとめた記事です。設定や入力データを見直すことで生成できるようになります。資料づくりでNotebookLMを使う際のトラブル解決に役立ちます。"
+    "raw_excerpt": "VercelでWebSocketが使え、リアルタイム通信機能が作れるように",
+    "detail": "Vercelの関数がWebSocketに対応し、ユーザーとサーバーが双方向にやり取りするリアルタイム機能を作れるようになりました（公開ベータ）。チャットや即時更新の機能が実装しやすくなります。v0を使うアプリ開発の幅を広げられます。"
   },
   {
-    "tool": "Canva",
-    "title": "Canvaの会話AIが日本語に本格対応",
-    "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBBdmZJekNCXzU3UXNBSWY5aDQyNVVKUTVMa3djVUN1UHNnNmdEbzVMRm03MFZnUGJ3M2kweFJjZGtmYUd2Nnpock15cGNaYVlhZlZaRQ?oc=5",
-    "published_at": "2026-06-21T07:32:08.000Z",
-    "raw_excerpt": "「こう作りたい」と話すだけでデザインできるCanvaの会話AIが日本語対応",
-    "detail": "Canvaのチャット型AIが日本語にしっかり対応し、作りたいイメージを言葉で伝えるだけでデザインを作れるようになりました。LP用バナーや営業資料、YouTubeサムネ作りで、細かい操作を覚えなくても会話だけで形にできます。資料作成やKiki Toaの宣伝画像づくりの時短に役立ちます。"
-  },
-  {
-    "tool": "NotebookLM",
-    "title": "GeminiとNotebookLMに大型アップデート",
-    "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1keTZXQzJLR1Y3NS1lRkJYbzhJbS1pVzNrdGg5TUtKYlBSZWdJaFJJYzhHeWozam5HaDlKcUhtN3hqSzdnM1NQSGR1MEFNU1FtZUFCSE5HRVVhbVU?oc=5",
-    "published_at": "2026-06-20T13:52:48.000Z",
-    "raw_excerpt": "GoogleのGeminiとNotebookLMの新機能をまとめて解説した動画",
-    "detail": "GoogleのAI「Gemini」と資料整理AI「NotebookLM」に新機能が加わり、その内容を解説した動画です。両ツールの最新の使い方がまとめて分かります。資料作成や情報整理にGoogle系AIを使う新井さんの参考になります。"
-  },
-  {
-    "tool": "NotebookLM",
-    "title": "NotebookLMの多言語リサーチ機能が強化",
-    "source_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAzcml6NDVqbF9hT0lFMDlhcER2dG85T3EybkV5WW1HYmNxOTBFSjdWM2FRb09iNUxNMkxVb05ZVG5PbWpZSjVNMV9yUU93WnVYdlBV?oc=5",
-    "published_at": "2026-06-19T12:13:18.000Z",
-    "raw_excerpt": "NotebookLMが多言語リサーチ対応で、海外原典に当たりやすくなった",
-    "detail": "Googleの資料整理AI「NotebookLM」が複数の言語での調べ物に強くなり、海外の元資料を直接調べやすくなりました。海外のAIツール情報や英語記事を読み込んで要約させれば、リサーチが速くなります。営業資料の根拠集めや情報収集に役立ちます。"
+    "tool": "Suno",
+    "title": "歌手SZAがSunoのAI学習を名指しで批判",
+    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9XZm1Mcmc4SktDaG5pRGJSSWRWX3k4V0dHSmlsVTd6cVNrMmQ4NFBQeF9IamxxemJRelBJeHNQanB2eXpXWng4VVJ3ZVN0V3NiZEp3UWJmVjZZUjdXLWdxTEhudThFYXVab1drcnZCMWxyOWFH?oc=5",
+    "published_at": "2026-06-21T03:44:22.000Z",
+    "raw_excerpt": "自身の曲がSunoの学習に使われたとアーティストが糾弾",
+    "detail": "歌手SZAが、自分の曲がAI音楽サービスSunoの学習に無断で使われたと批判しました。AI音楽の著作権をめぐる議論が続いています。Sunoで音楽制作・YouTube運用をする新井さんは、権利リスクの動向として知っておくべき話題です。"
   },
   {
     "tool": "Cursor",
-    "title": "Cursorの自動化機能が強化、繰り返し作業を自動化",
+    "title": "Cursorの自動化機能が強化、GitHub・Slack連携も",
     "source_url": "https://cursor.com/changelog/06-18-26",
     "published_at": "2026-06-18T00:00:00.000Z",
-    "raw_excerpt": "Cursorに/automateスキルやGitHub・Slack連携の新トリガーが追加",
-    "detail": "AIコーディングツールCursorが、繰り返しの作業を常時動くAIに任せる自動化機能を強化しました。GitHubやSlackと連携して作業を自動で進められます。アプリ開発や定型作業の自動化を考える新井さんに役立つ更新です。"
+    "raw_excerpt": "Cursorの自動化に新スキルとGitHub・Slackトリガーが追加",
+    "detail": "AIコーディングツールCursorの自動化機能が強化され、「/automate」という新機能やGitHub・Slackをきっかけに動かす仕組みが加わりました。繰り返し作業を常時動くAIに任せられます。アプリ開発の定型作業を自動化したい新井さんに役立ちます。"
   }
 ]
