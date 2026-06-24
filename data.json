@@ -1,98 +1,90 @@
 [
   {
-    "tool": "Canva",
-    "title": "CanvaがAIエージェント「AGENTIC STAR」と連携、資料作成を自動化",
-    "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB0cExYVVdaVkMxUWV6bmN6MmdZWEpVNm5wRzMzdjlwTVNBaDZadnRwVldhTnlHa0RzM0dQcWgzSmVJdi1IUzJXQXAzMTRlcnNUeVQxNVl5WHAzTHFtOUZKNFc4c05RMnIySUNZV3Bia0JxMTF4Z1hwUGkzdlRYXzQ?oc=5",
-    "published_at": "2026-06-23T08:17:00.000Z",
-    "raw_excerpt": "ソフトバンクのAIエージェントがCanvaとMCP連携し、資料作成を自動化・効率化",
-    "detail": "ソフトバンクのAIエージェント「AGENTIC STAR」がCanvaと技術連携し、AIが資料を自動で作れるようになりました。営業資料や社内文書を作るときに、指示するだけでデザイン付きの資料が生まれる仕組みです。新井さんの営業資料・社内文書づくりが大きく時短できる可能性があります。"
-  },
-  {
     "tool": "ChatGPT / OpenAI",
-    "title": "メルカリがChatGPT上で商品検索・出品準備できる公式アプリ提供",
-    "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOTEJjNEQ0djliYkFGQWpmRTh5ZFhwR1JiaFJicGY5WUZXdHRrWWkzeUsyZUgxNFJNTDAyakJlSkVyNnBGc1NOMllYSXBhRUdsRnBCWVpNM2xVMWlZN3h1VVBfVlR0NWFvTEdRS1hCWGpxbnRFOGxyZkxCR3lRdEZrcVp1aWY5dw?oc=5",
-    "published_at": "2026-06-23T08:02:48.000Z",
-    "raw_excerpt": "ChatGPT内でメルカリの商品検索や出品準備が可能になる公式アプリが登場",
-    "detail": "メルカリがChatGPTの中で使える公式アプリを出し、ChatGPTから商品を探したり出品の準備ができるようになりました。AIが買い物や販売の入り口になる流れが進んでいます。EC運営をする新井さんにとって、今後の販売チャネルの変化を知る重要な動きです。"
-  },
-  {
-    "tool": "ChatGPT / OpenAI",
-    "title": "OpenAIがGetty Imagesと提携、ChatGPTの画像を強化",
-    "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9fZmlJT3Q1OFBrWVBoOTNIOVpYM01iSldsMExlQ08yZVcwUV8yQ28wU0djbF9VUFRSNDNweHA3OVFjUlpyWmU1Rms3MFJORlFpZTVBU2tVMjlubUNsZzNJ0gFkQVVfeXFMTjc4a1otQ2k4bFpRM2Q3UmlhYWxSeTN0YUZmTjNIc3VfTm45ZWZGcTB3aUxORU8zV1E3LS1GNjBscDlsejNMX0x1NlR1Q2JxR0t5clU3UjFoSWFUanliUUlpcF9zYw?oc=5",
-    "published_at": "2026-06-23T06:36:24.000Z",
-    "raw_excerpt": "ChatGPTにライセンス済みの正規画像が使えるようになる提携",
-    "detail": "OpenAIが大手写真サービスGetty Imagesと契約し、ChatGPTで権利のクリアな画像を扱えるようになります。安心して使える画像が増える見込みです。画像生成や資料・LP制作で画像を使う新井さんにとって、権利面の安心材料になります。"
+    "title": "ChatGPT広告が日本でもCriteo経由で配信開始",
+    "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB2dDFmZDMtakNjTkFLM2JPNHJNbjhqc2ctUUFQdDdtdTFQSGZERjZ2aDBucHdVdDNuNmtQeFVHdVE0aWh4Wnl0SzRTWk9SRzhtRHptNlhrMjBuQ2Q2RTZjQ09DRTloa1BnMEE?oc=5",
+    "published_at": "2026-06-23T23:58:30.000Z",
+    "raw_excerpt": "会話型AI広告がChatGPT上で日本でも本格スタート",
+    "detail": "ChatGPTの会話の中に広告を出せる仕組みが、Criteo経由で日本でも使えるようになりました。AIチャットが新しい集客の場になりつつあります。EC運用で将来の広告手段として知っておく価値があります。"
   },
   {
     "tool": "Claude / Claude Code",
-    "title": "Claude Codeに自動化機能「Routines」が登場",
-    "source_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9GdDd3Uktjc1R0MWRfclhXOTZzZnplbkpUeFAzTzh0OHZBS0NlU1ZtRjk0aURYcW1XSjJpU2lKRXRHYTUyOHFvSDcxdjlpOE5kajZyN29zVEU4ZGQtOWpseG9JblRHU3AxMmc4dC1NRzdGUQ?oc=5",
-    "published_at": "2026-06-23T06:32:45.000Z",
-    "raw_excerpt": "AnthropicがClaude Codeの作業を自動化するRoutinesを導入",
-    "detail": "Claude Codeに、決まった手順の作業を自動で繰り返してくれる「Routines」という機能が追加されました。毎回同じ指示を出さなくても、AIが定型作業をこなしてくれます。アプリ開発や業務自動化に取り組む新井さんの効率アップに直結します。"
+    "title": "Slackで使えるAI『Claude Tag』登場",
+    "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1mbTRYQjhxeUVnVVVqSmlZZG1TZlAzMXFqN093UFYtMFVGT3dLMnluX0RFbk0tZW1oUE8xRnpSTklYWW9qMHlxWFlIeUZYSkdLcWpzVFBnRzY4aXJjOU9MVHVNbV9nd3FM?oc=5",
+    "published_at": "2026-06-23T23:05:00.000Z",
+    "raw_excerpt": "Slackで「@Claude これやって」と頼める常駐型AIが発表された",
+    "detail": "Anthropicが、Slackのチャンネルに常駐してメンバーのように仕事を手伝う『Claude Tag』を発表しました。Slackで話しかけるだけで調査や作業をしてくれます。社内連絡をSlackで行うなら、文書作成や業務効率化を一気に自動化できます。"
   },
   {
     "tool": "Gemini",
-    "title": "Geminiがスプレッドシートの数式エラーを解決可能に",
-    "source_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE55b2NObUdfLUhPOXNHQWdGdDZmY2NGdHpDb1pfLXBUbHRlcGdtTTgwSHdpaVo1bkw4XzM2cXI4VER5RXpiVTdqN09oMENwT1V3aExuTDUxcHR4OXJoRzBxZm5ENWQ0Z2s?oc=5",
-    "published_at": "2026-06-23T03:40:44.000Z",
-    "raw_excerpt": "GoogleのGeminiが表計算ソフトの数式エラーを直してくれる機能に対応",
-    "detail": "Geminiがスプレッドシート（表計算ソフト）の数式の間違いを見つけて直せるようになりました。エラーの原因が分からず困っていたときも、AIが説明・修正してくれます。業務改善や集計作業を行う新井さんの手間を減らせます。"
+    "title": "Geminiで『使いたい現場と禁止する会社』の溝を埋める",
+    "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1NaS1HR2s3YThkdXVQV1lzZVZlTFVTOGxtdTlURTBTRExFUEd5R2tGY0tHR1dLUG5EaDFzZnpSVXJSNXZyY1N0aTdPa1JKNWRwMWJiaEtSQWVMOHdEbFJzMkNnOWFQUU15?oc=5",
+    "published_at": "2026-06-23T22:00:00.000Z",
+    "raw_excerpt": "社内でAI導入を進める実践的な方法を解説した記事",
+    "detail": "現場はAIを使いたいのに会社が許可しない、というギャップをGeminiでどう解消するかを解説しています。安全に業務へAIを取り入れる考え方が学べます。三高産業の業務改善でAI導入を提案する際の参考になります。"
   },
   {
-    "tool": "Gemini",
-    "title": "GoogleがInteractions APIを正式提供、Geminiをエージェント標準に",
-    "source_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5hSFhlcDUtYVZXSXlzTTZ4MVBOUTJKSzRXRGpObTlWaTVEU0hCcE5zVm5HX1NlZ2tvSmNTZnk2eTluNjJBWWFWSmlyQ2xnZkhsX1Zn?oc=5",
-    "published_at": "2026-06-23T01:33:23.000Z",
-    "raw_excerpt": "Geminiをアプリ連携の標準にする新APIが正式提供へ",
-    "detail": "Googleが、Geminiを使ってアプリやサービスを連携させる「Interactions API」を正式に提供します。AIが他のツールと協調して自動で動く土台になります。業務自動化やアプリ開発を進める新井さんの将来の選択肢になります。"
+    "tool": "ChatGPT / OpenAI",
+    "title": "メルカリがChatGPTで商品検索・出品下書きに対応",
+    "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5fbEZ4eXJ6cDRvWUloRF84ckpCVXlJVjhLMnRxOElwYkVabkd4Rk1kMVpfOENnWjdSeUtRWXlZellURGZXTTg5R21jSC16UGplX2paempWOUNQWk96OE9GS1N0S3otTWFkUWZSRF9Wb2k2M1JxZWt4dDJ4RWdTaDQ?oc=5",
+    "published_at": "2026-06-23T20:10:00.000Z",
+    "raw_excerpt": "ChatGPT上でメルカリの商品検索や出品の下書き作成ができるようになった",
+    "detail": "ChatGPTと会話するだけで、メルカリの商品を探したり出品の下書きを作れるようになりました。AIがそのままお店の業務とつながる時代が来た例です。新井さんのEC運用でも、AIを使った商品検索・出品の自動化のヒントになります。"
+  },
+  {
+    "tool": "ChatGPT / OpenAI",
+    "title": "ChatGPT無料/Goでも長文貼り付けが自動で添付化",
+    "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1SSjV5a1I2Z3VWT0lWNWoxQVFuRUozQWVmc0gxeGRraDVvSlRHM1IyVTQyVzNMM3Zzci0teEEwMFdubVJYb3M0NndYZWRkeHRFa0JlY2RFOGZnaHh4cnR1ZzMxMkJOaVNUdlpBU0hLNGFjeTZWWG5UY256cWl6b2c?oc=5",
+    "published_at": "2026-06-23T18:22:55.000Z",
+    "raw_excerpt": "長すぎる文章を貼ると自動でファイル添付に変わる仕様に",
+    "detail": "ChatGPTの無料版やGoプランでも、長すぎるテキストを貼り付けると自動的に添付ファイルとして扱われるようになりました。会話が見づらくならず処理もスムーズです。資料の文章をまとめてAIに渡すときに便利です。"
   },
   {
     "tool": "NotebookLM",
-    "title": "NotebookLMのフラッシュカードが完全カスタマイズ対応",
-    "source_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTXNEUHMwWTVFVGhZUlFtbWtGa2dEazdOZldHWUMxdGZnQ0YzSEdWS3g5cU5YUV92TFBxSDNfR1N6UG1aV2l4Smlwa1J0ZHFSdzE5OVVLanUwQi1xZXVEb2FpcDJtR082TVZ2RjZjSEs1VHQ5STNsb2RFYW5Bd29MSg?oc=5",
-    "published_at": "2026-06-23T00:57:23.000Z",
-    "raw_excerpt": "NotebookLMの暗記カード機能を自由にカスタマイズできるように",
-    "detail": "GoogleのNotebookLMで作れるフラッシュカード（暗記カード）を、内容や形を自由に調整できるようになりました。資料から要点をカード化して学べます。社内マニュアルや資料整理に使う新井さんの情報まとめに活用できます。"
+    "title": "NotebookLMのフラッシュカードが編集可能に",
+    "source_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBXdEdURy1relFPbmxLa3RXS3JzR1ZWQWpzQnNZWjhfdG1yNnoxY1dBdVZjWGg5Wktxa1lSVW4zRU5Dd29xWXlha2RvYjlFTHVCb2prNjBGZjlRMlB5RDJOVW01TERHRHQ3ekxNdGdRbw?oc=5",
+    "published_at": "2026-06-23T11:10:14.000Z",
+    "raw_excerpt": "問題と答えを直接編集できる機能が無料含む全員に展開",
+    "detail": "NotebookLMの学習カード機能で、問題文と答えを自分で直接書き換えられるようになりました。無料ユーザーも使えます。資料からの学習用まとめや社内ナレッジ整理に役立ちます。"
   },
   {
-    "tool": "v0",
-    "title": "Claude DesignからVercelへ直接デプロイ可能に",
-    "source_url": "https://vercel.com/changelog/claude-design-and-vercel",
-    "published_at": "2026-06-23T00:00:00.000Z",
-    "raw_excerpt": "Claudeで作ったデザインをそのまま公開URLにできる機能が登場",
-    "detail": "Claude Designで作ったデザインを、画面を離れずにVercelへ送って公開用URLをすぐ受け取れるようになりました。デザインから実際のWebページ公開までが一気通貫でできます。LP制作やアプリ開発をする新井さんの作業を短縮できます。"
+    "tool": "Canva",
+    "title": "CanvaがAIエージェントとMCP連携、資料作成を自動化",
+    "source_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1iQllRUm5DeWt4QU9TQ1dwanY4VEZMMXZ5Y0hHNzBsSW1EUmNjNzRXRkFQMTI5dWVZdzUwUl9qcUJrVzhOLW1FN3dIWHU2VkJoTGZDMktiX2dwVUp4VHlldG9QR2LSAWRBVV95cUxNYkJZUVJuQ3lreEFPU0NXcGp2OFRGTDF2eWNIRzcwbEltRFJjYzc0V0ZBUDEyOXVlWXc1MFJfanFCa1c4Ti1tRTd3SFh1NlZCaExmQzJLYl9ncFVKeFR5ZXRvUEdi?oc=5",
+    "published_at": "2026-06-23T07:51:15.000Z",
+    "raw_excerpt": "ソフトバンクのAIがCanvaと連携し資料作成を自動化・効率化",
+    "detail": "AIエージェントがCanvaとつながり、資料作成を自動でこなせるようになる連携が発表されました。指示するだけでデザイン入りの資料ができるイメージです。新井さんの営業資料や社内文書づくりを大幅に時短できる可能性があります。"
   },
   {
     "tool": "Gemini",
-    "title": "GoogleビジネスプロフィールとGeminiが連携、口コミ返信を自動作成",
-    "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4ycU5GZkVrU3BXY2w3MmpUX2dYdnc1V09RTUVwMkJFSk5LTTEyVkl3aGc3emZiTUZ6elFqU2t1SFVzN05xVV9nSFVpd0dHYmZrQU1sLWNaT0xRQVE?oc=5",
-    "published_at": "2026-06-22T22:01:48.000Z",
-    "raw_excerpt": "Geminiが口コミ返信の下書きや投稿作成をAIで支援",
-    "detail": "GoogleビジネスプロフィールにGeminiが連携し、お店への口コミ返信の下書きや投稿文をAIが作ってくれるようになりました。文章を一から考える手間が省けます。三高産業など店舗・事業の情報発信や口コミ対応の効率化に役立ちます。"
+    "title": "Geminiで歌詞付きAI音楽『Lyria 3』が利用可能に",
+    "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNajMzT0szYjN1cjFZRk5GN0drdHZTZmsxNjhwSkt4dGJveVNnd2F3YnIza2ZMZ25ycGZ4M1RxVGhZZ1BFVHNyOXN6RXBKWGhRYUpvQkhTcXZyMndXaDA3WWEyeFVsVjJDOWViWm1VQnBULTduWkRBclBSandWcVRkUHhSZU5mcGN6X0p0T0VWSm5GQy1vU2g2UndUM2l0ZkdXcExIeHpnRUtVTm03RmpybU9IRFlPQ21nWHEyMHVXWjEzeXREWTVqeS1B?oc=5",
+    "published_at": "2026-06-23T07:35:50.000Z",
+    "raw_excerpt": "歌詞付き音楽生成やスタイル制御ができるLyria 3がGeminiに登場",
+    "detail": "Googleが歌詞付きの音楽を作れるAI『Lyria 3』をGeminiで使えるようにしました。曲の雰囲気を細かく指定でき、AI生成を示す透かしも入ります。Kiki Toaの音楽制作で、Suno以外の選択肢として比較・活用できます。"
+  },
+  {
+    "tool": "Gemini",
+    "title": "Geminiに月額1,200円の新プラン『Google AI Plus』",
+    "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5FcGhMQUt4a3hGUVh6NzZ4ZGIwZ0ZJMlBxdXo4ZGN5VjhIVHhSa0FGMW5aMTNyYzgybi1PRGl1V196VDdPbXpiY2FfSmhMQXgzOGhYOHFNQnJZeGs?oc=5",
+    "published_at": "2026-06-23T05:32:53.000Z",
+    "raw_excerpt": "無料・Pro・Ultraの間を埋める手頃な新プランが登場",
+    "detail": "Geminiに月額1,200円ほどの新プラン『Google AI Plus』が登場しました。無料版と高額なProプランの中間で、コスパよくAIを使えます。新井さんがGeminiをどのプランで契約するか見直す参考になります。"
   },
   {
     "tool": "v0",
-    "title": "VercelがWebSocket対応、リアルタイム機能を実現",
-    "source_url": "https://vercel.com/changelog/websocket-support-is-now-in-public-beta",
-    "published_at": "2026-06-22T00:00:00.000Z",
-    "raw_excerpt": "VercelでWebSocketが使え、リアルタイム通信機能が作れるように",
-    "detail": "Vercelの関数がWebSocketに対応し、ユーザーとサーバーが双方向にやり取りするリアルタイム機能を作れるようになりました（公開ベータ）。チャットや即時更新の機能が実装しやすくなります。v0を使うアプリ開発の幅を広げられます。"
-  },
-  {
-    "tool": "Suno",
-    "title": "歌手SZAがSunoのAI学習を名指しで批判",
-    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9XZm1Mcmc4SktDaG5pRGJSSWRWX3k4V0dHSmlsVTd6cVNrMmQ4NFBQeF9IamxxemJRelBJeHNQanB2eXpXWng4VVJ3ZVN0V3NiZEp3UWJmVjZZUjdXLWdxTEhudThFYXVab1drcnZCMWxyOWFH?oc=5",
-    "published_at": "2026-06-21T03:44:22.000Z",
-    "raw_excerpt": "自身の曲がSunoの学習に使われたとアーティストが糾弾",
-    "detail": "歌手SZAが、自分の曲がAI音楽サービスSunoの学習に無断で使われたと批判しました。AI音楽の著作権をめぐる議論が続いています。Sunoで音楽制作・YouTube運用をする新井さんは、権利リスクの動向として知っておくべき話題です。"
+    "title": "Claude Designからワンクリックで公開できる連携",
+    "source_url": "https://vercel.com/changelog/claude-design-and-vercel",
+    "published_at": "2026-06-23T00:00:00.000Z",
+    "raw_excerpt": "Claude Designで作ったデザインをVercelに送りURL化できる",
+    "detail": "Claude Designでデザインを完成させると、そのままVercelに送って公開URLを受け取れるようになりました。画面を離れずにWebページとして動かせます。LP制作やアプリ開発の試作公開がぐっと速くなります。"
   },
   {
     "tool": "Cursor",
-    "title": "Cursorの自動化機能が強化、GitHub・Slack連携も",
+    "title": "Cursorの自動化が強化、GitHub/Slack連携追加",
     "source_url": "https://cursor.com/changelog/06-18-26",
     "published_at": "2026-06-18T00:00:00.000Z",
-    "raw_excerpt": "Cursorの自動化に新スキルとGitHub・Slackトリガーが追加",
-    "detail": "AIコーディングツールCursorの自動化機能が強化され、「/automate」という新機能やGitHub・Slackをきっかけに動かす仕組みが加わりました。繰り返し作業を常時動くAIに任せられます。アプリ開発の定型作業を自動化したい新井さんに役立ちます。"
+    "raw_excerpt": "繰り返し作業を任せる常駐エージェント機能が強化された",
+    "detail": "Cursorの自動化機能が強化され、GitHubやSlackをきっかけに自動で作業を進められるようになりました。決まった作業をAIに任せられます。アプリ開発や業務の自動化を進める新井さんに役立ちます。"
   }
 ]
