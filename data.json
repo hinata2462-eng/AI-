@@ -1,98 +1,90 @@
 [
   {
     "tool": "Gemini",
-    "title": "Gemini 3.1 Flash-Liteの機能・料金・使い方を解説",
-    "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5IclhxVlcwYjNCR0hVX0FiaXFVZ0tXOWZPZUdwTFhhRUI1QlJqVmFMU3loU0N1Rk1sRzlaWVZnZVRMN2x1R09Ic1E5TzA2alllYWotRGVYajNXYVNmVGozVERlOA?oc=5",
-    "published_at": "2026-06-26T06:46:34.000Z",
-    "raw_excerpt": "Geminiの軽量モデルFlash-Liteの特徴や料金、使い方を紹介。",
-    "detail": "Geminiの中でも軽くて速い「Flash-Lite」モデルの機能や料金が解説されています。低コストで素早く処理できるのが特徴です。大量のテキスト処理やアプリ開発でコストを抑えたい場面に向いており、効率化に役立ちます。"
+    "title": "GeminiがGoogleビジネスプロフィール連携",
+    "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9hOGdnTnhGcTVfN0VHaGdPTG5sRFV0LTdtcm40R2JIRXFsejd3WVlUeDY4WFhINkh3dFpLYW5KbG5IV0NkenBqVUY1Q09wXzZVWFJHOTIwR1hpWi1EY1lTeDZraDZKeFBxTGZaV1BCSGltOWQ4bUIxMld2NVJQQQ?oc=5",
+    "published_at": "2026-06-27T02:31:59.000Z",
+    "raw_excerpt": "GeminiにGoogleビジネスプロフィールとの連携設定が新設",
+    "detail": "GeminiがGoogleビジネスプロフィール（店舗情報）と連携できる設定が追加されました。店舗やサービスの情報をAIが扱いやすくなります。ECや集客に関わる情報発信で、Geminiを活用した運用がしやすくなる可能性があります。"
   },
   {
-    "tool": "Claude / Claude Code",
-    "title": "Claude新モデル「Fable 5」の使い方・料金解説",
-    "source_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBhbmxUZ3VqbjRTa2Nrc21zdnIwbzBGRm41NzdsODZTaWp3N3lKY2dKTkN5VjN4Tzk4ZmEtMnlPZEE4MXkzMGt0cnZBTDE3VkdkMkx4dThYRzg?oc=5",
-    "published_at": "2026-06-26T05:41:44.000Z",
-    "raw_excerpt": "Claudeの新バージョンFable 5の特徴や料金、安全性を紹介。",
-    "detail": "Claudeの新しいモデル「Fable 5」について、使い方や料金、安全性が解説されています。Claude Codeを使う新井さんにとって、どのモデルを選ぶかの判断材料になります。文書作成や開発の用途に合わせて活用できます。"
+    "tool": "ChatGPT / OpenAI",
+    "title": "OpenAIが「GPT-5.6」発表",
+    "source_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE92ZWNBUTF1T1BnNFdYRkFPR0lwRVMzZDFGOXBKTzN2cDVYelZIQnZWQzJTSWZldlBaVHZzNUlXT2tWUklBWjc4TlJ6cU9HTHViSjVxNXdFYldBcU9SVlVXdndXenE?oc=5",
+    "published_at": "2026-06-27T01:57:44.000Z",
+    "raw_excerpt": "OpenAIが新モデルGPT-5.6を発表、上位モデルは段階提供",
+    "detail": "OpenAIがChatGPTの新しい頭脳「GPT-5.6」を発表しました。最上位モデルなどは段階的に提供される予定です。普段使うChatGPTの性能が上がれば、文書作成や資料づくり、業務自動化の精度とスピードがさらに向上します。"
+  },
+  {
+    "tool": "Gemini",
+    "title": "Gemini Drops 6月版に新機能5つ",
+    "source_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB4WkstNENoMDI4eDB5akpoSVFjNm9tRFVJTXJXdVcwR21aSm55TERPcDVoVFcteVdjWEdoRWpkR2JMTXB5T2lXMWlmMFpNRGZ6M0c3Vjdwb1pLempxeGpOeVpRTzU?oc=5",
+    "published_at": "2026-06-26T17:15:22.000Z",
+    "raw_excerpt": "Geminiの最新アップデートで便利な新機能が5つ追加",
+    "detail": "Googleの生成AI「Gemini」の月次アップデートで新機能が5つ追加されました。日々の作業を助ける改善が含まれています。Geminiを文章作成や調べ物に使う新井さんにとって、新機能を知れば作業の効率化につながります。"
+  },
+  {
+    "tool": "v0",
+    "title": "Vercel Ship 2026の発表まとめ",
+    "source_url": "https://vercel.com/blog/vercel-ship-2026-recap",
+    "published_at": "2026-06-26T16:00:00.000Z",
+    "raw_excerpt": "Vercelがエージェント向けインフラなど最新発表をまとめて公開",
+    "detail": "WebサービスのVercelが、自動で動くAI（エージェント）向けの基盤など最新の発表をまとめて公開しました。v0などと組み合わせた開発に関わる内容です。アプリやWeb制作を効率化したい新井さんにとって参考になります。"
   },
   {
     "tool": "NotebookLM",
     "title": "NotebookLMの回答の質を変える隠し設定",
     "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOM2RSODNPa3VfekE1R2J6Y0FUd1F1MEJaTGsxWTlEM3YydGlITHQzdkdsZVBMczU4ZlRhX3NoM1BHTnJjRGZtNHJ5di1TVk1sVlJUUFoyc25nVVBVUzhlMTJWdWRHZ1VaWHlYNjFWUVhYSjZhcm85Z2U3NVcwa0dNRHBNQmE?oc=5",
     "published_at": "2026-06-26T03:00:00.000Z",
-    "raw_excerpt": "NotebookLMの回答精度を上げる、知られていない設定を紹介。",
-    "detail": "GoogleのNotebookLMには、回答の質が変わる隠れた設定があると紹介されています。資料を読み込ませて要約や質問に答えさせる際の精度を高められます。社内文書やリサーチを整理する新井さんの作業がより正確になります。"
-  },
-  {
-    "tool": "ChatGPT / OpenAI",
-    "title": "OpenAI社員のAIエージェント活用レポート公開",
-    "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1PYVV3RUpEalI2VUtJODlNV1hFZGhXZUVtSzdMaDJmaTNMcmhRTzkxVmVxbkJuN3l1U2ZwLVpndEhnTTN6Mk5ZWHBpZ3h2NXVCRmFUb3BQY1hpMUY5Q2QtZUMwUFVkUXRhQUE?oc=5",
-    "published_at": "2026-06-26T02:22:00.000Z",
-    "raw_excerpt": "非エンジニアもCodexを活用するOpenAI社内のAI活用実態が公開。",
-    "detail": "OpenAIの社員が日々の仕事でAIエージェントやCodexをどう使っているかをまとめたレポートが公開されました。エンジニア以外も自動化に活用している点がポイントです。業務の自動化・効率化を進める新井さんにとって、実例のヒントになります。"
-  },
-  {
-    "tool": "Claude / Claude Code",
-    "title": "Claude Cowork、モバイル対応を準備中",
-    "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPNl8zcDlERDVvVklDaEdHSUJ0ZEZBR245NDhkamhCd1lIMkdyWV84X0hvV3Z3bnl1WjJ0T0VaQXQzbkJseWU4WGhyUjE1S3pKQkp3cGNZZTg3Y2VFbnhsV28ydHlrVEZWSVVIV045eDdUMTBhSG9MQm5mbXFsSTBBRXpsb21pZnVSd2FfWDZBUmtHZXlpWWNLRkVuUy0?oc=5",
-    "published_at": "2026-06-26T01:43:15.000Z",
-    "raw_excerpt": "Anthropicの協働AI「Claude Cowork」がスマホ対応へ。",
-    "detail": "AnthropicがClaude Coworkをスマホでも使えるよう準備していると報じられました。外出先でもAIに作業を任せやすくなります。移動中でも文書作成やアイデア整理ができ、業務効率化につながります。"
-  },
-  {
-    "tool": "ChatGPT / OpenAI",
-    "title": "ChatGPTの標準モデルが会話品質を向上",
-    "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBuY09iXy1GbGh4T0NXZDZGMWpnRGRlV09JeWt1OU1qSDIyMFZEVzkzUmFZY2E4aTEtb2ZGckp4b1Y2RXlWV1doRzFCMHhiRndpZER1VVU1QlpMTGZjLVRPLUJ0WWlOQVdCb1M5aUlCTzlIRnR3bXpLUnEzWkFJNnM?oc=5",
-    "published_at": "2026-06-25T09:05:00.000Z",
-    "raw_excerpt": "GPT-5.5 Instantが新バージョンになり、会話がより自然で快適に。",
-    "detail": "ChatGPTの標準モデルが更新され、やり取りがより自然で使いやすくなりました。文章作成や相談など普段使いの精度が上がります。営業資料や社内文書の下書き、アイデア出しなど日常の作業がより快適になります。"
-  },
-  {
-    "tool": "Canva",
-    "title": "ソフトバンクのAIがCanvaと連携、資料作成を自動化",
-    "source_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE85V240YTI2Q285czY3MW1wTkdBUXlvZWlVRnNpR0NaNEJZNF91YkZ0VWdsRlhpcmExWHNwM2pXQ1FDaVVtMWt0VDIzd25DSEZSeVBPckRkVi1XdjdPaHc?oc=5",
-    "published_at": "2026-06-25T06:20:59.000Z",
-    "raw_excerpt": "AIエージェントがCanvaと連携し、資料作成を自動でこなす仕組みが登場。",
-    "detail": "AIがCanvaを操作して資料を自動で作る連携が発表されました。指示するだけでデザイン入りの資料が出来上がるイメージです。新井さんの営業資料や社内文書づくりを自動化・時短できる方向性として参考になります。"
-  },
-  {
-    "tool": "NotebookLM",
-    "title": "NotebookLMがGoogleドライブと統合へ",
-    "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBHMVFuRG5LU3ByOEFQQnJVYklaRWZmOWtVdjZjd3UydWdGRlJUUVNUZmFWeUFrODFPdHlFRURWcHItLURPQlVDVHk5VXprVGJzNmw5cnRLeTNZWjA?oc=5",
-    "published_at": "2026-06-25T01:36:11.000Z",
-    "raw_excerpt": "NotebookLMがGoogleドライブと連携し、プロジェクト機能も強化。",
-    "detail": "NotebookLMがGoogleドライブと統合され、ファイル管理やプロジェクト単位の活用がしやすくなる大型アップデートです。資料を一元管理しながらAIに分析させられます。文書整理や資料作成の効率化に役立ちます。"
-  },
-  {
-    "tool": "Canva",
-    "title": "Canva、AIチャットで生成した画像を直接編集可能に",
-    "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE96TDdoZGVUbGg0V19rcjJsUHFacmVXZF92cVZBNDF4OG1IdG1RV1ExeENUTjEwLWk0MzdXMDFCcEMyc20tSjRqUXBmajlLYjZLaUZEQ3ZkekJzTVNUWkRZ?oc=5",
-    "published_at": "2026-06-24T08:03:15.000Z",
-    "raw_excerpt": "CanvaのAIチャット生成画像を、その場で直接編集できる新機能が登場。",
-    "detail": "Canvaで、AIに指示して作った画像をそのまま編集できるようになりました。これまで生成後に別作業が必要だった画像の手直しが、チャット画面で完結します。LPやバナー、営業資料の画像作りがぐっと速くなり、デザイン作業の効率化に役立ちます。"
+    "raw_excerpt": "NotebookLMの回答精度を上げる知られざる設定の解説",
+    "detail": "資料をまとめてくれるGoogleのNotebookLMには、回答の質が変わる隠れた設定があるという解説記事です。設定を変えるだけでより正確で使える答えが得られます。社内文書の整理や営業資料の下調べに使うと、調べ物の精度が上がります。"
   },
   {
     "tool": "v0",
-    "title": "v0のProチームが同時ビルド数を500に拡大",
-    "source_url": "https://vercel.com/changelog/pro-teams-can-now-run-up-to-500-concurrent-builds",
-    "published_at": "2026-06-24T00:00:00.000Z",
-    "raw_excerpt": "VercelのProチームで同時に実行できるビルドが大幅に増加。",
-    "detail": "v0を提供するVercelで、Proチームが同時に進められるビルドが12から500に増えました。大きなプロジェクトでも待ち時間なく公開できます。アプリ開発のスピードを上げたい新井さんに役立ちます。"
+    "title": "AI SDK 7が公開",
+    "source_url": "https://vercel.com/changelog/ai-sdk-7",
+    "published_at": "2026-06-25T07:00:00.000Z",
+    "raw_excerpt": "AIアプリ開発用のAI SDK 7が登場、エージェント開発が強化",
+    "detail": "Vercelが提供するAIアプリ開発キット「AI SDK 7」が公開されました。自動で動くAI（エージェント）を作るための機能が大幅に強化されています。アプリ開発や業務自動化の仕組みづくりに使えるため、開発の幅が広がります。"
+  },
+  {
+    "tool": "Canva",
+    "title": "Canvaの会話AIが日本語に本格対応",
+    "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBBdmZJekNCXzU3UXNBSWY5aDQyNVVKUTVMa3djVUN1UHNnNmdEbzVMRm03MFZnUGJ3M2kweFJjZGtmYUd2Nnpock15cGNaYVlhZlZaRQ?oc=5",
+    "published_at": "2026-06-25T06:23:52.000Z",
+    "raw_excerpt": "話しかけるだけでデザインが作れるCanvaの会話型AIが日本語対応に",
+    "detail": "Canvaの「こういうものを作りたい」と話すだけでデザインを生成してくれる会話AIが、本格的に日本語に対応しました。これまで英語中心だった機能が日本語で使えるようになり、指示が出しやすくなります。LP制作や営業資料、SNS画像づくりが言葉で頼むだけで進むので、新井さんの制作作業を大きく時短できます。"
+  },
+  {
+    "tool": "Canva",
+    "title": "CanvaがAI生成画像の直接編集に対応",
+    "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE96TDdoZGVUbGg0V19rcjJsUHFacmVXZF92cVZBNDF4OG1IdG1RV1ExeENUTjEwLWk0MzdXMDFCcEMyc20tSjRqUXBmajlLYjZLaUZEQ3ZkekJzTVNUWkRZ?oc=5",
+    "published_at": "2026-06-24T08:03:15.000Z",
+    "raw_excerpt": "チャットで作った画像をそのままCanva内で手直しできるように",
+    "detail": "Canvaのチャットで生成した画像を、別ソフトを使わずそのまま編集できるようになりました。色や一部だけ直したいときも一つの画面で完結します。画像生成からLPや資料への配置まで一気に作れるので、EC商品画像や広告素材の制作がスムーズになります。"
+  },
+  {
+    "tool": "Suno",
+    "title": "Suno、巨額調達で新音楽モデルへ",
+    "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1ZeTZSZ1o0elcyMWViUEJ3TE9YTHlSMFpFT3JMc0tCT3JuUFA2am9acmFad3RGYTk4QmpJVFgtZE9DSDNfTlBLQzNZX3V4ZVZJaFgtdmY1MHdZTm9IZ2dGcVZseHd2Vnhrc0E?oc=5",
+    "published_at": "2026-06-24T02:53:16.000Z",
+    "raw_excerpt": "AI音楽のSunoが4億ドル調達、評価額54億ドルで新モデル展開へ",
+    "detail": "AI作曲ツールのSunoが大型の資金調達を行い、新しい音楽モデルの開発・展開を進めています。今後さらに音質や表現力が上がる可能性があります。Kiki Toaの楽曲制作で使うSunoが進化すれば、より質の高い曲づくりやYouTube向けコンテンツ制作に役立ちます。"
   },
   {
     "tool": "Cursor",
-    "title": "Cursorのカスタマイズ機能が一元化",
+    "title": "Cursorに機能をまとめる設定ページ追加",
     "source_url": "https://cursor.com/changelog/customize",
     "published_at": "2026-06-22T00:00:00.000Z",
-    "raw_excerpt": "Cursorのプラグインやスキル、MCPを一つの画面で管理可能に。",
-    "detail": "Cursorで使える拡張機能（プラグインやスキル）を一か所でまとめて設定できるようになりました。自分の作業に合わせた使い方を整えやすくなります。アプリ開発の作業環境を効率化したい新井さんに役立ちます。"
+    "raw_excerpt": "Cursorのプラグインやスキルを一括管理できる新ページが登場",
+    "detail": "Cursorに、プラグインやスキルなどの拡張機能を一か所で管理できる「Customize」ページが追加されました。自分の作業に合わせてカスタマイズしやすくなります。アプリ開発の作業環境を整えるのに役立ちます。"
   },
   {
     "tool": "Cursor",
-    "title": "CursorがJiraと連携可能に",
-    "source_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBLMHFSblBYZHZBdEdicDU0ZVV3VjREazRXbDRYRFNzYWNwMklHUWJib1RfbjQ2MDBTRXR0bXBCMFdVSGV2MUFpWGw3STdhYzJhdlF6Y1JaZ2NvNXhtWWs5bnE3MHhPa2s4VENF?oc=5",
-    "published_at": "2026-06-19T09:47:27.000Z",
-    "raw_excerpt": "AIコーディングツールCursorが課題管理ツールJiraと連携。",
-    "detail": "AIでコードを書けるCursorが、タスク管理のJiraとつながるようになりました。課題とコード作業を行き来しやすくなります。アプリ開発を行う新井さんの開発作業の管理がスムーズになります。"
+    "title": "Cursorの自動化機能が強化",
+    "source_url": "https://cursor.com/changelog/06-18-26",
+    "published_at": "2026-06-18T00:00:00.000Z",
+    "raw_excerpt": "Cursorに繰り返し作業を自動化する新機能とトリガーが追加",
+    "detail": "開発エディタCursorの自動化機能が強化され、GitHubやSlackをきっかけに作業を自動で動かせるようになりました。決まった作業をAIに任せられます。アプリ開発や業務の自動化に取り組む新井さんの手間を減らせます。"
   }
 ]
