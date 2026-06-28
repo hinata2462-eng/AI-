@@ -1,90 +1,98 @@
 [
   {
     "tool": "Gemini",
-    "title": "GeminiがGoogleビジネスプロフィール連携",
-    "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9hOGdnTnhGcTVfN0VHaGdPTG5sRFV0LTdtcm40R2JIRXFsejd3WVlUeDY4WFhINkh3dFpLYW5KbG5IV0NkenBqVUY1Q09wXzZVWFJHOTIwR1hpWi1EY1lTeDZraDZKeFBxTGZaV1BCSGltOWQ4bUIxMld2NVJQQQ?oc=5",
-    "published_at": "2026-06-27T02:31:59.000Z",
-    "raw_excerpt": "GeminiにGoogleビジネスプロフィールとの連携設定が新設",
-    "detail": "GeminiがGoogleビジネスプロフィール（店舗情報）と連携できる設定が追加されました。店舗やサービスの情報をAIが扱いやすくなります。ECや集客に関わる情報発信で、Geminiを活用した運用がしやすくなる可能性があります。"
-  },
-  {
-    "tool": "ChatGPT / OpenAI",
-    "title": "OpenAIが「GPT-5.6」発表",
-    "source_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE92ZWNBUTF1T1BnNFdYRkFPR0lwRVMzZDFGOXBKTzN2cDVYelZIQnZWQzJTSWZldlBaVHZzNUlXT2tWUklBWjc4TlJ6cU9HTHViSjVxNXdFYldBcU9SVlVXdndXenE?oc=5",
-    "published_at": "2026-06-27T01:57:44.000Z",
-    "raw_excerpt": "OpenAIが新モデルGPT-5.6を発表、上位モデルは段階提供",
-    "detail": "OpenAIがChatGPTの新しい頭脳「GPT-5.6」を発表しました。最上位モデルなどは段階的に提供される予定です。普段使うChatGPTの性能が上がれば、文書作成や資料づくり、業務自動化の精度とスピードがさらに向上します。"
+    "title": "Googleが学習ツール「Study Notebooks」提供開始",
+    "source_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE44ZUo3VVViemtQLUtSSFktM1drclFSS0trb1RFZXo2WEZscnBmeU1UOFVTQllBLVdFcllmMzF5Wmw2Y0VFQm9sOWFEQTZuaTJlRUpV?oc=5",
+    "published_at": "2026-06-28T08:25:27.000Z",
+    "raw_excerpt": "Geminiが先生役になる学習ツールをGoogleが提供開始",
+    "detail": "Geminiがあなた専属の先生のように教えてくれる学習ツールが始まりました。分からないことを自分のペースで学べます。新しいAIツールやスキルを学びたい新井さんの自己学習に活用できます。"
   },
   {
     "tool": "Gemini",
-    "title": "Gemini Drops 6月版に新機能5つ",
-    "source_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB4WkstNENoMDI4eDB5akpoSVFjNm9tRFVJTXJXdVcwR21aSm55TERPcDVoVFcteVdjWEdoRWpkR2JMTXB5T2lXMWlmMFpNRGZ6M0c3Vjdwb1pLempxeGpOeVpRTzU?oc=5",
-    "published_at": "2026-06-26T17:15:22.000Z",
-    "raw_excerpt": "Geminiの最新アップデートで便利な新機能が5つ追加",
-    "detail": "Googleの生成AI「Gemini」の月次アップデートで新機能が5つ追加されました。日々の作業を助ける改善が含まれています。Geminiを文章作成や調べ物に使う新井さんにとって、新機能を知れば作業の効率化につながります。"
-  },
-  {
-    "tool": "v0",
-    "title": "Vercel Ship 2026の発表まとめ",
-    "source_url": "https://vercel.com/blog/vercel-ship-2026-recap",
-    "published_at": "2026-06-26T16:00:00.000Z",
-    "raw_excerpt": "Vercelがエージェント向けインフラなど最新発表をまとめて公開",
-    "detail": "WebサービスのVercelが、自動で動くAI（エージェント）向けの基盤など最新の発表をまとめて公開しました。v0などと組み合わせた開発に関わる内容です。アプリやWeb制作を効率化したい新井さんにとって参考になります。"
+    "title": "GoogleがオンデバイスGemini搭載スピーカー発売",
+    "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1NaWNjNjZGbWFCMjJXQ09VdHhzSXFIMHJqc1pWZWNqSThDWnhRTjVkekpqOF9UWmtKbUlmNDA3QVc2eF9Md2hSYmhfVXZYVWpzd3ZqRG0xSHBXYXMyQkE1Z1oyd9IBaEFVX3lxTE9PajNLUzhySEx2ZmRKVnNldFZzYXQzUTZ0VDhzVnVDVHR6UG9qckNpbWJiM0d5SDdLSmpFUlhDUTVfQjRvZTZBN2NQb3JKVUIwcXYzQUltSVA1di0wbHRBTGdOYmJRakto?oc=5",
+    "published_at": "2026-06-28T07:24:58.000Z",
+    "raw_excerpt": "Gemini搭載スピーカー発売、高度機能は月額10ドル",
+    "detail": "Geminiを内蔵したGoogleのスピーカーが発売されました。高度なAI機能は月額10ドルの有料となります。Geminiの提供形態や料金の動向を知る参考になります。"
   },
   {
     "tool": "NotebookLM",
-    "title": "NotebookLMの回答の質を変える隠し設定",
-    "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOM2RSODNPa3VfekE1R2J6Y0FUd1F1MEJaTGsxWTlEM3YydGlITHQzdkdsZVBMczU4ZlRhX3NoM1BHTnJjRGZtNHJ5di1TVk1sVlJUUFoyc25nVVBVUzhlMTJWdWRHZ1VaWHlYNjFWUVhYSjZhcm85Z2U3NVcwa0dNRHBNQmE?oc=5",
-    "published_at": "2026-06-26T03:00:00.000Z",
-    "raw_excerpt": "NotebookLMの回答精度を上げる知られざる設定の解説",
-    "detail": "資料をまとめてくれるGoogleのNotebookLMには、回答の質が変わる隠れた設定があるという解説記事です。設定を変えるだけでより正確で使える答えが得られます。社内文書の整理や営業資料の下調べに使うと、調べ物の精度が上がります。"
+    "title": "NotebookLMが電子書籍EPUBに対応",
+    "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQdFVnWmRWR3M4LUNSTHNPTW5IUVY4TGZSVUx6dmdDQXBGM3c0X0lRd29GU1FJdmJWcHl3d2xVTjdBeDI2MV84dVl1Wkc0OFJ6OVd2NlFtQlh5eWQtUlpEYTdXdmxENkpLUi00ME9EMk9RYjF2RG0zMVNsNkJBTFQxc1ZaejE2QjBWSHh6TmRIaUp4R1gtMzhWZG1Tdk45LTAxamtjUQ?oc=5",
+    "published_at": "2026-06-28T03:00:00.000Z",
+    "raw_excerpt": "NotebookLMがEPUB対応、本まるごとを資料データベース化できる",
+    "detail": "GoogleのNotebookLMが電子書籍（EPUB）を読み込めるようになりました。本一冊をまるごと取り込んで質問できます。業務マニュアルや参考書を学習資料として整理したい新井さんの調べ物や社内文書作成に役立ちます。"
+  },
+  {
+    "tool": "Gemini",
+    "title": "Geminiがパソコンを直接操作できるように",
+    "source_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBZRHVPUVFXWG5iRk5lMC1ZaU5TdHFieUZrd3o1SWRtbjBpMG5XUXhDMm9HVkJpZ3l4VWsyRXVOTGFkZW5oQ1dWN21PQ0ZTZGhCM3lzTXJnZlY?oc=5",
+    "published_at": "2026-06-28T01:00:00.000Z",
+    "raw_excerpt": "GoogleのGeminiが進化し、AIが画面を直接操作する機能を追加",
+    "detail": "Geminiがアップグレードされ、AIが人の代わりにパソコンを操作できるようになりました。クリックや入力などの作業をAIに任せられる方向です。新井さんの繰り返し作業の自動化・効率化に直結する可能性があります。"
+  },
+  {
+    "tool": "ChatGPT / OpenAI",
+    "title": "OpenAIが新AI「GPT-5.6」を発表",
+    "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNY0NENG42RE9jU3NhWV9POXZ6QjVMUkZSWUd6U01GZ21KRWtHT0JsMzJ1WU9MUkpRRkdTM2I2QjBJOVJqSjJvTGFMbFZ2OVJoYkFlWE1Ub0U2NnVLS203MTF1cXZXSXRISGdBUHByakRETzFsUTBBWTI4bjhfaWtOYXJUYmU2Yjg?oc=5",
+    "published_at": "2026-06-27T12:20:00.000Z",
+    "raw_excerpt": "OpenAIが最新モデルGPT-5.6を発表、3種類のモデルを投入",
+    "detail": "OpenAIがChatGPTの新しい頭脳「GPT-5.6」を発表しました。能力ごとに「Sol」など複数のモデルが用意されています。ChatGPTを日常的に使う新井さんにとって、より賢い回答や資料作成の精度向上が期待できます。"
+  },
+  {
+    "tool": "ChatGPT / OpenAI",
+    "title": "メルカリがChatGPT内で買い物できる新機能",
+    "source_url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1oamFFX2pUbWFaVzJvdXZleUhUSldrc0lJOTFNQVdBNVlnZGhMNlNJbWpNQXFvZWttNUg4VkwycktCN2dWMXc?oc=5",
+    "published_at": "2026-06-27T10:47:06.000Z",
+    "raw_excerpt": "ChatGPTと会話しながらメルカリで買い物できる新機能がスタート",
+    "detail": "ChatGPTの中でメルカリの商品を探して買えるようになりました。AIとの会話から直接買い物につながる流れが本格化しています。EC運営をする新井さんにとって、今後の購買体験がどう変わるかを知る重要なヒントになります。"
   },
   {
     "tool": "v0",
-    "title": "AI SDK 7が公開",
+    "title": "Vercelがエージェント向け基盤を発表（Ship 2026）",
+    "source_url": "https://vercel.com/blog/vercel-ship-2026-recap",
+    "published_at": "2026-06-26T16:00:00.000Z",
+    "raw_excerpt": "VercelがAIエージェント時代に向けた新インフラ方針を発表",
+    "detail": "v0を提供するVercelが、AIが自動で動く「エージェント」のための基盤づくりを進めると発表しました。今後のアプリ開発の主流が変わる流れです。アプリ開発やv0を使う新井さんが今後の技術動向を押さえるのに役立ちます。"
+  },
+  {
+    "tool": "NotebookLM",
+    "title": "NotebookLMの回答の質を上げる隠し設定",
+    "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOM2RSODNPa3VfekE1R2J6Y0FUd1F1MEJaTGsxWTlEM3YydGlITHQzdkdsZVBMczU4ZlRhX3NoM1BHTnJjRGZtNHJ5di1TVk1sVlJUUFoyc25nVVBVUzhlMTJWdWRHZ1VaWHlYNjFWUVhYSjZhcm85Z2U3NVcwa0dNRHBNQmE?oc=5",
+    "published_at": "2026-06-26T03:00:00.000Z",
+    "raw_excerpt": "NotebookLMの回答精度が変わる隠れた設定を解説",
+    "detail": "NotebookLMには知られていない設定があり、これを変えると回答の質が大きく変わります。同じ資料でもより正確な答えが得られます。新井さんが調べ物や資料整理でNotebookLMを使うとき、すぐ役立つ実践テクニックです。"
+  },
+  {
+    "tool": "v0",
+    "title": "AI SDK 7が利用可能に",
     "source_url": "https://vercel.com/changelog/ai-sdk-7",
     "published_at": "2026-06-25T07:00:00.000Z",
-    "raw_excerpt": "AIアプリ開発用のAI SDK 7が登場、エージェント開発が強化",
-    "detail": "Vercelが提供するAIアプリ開発キット「AI SDK 7」が公開されました。自動で動くAI（エージェント）を作るための機能が大幅に強化されています。アプリ開発や業務自動化の仕組みづくりに使えるため、開発の幅が広がります。"
+    "raw_excerpt": "VercelのAI SDK 7公開、AIアプリ開発をより本格的に",
+    "detail": "AIアプリを作るための開発キット「AI SDK 7」が公開されました。単なるチャット機能を超え、自動で作業するエージェントを作りやすくなっています。アプリ開発に取り組む新井さんの制作の幅を広げます。"
   },
   {
     "tool": "Canva",
     "title": "Canvaの会話AIが日本語に本格対応",
     "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBBdmZJekNCXzU3UXNBSWY5aDQyNVVKUTVMa3djVUN1UHNnNmdEbzVMRm03MFZnUGJ3M2kweFJjZGtmYUd2Nnpock15cGNaYVlhZlZaRQ?oc=5",
     "published_at": "2026-06-25T06:23:52.000Z",
-    "raw_excerpt": "話しかけるだけでデザインが作れるCanvaの会話型AIが日本語対応に",
-    "detail": "Canvaの「こういうものを作りたい」と話すだけでデザインを生成してくれる会話AIが、本格的に日本語に対応しました。これまで英語中心だった機能が日本語で使えるようになり、指示が出しやすくなります。LP制作や営業資料、SNS画像づくりが言葉で頼むだけで進むので、新井さんの制作作業を大きく時短できます。"
-  },
-  {
-    "tool": "Canva",
-    "title": "CanvaがAI生成画像の直接編集に対応",
-    "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE96TDdoZGVUbGg0V19rcjJsUHFacmVXZF92cVZBNDF4OG1IdG1RV1ExeENUTjEwLWk0MzdXMDFCcEMyc20tSjRqUXBmajlLYjZLaUZEQ3ZkekJzTVNUWkRZ?oc=5",
-    "published_at": "2026-06-24T08:03:15.000Z",
-    "raw_excerpt": "チャットで作った画像をそのままCanva内で手直しできるように",
-    "detail": "Canvaのチャットで生成した画像を、別ソフトを使わずそのまま編集できるようになりました。色や一部だけ直したいときも一つの画面で完結します。画像生成からLPや資料への配置まで一気に作れるので、EC商品画像や広告素材の制作がスムーズになります。"
-  },
-  {
-    "tool": "Suno",
-    "title": "Suno、巨額調達で新音楽モデルへ",
-    "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1ZeTZSZ1o0elcyMWViUEJ3TE9YTHlSMFpFT3JMc0tCT3JuUFA2am9acmFad3RGYTk4QmpJVFgtZE9DSDNfTlBLQzNZX3V4ZVZJaFgtdmY1MHdZTm9IZ2dGcVZseHd2Vnhrc0E?oc=5",
-    "published_at": "2026-06-24T02:53:16.000Z",
-    "raw_excerpt": "AI音楽のSunoが4億ドル調達、評価額54億ドルで新モデル展開へ",
-    "detail": "AI作曲ツールのSunoが大型の資金調達を行い、新しい音楽モデルの開発・展開を進めています。今後さらに音質や表現力が上がる可能性があります。Kiki Toaの楽曲制作で使うSunoが進化すれば、より質の高い曲づくりやYouTube向けコンテンツ制作に役立ちます。"
-  },
-  {
-    "tool": "Cursor",
-    "title": "Cursorに機能をまとめる設定ページ追加",
-    "source_url": "https://cursor.com/changelog/customize",
-    "published_at": "2026-06-22T00:00:00.000Z",
-    "raw_excerpt": "Cursorのプラグインやスキルを一括管理できる新ページが登場",
-    "detail": "Cursorに、プラグインやスキルなどの拡張機能を一か所で管理できる「Customize」ページが追加されました。自分の作業に合わせてカスタマイズしやすくなります。アプリ開発の作業環境を整えるのに役立ちます。"
+    "raw_excerpt": "話すだけでデザインできるCanvaの会話AIが日本語対応",
+    "detail": "「こういうものを作りたい」と日本語で話しかけるだけで、Canvaがデザインを作ってくれるようになりました。専門知識がなくても会話で制作が進みます。LP制作や営業資料、画像作成をするときに作業時間を大きく短縮できます。"
   },
   {
     "tool": "Cursor",
     "title": "Cursorの自動化機能が強化",
     "source_url": "https://cursor.com/changelog/06-18-26",
     "published_at": "2026-06-18T00:00:00.000Z",
-    "raw_excerpt": "Cursorに繰り返し作業を自動化する新機能とトリガーが追加",
-    "detail": "開発エディタCursorの自動化機能が強化され、GitHubやSlackをきっかけに作業を自動で動かせるようになりました。決まった作業をAIに任せられます。アプリ開発や業務の自動化に取り組む新井さんの手間を減らせます。"
+    "raw_excerpt": "Cursorの自動化に新スキルやGitHub/Slack連携が追加",
+    "detail": "コード作成AIのCursorで、繰り返し作業を自動でこなす機能が強化されました。GitHubやSlackと連携した自動実行ができます。アプリ開発や業務自動化を進める新井さんの作業効率アップに役立ちます。"
+  },
+  {
+    "tool": "Cursor",
+    "title": "CursorのBugbotが高速・低価格に進化",
+    "source_url": "https://cursor.com/changelog/bugbot-updates-june-2026",
+    "published_at": "2026-06-10T00:00:00.000Z",
+    "raw_excerpt": "Cursorのバグ検出が3倍速・22%安く・検出力も向上",
+    "detail": "Cursorのバグ自動チェック機能が、前より3倍速く、22%安く、より多くのバグを見つけられるようになりました。コードを公開する前に確認するコマンドも追加されました。アプリ開発の品質と効率を高めたい新井さんに役立ちます。"
   }
 ]
