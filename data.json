@@ -1,98 +1,98 @@
 [
   {
+    "tool": "Gemini",
+    "title": "GeminiのAIエージェントがMacに対応",
+    "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5rMU03NmNTYzhhYjNucEFPcVpoRU04ZE5vT05QV2pVQTJra1NZSEh6NmloMHpTakJrSmY0Mmx5T2p6UzA0dnJCRnJoemZGOVA4SnlaUEVHSjZWaVZhLUtTbEhwQzlfN3oxOXI2c1J3VDVDNlVrc3dFRzlTMlE2VTg?oc=5",
+    "published_at": "2026-07-01T09:41:01.000Z",
+    "raw_excerpt": "macOSで使えるGemini Spark、連携アプリも拡大",
+    "detail": "GoogleのAIエージェント「Gemini Spark」がMac（macOS）で使えるようになり、連携できるアプリも増えました。パソコン上の作業をAIに任せやすくなるので、日々の業務の自動化や効率化に活用できます。"
+  },
+  {
     "tool": "Claude / Claude Code",
-    "title": "ClaudeがSlackで自律作業",
-    "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0yS0xqTnB1YlRpTjAzUENURnVOeXd0dkFfZXF2Z1c3Ni1fbTJKTHU1S08yVFRhQ2pRNkk1cF9fMnBrNFZ1dHZzcU9UYlFsMlpyZHVNMFpDQlRJdDZiOUc1eUlCNVNGNnJlWUFlbHVhSTVNTG9IYnhfM1ZLd2RfYXM?oc=5",
-    "published_at": "2026-06-30T06:30:12.000Z",
-    "raw_excerpt": "Slack内でClaudeがコード生成やデータ調査を自動処理",
-    "detail": "ClaudeがSlackのメンバーのように加わり、コード作成やデータ調査などを自分で進めてくれるようになりました。普段のチャットの流れの中でAIに作業を頼めるので、アプリ開発や業務の自動化・効率化に直接つながります。"
-  },
-  {
-    "tool": "Gemini",
-    "title": "Geminiに学習支援機能を追加",
-    "source_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1RNTVtOFRyS3hTc0t3ZGtMSk56OVlDc3o1Sk80WnNvSHo1LWlkVTFIS0E1QkQ0T0lrZWhfMDZKcXUybnZGTGY3UVlVS2FETm9vTkhoN1M2T3NYSVcySWc?oc=5",
-    "published_at": "2026-06-30T03:13:26.000Z",
-    "raw_excerpt": "AIが弱点を分析し学習を個別最適化",
-    "detail": "GoogleがGeminiに「Study Notebooks」という学習支援機能を追加し、弱点分析から対策まで個別に最適化してくれます。新しいツールやスキルを学ぶときの自習に活用でき、新井さんのスキルアップに役立ちます。"
-  },
-  {
-    "tool": "Gemini",
-    "title": "Google Meetの議事録AIが個人にも開放",
-    "source_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8yY1d3d2luLUk0SE03RFFwTDh1akU1M0tEamNiYmhkRVlyZGczdTBvdGU5M2V5N1h0bmw4cEdQSU5IeXJvOExUNm5EcGRGbGFfa3hfZzVMV1FPVkpVS3BTUXNfUHE?oc=5",
-    "published_at": "2026-06-30T01:57:22.000Z",
-    "raw_excerpt": "GeminiがMeetの会議を自動で文字起こし・要約",
-    "detail": "Google MeetでGeminiが会議の内容を自動で文字起こしして要約し、Googleドキュメントに保存やメール送信もできる機能が個人ユーザー（Google AI Pro加入者）にも開放されました。打ち合わせの議事録作成が自動化でき、三高産業の業務改善や社内文書作りに役立ちます。"
-  },
-  {
-    "tool": "ChatGPT / OpenAI",
-    "title": "ロレアルがOpenAIで画像制作費40%削減",
-    "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNMTl5aHphWldFTDJvckJFNmhBNG5zakc5bXU5T2RrLXhiT09KVEl5TFYxczltUVlZVGhFU0RWUmZDa0Y1cjlnbGZCQkhVNHBaMG5BMTRIenQtS3o1Rkh3MVpEQ01JRzhaMHZLekxDNWxGSHc0RE42dkpQLVZzdnhYZjlFS3NfMVJCRGRicVYwTDJGaXRjQ1JFQXZ6OTJqQQ?oc=5",
-    "published_at": "2026-06-30T01:00:54.000Z",
-    "raw_excerpt": "AI画像生成で制作コストを大幅カットした事例",
-    "detail": "化粧品大手ロレアルがOpenAIと組み、画像制作のコストを40%減らした裏側を紹介する記事です。AIで商品画像や広告ビジュアルを作る具体的な成功例として、EC・LP制作のコスト削減のヒントになります。"
-  },
-  {
-    "tool": "ChatGPT / OpenAI",
-    "title": "OpenAIがGPT-5.6を限定公開",
-    "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQdUpTcjdTRlBWMFllNmk2V0dVNlhjREJ5UmduSWxtb0t6NE1ubDlXeV9tZ1E2Zy1FcXljbU03LWlXLWZKaWdaQ3ZhUHdQS2NNdkwxU1U5X0xYR2FWNWo4Uk5qaU5KdjJGYnhkRlBOcm5kbVN1Y2pOUl9kWS1hb1hEbjAtdWNKOEJLOE41QVdjNWNDOHlyc0V1LWVzaWFUeEV2WUVMdG1rUzdyX1BDbUJnNVdLVnRqdkRsYjFkckJkVDNSTTg?oc=5",
-    "published_at": "2026-06-30T00:48:44.000Z",
-    "raw_excerpt": "新モデルGPT-5.6を3種類公開",
-    "detail": "OpenAIが新しいAIモデル「GPT-5.6」を3つのバージョンで限定公開しました。最上位は防御向けですが、性能向上はChatGPTでの資料作成や文章作成の精度アップにつながるため、今後の正式提供に注目です。"
-  },
-  {
-    "tool": "Gemini",
-    "title": "Geminiの画像生成が全米で無料開放",
-    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBMQ2U1bnFyNUYwZlVuNVBrUklsWHM0QjRPcWZqQTFqcDV3ZFVyR1JxQzVIMUNscS01S0JZckJzQXJsUEVTZzY0eThzOS1ldEd6bnlzYU5STWJfdXFuVl9qVFVmT2ZlS3phQjVXbU45TXNEZFVB?oc=5",
-    "published_at": "2026-06-30T00:25:00.000Z",
-    "raw_excerpt": "パーソナライズAI画像生成Geminiが無料利用可能に",
-    "detail": "Googleが自分好みに合わせて画像を作れるGeminiの画像生成機能を全米ユーザーに無料で開放しました。今後日本でも広がれば、LPや広告、SNS用のビジュアルを無料で量産できるようになり、画像制作の選択肢が増えます。"
-  },
-  {
-    "tool": "Suno",
-    "title": "Sunoが独立アーティスト支援「Spark」開始",
-    "source_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5reGRmbjVSUy1Qb3YtMFpMcDFwM2FYVzBTM2t0d1loOUs2bFl4eHRKODlGekR0d2FaNXNFbjJ1UVdKSk1OckRPNXJnYllONFY3THhMaHBJeFdfY3RIeFRVMDAtQjhvYi1BZXRJSzZ6WHdoUQ?oc=5",
-    "published_at": "2026-06-29T02:39:00.000Z",
-    "raw_excerpt": "音楽AI Sunoの支援プログラムに賛否",
-    "detail": "音楽生成AIのSunoが独立系アーティストへ資金提供する「Spark」を始めましたが、「Sunoの悪口禁止」「裁判参加権の放棄」など条件が話題です。Sunoで音楽制作するKiki Toa運営にとって、利用時の注意点として知っておくべき情報です。"
-  },
-  {
-    "tool": "Cursor",
-    "title": "CursorのiPhoneアプリが登場",
-    "source_url": "https://cursor.com/changelog/ios-mobile-app",
-    "published_at": "2026-06-29T00:00:00.000Z",
-    "raw_excerpt": "スマホからAIに開発作業を任せられる",
-    "detail": "AIコーディングツールCursorのiOSアプリが有料プラン向けに公開されました。外出先でもiPhoneからAIエージェントに開発作業を指示・管理できるので、アプリ開発のスキマ時間活用に便利です。"
+    "title": "Anthropicが新モデル「Claude Sonnet 5」発表",
+    "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBlY0d1QVhaWkRpWkdlMVAyQU5EZFkzOVlBOGtKOUFTbTdnRHFlQ25zLTgxLW9kcUpVQ1pBRDlDdWd0MHhHejFRVE9JWnkwbTc0U1ZEejhnbkRFdmhZNmJPandrSWVLZHZGNFdGblBXSi10R3M0VThlU0FvcnNVSjg?oc=5",
+    "published_at": "2026-07-01T09:31:00.000Z",
+    "raw_excerpt": "上位に迫る性能を手頃な価格で使える新Claude",
+    "detail": "AnthropicがClaudeの新しいモデル「Sonnet 5」を発表しました。上位モデルに近い賢さを、より手頃な価格で使えるのが特徴です。文章作成やコード作成、Claude Codeでの開発作業をコストを抑えて効率化できます。"
   },
   {
     "tool": "NotebookLM",
-    "title": "NotebookLMがEPUB（電子書籍）に対応",
-    "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQdFVnWmRWR3M4LUNSTHNPTW5IUVY4TGZSVUx6dmdDQXBGM3c0X0lRd29GU1FJdmJWcHl3d2xVTjdBeDI2MV84dVl1Wkc0OFJ6OVd2NlFtQlh5eWQtUlpEYTdXdmxENkpLUi00ME9EMk9RYjF2RG0zMVNsNkJBTFQxc1ZaejE2QjBWSHh6TmRIaUp4R1gtMzhWZG1Tdk45LTAxamtjUQ?oc=5",
-    "published_at": "2026-06-28T03:00:00.000Z",
-    "raw_excerpt": "本をまるごと読み込ませて調べられる新機能",
-    "detail": "GoogleのNotebookLMが電子書籍ファイル（EPUB）を読み込めるようになりました。手持ちの本や資料をAIに丸ごと覚えさせて質問できるので、業務マニュアルや専門書をもとにした調べ物・資料作成が楽になります。"
+    "title": "NotebookLMに60秒の縦型動画生成機能",
+    "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNREd3YzN0elVGMjhOa25VQ01XZzlsbWhWSGFhNFByRmlRWE9rRVE0SmZCNXZucU1yWTZPa1VfTDNSNGZJaWdnUEJvYVgwc2FyVmgtS085VUhXR0E2NktMZE1SQVRuZFJJNTZFM0t0TFk1dFhWNXlxSThtQVUzVXpYUFphMy1zNW9PdERmS3A2UE1EclBMQWpaV3oyWUh0RDc5X0gxczAzS0hfSjhZdFFN?oc=5",
+    "published_at": "2026-07-01T06:57:53.000Z",
+    "raw_excerpt": "資料から縦型ショート動画を自動で作れる新機能",
+    "detail": "GoogleのNotebookLMに、メモや資料から60秒の縦型ショート動画を作る機能が追加されました。TikTokやYouTubeショート風の動画をワンクリックで作れるので、Kiki Toaの宣伝や商品紹介の短い動画作りに役立ちます。"
+  },
+  {
+    "tool": "Gemini",
+    "title": "Nano Banana 2 LiteとGemini Omni Flashが公開",
+    "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5xdUd6dy03WVdnNUI0czR5bWFfYW5SR1FQZlBPV3l1TDhPQ3Y1cjNUc0l6cTJ5ZmpBTXBMb2hRbDJ0Qmg4MVB6U3lWeUZ3WVNfM3Q2bVV3TVo5aEZWSjA2UG9aOS1UNU00?oc=5",
+    "published_at": "2026-07-01T06:14:40.000Z",
+    "raw_excerpt": "Googleの新しい画像・動画生成モデルが利用可能に",
+    "detail": "Googleの新しい画像生成モデル「Nano Banana 2 Lite」と動画生成の「Gemini Omni Flash」が使えるようになりました。安く速く作れるので、ECやYouTube向けのビジュアル制作の選択肢が増えます。"
+  },
+  {
+    "tool": "Gemini",
+    "title": "Googleが高速・安価な画像/動画生成モデルを発表",
+    "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZlJ0OVMwb2pyZjFDcHR6c1ZLX1dKY20zVDR6VlptWmp4Y1hPbnZrS3lZSjNPZzRWa01QRVVNZ05VSW9zVWNIc0xfeFhQLUtWMkxXMFlrUDFlX0Q5VVpfUkdfcTNfbUQ4LWxmaENYWTVGY1lVc0JtUkFmNmgtV1FudVhhREtnZw?oc=5",
+    "published_at": "2026-07-01T02:45:00.000Z",
+    "raw_excerpt": "Nano Banana 2 LiteとGemini Omni Flashで安く速く生成",
+    "detail": "Googleが、より速くて料金の安い画像生成モデル「Nano Banana 2 Lite」と、動画生成モデル「Gemini Omni Flash」を発表しました。コストを抑えて画像や動画を作れるので、ECの商品画像やYouTube用素材を量産する作業がやりやすくなります。"
+  },
+  {
+    "tool": "Gemini",
+    "title": "GoogleスプレッドシートのGeminiが数式エラーを解説",
+    "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQa0xEcVl6NU1CeXhjVnBNZ0hENmFudmZNaVlGNnlGN3pjQWctTGN3THdPWTFmd1dKR1RZTV8wSmJnNWJCaHNTUDFoWmxQY2dmaHlsRXBfUjkxRWFmZC1nUWRhQVZRWTZWQWxyWV9fYlNRM3RMUC1UMVFxRzNGNHNuVXRlYWhxdGRZell2S2JXZTlEcHJMVkszRk5STFE?oc=5",
+    "published_at": "2026-07-01T00:00:00.000Z",
+    "raw_excerpt": "表計算のエラー原因をAIが親切に教えてくれる",
+    "detail": "GoogleスプレッドシートのGeminiが、数式のエラーの原因を分かりやすく教えてくれるようになりました。どこが間違っているか探す手間が減るので、EC売上や在庫の集計、社内の数字管理がスムーズになります。"
+  },
+  {
+    "tool": "ChatGPT / OpenAI",
+    "title": "OpenAI社内でAIエージェント「Codex」が主役に",
+    "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1yTHRLS3Jock5vZ2FtblBpeUNLcUNDOEFrUzk5T29hcTNmS0NjTzg4VFg3YlVfbWhIZHhad1IxRWp2dHhrbkx1TWxLajZJNlcxdmZMOGJyM1kwcEJiZUtjN01kdzhxVHhpTXc?oc=5",
+    "published_at": "2026-06-30T23:04:59.000Z",
+    "raw_excerpt": "非技術部門にも広がるAIエージェント活用の事例",
+    "detail": "OpenAIの社内利用が、対話型のChatGPT中心から作業を代行するCodex中心へと移り、技術者以外の部門にも広がっているという話です。AIに実際の作業をさせる使い方の参考になり、業務自動化のヒントになります。"
+  },
+  {
+    "tool": "Cursor",
+    "title": "iOS版Cursorでスマホから作業管理",
+    "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9yQ21uUk14R2tBMEdlUWpHQXFEZFppdTFxUG1BanB5cVBjLXY4ajF5bUk2MWowbkdHaFppU3BPcEhxd1E5aXRjRW9mYU1qNFVoUVg5MjdWeEEyS2cyTndj?oc=5",
+    "published_at": "2026-06-30T05:15:00.000Z",
+    "raw_excerpt": "iPhoneでCursorのエージェント作業を管理できる",
+    "detail": "Cursorのタスクを担うAIエージェントを、iPhoneから管理できるようになったニュースです。開発作業の進行を移動中でも確認・指示できるので、アプリ開発を柔軟に進められます。"
+  },
+  {
+    "tool": "Cursor",
+    "title": "Cursorが選ばれる理由と他ツールとの違い",
+    "source_url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxQSnJza0daNlRzOThGc1g4Uzhlc0huRFE0a056RnlNNG9aamJMMXdvNXdQb1pXUDdaWmhRTk9xLU5xQVhGSFFQZlR2Z0dqOTVNajBOZ3VQLVVIUWVjZ3V2WmdGMEMyOHRsNWdrSGZLNGNvV3p0cENPcmRwZTNNY3pFMTg5MXI1UkJXZm1UaG5XTGwzQzY4T0xxSEpKQWJlcEF4Wk9fSm1ycmh1V3Y1dHh5YjBMT2VnRXNRUGJmWVBubllHZHVIV2pEdFgyOXIzUVJXcjE1eG9iYWJUd0h2Z19zV3N3LU1xNDdEYjFNVXB2WFZRek5QLWV2cmlpQk5MT2Y3NWllbDFEN1ZTVTFvem90ZFA3VzRkMUhhQU56UWlfcDNXcGJWN0ZoWV9EY0VtSXVCZ3Vr?oc=5",
+    "published_at": "2026-06-29T19:15:20.000Z",
+    "raw_excerpt": "Claude CodeやCodexとCursorを比較した解説",
+    "detail": "開発ツールCursorが最近人気の理由を、Claude CodeやOpenAIのCodexと比べて解説した記事です。どのAIツールを開発に使うか選ぶ判断材料になり、アプリ開発の効率化に役立ちます。"
+  },
+  {
+    "tool": "Cursor",
+    "title": "Cursorのスマホアプリ（iOS版）が登場",
+    "source_url": "https://cursor.com/changelog/ios-mobile-app",
+    "published_at": "2026-06-29T00:00:00.000Z",
+    "raw_excerpt": "iPhoneから開発エージェントを操作できるように",
+    "detail": "コード開発ツールCursorのiPhoneアプリが、有料プラン向けに公開ベータで登場しました。外出先からでもAIエージェントに作業を頼んだり進み具合を確認できます。アプリ開発の作業を場所を選ばず進められます。"
   },
   {
     "tool": "Canva",
     "title": "Canvaの会話AIが日本語に本格対応",
     "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBBdmZJekNCXzU3UXNBSWY5aDQyNVVKUTVMa3djVUN1UHNnNmdEbzVMRm03MFZnUGJ3M2kweFJjZGtmYUd2Nnpock15cGNaYVlhZlZaRQ?oc=5",
     "published_at": "2026-06-27T18:01:11.000Z",
-    "raw_excerpt": "話すだけでデザインが作れるCanvaの会話AIが日本語対応",
-    "detail": "Canvaに「こういうものを作りたい」と日本語で話しかけるだけでデザインを作ってくれる会話AIが本格対応しました。LP制作や営業資料・社内文書のデザインを言葉だけで素早く作れるので、新井さんのバナーや資料づくりの時間を大きく短縮できます。"
-  },
-  {
-    "tool": "Canva",
-    "title": "CanvaがMCP連携に対応",
-    "source_url": "https://news.google.com/rss/articles/CBMinwVBVV95cUxQalFyb3VMZHJGQldFOUM3UW9zTGZuZHBDMVFjX3hodmxrdHNHVTNKZVFvWmRqajlCZDNORUQxUVpaTHhDemNObTd5cUgtOUdsUDJ2M0g0UEE2YjljTUtWNVV5eGlCeDRJckc0bmhSeV9xOXNyczNGVXYtV25telQyaktMNDdlU0k2cE1sZ3dXZjNId2R1c2JuRHRlMjFoczdzZjdWSDJuNll5UGJ2NGRhSEhEbVAxb2VYLU9ZOV9RWkFNU2paVjE2ZVhFNUNOMGpZNFhrcjZfSWFwb3pPNjk2RER3UnkzTzI1UnJXTllxLUpPb0FnaXpzVU1ld0Y1dDhGcFNlY19URUJtbC02dEZFY21vNWo5S08tdFFmSnF2WUtFQW1vTmYwVW41MXZWRGQ2U3hhLUVULU9aX3RzR3VyNUlNWkxvNG1yVko5REtaakZfU1pEbUNJOXEtbEF1bEF4bzdWcmNwVXlRWll0alJncXZyZEwwdHhEMEEyTmlsazhPQVJmOWJad2dObzFPNkZuWmlXX1RqS0pfbVpJVURDNlExYXFacmZieDFQOW9KejBQSDZpWlpaTDk0QVZFam56TW1ZZk5zWVRibW5xVThYeENMVDdzNVhqSHpqa0cwMXlGUTNUMFFzdUcySmhfVTE4SkU3aFIzcjlZTndGRjZOLUhIYWFPdXBsX2UyaktfVy1iNUZKLXNSc0NHS3liRVkxVG9ETFdaakExVjNSRllJalc1c2ktMFItd0I4ckVkRE1NY1JzSlZCZWp4eHVsVHROcmlpUVAteV9rM3hEc1JQY2tPeTJPZW9WbWhtMURlc1pZWXBqaXNFOE5EVXN5MG5DOGIwMi16TU11ajMyTS1KSGF4ZG4zYklMNTFyMHo5UQ?oc=5",
-    "published_at": "2026-06-24T19:21:41.000Z",
-    "raw_excerpt": "ソフトバンクのAIエージェントがCanvaと連携",
-    "detail": "ソフトバンクのAIエージェント「AGENTIC STAR」がCanvaとMCPという仕組みで連携しました。AIに指示するとCanvaのデザイン作業まで自動でつなげられるようになり、資料作りやデザイン業務の自動化の流れが進んでいることを示しています。"
+    "raw_excerpt": "話しかけるだけでデザインを作れるCanvaのAIが日本語対応",
+    "detail": "Canvaに「こういうものを作りたい」と言葉で伝えるだけでデザインを作ってくれる会話型AIが、本格的に日本語で使えるようになりました。難しい操作を覚えなくても指示を出せるので、LP用の素材や営業資料のデザインを素早く作れます。日本語で自然に頼めるのが大きな利点です。"
   },
   {
     "tool": "Cursor",
-    "title": "Cursorをワークフローに合わせて拡張",
-    "source_url": "https://cursor.com/changelog/customize",
-    "published_at": "2026-06-22T00:00:00.000Z",
-    "raw_excerpt": "プラグインやMCPを一画面でまとめて管理",
-    "detail": "Cursorにプラグイン・スキル・MCPを一カ所で設定できる「Customize」ページが追加されました。自分の作業に合わせてAIを使いやすく調整できるので、アプリ開発の効率化に役立ちます。"
+    "title": "Cursorの自動化機能が強化",
+    "source_url": "https://cursor.com/changelog/06-18-26",
+    "published_at": "2026-06-18T00:00:00.000Z",
+    "raw_excerpt": "繰り返し作業をAIで自動化、GitHub/Slack連携も",
+    "detail": "Cursorの「Automations」機能が強化され、繰り返しの作業をAIエージェントに任せやすくなりました。GitHubやSlackをきっかけに自動で動く仕組みも追加され、開発や業務の自動化・効率化に使えます。"
   }
 ]
