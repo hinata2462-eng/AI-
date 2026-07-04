@@ -1,98 +1,98 @@
 [
   {
+    "tool": "Gemini",
+    "title": "Googleドライブに文書検索AI「Ask Gemini」",
+    "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB3aF9yRnc4QVRNUkx5SmdFOExaUkUzMFhOUzNWUXBOMHY2c3VSRVZJR0pBcHNTNFl3bDBRY1lfbzRHdGNxbGZpcnpMRzJqRUw0ZGY2YW5SYkxhb0llZHVxMTJpWdIBaEFVX3lxTE9taUJVbDdFa20wZ1hJTGFBOWoxRDJaOWdiQ1Iwb05ud3dXMDlKTHJ5WjJvc1VydDBCaWlmUGdsVHlpcXdoS0Z3MUZyQ25yQXBkMnh5VEtjckRVZ2RZVUJpVmpJajhvc19P?oc=5",
+    "published_at": "2026-07-03T22:26:13.000Z",
+    "raw_excerpt": "モバイルのGoogleドライブでAIが文書を検索・要約、Workspace有料向け",
+    "detail": "Googleドライブのスマホアプリに、AIで書類を探して答えてくれる「Ask Gemini」が追加されました。Workspace有料会員向けです。社内文書や資料をスマホからすぐ探して内容を確認できるので、外出先での資料確認や文書管理が楽になります。"
+  },
+  {
+    "tool": "ChatGPT / OpenAI",
+    "title": "ChatGPTの「GPTs」で自分専用AIを作れる",
+    "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAxZ1VPQ3FEdFVVYjk5LURJSjUwNVNhaEM4VzRyUW5oRUdyUWVnSU5nSUo0YWJmRE5jdEgxeW5CVEt3Q2lGUG9NOGFjQ2lPaGw3NjZsOXNTeUFzdlFMVlpYWFgyMjVyLXp5?oc=5",
+    "published_at": "2026-07-03T21:05:00.000Z",
+    "raw_excerpt": "ノーコードでChatGPTをカスタマイズできる「GPTs」機能を解説",
+    "detail": "プログラミング無しで自分専用のChatGPTを作れる「GPTs」機能の使い方を紹介しています。よく使う業務指示を仕込んだ専用アシスタントを作れるので、営業資料や社内文書の作成を定型化して時短できます。"
+  },
+  {
+    "tool": "ChatGPT / OpenAI",
+    "title": "アドエビスがChatGPT広告の効果測定に対応",
+    "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5leGpOSDJxN1FfTmNYS0JsRGdjWFNhMmFWVmlsSzI4b3JXS3pYQWNoVkd3UU1DQzg5b3JuYThHSXI1VU1TTXJYNHg1bm9hNVpaX3ZXTQ?oc=5",
+    "published_at": "2026-07-03T07:45:25.000Z",
+    "raw_excerpt": "国内提供開始のChatGPT広告の効果を計測できるように対応",
+    "detail": "広告効果測定ツール「アドエビス」が、日本で始まったChatGPT上の広告の効果測定に対応しました。他の媒体とまとめて分析できます。EC・楽天の集客で新しい広告先を検討する新井さんにとって、成果を数字で把握できる材料になります。"
+  },
+  {
     "tool": "Claude / Claude Code",
-    "title": "Claude Sonnet 5が提供開始",
-    "source_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE44T1czbUVEaml1eUpMT19Sdzc2dGZFV0llWjNzOXhZVGdLZDdOY2VaTmx6cTJiclFiT2RUajJiQmtkZXdQdFRkenNFdTM2c1VlaDNwMWpCSGVzMUowR2c?oc=5",
-    "published_at": "2026-07-03T02:50:59.000Z",
-    "raw_excerpt": "高性能AIエージェント「Claude Sonnet 5」が低コストで利用可能に",
-    "detail": "Anthropicが新モデル「Claude Sonnet 5」を公開しました。上位モデルに迫る性能を、より安い料金で使えるのが特徴とされています。文書作成やアプリ開発、Claude Codeでの作業コストを抑えつつ質を上げられる可能性があります。"
+    "title": "Anthropicが「Claude Sonnet 5」を発表",
+    "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBlY0d1QVhaWkRpWkdlMVAyQU5EZFkzOVlBOGtKOUFTbTdnRHFlQ25zLTgxLW9kcUpVQ1pBRDlDdWd0MHhHejFRVE9JWnkwbTc0U1ZEejhnbkRFdmhZNmJPandrSWVLZHZGNFdGblBXSi10R3M0VThlU0FvcnNVSjg?oc=5",
+    "published_at": "2026-07-03T07:41:00.000Z",
+    "raw_excerpt": "高性能なClaude Sonnet 5が手頃な価格で登場、Opus級の性能に迫る",
+    "detail": "Anthropicが新しいAIモデル「Claude Sonnet 5」を発表しました。上位のOpusに近い性能を、より安い料金で使えるのが特徴です。文書作成やコード生成をコスパよく回せるので、日々の業務でClaudeを使う新井さんのコスト削減と品質向上に役立ちます。"
+  },
+  {
+    "tool": "Claude / Claude Code",
+    "title": "Claude Code、並列エージェント機能を一般提供",
+    "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1HazFoaUFkcGdvRGlZc2YxWFVIOFVyN3IxSVVPcmJYYW53SUFCaTZYOUthaW92VkZhRDJGVE1URkJKSUFCOFlBQ2JkU3d5Ul9QeEJpd0J0UGM4QzdZU2JqdnFab9IBaEFVX3lxTE12aXB1aGZXQlZFQTZNMHVPNnFvQVBkZGFDaF9GUlVmd0llWHh5VkV2aVZJNjdlcnozUWdrWlFObFBreUdYOG1xajJuMFVRWWFpb1lXbDEwSk9CdURrT3RJNVp1YS0yelNr?oc=5",
+    "published_at": "2026-07-03T07:38:32.000Z",
+    "raw_excerpt": "Claude Codeの「Dynamic Workflows」が一般公開、Proでも最大1000個の並列エージェント利用可能に",
+    "detail": "AnthropicがClaude Codeに複数の作業を同時に進める「Dynamic Workflows」を正式提供しました。Proプランでも大量の並列処理が使えるので、アプリ開発や業務自動化のコードを一気に書かせて時間を短縮できます。新井さんの開発作業の効率化に直結する機能です。"
   },
   {
     "tool": "Gemini",
-    "title": "Geminiの簡易コーディング活用術",
+    "title": "Geminiの簡易コーディングで自動化を強化",
     "source_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0ycHowNkRLbnFlUHlDZ25USG9tOXlmRVRvLVUtc1BGS1ZrS2FRZ2hfZXIza1ZUbmRMMlNFRG82R3ppd05MZ1ZxcVF3cHVTd0FwUHVuRmNUZWI3YXRWaFVUMmRiaVpiX0JRMnN2RnJB?oc=5",
     "published_at": "2026-07-03T02:00:00.000Z",
-    "raw_excerpt": "Geminiでコードを書き業務ツールの限界を超える方法",
-    "detail": "Geminiに簡単な指示でコードを書かせる「バイブコーディング」で、標準ツールでは難しい処理を実現する方法を紹介しています。専門知識が浅くても自動化の幅を広げられます。三高産業の業務改善や自作ツール作りの参考になります。"
+    "raw_excerpt": "Geminiの会話でコードを作り、Workspace Studioの限界を超える方法",
+    "detail": "Geminiに話しかけて簡単なプログラムを作らせ、Google Workspaceの自動化ツールでは難しかった処理を実現する方法の解説です。難しいコードを書かずに業務を自動化できるヒントになり、社内業務の効率化に役立ちます。"
   },
   {
     "tool": "Gemini",
-    "title": "動画生成AI「Gemini Omni Flash」公開",
+    "title": "Gemini動画生成「Omni Flash」がAPIで利用可能に",
     "source_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBtSHJSVkR1UkdUMklMWTc2UWE1OGpYM0NXRzFJcGZIRENHUVBkRERtMGo0UEYwbnhSWFRlaDVKT3Z1cmJyM09Oa2dQcHNnY1lIdlhJaVRoOWZFVXZ3NnJtZk1pLWY?oc=5",
     "published_at": "2026-07-03T01:50:05.000Z",
-    "raw_excerpt": "GoogleがAPIで使える動画生成AIを公開",
-    "detail": "Googleが動画を作れるAI「Gemini Omni Flash」を公開し、Gemini API経由で利用できるようになりました。プログラムから動画生成を組み込めます。動画制作の自動化や、アプリへの機能追加を検討する際の候補になります。"
+    "raw_excerpt": "動画生成AI「Gemini Omni Flash」がGemini APIから使えるように",
+    "detail": "Googleの動画生成AI「Gemini Omni Flash」がAPI経由で利用できるようになりました。プログラムから動画生成を呼び出せるので、動画作成を自動化する仕組みに組み込めます。アプリ開発や動画制作の自動化を進める新井さんに役立ちます。"
   },
   {
     "tool": "Gemini",
-    "title": "Google新画像・動画AIを発表",
+    "title": "Google「Nano Banana 2 Lite」と動画AIを公開",
     "source_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB4alE5bHBLTktmdTFhQjNSa2phbmlUcnFiVTVZQldqVzJSdm1PTEdZWm1lSU1zWFJKcDBVY2ZIQ01ta1hHai04bDBwYllVX0Q0ZWFQV0NhSG4xR0UyVnc?oc=5",
     "published_at": "2026-07-03T01:04:58.000Z",
-    "raw_excerpt": "高速画像生成「Nano Banana 2 Lite」と動画AIをプレビュー公開",
-    "detail": "Googleが素早く画像を作れる「Nano Banana 2 Lite」と、動画生成AI「Gemini Omni Flash」の公開プレビューを始めました。画像も動画も短時間で用意できるようになります。LPやYouTube用の素材制作、動画生成の選択肢が広がります。"
+    "raw_excerpt": "高速画像生成Nano Banana 2 Liteと動画生成Gemini Omni Flashが登場",
+    "detail": "Googleが高速の画像生成「Nano Banana 2 Lite」と、動画生成AI「Gemini Omni Flash」を公開しました。素早く画像や動画を作れるので、商品ビジュアルやYouTube用素材の制作に便利です。画像・動画生成を多用する新井さんの作業スピードを上げます。"
   },
   {
-    "tool": "Gemini",
-    "title": "Gemini SparkがmacOSに対応",
-    "source_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBFVEpLYkxVdGhjOUo2a09FU1NadVpQSDkxYzJzTW1lX0U1bkpUSEdmekl1SDFmQXZHN0FNVmFIU0JIblhHWHdBQnY3eDl6bjJzUGNBRXJySW82NGM0R3c?oc=5",
-    "published_at": "2026-07-03T01:02:33.000Z",
-    "raw_excerpt": "GoogleのAIエージェントが外部アプリ連携で作業を自動化",
-    "detail": "GoogleのAIエージェント「Gemini Spark」がmacOSに対応し、Canvaなど外部アプリと連携して複数の作業を横断的に自動化できるようになりました。手作業の繰り返しをAIに任せやすくなります。日々の業務効率化のヒントになります。"
-  },
-  {
-    "tool": "Claude / Claude Code",
-    "title": "Claude Sonnet 5は上位に迫る性能を低価格で",
-    "source_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9kWmtrcXdCLWxkLXkwU3JaQ2E0bDAzSnZmbTZZazNYMkZ0a0NySVBsTzdkOF90dEtIZmk2TFpOOTFEaF9OUTE0aDNKMmJtLTFmUTdaX2tSa2M1clNjcmxBTG82QzBselo1Q1VjeVRWOEJ5c1E?oc=5",
-    "published_at": "2026-07-03T00:28:16.000Z",
-    "raw_excerpt": "新モデルがOpusに迫る性能を低価格で実現との報道",
-    "detail": "新しいClaude Sonnet 5が、より高性能な上位モデルに近い実力を安い価格で出せると紹介されています。同じ予算でこなせる仕事量が増えることを意味します。営業資料や社内文書、コード生成を日常的に使う新井さんにはコスト面で嬉しい更新です。"
+    "tool": "Cursor",
+    "title": "AIコーディング「Cursor」にiOSアプリ登場",
+    "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5YS3BfVE5lLXRmbWpnM0lUR2VkRzM2dXAxNHRTeVIwbFF1em9RTE5qWkdHVFhWZ2gtVDNQWkFGU2I0Rl9iTlpRQVloUWxnZllSd2ptMmxQN3lQZzhVT21yUnp0c0lHWlhibnRwaEd3UzV2MWt0SUVtczRUNVhuOVE?oc=5",
+    "published_at": "2026-07-02T15:09:00.000Z",
+    "raw_excerpt": "CursorのiOSアプリが登場、エージェントを遠隔操作・通知受信可能",
+    "detail": "AIでコードを書くツールCursorのiPhoneアプリが登場しました。AIエージェントに作業を任せて外出先から遠隔で操作したり、完了通知を受け取ったりできます。アプリ開発中の作業をスキマ時間に進められ、新井さんの開発効率が上がります。"
   },
   {
     "tool": "Canva",
-    "title": "Canva会話AIが日本語に本格対応",
+    "title": "Canvaの会話AIが日本語に本格対応",
     "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBBdmZJekNCXzU3UXNBSWY5aDQyNVVKUTVMa3djVUN1UHNnNmdEbzVMRm03MFZnUGJ3M2kweFJjZGtmYUd2Nnpock15cGNaYVlhZlZaRQ?oc=5",
     "published_at": "2026-07-02T10:12:51.000Z",
-    "raw_excerpt": "話すだけでデザインが作れるCanvaの会話AIが日本語に対応",
-    "detail": "Canvaに「こういうものを作りたい」と話しかけるだけでデザインを生成してくれる会話型AIが、本格的に日本語対応しました。細かい操作を覚えなくても、言葉でイメージを伝えるだけで下地ができます。LP用の素材や営業資料のバナー作りが一段と速くなります。"
-  },
-  {
-    "tool": "Gemini",
-    "title": "Geminiの画像生成が無料開放",
-    "source_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ldl9LY0VYQlVhS2lLUUkzV2RCdDR6V0c4Wk9lMVEydDN1ajFYVFhWLWkyN0ZPSkFZbDMyMHlOd201dlQwSy12WUg4UDNYcHRYblFJdmJfbVMwSkctWGc?oc=5",
-    "published_at": "2026-07-02T07:19:01.000Z",
-    "raw_excerpt": "Geminiの「好みの画像」生成が無料でGoogleフォト連携",
-    "detail": "Googleが、Geminiで自分好みの画像を作る機能を無料で使えるようにし、Googleフォトとの連携も強化しました。手持ちの写真を活かした画像づくりがしやすくなります。ECの商品ビジュアルやSNS用素材の制作で試す価値があります。"
+    "raw_excerpt": "「こう作りたい」と話すだけでCanvaがデザインを生成、日本語対応強化",
+    "detail": "Canvaで作りたいものを日本語で話すだけでデザインを自動生成できるようになりました。細かい操作を覚えなくても指示だけで形になるので、LP素材や営業資料、SNS画像を素早く作れます。デザイン作業の多い新井さんの時短に直結します。"
   },
   {
     "tool": "NotebookLM",
-    "title": "NotebookLMが資料を縦型ショート動画に",
-    "source_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE13VUxWNktKXzhEYmh6UXR6N3VESWdnZ1JUSTQtVzd5WEhhYnAxc0hLS2x6di1sV1pNLUhEb1FwYUhIX0UtMFdNTmw3cl9weXJYcS1j?oc=5",
-    "published_at": "2026-07-02T01:55:47.000Z",
-    "raw_excerpt": "文書を60秒の縦型動画に自動変換する新機能が登場",
-    "detail": "NotebookLMに、読み込ませた資料を約60秒の縦型ショート動画へ自動で変換する新機能が加わりました。TikTokやYouTubeショート向けの動画がすぐ作れます。Kiki Toaの告知や商品紹介の短尺動画作りに使えます。"
-  },
-  {
-    "tool": "Cursor",
-    "title": "Cursorと他ツールの違い解説",
-    "source_url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxQSnJza0daNlRzOThGc1g4Uzhlc0huRFE0a056RnlNNG9aamJMMXdvNXdQb1pXUDdaWmhRTk9xLU5xQVhGSFFQZlR2Z0dqOTVNajBOZ3VQLVVIUWVjZ3V2WmdGMEMyOHRsNWdrSGZLNGNvV3p0cENPcmRwZTNNY3pFMTg5MXI1UkJXZm1UaG5XTGwzQzY4T0xxSEpKQWJlcEF4Wk9fSm1ycmh1V3Y1dHh5YjBMT2VnRXNRUGJmWVBubllHZHVIV2pEdFgyOXIzUVJXcjE1eG9iYWJUd0h2Z19zV3N3LU1xNDdEYjFNVXB2WFZRek5QLWV2cmlpQk5MT2Y3NWllbDFEN1ZTVTFvem90ZFA3VzRkMUhhQU56UWlfcDNXcGJWN0ZoWV9EY0VtSXVCZ3Vr?oc=5",
-    "published_at": "2026-06-29T19:15:13.000Z",
-    "raw_excerpt": "CursorがClaude CodeやCodexとどう違うかを比較",
-    "detail": "人気のAI開発ツールCursorが、Claude CodeやCodexと何が違い、なぜ選ばれているのかを解説した記事です。それぞれの得意分野が分かります。開発環境を選ぶときの判断材料になります。"
+    "title": "NotebookLMが資料を60秒縦型動画に変換",
+    "source_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5BRzk4ajN3VWh6WGY4OXo5emtLMzFoMEFZeTFHMUdJZGlLUkdGU1B3X0U5VjNPNkFOSGZOZ3VjTUVKM2o1V3lpemxTMlIxblRBeWxZb2lIQkFJdXpQRVZsWlhMbUgzeF9NQkJVNWNwSWVSdw?oc=5",
+    "published_at": "2026-07-01T08:51:00.000Z",
+    "raw_excerpt": "資料から約60秒の縦型ショート動画を自動生成する新機能を追加",
+    "detail": "GoogleのNotebookLMに、文書をTikTokやYouTubeショート向けの縦型動画に自動変換する機能が加わりました。まず英語でWeb版全ユーザーに展開中です。Kiki ToaのYouTube運用や販促動画作りに応用でき、資料から手早くショート動画を作れます。"
   },
   {
     "tool": "Suno",
-    "title": "Suno支援プログラム「Spark」に懸念条件",
+    "title": "Suno支援プログラム「Spark」に注意条件",
     "source_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5reGRmbjVSUy1Qb3YtMFpMcDFwM2FYVzBTM2t0d1loOUs2bFl4eHRKODlGekR0d2FaNXNFbjJ1UVdKSk1OckRPNXJnYllONFY3THhMaHBJeFdfY3RIeFRVMDAtQjhvYi1BZXRJSzZ6WHdoUQ?oc=5",
     "published_at": "2026-06-29T02:39:00.000Z",
-    "raw_excerpt": "Sunoの新支援策に「悪口禁止・訴訟不参加」などの条件",
-    "detail": "音楽生成AIのSunoが独立系アーティスト向け支援プログラム「Spark」を始めましたが、「Sunoの批判禁止」「訴訟に参加しない」といった条件が話題になっています。参加前に契約内容をよく確認すべき事例です。Sunoで音楽制作する新井さんは動向を把握しておくと安心です。"
-  },
-  {
-    "tool": "Cursor",
-    "title": "Cursorのスマホアプリ登場",
-    "source_url": "https://cursor.com/changelog/ios-mobile-app",
-    "published_at": "2026-06-29T00:00:00.000Z",
-    "raw_excerpt": "iOS版Cursorが公開、外出先からAI開発を操作可能",
-    "detail": "AIコーディングツールCursorのiPhone向けアプリが公開され、常時稼働するエージェントを外出先からも起動・管理できるようになりました。パソコンの前にいなくても開発作業を進められます。アプリ開発をすきま時間に進めたい新井さんに便利です。"
+    "raw_excerpt": "Sunoが独立アーティスト支援を開始、批判禁止など条件が話題に",
+    "detail": "音楽生成AIのSunoが独立系アーティスト向け支援プログラム「Spark」を始めましたが、「Sunoへの批判禁止」「訴訟への参加権放棄」などの条件が注目されています。Sunoで音楽制作する新井さんは、参加前に契約条件を確認する参考になります。"
   }
 ]
