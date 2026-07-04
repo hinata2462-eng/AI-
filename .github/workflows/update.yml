@@ -7,10 +7,19 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: get repo
         uses: actions/checkout@v4
@@ -26,14 +35,26 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ANTHROPIC_MODEL: claude-opus-4-8
 
-      - name: commit if changed
+      - name: prepare site
+        run: |
+          mkdir -p _site
+          cp index.html data.json _site/
+
+      - name: configure pages
+        uses: actions/configure-pages@v5
+
+      - name: upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "_site"
+
+      - name: deploy to Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: commit backup
         run: |
           git config user.name "ai-radar-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data.json
-          if git diff --staged --quiet; then
-            echo "no change"
-          else
-            git commit -m "update data.json"
-            git push
-          fi
+          git diff --staged --quiet || (git commit -m "update data.json" && git push) || echo "commit skipped"
