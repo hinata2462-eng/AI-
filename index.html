@@ -624,6 +624,27 @@
   .field label,.field .hint,.page-sub,.empty p{color:var(--text-soft)!important}
   input,select,textarea{color:var(--text)}
   ::placeholder{color:var(--text-mute)!important}
+
+  /* ---- ホーム簡素化: 極小の件数表示・日付見出し・未読マーク ---- */
+  .mini-meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:0 0 10px;font-size:12px;color:var(--text-mute)}
+  .mini-chip{
+    display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:999px;
+    font-size:11.5px;font-weight:700;cursor:pointer;
+    background:rgba(93,168,255,.10);border:1px solid rgba(125,160,255,.28);color:#9fc2ff;
+    transition:.12s;
+  }
+  .mini-chip:hover{background:rgba(93,168,255,.2);border-color:rgba(125,160,255,.5)}
+  .day-head{
+    display:flex;align-items:center;gap:12px;
+    margin:20px 0 10px;font-size:13.5px;font-weight:800;color:#cdd6ff;letter-spacing:.04em;
+  }
+  .day-head:first-of-type{margin-top:4px}
+  .day-head::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,rgba(125,150,255,.35),transparent)}
+  .day-head span{display:inline-flex;align-items:center;gap:7px}
+  .day-head span::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--brand-grad);box-shadow:0 0 8px rgba(93,168,255,.8)}
+  .ucard.is-new{box-shadow:inset 3px 0 0 #22d3ee}
+  .ucard.is-new:hover{box-shadow:inset 3px 0 0 #22d3ee,var(--shadow-lg)!important}
+  .ucard h3{font-size:16.5px}
 </style>
 </head>
 <body>
@@ -1098,7 +1119,7 @@ function renderNav(){
 }
 
 const PAGE_META = {
-  home:['ホーム','重要なアップデートをひと目で'],
+  home:['ホーム','あなた専用に厳選した最新AIニュース'],
   updates:['アップデート','すべての更新情報を検索・絞り込み'],
   categories:['事業別','あなたの仕事カテゴリ別に表示'],
   'try-list':['あとで試す','試す・試した・導入済みを管理'],
@@ -1139,18 +1160,16 @@ function updateCard(u){
   const tool=toolById(u.tool_id);
   const color=toolColor(u.tool_id);
   const sum=u.manual_summary||u.ai_summary||u.raw_excerpt||'要約はまだありません。';
-  return `<div class="ucard rk-${u.rank}" onclick="go('update-detail','${u.id}')">
+  return `<div class="ucard ${u.status==='unread'?'is-new':''}" onclick="go('update-detail','${u.id}')">
     <div class="ucard-top">
       <div class="ucard-tool"><span class="tool-dot" style="background:${color}"></span><span>${esc(tool?tool.name:'不明')}</span></div>
-      <div style="margin-left:auto;display:flex;gap:6px;align-items:center">${rankBadge(u.rank)}</div>
+      <span class="ucard-date" style="margin-left:auto">${relDate(u.published_at)}</span>
     </div>
     <h3>${esc(u.title)}</h3>
     <div class="summary">${esc(sum)}</div>
     <div class="ucard-meta">
       ${catChips(u.related_categories,2)}
-      ${statusBadge(u.status)}
-      ${u.status==='unread'?`<button class="mark-read" onclick="event.stopPropagation();markRead('${u.id}')">${icon('check')}既読にする</button>`:''}
-      <span class="ucard-date" style="margin-left:auto">${relDate(u.published_at)}</span>
+      ${u.status==='unread'?`<button class="mark-read" onclick="event.stopPropagation();markRead('${u.id}')">${icon('check')}既読にする</button>`:statusBadge(u.status)}
     </div>
   </div>`;
 }
@@ -1161,39 +1180,52 @@ function updateCard(u){
 function renderHome(v){
   recomputeAll();
   const ups=getUpdates();
-  const unread=ups.filter(u=>u.status==='unread');
-  const sRank=ups.filter(u=>u.rank==='S');
-  const aRank=ups.filter(u=>u.rank==='A');
-  const tryLater=ups.filter(u=>u.status==='try_later');
-  // 新しい順（公開日の新しいものが上）で並べた単一リスト（重複なし）
+  const unread=ups.filter(u=>u.status==='unread').length;
+  const tryLater=ups.filter(u=>u.status==='try_later').length;
+  // 新しい順（公開日の新しいものが上）
   const list=[...ups].sort(byPub);
 
   document.getElementById('topActions').innerHTML =
-    `<button class="btn btn-primary" onclick="go('fetch')">${icon('fetch')}取得実行</button>`;
+    `<button class="btn btn-sm" onclick="go('updates')">${icon('search')}検索・絞り込み</button>`;
 
-  let html = `<div class="grid cols-4" style="margin-bottom:6px">
-    ${statTile('未読アップデート',unread.length,'inbox','#4338ca',"openUpdatesFiltered({unreadOnly:true})")}
-    ${statTile('Sランク',sRank.length,'bolt','#e11d48',"openUpdatesFiltered({rank:'S'})")}
-    ${statTile('Aランク',aRank.length,'star','#ea580c',"openUpdatesFiltered({rank:'A'})")}
-    ${statTile('あとで試す',tryLater.length,'flask','#0891b2',"go('try-list')")}
+  // 件数はごく小さく（タップで絞り込みだけできる）
+  let html = `<div class="mini-meta">
+    <span>全${list.length}件</span>
+    ${unread?`<button class="mini-chip" onclick="openUpdatesFiltered({unreadOnly:true})">未読 ${unread}</button>`:''}
+    ${tryLater?`<button class="mini-chip" onclick="go('try-list')">あとで試す ${tryLater}</button>`:''}
   </div>`;
 
-  // 単一のアップデート一覧（重要度順）
-  html+=sectionHead('アップデート', list.length+'件', `<button class="btn btn-sm" onclick="go('updates')">絞り込み・検索 ${icon('chevR','')}</button>`);
-  if(list.length){
-    html+=`<div class="grid cols-3">${list.map(updateCard).join('')}</div>`;
-  }else{
-    html+=emptyState('まだアップデートがありません','「取得実行」から最新情報を集めるか、アップデート画面から手動で追加できます。');
+  if(!list.length){
+    html+=emptyState('まだアップデートがありません','毎朝6時に自動で最新ニュースが届きます。');
+    v.innerHTML=html; return;
   }
+
+  // 日付ごとの見出し（今日・昨日…）でグループ表示
+  let lastLabel=null, open=false;
+  list.forEach(u=>{
+    const label=dayLabel(u.published_at);
+    if(label!==lastLabel){
+      if(open) html+=`</div>`;
+      html+=`<div class="day-head"><span>${label}</span></div><div class="grid cols-2">`;
+      lastLabel=label; open=true;
+    }
+    html+=updateCard(u);
+  });
+  if(open) html+=`</div>`;
 
   v.innerHTML=html;
 }
 function byPub(a,b){ return new Date(b.published_at)-new Date(a.published_at); }
-function statTile(label,value,ico,color,action){
-  const tag=action?'button':'div';
-  const go=action?` onclick="${action}"`:'';
-  const hint=action?`<span class="stat-go">${icon('chevR')}</span>`:'';
-  return `<${tag} class="stat${action?' is-link':''}"${go}><div class="label">${icon(ico)} ${label}</div><div class="value" style="color:${color}">${value}</div>${hint}</${tag}>`;
+function dayLabel(iso){
+  if(!iso) return 'その他';
+  const d=new Date(iso); if(isNaN(d)) return 'その他';
+  const now=new Date();
+  const today=new Date(now.getFullYear(),now.getMonth(),now.getDate());
+  const that=new Date(d.getFullYear(),d.getMonth(),d.getDate());
+  const diff=Math.round((today-that)/86400000);
+  if(diff<=0) return '今日';
+  if(diff===1) return '昨日';
+  return diff+'日前 ('+(d.getMonth()+1)+'/'+d.getDate()+')';
 }
 function sectionHead(title,count,right){
   return `<div class="section-head"><h2>${title}</h2>${count?`<span class="count">${count}</span>`:''}<div class="spacer"></div>${right||''}</div>`;
@@ -1235,8 +1267,6 @@ function renderUpdates(v){
       <option value="">すべてのツール</option>${tools.map(t=>`<option value="${t.id}" ${f.tool===t.id?'selected':''}>${esc(t.name)}</option>`).join('')}</select>
     <select class="filter" onchange="upFilter.cat=this.value;renderUpdates(document.getElementById('view'))">
       <option value="">全カテゴリ</option>${BUSINESS_CATEGORIES.map(c=>`<option ${f.cat===c?'selected':''}>${esc(c)}</option>`).join('')}</select>
-    <select class="filter" onchange="upFilter.rank=this.value;renderUpdates(document.getElementById('view'))">
-      <option value="">全ランク</option>${['S','A','B','C'].map(r=>`<option ${f.rank===r?'selected':''}>${r}</option>`).join('')}</select>
     <select class="filter" onchange="upFilter.status=this.value;renderUpdates(document.getElementById('view'))">
       <option value="">全ステータス</option>${STATUS_ORDER.map(s=>`<option value="${s}" ${f.status===s?'selected':''}>${STATUS_LABELS[s]}</option>`).join('')}</select>
     <label class="toggle-pill"><input type="checkbox" ${f.unreadOnly?'checked':''} onchange="upFilter.unreadOnly=this.checked;renderUpdates(document.getElementById('view'))">未読のみ</label>
@@ -1249,11 +1279,10 @@ function renderUpdates(v){
     html+=`<div class="grid cols-1">${list.map(updateCard).join('')}</div>`;
   }else{
     html+=`<div class="table-wrap"><table>
-      <thead><tr><th style="width:46px">ランク</th><th>タイトル</th><th style="width:130px">ツール</th><th style="width:150px">カテゴリ</th><th style="width:90px">公開日</th><th style="width:160px">ステータス</th></tr></thead><tbody>`;
+      <thead><tr><th>タイトル</th><th style="width:130px">ツール</th><th style="width:150px">カテゴリ</th><th style="width:90px">公開日</th><th style="width:160px">ステータス</th></tr></thead><tbody>`;
     list.forEach(u=>{
       const tool=toolById(u.tool_id);
       html+=`<tr>
-        <td>${rankBadge(u.rank)}</td>
         <td><span class="row-title" onclick="go('update-detail','${u.id}')">${esc(u.title)}</span></td>
         <td><span style="display:inline-flex;align-items:center;gap:7px"><span class="tool-dot" style="background:${toolColor(u.tool_id)}"></span><span style="font-size:13px;color:var(--text-soft);font-weight:600">${esc(tool?tool.name:'—')}</span></span></td>
         <td>${catChips(u.related_categories,1)}</td>
@@ -1283,13 +1312,6 @@ function renderDetail(v){
 /* 右サイド共通パネル（読み／編集 両モードで使用） */
 function detailSidebar(u,tool){
   return `<div class="form-card">
-      <h3>${icon('bolt')} 重要度</h3>
-      <div class="score-ring">
-        ${rankBadge(u.rank).replace('class="rank','style="width:46px;height:42px;font-size:19px" class="rank')}
-        <div><div class="score-num">${u.score}<small style="font-size:16px;color:var(--text-mute)">点</small></div><div style="font-size:12px;color:var(--text-mute);font-weight:600">ルールベース自動計算</div></div>
-      </div>
-    </div>
-    <div class="form-card" style="margin-top:16px">
       <h3>${icon('flask')} ステータス</h3>
       <select class="filter" style="width:100%" id="d_status" onchange="quickStatus('${u.id}',this.value)">
         ${STATUS_ORDER.map(s=>`<option value="${s}" ${u.status===s?'selected':''}>${STATUS_LABELS[s]}</option>`).join('')}
@@ -1305,8 +1327,6 @@ function detailSidebar(u,tool){
         <div class="row"><span class="k">対象ツール</span><span class="v">${esc(tool?tool.name:'—')}</span></div>
         <div class="row"><span class="k">公開日</span><span class="v">${fmtDate(u.published_at)}</span></div>
         <div class="row"><span class="k">取得日</span><span class="v">${fmtDate(u.fetched_at)}</span></div>
-        <div class="row"><span class="k">スコア</span><span class="v">${u.score}点</span></div>
-        <div class="row"><span class="k">ランク</span><span class="v">${u.rank}</span></div>
       </div>
       <button class="btn btn-danger btn-sm" style="width:100%;margin-top:14px" onclick="confirmDeleteUpdate('${u.id}')">${icon('trash')}このアップデートを削除</button>
     </div>`;
@@ -1334,7 +1354,6 @@ function renderDetailRead(v,u,tool){
     <div>
       <div class="detail-head">
         <div class="detail-toprow">
-          ${rankBadge(u.rank).replace('class="rank','style="width:34px;height:30px;font-size:15px" class="rank')}
           <span class="detail-tool"><span class="tool-dot" style="background:${toolColor(u.tool_id)}"></span>${esc(tool?tool.name:'')}</span>
           <span style="color:var(--text-mute);font-size:13px;margin-left:auto">公開 ${fmtDate(u.published_at)}</span>
         </div>
@@ -1376,7 +1395,6 @@ function renderDetailEdit(v,u,tool){
   <div class="detail-grid">
     <div>
       <div class="detail-toprow" style="margin-bottom:14px">
-        ${rankBadge(u.rank)}
         <span class="detail-tool"><span class="tool-dot" style="background:${toolColor(u.tool_id)}"></span>${esc(tool?tool.name:'')}</span>
         <span style="color:var(--brand);font-size:12.5px;font-weight:700;margin-left:auto">編集中</span>
       </div>
@@ -1390,7 +1408,7 @@ function renderDetailEdit(v,u,tool){
         <div class="field">
           <label>関連カテゴリ</label>
           <div class="checks" id="d_cats">${BUSINESS_CATEGORIES.map(c=>`<label class="check-pill ${(u.related_categories||[]).includes(c)?'on':''}" onclick="this.classList.toggle('on')"><input type="checkbox" ${(u.related_categories||[]).includes(c)?'checked':''} value="${esc(c)}">${esc(c)}</label>`).join('')}</div>
-          <div class="hint">カテゴリを変えて保存するとスコア・ランクが再計算されます。</div>
+          <div class="hint">このニュースに関係する仕事カテゴリを選べます。</div>
         </div>
       </div>
       <div class="form-card">
@@ -1565,10 +1583,8 @@ function renderCategories(v){
   let html=`<div class="grid cols-3">`;
   BUSINESS_CATEGORIES.forEach((c,i)=>{
     const items=ups.filter(u=>(u.related_categories||[]).includes(c));
-    const top=items.filter(u=>u.rank==='S'||u.rank==='A').length;
     html+=`<div class="cat-tile" onclick="catView='${c.replace(/'/g,"\\'")}';renderCategories(document.getElementById('view'))">
       <div class="ct-top"><div class="ct-name">${esc(c)}</div><div class="ct-num" style="color:${TOOL_COLORS[i%TOOL_COLORS.length]}">${items.length}</div></div>
-      <div style="font-size:12.5px;color:var(--text-mute);font-weight:600">重要(S/A) ${top}件</div>
       <div class="ct-bar"><i style="width:${Math.round(items.length/max*100)}%"></i></div>
     </div>`;
   });
@@ -1598,7 +1614,6 @@ function renderTryList(v){
     const tool=toolById(u.tool_id);
     html+=`<div class="card" style="padding:16px 18px;display:flex;flex-direction:column;gap:11px">
       <div style="display:flex;align-items:center;gap:9px">
-        ${rankBadge(u.rank)}
         <span style="display:inline-flex;align-items:center;gap:6px"><span class="tool-dot" style="background:${toolColor(u.tool_id)}"></span><span style="font-size:12.5px;font-weight:700;color:var(--text-soft)">${esc(tool?tool.name:'')}</span></span>
         <span style="margin-left:auto;font-size:12px;color:var(--text-mute)">${relDate(u.published_at)}</span>
       </div>
