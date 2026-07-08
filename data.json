@@ -1,98 +1,98 @@
 [
   {
-    "tool": "Gemini",
-    "title": "安くて速いNano Banana 2 LiteとGemini活用術",
-    "source_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFAyZ0w4ZGt4dEcwZHBHT1BKNExELVp3SFpiMEJKSzZrY2JBRE1UNkRneUJCaUFDbEE5QU5udFRfR1dveDNJSVVhd0l5ZVAyUWVaNFhfUmM4Vlp3bUVJenNjM01JcXdLckxaOHpuMVFUaEc3cFphR0VR0gF8QVVfeXFMTVlxa3laWkhsWTJlS1M5OVZ0bWFnaU0tRGl4YUQwYjFrbUhMYUlzWlJ2WlZKVVlnNExPY3kyM0J4S2lVQ2xfT2NwSUo2b0toMHNEVXR6bkpwRlFZM0VsQWI4T044Uk5fSHZkbHZhT3l1Nkg5YjYwZUhZT2pUaA?oc=5",
-    "published_at": "2026-07-07T04:16:00.000Z",
-    "raw_excerpt": "低価格・高速なGemini系画像生成モデルのおいしい活用法を紹介",
-    "detail": "Geminiの安くて速い画像生成モデル「Nano Banana 2 Lite」などの活用法を紹介する記事です。コストを抑えて画像を量産できます。EC商品画像やLP素材、SNS投稿画像の作成に手頃に使えます。"
+    "tool": "Claude / Claude Code",
+    "title": "Claude CoworkがWebとモバイルでも利用可能に",
+    "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1aTFVoTW9RTkx6YUtIanBLazNHNHNqc1licktURjAzYUdnZy1xb2pManZ4Q1gybXhUMVBBVXVlc0tVMnUtZEhmZ3NhMUh2YWRzaTQ1VVFpc2FZd1F2d0VHeE1ZZFBDdkpHN19SNA?oc=5",
+    "published_at": "2026-07-07T21:55:26.000Z",
+    "raw_excerpt": "Anthropicの作業支援AI「Claude Cowork」がWeb・モバイルに展開、まずはMaxプランから",
+    "detail": "Claudeの新しい作業支援機能「Cowork」がパソコンのブラウザやスマホでも使えるようになりました。まずは上位のMaxプランから提供されます。外出先でもClaudeに仕事を任せられるので、新井さんの文書作成や業務効率化に役立ちます。"
   },
   {
-    "tool": "Claude / Claude Code",
-    "title": "Claude Opus 4.8を使い続ける理由",
-    "source_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBiVXJneENPdEFCTnFvS3dVWm9MaGZsQWFTRUczZGJhSWR0b1dXNTFVWEdPZjBKSXJqZkVaNDdYbndfdjMwZUl4NDVRR2x3Q1g5dWpB?oc=5",
-    "published_at": "2026-07-07T00:44:00.000Z",
-    "raw_excerpt": "新モデル登場後もClaude Opus 4.8を選ぶ5つの理由を解説",
-    "detail": "新しいClaudeモデルが出た後も、あえて「Opus 4.8」を使い続ける理由を挙げた記事です。用途によって適したモデルが違うと分かります。文章作成やコード生成でどのAIを選ぶかの判断材料になります。"
+    "tool": "ChatGPT / OpenAI",
+    "title": "OpenAIが応答速度を25%改善した新モデル公開",
+    "source_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBkVnFIOFBrWU5RdTZtSlRfdVdRS0lpM1F0NFpPNzB6aU9mSl90RnZGM0Q5eUwzRXVRdFlBT0NKbGltU09BTjBRZ3lDSHh2bWJIWElkT0Y2a0FrSGhqZHk4R2o2NlBSbVJaOUs3Q05ROVNLZ3N4b2c?oc=5",
+    "published_at": "2026-07-07T11:54:52.000Z",
+    "raw_excerpt": "OpenAIがgpt-realtime-2.1を公開し、応答の遅れを25%削減",
+    "detail": "OpenAIがリアルタイム会話向けの新モデルを公開し、返事が返ってくるまでの遅さを約25%減らしました。音声のやり取りなどがより快適になります。新井さんが音声対応の自動化やアプリを作るときに役立ちます。"
+  },
+  {
+    "tool": "Suno",
+    "title": "Suno、開発者向けAPI提供を検討",
+    "source_url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5mQlQ2aHJlLVBlNGlLR0xFTGFIX3hFSFRrVVI4U0VWLUM1UHFIMEJQUUVJR1lSNFNVSThCbXVmM0RmcFpzb1E?oc=5",
+    "published_at": "2026-07-07T11:24:05.000Z",
+    "raw_excerpt": "音楽生成AIのSunoが外部アプリと連携できる開発者向けAPIの提供を検討中",
+    "detail": "音楽生成AIのSunoが、他のアプリやシステムから直接使えるAPI（連携の仕組み）の提供を検討していると報じられました。実現すれば、曲作りを自分のツールに組み込んで自動化できます。Kiki Toaの音楽制作の効率化につながる可能性があります。"
+  },
+  {
+    "tool": "Gemini",
+    "title": "安く速い画像生成モデルの活用法",
+    "source_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1ZcWt5WlpIbFkyZUtTOTlWdG1hZ2lNLURpeGFEMGIxa21ITGFJc1pSdlpWSlVZZzRMT2N5MjNCeEtpVUNsX09jcElKNm9LaDBzRFV0em5KcEZRWTNFbEFiOE9OOFJOX0h2ZGx2YU95dTZIOWI2MGVIWU9qVGjSAXxBVV95cUxNWXFreVpaSGxZMmVLUzk5VnRtYWdpTS1EaXhhRDBiMWttSExhSXNaUnZaVkpVWWc0TE9jeTIzQnhLaVVDbF9PY3BJSjZvS2gwc0RVdHpuSnBGUVkzRWxBYjhPTjhSTl9IdmRsdmFPeXU2SDliNjBlSFlPalRo?oc=5",
+    "published_at": "2026-07-07T04:16:00.000Z",
+    "raw_excerpt": "低価格・高速なNano Banana 2 LiteとGemini Omni Flashの活用方法を解説",
+    "detail": "Geminiの安くて速い画像生成・処理モデルの使いこなし方を紹介する記事です。コストを抑えながら画像を量産できます。新井さんの画像生成やEC商品ページの素材作りに役立ちます。"
+  },
+  {
+    "tool": "Gemini",
+    "title": "Geminiでスライドを高速作成",
+    "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE83QzJGbWhJQklDSENuMkNCUU9lMHgtaUczRmNnbzUxc0hGcWZJMFd1bEFxekZ4RDFNSTZMR3ZkZEE0ZDlJTm5HUjNQQ29rSFBlZVVLQUJ3ZHZVUjg?oc=5",
+    "published_at": "2026-07-06T09:42:58.000Z",
+    "raw_excerpt": "GoogleのGeminiを使ってパワポやプレゼン資料を爆速で作る活用法を解説",
+    "detail": "GoogleのAI「Gemini」を使って、プレゼン用のスライドやパワポを一気に作る方法の紹介です。手作業を大幅に減らせるので、新井さんの営業資料や社内文書づくりの時短につながります。"
   },
   {
     "tool": "NotebookLM",
-    "title": "NotebookLMで情報収集が変わった話",
-    "source_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQUnNRTUhGeEpiS0lWaTFub2tUSGZXUVFJd1NBaTV2NUJCcllfeEQtVFZ5THY5WnRIQmxPR0hWNVMtTzFCRTE2VmowVVozWlZyQU9INUhxZ0gxV3dOeFF5VXU3ZWJqVEtLeXlkZjQ0dUVGaGZDOTJfZDlXOUdZaHJFUW5tN3VveWd5VVA4bks5Y3BhclBxcjVhUTZ5aE93cGJncDRYc3RqSFRBV1ZDeEsxTkZTVkstamc0RjVjN25Da1oyNzYwWUltT1BSQjUydlBkVnYwV2Z4Wks5MkpxelHSAd4BQVVfeXFMUFJzUU1IRnhKYktJVmkxbm9rVEhmV1FRSXdTQWk1djVCQnJZX3hELVRWeUx2OVp0SEJsT0dIVjVTLU8xQkUxNlZqMFVaM1pWckFPSDVIcWdIMVd3TnhReVV1N2VialRLS3l5ZGY0NHVFRmhmQzkyX2Q5VzlHWWhyRVFubTd1b3lneVVQOG5LOWNwYXJQcXI1YVE2eWhPd3BiZ3A0WHN0akhUQVdWQ3hLMU5GU1ZLLWpnNEY1YzduQ2taMjc2MFlJbU9QUkI1MnZQZFZ2MFdmeFpLOTJKcXpR?oc=5",
-    "published_at": "2026-07-06T21:00:00.000Z",
-    "raw_excerpt": "検索の代わりにNotebookLMを使い情報収集が激変した体験談",
-    "detail": "ネット検索の代わりにNotebookLMを使ったら情報整理が楽になったという体験談です。自分の資料をAIに読み込ませて質問できます。社内文書やリサーチ資料の要点を素早くつかむ業務効率化に役立ちます。"
-  },
-  {
-    "tool": "Gemini",
-    "title": "Geminiで爆速スライド作成術",
-    "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE83QzJGbWhJQklDSENuMkNCUU9lMHgtaUczRmNnbzUxc0hGcWZJMFd1bEFxekZ4RDFNSTZMR3ZkZEE0ZDlJTm5HUjNQQ29rSFBlZVVLQUJ3ZHZVUjg?oc=5",
-    "published_at": "2026-07-06T09:42:58.000Z",
-    "raw_excerpt": "GoogleのGeminiを使ったプレゼン資料の高速作成法を紹介",
-    "detail": "GeminiでパワポやGoogleスライドを一気に作る方法を紹介する動画です。テーマを伝えるだけで下書きが作れます。営業資料や社内プレゼンの作成時間を大きく短縮できます。"
-  },
-  {
-    "tool": "Gemini",
-    "title": "無料でも優秀すぎるGeminiの機能",
-    "source_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1rT1NiSXVoMVJaOV94ejhqRkFKU29aX0Y0WU9oS0paRUdTbWJOSDY4eTF3S3lUSFotWUtWdXI0cnVOcEUzVDlTUk4tOGFJQ2M?oc=5",
-    "published_at": "2026-07-06T09:05:00.000Z",
-    "raw_excerpt": "無料でここまでできるGeminiの便利機能を紹介",
-    "detail": "Google Geminiが無料でも仕事や日常に役立つ機能をたくさん持つと紹介する記事です。文章作成や調べ物、画像処理などができます。まずコストをかけずにAIを業務に取り入れたい時の参考になります。"
-  },
-  {
-    "tool": "Gemini",
-    "title": "Gemini 3.5 Flashの性能・料金・使い方解説",
-    "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBXWG82YkRrcHlOdXlWd2NFbnRKd1FCU2RRMHB4WVBQbFhkLVNGS0JYN0MyWHMtYlBiV2traEFyWGt6RDhyRXFnUXRJUTVpZEJvM3JwR01KYUFGZzhCLUNpWXcwSQ?oc=5",
-    "published_at": "2026-07-06T05:14:23.000Z",
-    "raw_excerpt": "高速版GeminiのFlashモデルの性能や料金、API利用法を解説",
-    "detail": "Googleの高速で安価なAI「Gemini 3.5 Flash」の性能や料金、プログラムからの使い方をまとめた記事です。安く速く動くので大量の処理に向きます。文章生成や業務の自動化にコストを抑えて組み込みたい時に役立ちます。"
+    "title": "NotebookLM仕事術の新刊が発売",
+    "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0zeERFektxTFVIWFVITWhzYzI3WE5FWWRvTlNVRmx6Q3lsZHlEX0hsVEJaTGUwTHA1ZTliTEx0UUJwbjluLV9tZzYwSEhOTUNObmVaOE80Rk1BcE5HUlZJMkRfYTdyVWlHQmc?oc=5",
+    "published_at": "2026-07-06T02:00:02.000Z",
+    "raw_excerpt": "自分専用AIで探す・覚える時間をゼロにするNotebookLM仕事術の本が発売",
+    "detail": "GoogleのNotebookLMを仕事で使いこなす方法をまとめた新しい本が発売されました。資料を読み込ませて必要な情報をすぐ引き出す使い方が学べます。新井さんの情報整理や業務効率化のヒントになります。"
   },
   {
     "tool": "Canva",
     "title": "CanvaのPDF編集機能を徹底検証",
     "source_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1obHZzQkJqZ3pValBTRnlJdGN4YUx4WHU5Y2ZSc3lwaWk0Vy13MWFQLWM4LXhmdnpoSzZKOFBRbXpLa2MxYkttNjhUSjRiWW56TlFN?oc=5",
     "published_at": "2026-07-06T00:00:00.000Z",
-    "raw_excerpt": "CanvaのオンラインPDF編集の実力と限界を検証した記事",
-    "detail": "CanvaでPDFをどこまで編集できるかを検証した記事です。文字の差し替えや画像追加など、できること・できないことが分かります。営業資料や社内文書をブラウザだけで手直ししたい時の参考になります。"
+    "raw_excerpt": "CanvaでどこまでPDF編集ができるか、その実力と限界を検証した記事",
+    "detail": "CanvaのオンラインPDF編集がどこまで使えるかを実際に試した記事です。専用ソフトを買わなくてもブラウザで書類を修正できるかが分かります。新井さんが資料や納品物のPDFを直す作業に役立ちます。"
   },
   {
     "tool": "Canva",
-    "title": "Canvaの会話AIが日本語に本格対応",
+    "title": "Canvaの会話AIが日本語対応",
     "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBBdmZJekNCXzU3UXNBSWY5aDQyNVVKUTVMa3djVUN1UHNnNmdEbzVMRm03MFZnUGJ3M2kweFJjZGtmYUd2Nnpock15cGNaYVlhZlZaRQ?oc=5",
     "published_at": "2026-07-03T20:49:35.000Z",
-    "raw_excerpt": "話すだけでデザイン生成できるCanvaの会話AIが日本語に本格対応",
-    "detail": "Canvaに「こういうものを作りたい」と日本語で話すだけでデザインを作ってくれる会話AI機能が本格対応しました。細かい操作を覚えなくてもイメージを言葉で伝えるだけで形になります。LPやSNS画像、営業資料の作成をより速く簡単にできます。"
-  },
-  {
-    "tool": "NotebookLM",
-    "title": "NotebookLMが文書を60秒動画に自動変換",
-    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1BTjI3Z1poamtsSnZIMjVETENONjhPamNGM1Y3ZlJiZG9LUXM1R0p4ZGU2dW9PM1NrNGxfZ09idU9FN2x3U0RMWVZORVk3MjZnZzF1V3ZlRDc0WHFna2pNaVRFRDdZODNlS3JCTl9pOXJKcWwz?oc=5",
-    "published_at": "2026-07-02T12:25:00.000Z",
-    "raw_excerpt": "文書をショート動画に自動変換する新機能がNotebookLMに登場",
-    "detail": "GoogleのNotebookLMが、資料やメモを60秒ほどのショート動画に自動で作り替える機能を追加しました。文章を読むより見て分かる形にできます。YouTubeやSNS向けの動画作り、商品紹介の素材づくりに活用できます。"
-  },
-  {
-    "tool": "Suno",
-    "title": "SunoのアーティストプログラムSparkが炎上",
-    "source_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1rdDdCemV3V0plempxRmx2Zi1zeG1jMVdOOF81SGZxcHJYM2xCNGk2SS1nUUR6RjQyTmpLSnBjay0xT2pubWZ2WHVycEhJbmVkdi1SbDRmY2djM2pYak5oLS1lUFJfM293RUpab2pJUW15eXBPMEHSAXtBVV95cUxNdUQ0dEtDeDg3d3c0UUNUekw5bk8tZm5YT0lXeWQ1S0EwODZOdEMxaVF2Y2Vac2JqZWY3VVZ3NlJQdjEyblVGYzRmUG9ncG9fNkZmd1BrQ2MtYnVKM2lhU1RPckM4bjhOeHR0Znh6cU5BbVZnX1FydG1KS3c?oc=5",
-    "published_at": "2026-07-02T12:00:00.000Z",
-    "raw_excerpt": "Sunoの新プログラムが「批判禁止」など問題条件で物議",
-    "detail": "AI音楽生成のSunoが始めたアーティスト支援プログラム「Spark」が、自社批判禁止などの契約条件で炎上しています。使う側にも不利な条件があり得ます。Sunoで音楽制作する際は規約や権利面の確認が大切だと分かります。"
+    "raw_excerpt": "作りたいものを話すだけでデザインできるCanvaの会話AIが本格的に日本語対応",
+    "detail": "Canvaに「こういうものを作りたい」と日本語で話すだけでデザインを生成してくれる会話型AIが本格対応しました。難しい操作を覚えなくても、言葉で指示するだけでLPやバナー、営業資料のデザインが作れます。新井さんのLP制作や社内文書作成のスピードアップに直結します。"
   },
   {
     "tool": "Cursor",
-    "title": "CursorにiOSアプリ登場、遠隔操作可能",
-    "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBaR0ZES3RTQ1RFUV9uOW5LZEp0MDZCdmR3eG5YNUk2VHNVd3NJaTdLZ0dsdjdaQmpIMS12TTZtcFFWQy0wQ0FrdmhXeHpacGZuYjJBeHdSOE5FaWEyQ3JhekhjTUcxemF4?oc=5",
-    "published_at": "2026-07-02T05:09:00.000Z",
-    "raw_excerpt": "AIコーディングのCursorがiPhoneアプリで遠隔操作・通知に対応",
-    "detail": "AIでプログラムを書けるツール「Cursor」のiPhoneアプリが登場しました。外出先からAIエージェントに作業を指示したり、完了通知を受け取れます。アプリ開発中に手が離せない時でもスマホで進捗を管理でき、開発の効率が上がります。"
+    "title": "CursorにiOSアプリ登場、遠隔操作も",
+    "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5YS3BfVE5lLXRmbWpnM0lUR2VkRzM2dXAxNHRTeVIwbFF1em9RTE5qWkdHVFhWZ2gtVDNQWkFGU2I0Rl9iTlpRQVloUWxnZllSd2ptMmxQN3lQZzhVT21yUnp0c0lHWlhibnRwaEd3UzV2MWt0SUVtczRUNVhuOVE?oc=5",
+    "published_at": "2026-07-02T15:09:00.000Z",
+    "raw_excerpt": "AIコーディングツールCursorのiOSアプリが公開、エージェントの遠隔操作や通知が可能に",
+    "detail": "プログラム作成を助けるCursorがスマホアプリになりました。AIエージェント（自動で作業する助手）を外出先から動かしたり、完了通知を受け取れます。新井さんのアプリ開発で、席を離れていても進捗を管理できるようになります。"
+  },
+  {
+    "tool": "NotebookLM",
+    "title": "NotebookLMが文書を動画に変換",
+    "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNOGt6cDA3ZEdnSzdHSFB0Q3VrWU8xSkxkLUEzVURwSV85b29DdC00WnUtSGl3QkpaaGEzM05RZnJiQ1Y0eERnRkxQeDV5U3I0VWhObGgzaC1ORU9LVWEzMVNxbHBjTmlqay1FNEppTmtVaE44WTdpU191UDloWV9xSWt0NXItTVNiZUNSNm1tVnNUblpBUG0zZDFQeHBhQlFKRXZ5RQ?oc=5",
+    "published_at": "2026-07-02T14:08:30.000Z",
+    "raw_excerpt": "NotebookLMがAIで文書をTikTok風の縦型ショート動画に変換できるように",
+    "detail": "GoogleのNotebookLMが、読み込んだ文書を自動で縦型のショート動画にする機能を持ちました。資料を短い解説動画にできるので、新井さんのYouTubeやSNS運用のコンテンツ作りに使えます。"
   },
   {
     "tool": "Canva",
-    "title": "Gemini SparkがmacOS対応、Canva連携も",
+    "title": "Gemini SparkがMac対応、Canva連携も",
     "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE93YzY3QTV1UHVJSGc4dmlsclJLR3BXVHh2LUxVWkI1bHJ4aDZTNE1hbTB5WFRzbjItQ05qRWYxdkJYdVZMLUR4ZzJNYlphZFBZNktqWURWNVg5a0IyemhueGVwWDVlMzBsZWlFZ3l6eXdyMkhnRTFvTlhQeDdQcGc?oc=5",
     "published_at": "2026-07-02T00:26:41.000Z",
-    "raw_excerpt": "Gemini SparkがMacに対応しCanvaなど外部アプリと連携",
-    "detail": "GoogleのAIアシスタント「Gemini Spark」がMacに対応し、Canvaなど外部アプリとつながるようになりました。Mac上でAIに指示して他アプリを操作できます。デザインや資料作りの作業をつなげて効率化できます。"
+    "raw_excerpt": "GoogleのGemini SparkがmacOSに対応、Canvaなど外部アプリと連携",
+    "detail": "GoogleのAI機能「Gemini Spark」がMacで使えるようになり、Canvaなどの外部アプリとつなげられるようになりました。パソコン上でAIとデザインツールを行き来しやすくなります。新井さんのMacでの制作作業がスムーズになります。"
+  },
+  {
+    "tool": "Cursor",
+    "title": "Cursorをカスタマイズする新機能",
+    "source_url": "https://cursor.com/changelog/customize",
+    "published_at": "2026-06-22T00:00:00.000Z",
+    "raw_excerpt": "CursorがプラグインやMCPを一箇所で管理できるカスタマイズページを追加",
+    "detail": "Cursorに、便利な拡張機能（プラグインやスキル、MCP）を1つの画面でまとめて設定できるページができました。自分の作業に合わせてツールを整えられます。新井さんのアプリ開発の作業環境づくりに役立ちます。"
   }
 ]
