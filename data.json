@@ -1,83 +1,91 @@
 [
   {
-    "tool": "ChatGPT / OpenAI",
-    "title": "ChatGPT Work発表、CodexアプリはChatGPTに統合",
-    "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1TZWR2YTJmNi1jbFZ0aFgzMnNjSWVOWGhTajJKeV9sMGw3TTNiVHA3V3NGWjRRZnlGYkhrTE8xbnZxSWY0ODVhaGpPWktzZXk2WV8wNQ?oc=5",
-    "published_at": "2026-07-10T08:00:00.000Z",
-    "raw_excerpt": "新機能ChatGPT Work発表とコード生成のCodexがChatGPTに統合",
-    "detail": "OpenAIが業務向けの「ChatGPT Work」を発表し、これまで別だったコード生成ツール「Codex」がChatGPT本体に統合されました。1つのアプリで文書作業もプログラム作成もできるようになります。アプリ開発や自動化を行う新井さんの作業がまとまって便利になります。"
-  },
-  {
-    "tool": "ChatGPT / OpenAI",
-    "title": "ChatGPT WorkがWord・Excel業務を最後まで自動実行",
-    "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9KbzBybk5QRjY4UzJ5WWVhRVpoOTNHc2cyRndBcWdRTWlfT0cwZ1ZQZ0F4bUx6QWxIbmx2MTNZRHhHdGIyamZyQ1VVVGpYaS1Ua1FuYUNaZXVVbjRtZ0J4amp1dEY5eEdmZkx2WEpEdzZlazNhLXc2UFY0UUZZcG8?oc=5",
-    "published_at": "2026-07-10T06:00:07.000Z",
-    "raw_excerpt": "新機能ChatGPT WordがWordやExcelの業務をやり切る実力を検証",
-    "detail": "OpenAIの新しい業務向け機能「ChatGPT Work」の紹介です。指示するとWordの文書作成やExcelの表計算まで、途中で止まらず最後まで作業を進めてくれるのが特徴です。新井さんの営業資料や社内文書の作成、業務の自動化に直接役立ちます。"
-  },
-  {
-    "tool": "ChatGPT / OpenAI",
-    "title": "新モデルGPT-5.6とChatGPT Workの総まとめ",
-    "source_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBKLWhZLVpPNTI0X0IyQVV2ZUI0WXRPOVdxZFpaeXhnQ2NKMk5UQUt0Vy1lMlMwVWxjYWUyMXRYV1pILXA1ZUJUYWpRMkF2dEo0TkxhdnZRNTBOWGw5emlfcNIBZkFVX3lxTE5rbUhBTXFjd1pWZWhsTVlqMVlrd3pXbmFhZDBQemhGN2VqUXpLTDBCMkhSR2kxazdVVThidk50VDlIVHhOYWsxalctUzhzc2dPUlRlT1UyOU9ySGpaWXVjSEViVG4xQQ?oc=5",
-    "published_at": "2026-07-10T05:36:47.000Z",
-    "raw_excerpt": "GPT-5.6や新機能・ultraモードなど最新情報を一括解説",
-    "detail": "OpenAIの新しいモデル「GPT-5.6」や、業務向け「ChatGPT Work」、高性能な「ultraモード」などをまとめて解説した記事です。今のChatGPTで何ができるかを一気に把握できます。どのモデルを仕事に使うか判断する参考になります。"
+    "tool": "Claude / Claude Code",
+    "title": "Claudeが定額制から従量課金へ移行",
+    "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOUGF2dHUxbENOX1JVT2FDOWViRW0wMnFKUDRYcTVwcENzWG9FUVdxX0hxdnpuYXEtWmJIdVBCSW1IUzVtcEVSdGVBejFvczlZN1REdDZLLTlHTkRONVhTdXpRYlVEVEhWR0Zqa1g4SVZ0cmN5ZzRfTDFOYXAyTnBpVXlYTWpoSVY1blQ5SUZwUWdSVWRRQzRlRGpReXBqNFo3YUE?oc=5",
+    "published_at": "2026-07-10T23:00:00.000Z",
+    "raw_excerpt": "Anthropicが「Fable 5」を使った分だけ払う従量課金制に変更",
+    "detail": "AnthropicがClaudeの料金を、定額から「使った分だけ払う」従量課金制に変える動きを報じています。たくさん使う月と少ない月で料金が変わるため、Claude Codeを使う新井さんは使い方や費用の見直しが必要になるかもしれません。"
   },
   {
     "tool": "Gemini",
-    "title": "Gemini Omni、会話感覚で動画を作れるAI",
+    "title": "Geminiアプリに学習用ノート機能",
+    "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/how-to-make-gemini-study-notebooks/",
+    "published_at": "2026-07-10T16:00:00.000Z",
+    "raw_excerpt": "資料を整理して効率よく学べる新機能が登場",
+    "detail": "Geminiアプリに、資料をまとめて効率的に学べる「Study notebooks（学習ノート）」機能が追加されました。調べものや情報整理に使えるので、新しいツールや業務知識を学ぶときに役立ちます。"
+  },
+  {
+    "tool": "ChatGPT / OpenAI",
+    "title": "OpenAIがGPT-5.6と業務向けエージェント公開",
+    "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQWjE1SXVmbk1nV0xkVWVfSmxpZnJST09ESmVXeFMtV1ZLbkdfdEpoMElieEtXRzlWdkJId3lVd0FvbHlmYjRGbXpGa3d6RE44TWhHUmNCc3VVb0Y5bWd0Z2U5a290b1BhWE1ubDBvRzNIVkpVWFpFUjBsdHBKNmFOalk0NlEwcG9mVy1qR0Fn?oc=5",
+    "published_at": "2026-07-10T14:40:06.000Z",
+    "raw_excerpt": "最新モデルGPT-5.6と自律型エージェント「ChatGPT Work」が一般公開",
+    "detail": "OpenAIが新しいAIモデル「GPT-5.6」と、仕事を自動でこなす「ChatGPT Work」というエージェントを一般公開しました。エージェントは指示すると調べものや作業を自分で進めてくれる機能です。営業資料作りや社内文書、業務の自動化に幅広く使えるので、新井さんの日々の効率化に直結します。"
+  },
+  {
+    "tool": "ChatGPT / OpenAI",
+    "title": "OpenAIの音声AI「GPT-Live-1」公開",
+    "source_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAzNFhCMlFIUXBpYjhfeDFaa0Y3VkFENVdwd0ljem8yRlhyTThWRUlKTERvVE84QWZnLUVLcnUzdkV3RWxaUE45TFVHbmR1eTBNWmE4?oc=5",
+    "published_at": "2026-07-10T11:00:00.000Z",
+    "raw_excerpt": "聞きながら話せて同時通訳もできる音声AI",
+    "detail": "OpenAIが、相手の話を聞きながら同時に話せる音声AI「GPT-Live-1」を公開しました。リアルタイムの会話や同時通訳ができるので、動画のナレーションや音声を使った資料作りに活用できそうです。"
+  },
+  {
+    "tool": "Claude / Claude Code",
+    "title": "Claudeの新機能「Reflect」で使い方を分析",
+    "source_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5zSXBMaFE1WWtOdko2Qm54dV9yYjI4SlNIaXVaUHVjVThEWS1IbTRqRWFYVm1uV2NZUkhyUFBua2E0OHlxdGk4TlJQaXBwVXNYUlE?oc=5",
+    "published_at": "2026-07-10T03:47:00.000Z",
+    "raw_excerpt": "自分のAI活用を振り返り改善案を出す新機能",
+    "detail": "Claudeに、これまでの自分の使い方を振り返って改善点を教えてくれる「Reflect」という機能が加わりました。どう使えばもっと効率的か分かるので、業務でClaudeを活用する新井さんの作業改善に役立ちます。"
+  },
+  {
+    "tool": "Gemini",
+    "title": "Gemini Omniで会話しながら動画生成",
     "source_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBPOEtYRGpqTFJ2c2NhWG1aaFdfaUVubkw3ZUd2dmZYWDBPYVlEVkpWVnF4YWxPeWZwSE96QnBuS0JFbndjSGNrWHUzdXEyZ1NteEJENzY1QWk?oc=5",
     "published_at": "2026-07-10T02:59:41.000Z",
-    "raw_excerpt": "話しかけるだけで簡単に動画を生成できるGoogleの新AIモデル",
-    "detail": "Googleの「Gemini Omni」は、会話するような感覚で指示するだけで動画を作れる新しいAIです。難しい設定なしで手軽に動画が作れます。Kiki ToaのYouTube用動画や商品紹介の動画制作に活用できそうです。"
+    "raw_excerpt": "話しかける感覚で簡単に動画を作れるGeminiの新モデル",
+    "detail": "Googleが、まるで会話するように指示するだけで動画を作れる「Gemini Omni」を発表しました。難しい設定なしで動画が作れるので、YouTube運用や動画生成の作業がぐっと楽になります。"
   },
   {
     "tool": "Claude / Claude Code",
-    "title": "Claudeに使い方を振り返る新機能「reflect」追加",
-    "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9HMEstbWFYRVJGQ2xTZVdMcWJabzl1VWpabmlBZnFrSldYLU1Pa2FOdEhPQ01BdnNFU1pfMm1Ja1BXU2RpcEpOeGlEVUJiMlpiSktHdkxuV1NrcFpsT1lyVUlESEMyVDJqVzhNZg?oc=5",
-    "published_at": "2026-07-10T01:24:00.000Z",
-    "raw_excerpt": "AnthropicがClaudeの使い方を見直せる振り返り機能を追加",
-    "detail": "Anthropicが、これまでのClaudeの使い方を振り返れる新機能「reflect」を追加しました。自分がAIをどう使っているか確認し、もっと上手に活用できます。日々の業務でClaudeを効率よく使うヒントになります。"
-  },
-  {
-    "tool": "Claude / Claude Code",
-    "title": "Claude Fable5、プロンプトほぼ不要で高性能",
-    "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNVmV3UkNRRmZvbWU3NFE2Q3R5dFhtendIMTB4UVRZWnNDWlJHQkQ5YVl4cjlZWUEzT3Z4cFQ5ZnphemNobEE1QzE3aHBub2dqZ3dnLXJETzNwejdQVkFSS0xIRTh6YlM5YmtHX2lzSWZ1WmptalN1eGJHbFdsNXpnT1BDa2pfbjc2aU9hX0FR?oc=5",
-    "published_at": "2026-07-10T01:15:06.000Z",
-    "raw_excerpt": "新モデルFable5が優秀で細かい指示なしでも良い結果",
-    "detail": "Anthropicの新モデル「Claude Fable5」が非常に優秀で、細かく指示を書かなくても賢く作業をこなすと紹介されています。プロンプト（指示文）作りに悩む時間が減ります。開発や資料作成をより手軽に進められます。"
-  },
-  {
-    "tool": "Claude / Claude Code",
-    "title": "Claudeが利用制限を全ユーザーにリセット",
-    "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBJS0pOSjJ4YjNia1Vtc0Z5dzZKWk0tbVJfR3RNOFNqUlFBd1N6ZGZyZDNGSnJKLWZsdklCSXZxWERia2ZsTzg0cmJxUmtFOVM4Qm5ac052dFRoNVhRU1R0MEN4MXRnR2VTbWV3aw?oc=5",
-    "published_at": "2026-07-10T00:38:35.000Z",
-    "raw_excerpt": "AnthropicがClaudeの利用上限を即日リセット、無料で多く使える",
-    "detail": "Claudeを提供するAnthropicが、GPT-5.6公開と同じ日に全ユーザーの利用制限をリセットしました。制限を気にせずたくさん使えるチャンスです。Claude Codeでのアプリ開発や文書作成をたくさん進めたい新井さんに好都合です。"
-  },
-  {
-    "tool": "v0",
-    "title": "Vercel Agentが本番環境で使えるエージェントに拡張",
-    "source_url": "https://vercel.com/blog/vercel-agent",
-    "published_at": "2026-07-08T06:00:00.000Z",
-    "raw_excerpt": "v0関連のVercel Agentが本番調査やPRレビューまで対応",
-    "detail": "v0を提供するVercelが、AIエージェント「Vercel Agent」を強化しました。アラート対応やコードのチェックに加え、本番環境の調査までできるようになります。アプリ開発の運用や不具合対応を効率化できます。"
-  },
-  {
-    "tool": "Suno",
-    "title": "音楽生成AI「Suno」が開発者向けAPIを検討",
-    "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5BRkZqd2plbVppU0lhTV9JZzR6T1pkSnA4SldfUjJldzlTZzJwU1hMaFpwVGpJQ1lXeUFzaWdaTHI2SDJ0c21PcmxUczJfQXZvVGJJRw?oc=5",
-    "published_at": "2026-07-08T04:32:56.000Z",
-    "raw_excerpt": "Sunoが外部アプリと連携できるAPI提供を検討中",
-    "detail": "音楽生成AI「Suno」が、他のアプリやシステムから直接使えるAPIの提供を検討しているというニュースです。実現すれば自作のアプリやツールから自動で曲を作れるようになります。Kiki Toaの音楽制作の自動化や新しいサービス作りに役立つ可能性があります。"
+    "title": "GPT-5.6全面公開、CodexがChatGPTに統合",
+    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9sRjBtMHB0ZEVyYUhvQzNQZEtyZkdpTGdZS1RmaHo5V053WlNrRlE5SDF0NWNNOHNCaUIxeVBYX3daZXJTRWFRVHppVHNaYUE1VXA2LXIyLUVvRHlIS1FxOFBGRzZ2VmhHcWNtbFg0Y2Iza1pJ?oc=5",
+    "published_at": "2026-07-10T01:56:00.000Z",
+    "raw_excerpt": "CodexがChatGPTに統合、Claude Fable 5の無料期間も延長",
+    "detail": "OpenAIのプログラミング支援ツール「Codex」がChatGPT本体に統合され、対抗するAnthropicはClaudeの新モデル「Fable 5」の無料期間を延長しました。ChatGPTだけでコード関連の作業がしやすくなり、アプリ開発や自動化の作業がまとめやすくなります。"
   },
   {
     "tool": "NotebookLM",
-    "title": "NotebookLMで縦型ショート動画の解説を自動生成",
-    "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNbHkxazhqVFE5OE9BRFpnaktURFRIa0drN2tBb0owMEZ4STFRZng1ZG16SEcwTk83MUNBQi1WX0ZmbWhnNUljQ0tVb2hDVkhDVzNTUDRwNVA5d1d4NXF2TFNDLVhCNXQyWW5iUnBDdHVpNy01OXBVRVhNTC12QWRycFF3eWt0a0RqdmJTbEhjRmYwMG03VUN0ZHk3MA?oc=5",
-    "published_at": "2026-07-07T18:02:27.000Z",
-    "raw_excerpt": "NotebookLMが縦型ショート動画の解説生成に対応と紹介",
-    "detail": "GoogleのNotebookLMが、資料をもとに縦型ショート動画の解説を自動で作れるようになったという紹介です。手持ちの資料からSNS向けの短い動画が作れます。YouTubeショートやSNS発信のコンテンツ作りに役立ちます。"
+    "title": "NotebookLM使い方完全ガイド2026",
+    "source_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8yWVM1cjZJS0p1cW1BYVhGbWhiRkZ2NERHQzJHVE9pandyNmxIRW1rSDJ2WTJwMEE5TDJ2OEtIVDh5SHl1R0pGZ3JSWW9DWXAzNlY3aDZ1VmloVzJ0RHlTN2UzY3BRU1FYZFlkR20wY0FvUWM?oc=5",
+    "published_at": "2026-07-09T08:02:30.000Z",
+    "raw_excerpt": "初心者向けにNotebookLMの使い方をまとめた最新総まとめ",
+    "detail": "資料をアップして質問できるAI「NotebookLM」の使い方を、初心者向けにまとめた記事です。営業資料や社内文書の整理、情報収集に使えるので、基本から学びたい新井さんの参考になります。"
+  },
+  {
+    "tool": "v0",
+    "title": "LovableアプリをVercelに簡単公開",
+    "source_url": "https://vercel.com/changelog/you-can-now-deploy-lovable-apps-to-vercel",
+    "published_at": "2026-07-09T00:00:00.000Z",
+    "raw_excerpt": "設定不要でLovable製アプリをVercelに配置可能に",
+    "detail": "AIでアプリを作れる「Lovable」で作ったものを、面倒な設定なしでVercel（v0と同じ会社のサービス）に公開できるようになりました。アプリ開発をしている新井さんが、作ったものをすぐネット上に出しやすくなります。"
+  },
+  {
+    "tool": "v0",
+    "title": "GPT-5.6がv0のAI Gatewayで利用可能に",
+    "source_url": "https://vercel.com/changelog/gpt-5-6-now-available-on-ai-gateway",
+    "published_at": "2026-07-09T00:00:00.000Z",
+    "raw_excerpt": "最新のGPT-5.6が3種類のモデルでv0基盤から使える",
+    "detail": "v0を運営するVercelの「AI Gateway」で、最新のGPT-5.6が3つのモデルとして使えるようになりました。v0でのアプリ開発やLP制作で、より賢い最新モデルを選んで使えるようになります。"
+  },
+  {
+    "tool": "Suno",
+    "title": "音楽生成AI「Suno」がAPI提供を検討",
+    "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5BRkZqd2plbVppU0lhTV9JZzR6T1pkSnA4SldfUjJldzlTZzJwU1hMaFpwVGpJQ1lXeUFzaWdaTHI2SDJ0c21PcmxUczJfQXZvVGJJRw?oc=5",
+    "published_at": "2026-07-08T04:32:56.000Z",
+    "raw_excerpt": "Sunoが開発者向けにAPIを出す検討中と報道",
+    "detail": "音楽を自動で作れるAI「Suno」が、外部のアプリやサービスから使える「API」の提供を検討しています。実現すればKiki Toaの音楽制作を自分のアプリや自動化の仕組みに組み込めるようになる可能性があります。"
   },
   {
     "tool": "Canva",
@@ -85,14 +93,6 @@
     "source_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1obHZzQkJqZ3pValBTRnlJdGN4YUx4WHU5Y2ZSc3lwaWk0Vy13MWFQLWM4LXhmdnpoSzZKOFBRbXpLa2MxYkttNjhUSjRiWW56TlFN?oc=5",
     "published_at": "2026-07-06T00:00:00.000Z",
     "raw_excerpt": "CanvaのオンラインPDF編集の実力と限界を検証した記事",
-    "detail": "デザインツールCanvaで、PDFをどこまで編集できるかを検証した記事です。ブラウザ上でPDFを直接直せる機能の実力と限界がわかります。営業資料やLP素材のPDF修正作業に役立ちます。"
-  },
-  {
-    "tool": "Canva",
-    "title": "CanvaでAIを使い効果的にグラフィックを作る方法",
-    "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOVnJKMU1xQ1J4TVFVb25STmJmVlZsSDhuMXdueTh1Q3BDU0NyVnowZDdWQXpCT0VqRHgyV0xpZ3dhcjBGc0hWQ05oanJqZ3ZkN0lGdXZuY1VZSy0zZDNYRmlmQkhRSF93YzRoMVdfWTQ5ekFhQ3JMX0ZGN2plRGpaZjFZQko?oc=5",
-    "published_at": "2026-07-03T22:12:19.000Z",
-    "raw_excerpt": "CanvaのAI機能で便利にデザインを作るやり方を解説",
-    "detail": "Canvaに搭載されたAI機能を使って、効率よくきれいなグラフィックを作る方法を紹介する記事です。画像づくりの手間を減らせます。LP制作や商品バナー、SNS画像の作成に直接使えます。"
+    "detail": "CanvaでどこまでオンラインでPDFを編集できるかを検証した記事です。営業資料やLP関連の書類をCanva上で直せるかが分かるので、資料作りの効率化を考える新井さんの参考になります。"
   }
 ]
