@@ -1,98 +1,98 @@
 [
   {
-    "tool": "ChatGPT / OpenAI",
-    "title": "OpenAIがGPT-5.6を一般公開",
-    "source_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE80aV9VcFlTSVphNE0wdHNDb2pJamVPTU4tcUJrZktJajlnWUl3MjN1WVZpM25uTFllR2lNMFJra1NsUFZaaVR4MHgzSlFNV3ZHM01xY0JfU3ZPZzgyeGU2OWZXN2d6QUU1QWlv0gFrQVVfeXFMTzRpX1VwWVNJWmE0TTB0c0NvaklqZU9NTi1xQmtmS0lqOWdZSXcyM3VZVmkzbm5MWWVHaU0wUmtrU2xQVlppVHgweDNKUU1XdkczTXFjQl9Tdk9nODJ4ZTY5Zlc3Z3pBRTVBaW8?oc=5",
-    "published_at": "2026-07-11T21:00:00.000Z",
-    "raw_excerpt": "OpenAIの最新AIモデルGPT-5.6が一般ユーザー向けに公開された",
-    "detail": "ChatGPTを動かす最新モデル「GPT-5.6」が誰でも使えるようになりました。文章作成や資料作りの精度が上がる見込みです。新井さんの営業資料・社内文書・LP制作の下書きがより賢くなります。"
+    "tool": "Claude / Claude Code",
+    "title": "Claude Codeの利用上限50%増を7月19日まで延長",
+    "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9MNnE1bGVZc0E3YzJDU1pPMVZ4WjZubHJyM2FQWEdXellHWmRkTXEtTi0xaEQzYWVqT25zMlRrbGRWS1ppdllab3FVNkUtXzVUZF9IQUJYM2ZHNTFrUldNZVVOMXFsVEV6a3AySQ?oc=5",
+    "published_at": "2026-07-12T22:25:21.000Z",
+    "raw_excerpt": "AnthropicがClaude Codeの使用上限アップとFable 5無償を延長",
+    "detail": "Anthropicが、Claude Codeで使える量を50％増やす特典を7月19日まで延長すると発表しました。より多くの回数を気にせず開発作業ができます。Claude Codeでアプリ開発をする新井さんにとって、この期間はたくさん活用できるチャンスです。"
   },
   {
     "tool": "Gemini",
-    "title": "Gemini・ChatGPT・Copilotの使い分け術",
-    "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE95a2ozZFg0LXp2bk04ZGFWZE40bzFoV2dpOXdxa1dMbnF6MHR0bHlmY2xzc1RiWlpaUjdiTVF3eUw0SzhYcGljWFBtU0Z1S0pmQmtJaFZ4dURxYkRXWW9IUmZFTC1OSmVzN3pTdA?oc=5",
-    "published_at": "2026-07-11T10:37:16.000Z",
-    "raw_excerpt": "日経が3大AIチャットの得意分野と賢い使い分けを解説",
-    "detail": "Gemini・ChatGPT・Microsoft Copilotそれぞれの強みと、場面ごとの使い分け方を紹介した記事です。1つに絞らず用途で選ぶのがコツと説明。新井さんが複数ツールを効率よく使い回すヒントになります。"
-  },
-  {
-    "tool": "ChatGPT / OpenAI",
-    "title": "ChatGPT WorkがCodex統合で登場",
-    "source_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQREdfdGVrbTY1RnlqMEZoV2NlM0x6TVZsQnR6R2ZGLWh0MHNBaVY1YTFOUzhxZnZvWm00WDEzU3VLSFk5ZGJ1M3gtRVJXcWk4QjJMQmtVSC1FWmlxdDU3ZHpNS2pMRFVJY1VBdmI4VnZZem5sRnI1UEVlV1Y2d1czVlVIMmNxVkFSRVpnWEhMTkEtQm40VWZvT0hHSG9VMUM4cUZHQkFNX3EtdERNT2tnNGEzMFZEdHpTZUhHTW9aTG5Bdw?oc=5",
-    "published_at": "2026-07-11T05:24:17.000Z",
-    "raw_excerpt": "デスクトップアプリとCodexを組み込んだ業務向けChatGPT Workが公開",
-    "detail": "OpenAIが仕事向けの「ChatGPT Work」をリリースし、パソコン用アプリとコード生成のCodexを一体化しました。業務でのAI活用がひとつのアプリで完結します。新井さんの社内文書作成や業務自動化に役立ちます。"
+    "title": "ローム、社内AIをGeminiに乗り換え作業を大幅短縮",
+    "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9tSl9WYnM4NnczemNwOHgzUXFFcU9lUjh0MHZxemp1b3J1ZnJXZkhTS3NpLVJjTTVsQmFhQjZNSmd0LWxNODBiNHd2cDM0VGVmVF84cjVuZDNybTdBQTNfUTNLbUl2SDdOODRzQQ?oc=5",
+    "published_at": "2026-07-12T20:00:00.000Z",
+    "raw_excerpt": "1年かかる見込みのコード解析がGemini活用で1週間に短縮した事例",
+    "detail": "半導体メーカーのロームが社内AIをGeminiに切り替え、1年かかると見込まれたコードの解析作業が1週間で済んだという事例です。AIを業務にどう活かせば効果が出るかの具体例で、三高産業の業務改善や自動化を進める新井さんの参考になります。"
   },
   {
     "tool": "Gemini",
-    "title": "Geminiの思考モードが選択式に変更",
-    "source_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9zenNOR3ZSNzRuakhoS2F3XzhkWDA5cUl4MVNsV1h6SmQtekdjeGNxRnc5Tk5sclZOd1hxY2xfb0hCX0pzMVB0UE9jbWZVcVpfbjhRdlRyZmw2TnZGLWk2VzlBbWV4eTBDX3BzUzlINHFBZw?oc=5",
-    "published_at": "2026-07-11T04:08:32.000Z",
-    "raw_excerpt": "Geminiで「強化版思考モード」を選べる仕様に変わった",
-    "detail": "Geminiが、じっくり考えて答える「強化版思考モード」を自分で選べるようになりました。難しい作業だけ深く考えさせる使い分けが可能です。新井さんの複雑な資料作成や分析で精度を上げられます。"
+    "title": "Geminiは初期設定で使うな、良い回答を引き出す必須設定",
+    "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBQRnRiZHJfckNlR0Npakg2M1V1V2tCNThkcmYweE0zTGJIWHpjcjJET1RmQTIzTUUyVkp4Zmdad3J4SE9wUU5hTFFrUVktZEx5T0hqRXVWY3g5eDM4QlR4NWt0UDdyZw?oc=5",
+    "published_at": "2026-07-12T15:00:00.000Z",
+    "raw_excerpt": "主要3大AIで質の高い回答を得るための設定方法を解説",
+    "detail": "Geminiなど主要なAIを初期設定のまま使うと回答の質が落ちる、という設定のコツを紹介する記事です。ちょっとした設定変更で、より的確な答えを引き出せるようになります。日々AIを使う新井さんの作業効率を上げるのに役立ちます。"
+  },
+  {
+    "tool": "ChatGPT / OpenAI",
+    "title": "OpenAI、Codex統合の「ChatGPT Work」を全プラン無料提供",
+    "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5iT1Uzb2p4U3ctTkVQYU1CNThUSWhQQ1BzSWE5SFlXTXZEXzRoMTY1TGFHNkh3NDMxSFBMTjZGb0RNVXBHVEo0STRpQXgtcHNqb1cyNkhiaE9XOTY3WW90dlh4NNIBaEFVX3lxTE5GZFVPZGota25vWHRJY0xtR0VoZ3ZpR0RaMXNLMERMSXJVVDRDX2pYTERRb1hldy1kaFY4eF9DY1JXSzNZTGJaMFUwRnFDcGhnaW5PU3YzUjIzb2NXUVZFVko4MDc1aWFn?oc=5",
+    "published_at": "2026-07-12T07:58:26.000Z",
+    "raw_excerpt": "OpenAIが仕事向け新機能ChatGPT Workを発表、コーディングを超えて生産性を拡大",
+    "detail": "OpenAIが「ChatGPT Work」という仕事用の新機能を発表しました。プログラム作成を助けるCodexを組み込み、全プランで無料に広げると報じられています。営業資料や社内文書づくり、業務の自動化を進める新井さんにとって、ChatGPTでできる作業の幅が広がる注目ニュースです。"
   },
   {
     "tool": "Claude / Claude Code",
-    "title": "Claude Codeが自動モードを標準化",
-    "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.207",
-    "published_at": "2026-07-11T00:52:10.000Z",
-    "raw_excerpt": "Claude Codeの自動モードが設定なしで各基盤で使える様に",
-    "detail": "Claude Codeの新版で、これまで特別な設定が必要だった「自動モード」が最初から使えるようになりました。設定でオフにも切り替え可能です。新井さんのアプリ開発やコード作業がよりスムーズになります。"
-  },
-  {
-    "tool": "Claude / Claude Code",
-    "title": "Anthropicが従量課金制を導入",
-    "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOUGF2dHUxbENOX1JVT2FDOWViRW0wMnFKUDRYcTVwcENzWG9FUVdxX0hxdnpuYXEtWmJIdVBCSW1IUzVtcEVSdGVBejFvczlZN1REdDZLLTlHTkRONVhTdXpRYlVEVEhWR0Zqa1g4SVZ0cmN5ZzRfTDFOYXAyTnBpVXlYTWpoSVY1blQ5SUZwUWdSVWRRQzRlRGpReXBqNFo3YUE?oc=5",
-    "published_at": "2026-07-10T23:00:00.000Z",
-    "raw_excerpt": "Claudeの新モデルが使った分だけ払う従量課金制に移行",
-    "detail": "Anthropicが新しいClaudeで、定額ではなく使った量に応じて支払う料金体系を導入しました。使い方次第で費用が変わります。新井さんのClaude利用コストの見直しに関わる重要な料金変更です。"
-  },
-  {
-    "tool": "Gemini",
-    "title": "Gemini Deep Researchの使い方解説",
-    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1uX1lOZExwZ25meHhlM3QyN2dfaDQ4ZTg1WGtybi1tWUZudUp3VGJaN0xOWWxza2ljMTYwb2toeHNPNDVuVTI1WTBwbXRMOE8tMHRMdzJsYTNSRkdEeVNTYWlVX1RnTUdCeURHaloyNjNDQU1i?oc=5",
-    "published_at": "2026-07-10T22:02:55.000Z",
-    "raw_excerpt": "Geminiの調査機能を無料でどこまで使えるかをやさしく説明",
-    "detail": "Geminiの「Deep Research」は、テーマを与えると自動でネットを調べてレポートにまとめてくれる機能です。無料枠の範囲も解説されています。新井さんの営業資料や市場調査の下調べが一気に楽になります。"
-  },
-  {
-    "tool": "NotebookLM",
-    "title": "NotebookLM使い方完全ガイド",
-    "source_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8yWVM1cjZJS0p1cW1BYVhGbWhiRkZ2NERHQzJHVE9pandyNmxIRW1rSDJ2WTJwMEE5TDJ2OEtIVDh5SHl1R0pGZ3JSWW9DWXAzNlY3aDZ1VmloVzJ0RHlTN2UzY3BRU1FYZFlkR20wY0FvUWM?oc=5",
-    "published_at": "2026-07-09T08:02:30.000Z",
-    "raw_excerpt": "初心者向けにNotebookLMの基本を総まとめした2026年版ガイド",
-    "detail": "NotebookLMは、自分の資料を読み込ませて質問したり要約させたりできるGoogleのAIツールです。初めての人向けに使い方を一通り説明しています。新井さんの社内文書整理や情報収集の入門に最適です。"
-  },
-  {
-    "tool": "Canva",
-    "title": "Canvaが新機能発表イベント開催",
-    "source_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBhYnljaHdGMndKR3ctQ0xSb2N4d0kxWVRhNEg1T19vRUdydkt1NWlSUHFxY2FKdThXck1ob0VFZFJEZDM2Z2UwWlpJVk03VDV4cTZmc0NGTHBvcVVLM1J6Sg?oc=5",
-    "published_at": "2026-07-09T04:38:36.000Z",
-    "raw_excerpt": "Canva Create 2026でAIデザイン機能の新展開を発表",
-    "detail": "Canvaが年次イベント「Canva Create 2026」で、誰でもデザインできるAI機能を紹介しました。デザイン作業がさらに簡単になる方向です。新井さんのLP制作や営業資料のビジュアル作りに直結します。"
+    "title": "Claude『劣化』の真相、Anthropicが設定ミスを認める",
+    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA2MWoxejNrR3VHekJhcUR6YWpLUXpZQmZRUGFDUUlJNk5KTDJCc1B4UnczTE5JSEk4YmVPYVppZVUyQXNsOEx3VjQ3RUFNeTFnaUdSQy1FTHNnalNWUlozOW1QZnIxU1BXNlE0MnpnN1pBOWlM?oc=5",
+    "published_at": "2026-07-12T01:55:00.000Z",
+    "raw_excerpt": "Claudeの品質低下は性能ではなく『努力度』調整の設定ミスが原因と判明",
+    "detail": "最近Claudeの回答が悪くなったと感じる声がありましたが、Anthropicが原因は設定ミスだったと認めました。AIの実力が下がったのではなく、回答にかける『努力度』の調整に問題があったとのことです。Claude Codeでアプリ開発や文書作成をする新井さんには、品質の変動理由を知る安心材料になります。"
   },
   {
     "tool": "v0",
-    "title": "GPT-5.6が3モデルでAI Gatewayに登場",
-    "source_url": "https://vercel.com/changelog/gpt-5-6-now-available-on-ai-gateway",
-    "published_at": "2026-07-09T00:00:00.000Z",
-    "raw_excerpt": "OpenAIの新モデルGPT-5.6がSol/Luna/TerraとしてAI Gatewayでプレビュー提供開始",
-    "detail": "OpenAIの最新モデルGPT-5.6が、3つのバリエーション（Sol・Terra・Luna）でAI Gatewayから使えるようになりました。用途に応じて性能を選べます。新井さんのアプリ開発や文書作成で最新モデルを試せるチャンスです。"
+    "title": "画像生成モデル「Seedream 5.0 Pro」がAI Gatewayで利用可能に",
+    "source_url": "https://vercel.com/changelog/seedream-5-0-pro-is-now-available-on-ai-gateway",
+    "published_at": "2026-07-11T00:00:00.000Z",
+    "raw_excerpt": "文字を誤字なく描ける画像生成・編集モデルがv0基盤で使えるように",
+    "detail": "文章から画像を作れる新モデル「Seedream 5.0 Pro」が、v0を運営するVercelのAI Gatewayで使えるようになりました。画像内の文字をスペルミスなく描ける点が特徴です。LP制作やバナーなど文字入り画像を作る新井さんの画像生成作業に役立ちます。"
   },
   {
-    "tool": "Suno",
-    "title": "音楽生成AI SunoがAPI提供を検討",
-    "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5BRkZqd2plbVppU0lhTV9JZzR6T1pkSnA4SldfUjJldzlTZzJwU1hMaFpwVGpJQ1lXeUFzaWdaTHI2SDJ0c21PcmxUczJfQXZvVGJJRw?oc=5",
-    "published_at": "2026-07-08T04:32:56.000Z",
-    "raw_excerpt": "Sunoが開発者向けAPIの提供を検討中と報道",
-    "detail": "曲を自動生成できるSunoが、外部アプリから使える開発者向けの窓口（API）を出すか検討していると報じられました。実現すれば自分のツールに組み込めます。新井さんのKiki Toaの音楽制作やアプリ連携の幅が広がる可能性があります。"
+    "tool": "Gemini",
+    "title": "Gemini Deep Researchの使い方と無料枠を解説",
+    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1uX1lOZExwZ25meHhlM3QyN2dfaDQ4ZTg1WGtybi1tWUZudUp3VGJaN0xOWWxza2ljMTYwb2toeHNPNDVuVTI1WTBwbXRMOE8tMHRMdzJsYTNSRkdEeVNTYWlVX1RnTUdCeURHaloyNjNDQU1i?oc=5",
+    "published_at": "2026-07-10T22:02:55.000Z",
+    "raw_excerpt": "Geminiで深く調べる機能の使い方と無料でどこまで使えるかを紹介",
+    "detail": "Geminiの「Deep Research」という、テーマを深く調べてまとめてくれる機能の使い方を解説した記事です。無料でどこまで使えるかもやさしく説明しています。市場調査や資料作成をする新井さんの情報収集に役立ちます。"
   },
   {
     "tool": "NotebookLM",
-    "title": "NotebookLMが縦型ショート動画生成に対応",
+    "title": "NotebookLMのソース上限、無料50個・有料プランの違いを解説",
+    "source_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA3cVJncWRnWnlSZlZLcjFvMW1FcVBIYkplUlJPNkdveHZPWWxZMmhHVjJHRjZFblQwMS1QajN5R21FaTZzZ0wyNE1kbWN1b0h4NW1kMkZjdTNPMDhucURTWUxENzFHTFZwNHAwVTdPalQ?oc=5",
+    "published_at": "2026-07-10T08:01:02.000Z",
+    "raw_excerpt": "NotebookLMで読み込める資料数の上限を無料・有料別に整理",
+    "detail": "資料を読み込ませて要約や質問ができるNotebookLMについて、無料は50個まで、有料プランでどれだけ増えるかを公式情報に基づき整理した記事です。営業資料や社内文書を大量に扱う新井さんが、どのプランを選ぶべきか判断する材料になります。"
+  },
+  {
+    "tool": "Cursor",
+    "title": "Cursorがサイドチャットと会話検索機能を追加",
+    "source_url": "https://cursor.com/changelog/side-chat",
+    "published_at": "2026-07-10T00:00:00.000Z",
+    "raw_excerpt": "メイン作業を止めずに使えるサイドチャットと履歴検索が可能に",
+    "detail": "AIコーディングツールCursorに、メインの作業と並行して使えるサブのチャットや、過去のやり取りを検索する機能が追加されました。作業の流れを止めずに調べ物ができます。開発作業を効率化したい新井さんに便利な更新です。"
+  },
+  {
+    "tool": "v0",
+    "title": "Lovableで作ったアプリをVercelに設定なしで公開可能に",
+    "source_url": "https://vercel.com/changelog/you-can-now-deploy-lovable-apps-to-vercel",
+    "published_at": "2026-07-09T00:00:00.000Z",
+    "raw_excerpt": "LovableアプリをVercelへ設定不要でデプロイできるように",
+    "detail": "AIでアプリを作れるLovableのプロジェクトを、GitHub経由でVercelに簡単に公開できるようになりました。面倒な設定なしで自動的に動くようになります。アプリ開発やWeb公開をする新井さんの手間を減らせます。"
+  },
+  {
+    "tool": "Suno",
+    "title": "音楽生成AI「Suno」が開発者向けAPI提供を検討",
+    "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5BRkZqd2plbVppU0lhTV9JZzR6T1pkSnA4SldfUjJldzlTZzJwU1hMaFpwVGpJQ1lXeUFzaWdaTHI2SDJ0c21PcmxUczJfQXZvVGJJRw?oc=5",
+    "published_at": "2026-07-08T04:32:56.000Z",
+    "raw_excerpt": "Sunoが外部アプリと連携できるAPIの提供を検討中と報道",
+    "detail": "曲を自動で作れるAI「Suno」が、他のアプリやサービスと連携できる仕組み（API）を出すか検討していると報じられました。実現すれば、自分のアプリやワークフローに曲作りを組み込めるようになります。Kiki Toaの音楽制作やアプリ開発をする新井さんに直結する話題です。"
+  },
+  {
+    "tool": "NotebookLM",
+    "title": "NotebookLMが縦型ショート動画の解説生成に対応",
     "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNbHkxazhqVFE5OE9BRFpnaktURFRIa0drN2tBb0owMEZ4STFRZng1ZG16SEcwTk83MUNBQi1WX0ZmbWhnNUljQ0tVb2hDVkhDVzNTUDRwNVA5d1d4NXF2TFNDLVhCNXQyWW5iUnBDdHVpNy01OXBVRVhNTC12QWRycFF3eWt0a0RqdmJTbEhjRmYwMG03VUN0ZHk3MA?oc=5",
     "published_at": "2026-07-07T18:02:27.000Z",
-    "raw_excerpt": "NotebookLMで縦型ショート動画の解説生成が全展開",
-    "detail": "NotebookLMが、読み込んだ資料から縦型のショート動画解説を自動で作る機能を全ユーザーに広げました（まず英語対応）。SNS向け動画が手軽に作れます。新井さんのYouTube運用や動画発信のネタ作りに使えます。"
+    "raw_excerpt": "NotebookLMで縦型ショート動画向けの解説を生成できる機能",
+    "detail": "NotebookLMに、縦長のショート動画向け解説を作る機能が広がっているという情報です。資料をもとに動画のネタや解説を自動生成できます。YouTube運用や動画制作をする新井さんの、ショート動画づくりのヒントになります。"
   }
 ]
