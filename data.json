@@ -1,98 +1,98 @@
 [
   {
-    "tool": "v0",
-    "title": "Chat SDKがX(旧Twitter)対応を追加",
-    "source_url": "https://vercel.com/changelog/chat-sdk-adds-x-adapter-support",
-    "published_at": "2026-07-14T00:00:00.000Z",
-    "raw_excerpt": "1つのコードでSlackやDiscordに加えXでもボットを作れるように",
-    "detail": "v0関連のChat SDKが、X（旧Twitter）でも動くようになったニュースです。SlackやDiscord、Teamsなど複数の場所で同じコードからチャットボットを作れます。営業や運用の自動化ボットを幅広い場所で動かしたいときに役立ちます。"
+    "tool": "ChatGPT / OpenAI",
+    "title": "OpenAI、初のハードウェア製品を計画",
+    "source_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1WVXZsTGh3eGktaVo2c1luRWNnMk5JNnQwMk1Sclo0SU02allra3k5RHJDRVZnQ3M4M2ZicjllZ0haZzdzRVV4czl3NGZDYXdGckpfRnlyZDhLMVFoVy1ybnV4V3hfd3M?oc=5",
+    "published_at": "2026-07-14T23:04:00.000Z",
+    "raw_excerpt": "OpenAIが自社初のホームスピーカー発売を計画中",
+    "detail": "ChatGPTのOpenAIが、初のハードウェアとして家庭用スピーカーの発売を計画しているというニュースです。今後AIの使い方が広がる兆しです。ChatGPTを日常的に使う新井さんが、今後の製品展開を把握しておくのに役立ちます。"
+  },
+  {
+    "tool": "Claude / Claude Code",
+    "title": "Claude Codeの失敗しやすい3パターン",
+    "source_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9vZzNQa2NJRVdad3J2NGZ6S3Q1YmRtQVVPRDRoY0s4QWpxU0xrWThfZmtENllyeXpvU1VJMmVsYTVTS3E0azByRDJTczRYTl9XZk5yMFdYdHFKaFAyeVdISk5jamluYlQyLWd2NlZ5YzZjQQ?oc=5",
+    "published_at": "2026-07-14T22:00:00.000Z",
+    "raw_excerpt": "Claude Codeがトークンを使いすぎる「動的ワークフロー」など3つの注意点",
+    "detail": "Claude Codeが作業中に効率を落とす3つの失敗パターンを解説した記事です。特にトークン（AIの処理量＝コスト）を無駄に多く使ってしまうケースが紹介されています。新井さんがアプリ開発や業務自動化でClaude Codeを使う際、コストを抑え失敗を避ける実践的なコツになります。"
+  },
+  {
+    "tool": "NotebookLM",
+    "title": "AIで調べてNotebookLMにまとめる情報収集術",
+    "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5xXzdjWkdHM1REeTBPc3RDS1lBSmVkenNsRzhyZjhPUmNPUXJUVXdySW9JZF9ZSWpXbEFreHFha2dHbG0ydjl1OFVZaWR1ZkhoaVFDaWJUYWZmanRBVHpHV0NwVjYwc2J2a1lTamZNdmRsMHlYcnNhNFpGZV9LMzA?oc=5",
+    "published_at": "2026-07-14T15:00:00.000Z",
+    "raw_excerpt": "3大AIで深く調査しNotebookLMに集約する効率的な手法を紹介",
+    "detail": "ChatGPT・Gemini・Claudeなど複数のAIで深く調べ、その結果をNotebookLMに集めて整理する方法を解説した記事です。営業資料作りや市場調査など、情報を集めてまとめる作業が多い新井さんの効率化に直結する実践ノウハウです。"
+  },
+  {
+    "tool": "Claude / Claude Code",
+    "title": "DropboxがClaudeやGeminiとAI連携拡充",
+    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1kYm9ENkpqdXQxdDdCOTcwRVphcFFDVS0wN3pMcnU1YUEtdWlWNmplYVFjX0FTWGUxLXBtcWEzLVg0WDZMalZKUDN4eWg4bk9VT2ltZS1tcEM5ZWRoc0hlQTV5dHUxaGNfNHplYmJHU1UyRUdz?oc=5",
+    "published_at": "2026-07-14T05:05:00.000Z",
+    "raw_excerpt": "DropboxがAnthropic・Google・ChatGPTとのAI連携を強化",
+    "detail": "クラウド保存サービスのDropboxが、ClaudeやGemini、ChatGPTと連携する機能を大きく増やしたというニュースです。保存した資料をAIで直接扱いやすくなります。文書管理と自動化を進めたい新井さんの業務効率化に役立ちます。"
+  },
+  {
+    "tool": "Claude / Claude Code",
+    "title": "Claudeが従量課金制へ、定額プラン終了",
+    "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOUGF2dHUxbENOX1JVT2FDOWViRW0wMnFKUDRYcTVwcENzWG9FUVdxX0hxdnpuYXEtWmJIdVBCSW1IUzVtcEVSdGVBejFvczlZN1REdDZLLTlHTkRONVhTdXpRYlVEVEhWR0Zqa1g4SVZ0cmN5ZzRfTDFOYXAyTnBpVXlYTWpoSVY1blQ5SUZwUWdSVWRRQzRlRGpReXBqNFo3YUE?oc=5",
+    "published_at": "2026-07-14T05:02:55.000Z",
+    "raw_excerpt": "AnthropicがClaudeの新モデルを従量課金制に移行、定額AIの時代が変わる",
+    "detail": "AnthropicがClaudeの新モデルを、使った分だけ払う従量課金制にするというニュースです。今までの月額定額とは料金の考え方が変わります。新井さんがClaude Codeでアプリ開発や自動化を使うとき、使用量で費用が変動する可能性があるので、料金プランの確認が大切になります。"
   },
   {
     "tool": "ChatGPT / OpenAI",
-    "title": "ChatGPTの5時間制限を一時撤廃",
-    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB1eHNwM3ktNXk3Q2EyWlkyQVRiX2RHOFNhX0xDSXNMVmh1dFdXZUtLY25RX1dkOE1uV2cwY0JTUjU0c0lvODg4azg0NkpiNDVaV1NvRWc0Zkh1bW5PZnBFWTRQeGJOeFVPUi0tQ3d5YWY1MGxK?oc=5",
-    "published_at": "2026-07-13T11:56:00.000Z",
-    "raw_excerpt": "OpenAIがChatGPT WorkとCodexの5時間利用制限を一時的に解除",
-    "detail": "OpenAIが「ChatGPT Work」と「Codex」にあった5時間ごとの利用制限を一時的になくしたというニュースです（週ごとの上限は残ります）。文書作成やコード生成をまとめて長時間使いたいときに便利になります。営業資料作成やアプリ開発の作業がはかどる変更です。"
-  },
-  {
-    "tool": "ChatGPT / OpenAI",
-    "title": "ChatGPT WorkとCodexの違いを解説",
+    "title": "ChatGPT Workの機能・料金・使い方解説",
     "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBFdEF1YzV4amdVS3MxRTU3T1pVUHp5Vkc2VWxUOG05QW1CUS1TWm0zMzhndzBaVTVUcUU5eEtvQ0Jja1lzdElUVTNTX01OUFpHOVdnOWZtTEtKQWFqaUJR?oc=5",
-    "published_at": "2026-07-13T10:04:07.000Z",
-    "raw_excerpt": "ChatGPT Workの機能・料金・Codexとの違いをまとめた解説記事",
-    "detail": "仕事向けのChatGPT「ChatGPT Work」の機能や料金、コード生成向けの「Codex」との違いを分かりやすくまとめた記事です。どの用途にどちらを使えばよいか整理でき、文書作成やアプリ開発でのツール選びの参考になります。"
+    "published_at": "2026-07-14T04:48:03.000Z",
+    "raw_excerpt": "仕事向けChatGPT Workの機能や料金、Codexとの違いを整理",
+    "detail": "仕事用に作られたChatGPT Workについて、何ができるか・料金・開発向けのCodexとの違いを分かりやすくまとめた記事です。営業資料や社内文書の作成、業務効率化をChatGPTで進めたい新井さんに、導入判断の材料になります。"
   },
   {
-    "tool": "Claude / Claude Code",
-    "title": "Claude Codeの「空回り課金」に指摘",
-    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1oa1NoOTkyQUpvZGJ1dll6MGthS0pkam4yck1VZFpvYjdBdjVDdndra1VfRWhBMmhxeE1mNDQwbmJvd1I2NFFGeE1nb1R0eGhLOXNURVkzVlV6dUJjeEM5SVJsa25uSWhXYlVWX1QyNG12OTFx?oc=5",
-    "published_at": "2026-07-13T08:46:00.000Z",
-    "raw_excerpt": "指示を出す前に約3.3万トークン消費、競合の4.7倍との分析",
-    "detail": "Claude Codeが、実際に指示を出す前の準備段階で約3.3万トークン（AIが処理する文字量の単位）を消費し、競合ツールの4.7倍だと指摘されたニュースです。トークンは料金に直結するので、使い方によっては費用がかさむ可能性があります。コスト管理をしながら使う参考になります。"
+    "tool": "Canva",
+    "title": "Canvaのプロ向け編集ツールAffinityの実力",
+    "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1ZMGhpTi1MQ1dzYkRCaThJWHA2eWplX1Zta1V6ajlsaUhxRUp1aV9iTVhvT1FfRTBTUTBGZmZKUFNIdm1mZFlwMWlVUHFwQmRFQ0ZOZ3gzX1Y5VWtLUk5GUmluNA?oc=5",
+    "published_at": "2026-07-14T00:05:00.000Z",
+    "raw_excerpt": "Canva傘下のAffinityの性能とツール普及の意味を検証",
+    "detail": "Canvaが提供するプロ向けデザインソフト「Affinity by Canva」の実力を検証した記事です。より本格的な画像・LP制作に使える可能性があります。EC・LP制作やデザイン業務が多い新井さんに、Canvaの新しい選択肢として役立ちます。"
   },
   {
-    "tool": "ChatGPT / OpenAI",
-    "title": "OpenAIがブラウザ「Atlas」提供終了",
-    "source_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9YeldITkJLNjN1Qkd0NFE0aTdqYnY1eDgtc2Jray1KRXNPd21KdHNjbUlTdmhXMkNIMVktaTdxN2YtLXNhbkt4UXpxc1RCdDB1QnJydVpVV1R1Zk13dHROS0xkZmxBbXM?oc=5",
-    "published_at": "2026-07-13T08:45:15.000Z",
-    "raw_excerpt": "ChatGPT組み込みブラウザ「Atlas」のサービスが終了へ",
-    "detail": "OpenAIが、ChatGPTを組み込んだWebブラウザ「Atlas」の提供を終了すると発表したニュースです。使っていた場合は別の方法への切り替えが必要になります。AIツールは急に終了することもあるので、業務で依存しすぎないための教訓にもなります。"
+    "tool": "v0",
+    "title": "VercelプラグインがVS CodeとCopilotに対応",
+    "source_url": "https://vercel.com/changelog/vercel-plugin-now-available-in-vs-code-and-github-copilot-cli",
+    "published_at": "2026-07-14T00:00:00.000Z",
+    "raw_excerpt": "v0関連のVercel機能がVS CodeやGitHub Copilot CLIで使えるように",
+    "detail": "v0を提供するVercelのプラグインが、コード編集ツールVS CodeやGitHub Copilotで使えるようになりました。Next.jsなどの開発支援がその場で受けられます。新井さんのアプリ開発で、コードを書きながら効率的に作業できるようになります。"
   },
   {
-    "tool": "Claude / Claude Code",
-    "title": "Claudeの最上位モデルが無料期間を再延長",
-    "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5jV1pYeWJ0WUJWSU9DZmxhYlVKTzIyZzZGMGR1bTNxeTZXUFZnem9hWjlha1pURlFJWk1uRko5VUFnVlROM0xDQVFUanhGMzhIdHN1TnM3T0ZJc2lDWjVWakxWaENBbEJSc0RiSA?oc=5",
-    "published_at": "2026-07-13T03:27:00.000Z",
-    "raw_excerpt": "Anthropicが「Fable 5」を追加費用なしで7月19日まで利用可能に",
-    "detail": "Claudeを提供するAnthropicが、最上位AIモデル「Fable 5」を追加料金なしで使える期間を7月19日まで延長したというニュースです。高性能なAIを無料で試せるチャンスなので、Claude Codeでのアプリ開発や文書作成でぜひ活用したい期間です。"
+    "tool": "NotebookLM",
+    "title": "NotebookLM作成スライドの編集と活用術",
+    "source_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB1TVRWOGtaUmFselVZdmt4Z3o1eUE1WXFYV05hR2xxVFBtLUF0X0FHTjhNd2lHdU1aejgzemx3bG9sTUQ3QUJKbE1iQUlIeElOdUE?oc=5",
+    "published_at": "2026-07-14T00:00:00.000Z",
+    "raw_excerpt": "NotebookLMで作ったスライドを編集する方法と仕事での使い方",
+    "detail": "NotebookLMで自動生成したスライドを編集できるか、仕事で活かすコツを解説した記事です。資料作成に応用できます。営業資料や社内文書を作ることが多い新井さんに、資料作りを時短する具体的な方法として役立ちます。"
+  },
+  {
+    "tool": "NotebookLM",
+    "title": "NotebookLMの無料・有料プラン比較",
+    "source_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE8wdWpoSzFUZXp1QUI3T2hLdXNuNjJGRzdoLU1lWTB3ZEFVVjBlbVpUVVlMWFFZaHlOSkhiYjhZSVZXM2NuQzlUUzAxLWtUYWtac1hHV2t0SzBENm53MEZLWUI1dm5ZRXg2c3RaRGpfM1dxRS1kSFY4V0dSZw?oc=5",
+    "published_at": "2026-07-13T08:00:34.000Z",
+    "raw_excerpt": "NotebookLMの無料枠と有料（Plus/Pro/Ultra）の違いを最新解説",
+    "detail": "NotebookLMがどこまで無料で使えるか、有料プランとの違いを最新情報でまとめた記事です。情報整理や資料作りにNotebookLMを使う新井さんが、必要なプランを選ぶ判断材料になります。"
   },
   {
     "tool": "Suno",
-    "title": "Suno、音楽チームを大幅強化",
+    "title": "Suno、音楽チームを拡充",
     "source_url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE13bmgtWjlOZ3lyQjhTWEk5RHA0YmVJd18tS09XMzJCZ2NQY0lSZlp3dXk2MlJJYnowQ245S3FWUUhlTjFvYkE?oc=5",
     "published_at": "2026-07-13T02:04:34.000Z",
-    "raw_excerpt": "SunoがアトランティックやYouTubeの元幹部を採用し体制を拡充",
-    "detail": "音楽生成AIのSunoが、大手レーベルのアトランティックやYouTubeの元幹部を採用して音楽チームを強化したというニュースです。会社が本気で音楽業界に取り組む姿勢の表れで、今後の機能改善やサービス拡充が期待できます。Sunoを使うKiki Toaの制作にも影響する動きです。"
-  },
-  {
-    "tool": "v0",
-    "title": "Vercel AI Gatewayに公開データ付きランキング",
-    "source_url": "https://vercel.com/changelog/open-data-and-shareable-charts-for-ai-gateway-leaderboards",
-    "published_at": "2026-07-13T00:00:00.000Z",
-    "raw_excerpt": "本番環境でのAI利用状況を示すリーダーボードが共有可能に",
-    "detail": "v0を提供するVercelの「AI Gateway」で、実際に使われているAIモデルやアプリのランキングが公開データとして見られるようになりました。今どのAIが実務でよく使われているかが分かるので、ツール選びの判断材料になります。"
-  },
-  {
-    "tool": "Cursor",
-    "title": "Cursorにサイドチャットと会話検索が追加",
-    "source_url": "https://cursor.com/changelog/side-chat",
-    "published_at": "2026-07-10T00:00:00.000Z",
-    "raw_excerpt": "メイン作業と並行して使えるサイドチャットや過去会話の検索が可能に",
-    "detail": "AIコーディングツール「Cursor」に、メインの作業を止めずに横で質問できる「サイドチャット」や、過去のAIとのやり取りを検索できる機能が追加されました。開発中に集中を切らさず調べ物ができるので、アプリ開発の作業効率が上がります。"
-  },
-  {
-    "tool": "NotebookLM",
-    "title": "NotebookLM使い方完全ガイド",
-    "source_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8yWVM1cjZJS0p1cW1BYVhGbWhiRkZ2NERHQzJHVE9pandyNmxIRW1rSDJ2WTJwMEE5TDJ2OEtIVDh5SHl1R0pGZ3JSWW9DWXAzNlY3aDZ1VmloVzJ0RHlTN2UzY3BRU1FYZFlkR20wY0FvUWM?oc=5",
-    "published_at": "2026-07-09T08:02:30.000Z",
-    "raw_excerpt": "初心者向けにNotebookLMの使い方を総まとめした2026年最新記事",
-    "detail": "資料を読み込ませて要約や質問応答ができるGoogleのAI「NotebookLM」の使い方を、初心者向けにまとめた最新ガイドです。社内文書の整理や大量資料からの情報抽出に使えるので、三高産業の業務改善や資料作成の効率化に役立ちます。"
+    "raw_excerpt": "SunoがアトランティックやYouTubeの元幹部を採用し体制強化",
+    "detail": "音楽生成AIのSunoが、大手レコード会社やYouTubeの元幹部を採用して音楽事業のチームを強化したというニュースです。今後Sunoの機能や音楽業界との連携が進む兆しで、Sunoで音楽制作やYouTube運用をする新井さんに関わる動きです。"
   },
   {
     "tool": "Suno",
-    "title": "音楽生成AI「Suno」がAPI提供を検討",
+    "title": "Suno、開発者向けAPI提供を検討",
     "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5BRkZqd2plbVppU0lhTV9JZzR6T1pkSnA4SldfUjJldzlTZzJwU1hMaFpwVGpJQ1lXeUFzaWdaTHI2SDJ0c21PcmxUczJfQXZvVGJJRw?oc=5",
     "published_at": "2026-07-08T04:32:56.000Z",
-    "raw_excerpt": "SunoがAPI公開を検討中、外部アプリと連携した楽曲制作の自動化に期待",
-    "detail": "音楽を作れるAI「Suno」が、開発者向けのAPI（外部のプログラムから機能を呼び出せる仕組み）を提供することを検討しているというニュースです。これが実現すれば、Kiki Toaの音楽制作を自分のアプリやツールと連携させて自動化できる可能性があります。ただし現在は著作権をめぐる係争中でもあるので、続報を注視する価値があります。"
-  },
-  {
-    "tool": "NotebookLM",
-    "title": "NotebookLMで縦型ショート動画解説を生成",
-    "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNbHkxazhqVFE5OE9BRFpnaktURFRIa0drN2tBb0owMEZ4STFRZng1ZG16SEcwTk83MUNBQi1WX0ZmbWhnNUljQ0tVb2hDVkhDVzNTUDRwNVA5d1d4NXF2TFNDLVhCNXQyWW5iUnBDdHVpNy01OXBVRVhNTC12QWRycFF3eWt0a0RqdmJTbEhjRmYwMG03VUN0ZHk3MA?oc=5",
-    "published_at": "2026-07-07T18:02:27.000Z",
-    "raw_excerpt": "NotebookLMが縦型ショート動画の解説生成機能を全展開",
-    "detail": "Googleの資料整理AI「NotebookLM」が、縦型のショート動画で内容を解説する機能を全ユーザーに広げたというニュースです。資料をもとに自動で動画を作れるので、YouTubeのショート動画や営業資料の説明コンテンツ作りに役立ちます。"
+    "raw_excerpt": "音楽生成AI Sunoが外部連携できるAPI提供を検討中",
+    "detail": "音楽生成AIのSunoが、他のアプリやサービスと連携できるAPIの提供を検討しているというニュースです。実現すれば、Kiki Toaの音楽制作を自作アプリや自動化の仕組みに組み込める可能性が出てきます。新井さんの音楽制作と開発をつなげるチャンスです。"
   }
 ]
