@@ -1,90 +1,98 @@
 [
   {
-    "tool": "Canva",
-    "title": "Canvaコード2.0：言葉だけでWebやアプリ作成",
-    "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8wejhSNzNzN1pJMGVQcTYyRTRwc2tUSThRMU9MSkd6bDVncHFUSGVoOWhHSC1UV0VsZ1U5NS14OGViTFlTZkJrdFZ5RWVOM0I2SGJsU3czNFJyNUh3eHU4NThKdWlTTC1ZMl9QbV81dmxhVG5YNjJlZ00yR282OVU?oc=5",
-    "published_at": "2026-07-16T00:00:00.000Z",
-    "raw_excerpt": "自然言語で指示するだけでWebサイトやアプリを作れる「Canvaコード2.0」が登場",
-    "detail": "Canvaに、やりたいことを普通の言葉で伝えるだけでWebサイトやアプリの見た目を作れる新機能が加わりました。専門的なコードを書かなくても、イメージを文章で伝えれば形にしてくれます。LP制作やちょっとしたアプリ試作を、いつも使うCanva内でスピーディに進められるので新井さんの制作作業の時短に役立ちます。"
+    "tool": "NotebookLM",
+    "title": "Gemini Notebookにコード実行機能が追加",
+    "source_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxORC1vMzVCZUc2bi1XYlZwSHcwWURJTzM3MnlHLVRKME9IZXZfSUxjVEVDQURJRVVlWlc5Y1B2MjZweUMtV3VhVXZJUmg3SGc3R1BHR3RWVWVJRjJkUURrZnZGSVJUTzNoR1NWc2dpZjBQU0pxemN2cUUxc05QZjNnUg?oc=5",
+    "published_at": "2026-07-16T22:48:46.000Z",
+    "raw_excerpt": "改称に加え、データ分析用のコード実行機能が新たに使えるように",
+    "detail": "名称変更と同時に、表やデータを自動で計算・分析できる機能が加わりました。売上データやアクセス数の整理をAIに頼めるので、EC/楽天の数字分析や三高産業の業務改善に役立ちます。"
   },
   {
     "tool": "Gemini",
-    "title": "「Gemini Spark」が日本で解禁",
-    "source_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5razJXdGJjblNiZUFpckc3YndRb1c5ZFpJYVVYczZPVEhGREJ1OTMtczQ0WXNjeVI4b0NkblJxYXoyMkZXVGhlS1JUc1lYQ1VhaVBKeFh4T1hrTGpEbUU2dnZIV2g2NkZ4SlVObklaOE4?oc=5",
-    "published_at": "2026-07-15T21:01:15.000Z",
-    "raw_excerpt": "Geminiの新機能「Spark」が日本でも使えるように展開拡大",
-    "detail": "GoogleのAI「Gemini」の新しい機能「Spark」が日本でも利用できるようになりました。Geminiの活用の幅が広がります。画像生成や文書作成でGeminiを使う新井さんが試せる選択肢が増えます。"
+    "title": "Gemini Sparkの日本語版が国内提供開始",
+    "source_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE5lSDFDUUMzV0FLMHNTTmxYVWlHOHJQRlJqVnR5V0Z1Zkx2Q3o3Mzlpb1k0NGpqTGMwbk8tbDV1Wmk?oc=5",
+    "published_at": "2026-07-16T22:19:56.000Z",
+    "raw_excerpt": "スマホを閉じても裏で作業を進めるGeminiの新機能が日本上陸",
+    "detail": "指示を出すと裏側で自動的に作業を進めてくれるGeminiの新機能「Spark」が日本語で使えるようになりました。調べ物や下書き作成を任せて放置できるので、業務の効率化・自動化に使えます。"
   },
   {
-    "tool": "Claude / Claude Code",
-    "title": "Claudeの「Reflection」機能を解説",
-    "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4zTVZpZXltQ3c2a0YyNnlBekFJMDJ1cTR6Q0RvcEwwQy1Jem1EengxV29fa1dwVkY4cGlLbDhVN0NMUmY0bGpERmJlOTl1amwxMjgtY2JRV2lsX1g4Wkw5ZXpHN0x0LXQ1QmI2Ug?oc=5",
-    "published_at": "2026-07-15T20:00:00.000Z",
-    "raw_excerpt": "AIに任せすぎを防ぐClaudeの新機能をセキュリティ視点で解説",
-    "detail": "ClaudeにAIの作業を振り返って確認できる「Reflection」という機能が登場し、任せすぎによるミスや情報漏れのリスクを情シス目線で解説しています。安全にAIを使うための注意点が分かります。業務自動化を進める新井さんが安心して導入するための参考になります。"
+    "tool": "Canva",
+    "title": "Canvaコード2.0でコード生成が高速化",
+    "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNdlNuOUNrNURDODQ3SE9DSUNkUGZFQUN5NzNLWk9rWUFlRUxQNnltaEpHRFFXWmV1c2hkWlB3YTFkTUg2U3ZrLTAyejFsRER4eGZGNDBwT2lZUnZJYzRka2RGNHRsekhmcjRCeDVGcnhZSENCeWpmLUZTNnctdHlhS2tjNzdhWk1XZHNqclJ3UDNUVm01bHpueE1LZmN2TTE1djZWTmNMRnREbEnSAbABQVVfeXFMTy1KZ1J0UHpSdVVSUmRNYXU2ZG9yTkZZMTMyUEswZHJoaFhlLXdpbTZjWTJYRjA0SHF0LXdNaktMSEtRSlVvNVFOSkpDNmFRQVpleFd1TkxaWHhKUHlqS21TTkFCc0FLWUhZSXZOTnNYTy1pRHhuejhoOUY4cGU4ZnRKSnhLdWo3UlpnYzNTRmtMV2dMSkRsX3hrcVJDZm9SUC1kSmZpSXZEQklYWVFyT00?oc=5",
+    "published_at": "2026-07-16T22:13:48.000Z",
+    "raw_excerpt": "Canvaの「コード」機能が刷新、生成時間を75%短縮",
+    "detail": "Canvaで話し言葉から動くWebパーツやアプリを作れる「Canvaコード」が2.0に進化し、作る速さが大きく上がりました。LPの部品づくりや簡単なアプリ試作を、専門知識なしでサッと形にできます。"
+  },
+  {
+    "tool": "Gemini",
+    "title": "NotebookLMが「Gemini Notebook」に改称・機能強化",
+    "source_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPZklqYllfYnFUMm5UUEF1MVJiYUNLUXlvdlhMWEJGTkQwa05kUmdDaUVOZlR0RllZMlJuU1pLR21tdV9PM0Nsa3ViSHhYNlpkX3duaW5uYWgwX2ZEMm5hYkZoeDVhMGxZeEhYa3pkZG1MMUNBclJFVVhVWENKQ1ZmRDZ6MDRIVHd3bHJzUkxOVm1fc2VuR0lEbFRXUlJpNG02ZnVkRGF5MFFOS0VEeXo2S2t1RXV1b1gzU203ZnZkdnJpRnd5dV9wVdIBeEFVX3lxTE9XVHJwYWxKS1JLQVItby1hSXJWaTNrb3RzRHZ3NDVrX1BBUTZaSHdTRURYRW5KN3hfUUw1bTBPNHpQdUl6MDJMbC03c3RDUW1wNzg2QWRYOEx5dXJ3b3Q1dk5NNFhDUWFRMmZpUVZ5ZEpNbTJLZXpoMQ?oc=5",
+    "published_at": "2026-07-16T22:05:20.000Z",
+    "raw_excerpt": "GoogleのNotebookLMが名称変更し、Gemini 3.5強化がAI Proに拡大",
+    "detail": "Googleの資料整理AI「NotebookLM」が「Gemini Notebook」に名前を変えました。中身の頭脳がGemini 3.5に強化され、有料のAI Proでも使えるようになります。営業資料や社内文書の下調べ・要約を任せるのに便利で、新井さんの資料作成がはかどります。"
   },
   {
     "tool": "ChatGPT / OpenAI",
-    "title": "ChatGPTに横断検索機能が追加",
-    "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNamphcGljeDlyWFJ1VTY4WThMLTI5VzVmcHJvX1h1OUhRal9DTXZCYWxjdWJwWEQ2SnlMVzZaX2RtYThqb0l1REM1Skwxb2JvR2g0MGtTMnUtUklsN1NDNERIeURLbWlEaFgxdVk2czNvd2Z6NkQ5QV9xZm1JYk5vYTdqRjFhZldXN2xLSmNB?oc=5",
-    "published_at": "2026-07-15T17:59:44.000Z",
-    "raw_excerpt": "過去のチャットやプロジェクト、ファイルをまとめて検索できる新機能",
-    "detail": "OpenAIがChatGPTに、これまでのやり取りやプロジェクト、アップロードしたファイルをまとめて探せる検索機能を追加しました。「あの資料どこだっけ」を素早く見つけられます。営業資料や社内文書を多く扱う新井さんが、過去の作業成果を再利用しやすくなります。"
-  },
-  {
-    "tool": "Claude / Claude Code",
-    "title": "AnthropicのAIがPRの65%を自動生成",
-    "source_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1sZUZsOUJHNWhrTG51UGdEcUIxcTNrbXBuT0RkLWUybXd2bWU2WTUtVU5EVEx2MzgzRWc0TURzTW9CdEFXVmNNd3MzQy1ZM0tuY1otM3VOc1AyZw?oc=5",
-    "published_at": "2026-07-15T17:09:00.000Z",
-    "raw_excerpt": "自律型AIがコード変更の多くを自動作成、人間の役割は判断へ",
-    "detail": "Claudeを作るAnthropicで、AIエージェントがプログラム変更の約65%を自動で作っているという内容です。人間の仕事はコードを書くことから「良し悪しを判断すること」に移りつつあります。Claude Codeでアプリ開発を進める新井さんに、AI活用の最新の姿を示してくれます。"
-  },
-  {
-    "tool": "Gemini",
-    "title": "Chrome版Geminiで動画を一瞬要約",
-    "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5PelBBdmdKQWMtV08zSWFzU1JuTHRyaEFxSTNBT1g2c2F5NURmNjF4Q1JWeWp4dG5oVG9PeUcyazJIYUQyeW5OUTZmaEh5TnNLYjFPLUtoNDZ3NjBLMkxjZUQ4OGZjUQ?oc=5",
-    "published_at": "2026-07-15T15:00:00.000Z",
-    "raw_excerpt": "Chromeの「Geminiサイドパネル」でYouTube動画などを素早く要約",
-    "detail": "ブラウザChromeの横に出るGeminiパネルを使うと、開いているYouTube動画やWebページを一瞬で要約できます。長い動画を全部見なくても要点をつかめます。競合のYouTube研究や情報収集の時間短縮に役立ちます。"
+    "title": "OpenAIの新音声モデル「GPT-Live」",
+    "source_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB0a3J3WkRtU01nOFdRTEhJWnB1bEpoc2JPU1hUX1FXbzh1bXJpTTh1TnRVeUlCNUFlOVFhSG1LdjhpcktIcDE0X1Z2TDMyQ1o2VlFv?oc=5",
+    "published_at": "2026-07-16T22:00:00.000Z",
+    "raw_excerpt": "人間のように自然に会話できる新音声モデルが登場",
+    "detail": "OpenAIが、より人間らしくスムーズに話せる音声AIを発表しました。動画のナレーションや、音声での商品説明・問い合わせ対応など、Kiki ToaのYouTubeや営業の場面で活用の幅が広がります。"
   },
   {
     "tool": "Canva",
-    "title": "CanvaでAI生成動画の品質を安定させるコツ",
-    "source_url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9fdkpIN0FEa01sVENDSXV5cDFwMDNGWHFvZ1hEUmE0T0trdW1CLURyR1N6OG15R0FqOTdxZXJxOEJlZG8?oc=5",
-    "published_at": "2026-07-15T01:02:56.000Z",
-    "raw_excerpt": "毎回ブレるAI動画のクオリティを、Canvaのひと手間でそろえる方法を解説",
-    "detail": "AIで動画を作ると毎回できあがりの質が変わってしまう悩みを、Canvaの操作を一手間加えることで解決する記事です。安定した仕上がりにするコツが紹介されています。Kiki ToaのYouTube動画やSNS用素材を量産するときに、品質のばらつきを抑えられて役立ちます。"
+    "title": "Google検索AIモードがCanva等と直接連携",
+    "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1hSThvU1UwT2MtODh4WENTQmxubzFCdGhRbDQwem5RMW9TSWUwZFZ6ei1DNlNrZTFrWV8tWEFOU24wb1FaUFFZZ24taU9kU0hrYmhGOHAxTTNWNG5mdXZQdEwyRG1DT3dkS2hEZQ?oc=5",
+    "published_at": "2026-07-16T21:51:00.000Z",
+    "raw_excerpt": "検索結果からそのままCanvaやYouTube Musicで作業できるように",
+    "detail": "Google検索の「AIモード」から、いちいちアプリを開かなくてもCanvaで制作を始められるようになりました。LP用画像やバナーのアイデア出しから制作までの流れが短くなり、Canvaをよく使う新井さんの作業が速くなります。"
   },
   {
-    "tool": "NotebookLM",
-    "title": "NotebookLMのスライドをPowerPointに変換",
-    "source_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5HcUNtS1ZyWVozd1l6aTdTb0lwVHJ1eG1scHpNbXJEaENIUTFoRlZZOEsxX3g3ZEMxVU1Mc0l1cWhwc3NpdEFRZWpNZDVxMEIxV1pOMExyUnBoN0JyYldybHhiTGRsTm9zbVdBbkJJV3FVQQ?oc=5",
-    "published_at": "2026-07-15T01:00:00.000Z",
-    "raw_excerpt": "NotebookLMで作ったスライドを編集可能なPowerPoint形式にする方法",
-    "detail": "NotebookLMが生成したスライドを、後から自由に編集できるPowerPoint形式に変換する手順を紹介しています。AIの下書きを社内テンプレートに合わせて仕上げられます。営業資料や社内説明資料の作成を効率化できます。"
+    "tool": "Cursor",
+    "title": "Cursor全プランでAI利用上限が2倍に",
+    "source_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFA1M3pIVFd3aVFpUDByZUJNZDZVeG50QXhvalFiVDJlbGEtTGEyQi1QeUV1bTJGTWZLbGJJRERrTHZlZDRYaVpLcEhQUnloQUNuRi1nMnl3ZUtucnMyLVRXWXJDQWt3UnBZU3pF?oc=5",
+    "published_at": "2026-07-16T12:33:55.000Z",
+    "raw_excerpt": "コーディング支援ツールCursorの使用上限が全プランで倍増",
+    "detail": "AIでプログラミングを助ける「Cursor」が、どのプランでもAIを使える回数を2倍にしました。同じ料金でより多く使えるので、アプリ開発を進める新井さんに直接お得な変更です。"
   },
   {
-    "tool": "NotebookLM",
-    "title": "リサーチはNotebookLM集約が黄金ルート",
-    "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5qWTI4M2hFUnk4cnBNVHlENTY2cjRVdjBLLV9hSVpkN1VDbk92LWp6YUxCZkFvd1dmbWc5UllqTWF4V1hjNE0tb2YwbE9hZ1lVMmNRN3RudXV2RVl4MU8ySWtWZW9Idw?oc=5",
-    "published_at": "2026-07-14T15:00:00.000Z",
-    "raw_excerpt": "3大AIで調べた情報をNotebookLMに集めて整理する効率的な手法を紹介",
-    "detail": "ChatGPT・Gemini・Claudeなどで深掘り調査した内容を、NotebookLMに集めて整理・活用する情報収集の流れを解説しています。バラバラな調査結果を一元管理できます。EC市場調査や営業資料作成の下調べを効率化するのに使える手法です。"
-  },
-  {
-    "tool": "Canva",
-    "title": "CanvaのプロデザインツールAffinityの実力",
-    "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1ZMGhpTi1MQ1dzYkRCaThJWHA2eWplX1Zta1V6ajlsaUhxRUp1aV9iTVhvT1FfRTBTUTBGZmZKUFNIdm1mZFlwMWlVUHFwQmRFQ0ZOZ3gzX1Y5VWtLUk5GUmluNA?oc=5",
-    "published_at": "2026-07-14T00:05:00.000Z",
-    "raw_excerpt": "Canva傘下の本格デザインツール「Affinity by Canva」を検証",
-    "detail": "Canvaが提供する本格的なデザインソフト「Affinity by Canva」の実力を検証した記事です。無料寄りで高機能なツールとして注目されています。LP用の画像やバナーなど、より作り込んだデザインが必要なときの選択肢になります。"
+    "tool": "ChatGPT / OpenAI",
+    "title": "OpenAIが公式プロンプトガイドを公開",
+    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5uaGRkeENkYWFVNE9XTjVYczVNR3hjZWRLZTJxTEh5T1JmSC10d0NBY3RJZjNQN3Z3Q0JyZHI5c3ZGdHJCcHFEV1kyaEZ5SHR6X0NPSi1jQ1dBWm1vSnMyMTBaeGtleWFtZUQxQnNLRkl1akJ1?oc=5",
+    "published_at": "2026-07-16T08:36:00.000Z",
+    "raw_excerpt": "ChatGPTを上手に使う8つのコツと新機能を同時発表",
+    "detail": "OpenAIが「ChatGPTへの指示の出し方」の公式ガイドを出しました。良い答えを引き出すコツがまとまっているので、資料作成や自動化の指示文を改善でき、日々のAI活用の質が上がります。"
   },
   {
     "tool": "Suno",
-    "title": "Suno AIの使い方と料金を解説",
-    "source_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5kX3FLdWJEYnFtN3c3WGlQVEd4MEhxMjdDaExQM2F2QURDeEU1NkVLbWstUjd1aDlyd0FjdGZCUHNOSEI4cnp0SEY3RkF0aWZOTXQzdTFOYi1PVEFXcTA2N3NfMWlKNXRKdnQzWmtTVnE?oc=5",
-    "published_at": "2026-07-10T07:00:00.000Z",
-    "raw_excerpt": "音楽生成AI「Suno」の使い方から料金プランまで詳しくまとめた記事",
-    "detail": "音楽を自動で作れるAI「Suno」について、基本的な使い方や料金プランを一通り解説しています。改めて機能や費用を整理できます。Kiki Toaの音楽制作でSunoを使う新井さんが、プラン見直しや使い方の再確認に役立ちます。"
+    "title": "Suno、YouTube音源で学習していた疑惑が流出",
+    "source_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFA5VWJXZHVzQm1wZ1lWXy1HSi1NdkFEeDdXcjVxTFc5VG9scE1pOFFnamFiVjhaamI3RjI0YjVIenhKOTVlWWxPMnNaQndSQkJjWmc?oc=5",
+    "published_at": "2026-07-16T07:49:00.000Z",
+    "raw_excerpt": "音楽生成AI「Suno」がYouTubeから大量の楽曲を無断収集か",
+    "detail": "Sunoのソースコードが流出し、YouTubeなどから大量の曲を集めて学習していた疑いが明らかになりました。著作権をめぐる問題に発展する可能性があり、Sunoで曲を作る新井さんは今後の動向に注意が必要です。"
+  },
+  {
+    "tool": "v0",
+    "title": "AI Gatewayに新モデル「Kimi K3」追加",
+    "source_url": "https://vercel.com/changelog/kimi-k3-is-now-available-on-ai-gateway",
+    "published_at": "2026-07-16T00:00:00.000Z",
+    "raw_excerpt": "文章・画像・動画を理解する大容量の新モデルが利用可能に",
+    "detail": "Vercelのv0で使えるAI基盤に、とても長い文章を扱え、画像や動画も理解できる新モデル「Kimi K3」が加わりました。選べるAIが増えることで、LP制作や画像・動画まわりの作業に合わせて使い分けられます。"
+  },
+  {
+    "tool": "Cursor",
+    "title": "Cursorにサイドチャットと会話検索を追加",
+    "source_url": "https://cursor.com/changelog/side-chat",
+    "published_at": "2026-07-10T00:00:00.000Z",
+    "raw_excerpt": "メイン作業と並行して質問でき、過去のやりとりも検索可能に",
+    "detail": "Cursorに、作業中の画面を止めずに横で質問できる「サイドチャット」や、過去のAIとの会話を検索する機能が加わりました。開発の流れを止めずに調べ物ができ、作業効率が上がります。"
+  },
+  {
+    "tool": "Cursor",
+    "title": "CursorのiOSアプリが公開ベータに",
+    "source_url": "https://cursor.com/changelog/ios-mobile-app",
+    "published_at": "2026-06-29T00:00:00.000Z",
+    "raw_excerpt": "スマホからAIエージェントを起動・管理できるiOSアプリ登場",
+    "detail": "Cursorのスマホアプリ（iOS）が有料プラン向けに公開ベータになりました。外出先でもAIに開発作業を任せて確認できるので、すきま時間でアプリ開発を進められます。"
   }
 ]
