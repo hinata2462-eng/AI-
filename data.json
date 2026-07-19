@@ -1,98 +1,98 @@
 [
   {
     "tool": "Claude / Claude Code",
-    "title": "Claude Fable 5がサブスク入り、初回100ドルクレジット配布",
-    "source_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1jajRkVFJNVU5SV25NenF3OGhXRGhsQnFGc3h5UVFjVVF6dERjdlBVRnhldHpaU1daaHcwRC1WaU5lZWFCUTluNHNydE1EenBWdWdwb0gyV1pndVFDaEVrdlFscE1TVDA?oc=5",
-    "published_at": "2026-07-18T07:30:31.000Z",
-    "raw_excerpt": "新モデルClaude Fable 5がサブスクに統合、初回限定で100ドル分クレジット配布",
-    "detail": "AnthropicのClaudeに新しいモデル「Fable 5」が加わり、Max・Team Premiumプランで使えるようになりました。初回限定で100ドル分の無料クレジットが配られ、上限の50%まで使えます。Claude Codeで開発やコード作業をする新井さんは、料金プランと使用量の条件をチェックしておくと得です。"
-  },
-  {
-    "tool": "Canva",
-    "title": "Google検索AIモードがCanvaなど外部連携に対応",
-    "source_url": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxOX1ZBM2pRZW95ZkR2emFXWDBpaC1GcVFNZHIyQ1dsODNTVWF6VFdqOHRhZFNQWnVKelBlQXJTT3N6NlFEMUNGcFZQWXNsYy1UUFhib2F4UlZ6bkZ4c291TC1id0NaUG5XcnJJR1V4ZTVUVGp3NzlpckRaSVg2STVzSUxjSW8yZ1RURlRzMnU1ZjlkYzdCbnV0V3lRMWthWmRfUENhWkFudVVzOWR4SHlvQUU3SUUzV3g3cGtQdkpyM2tQZ3BrcVlrRXB0N0ozX0pMZ1l3azE2dURWWG1fYVhnMHIya210ckgzVzQ1ckFFWTh3YXpySVlkQ2dQb0xwTm1UOC1jd2w3dWVYUWlqUWZPWW9QXzJaeHRBdlEzSUZIMkNUbS1jTmo3NXFlUlI5RHRpSWwtVThkb3djRnV3RVF2cFVVQ3dHYXFQUVliMlNVYkVqR3hna1cyalNELWU?oc=5",
-    "published_at": "2026-07-18T06:27:30.000Z",
-    "raw_excerpt": "Google検索のAIモードがCanvaやYouTube Musicと連携開始",
-    "detail": "Googleの「AIモード」検索が、CanvaやYouTube Musicなど外部サービスとつながるようになりました。検索から直接デザイン作業などにつなげられます。Canvaでデザインを作る新井さんの作業導線が短くなり便利です。"
+    "title": "Claude Fable 5が一部プランで利用可能に",
+    "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA2REZOaTV1YWpYSVB4QlFCTFFEMi0wU1BrR1RoOEpCd2NvTjZ2SURtSzB2c0xUdXNzYUttSzNQbHdOaWI1ZGMwT3lIWmNFbzd2eHRqS1dDMmdIdGMxV3cyOVlERXdvZw?oc=5",
+    "published_at": "2026-07-19T21:31:09.000Z",
+    "raw_excerpt": "新モデルClaude Fable 5が一部サブスクプランで使えるようになった",
+    "detail": "Claudeの新しいモデル「Fable 5」が、一部の有料プランで使えるようになったというニュースです。新モデルはより賢く長い作業をこなせる可能性があり、Claude Codeでアプリ開発や資料作成をする新井さんにとって性能向上は作業効率に直結します。"
   },
   {
     "tool": "Claude / Claude Code",
-    "title": "Claude Fable 5は20日以降Max/Team限定、Proは従量課金へ",
-    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1lMGJZS19BelBZcy0zZXJoekhmdWU0bTlLRm1nMEo0OWw1eGszNFpHQmhjanJuVUw1bE5LWklzRVd5WG12Qks0VFlxM1JZeE5ZS0JqZjFjc1R1eW91ZV8wTnl2MXVSMF94aThiQ2dzbkE3TWZp?oc=5",
-    "published_at": "2026-07-18T05:55:00.000Z",
-    "raw_excerpt": "20日以降Fable 5はMax・Team Premium限定、Proプランは従量課金に移行",
-    "detail": "新モデルFable 5は、20日以降はMaxとTeam Premiumのプラン限定になり、Proプランでは使った分だけ支払う従量課金に変わります。どのプランで何が使えるかが変わるので、Claudeで作業する新井さんはコスト管理のために確認が必要です。"
-  },
-  {
-    "tool": "Cursor",
-    "title": "Cursorに深刻な脆弱性、開くだけでコード実行の恐れ",
-    "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9jSkFxRmIzOVY3d1g0VzI0SGg5cjlHVU1tRnE4RDJEZjA5b0EtN3pjRFA0SEZjTjhpS3RmVUIxOUN6cWtjNmFBaFN1WWhORm1wUHM5LWRNZ1g4ck02VExPVDBzd2xRcy1h0gFoQVVfeXFMT2NKQXFGYjM5Vjd3WDRXMjRIaDlyOUdVTW1GcThEMkRmMDlvQS03emNEUDRIRmNOOGlLdGZVQjE5Q3pxa2M2YUFoU3VZaE5GbXBQczktZE1nWDhyTTZUTE9UMHN3bFFzLWE?oc=5",
-    "published_at": "2026-07-17T22:09:00.000Z",
-    "raw_excerpt": "CursorにWindowsでリポジトリを開くだけで攻撃される脆弱性が判明",
-    "detail": "AI開発ツール「Cursor」に危険な弱点が見つかり、Windowsで悪意あるプロジェクトを開くだけで勝手にプログラムが動かされる恐れがあります。アプリ開発でCursorを使うなら、知らないコードを開かないなど注意が必要です。"
-  },
-  {
-    "tool": "Runway",
-    "title": "Runway Agent 2.0がマーケ向けAI動画制作を刷新",
-    "source_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1QVlFtbEFyZnVGeEQwNlhlcTRKSDNTb1YzVUpWVy1NMHl6MldIckJUS3lmOUQ5R24xaWU1NzAwSWFmVXhOaHNOSlVpMnZVeWE5U09DS1BfRTJLMHJZNVJjeENYY3oxOTNRMmlIV0lB?oc=5",
-    "published_at": "2026-07-17T22:05:03.000Z",
-    "raw_excerpt": "Runwayの新機能Agent 2.0が広告・マーケ向けのAI動画作成を強化",
-    "detail": "Runwayに「Agent 2.0」という新機能が登場し、マーケティング用の動画作成がより簡単・高品質にできるようになりました。指示を出すとAIが自律的に動画を作ってくれます。YouTube運用やLP・営業資料用の動画を作る新井さんに直結する機能です。"
+    "title": "Claude上位プランの料金・制限が確定",
+    "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9XNEJ0WlRUdWpTQlVTTWdqOUt0OU0yTGczalZvTkk1RmFWYkphM1k2YzhGYzhNc0NWN3c5OVg2VW9GY3lqdHpEa3dCVXg4UVN5R09VaWsxUGRDbjUyRlVkYlZMd9IBaEFVX3lxTE5wVEZuRmFqZkdCYnlyMkJ4emdxQm8xazlPUVRJOHExZmMySnF4ME91U1k5Vi1HVjJsR2pXYWlkVmhvNkNUcEhRSEVuMFROZU1OMWRSTTBRVXd3ejJnZFpEbG5rRnc4TENh?oc=5",
+    "published_at": "2026-07-19T05:45:50.000Z",
+    "raw_excerpt": "Claude Fable 5でMaxは週制限50%継続、Proは100ドルクレジット後に従量課金へ",
+    "detail": "Anthropicが新モデルClaude Fable 5のサブスク提供方針を決めました。Maxプランは週の利用制限が半分になる形で継続、Proプランは100ドル分のクレジットを使い切ると従量課金になります。新井さんがClaude Codeで開発や文書作成を大量に使う場合、コストと使える量に直結するので事前に把握しておくべき情報です。"
   },
   {
     "tool": "ChatGPT / OpenAI",
-    "title": "OpenAIが10代のAI利用指針を発表",
-    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5xcEFqT082WTVEbWtIVHh5eWNPMW5jeFQ1eVJaZ3lYYkJVdWRhazd4c1hTMF9VV2I0aDIyLS1TZTVGbDhDQmpxOF8yOFNERk9VTHNfeVVrMjZzWF9Rdk40M0pocGVQd2x0WmVKUkkyVExJUWN1?oc=5",
-    "published_at": "2026-07-17T18:28:00.000Z",
-    "raw_excerpt": "OpenAIが10代向けAI利用方針を「禁止」から「安全な活用」へ転換",
-    "detail": "OpenAIが、若い世代のChatGPT利用について、単に禁止するのではなく安全に使える形にする方針を発表しました。ツールの運用ルールが変わる兆しなので、ChatGPTを日常的に使う新井さんは今後の方針変更として把握しておくとよいです。"
+    "title": "OpenAIの新機能「ChatGPT Work」とは",
+    "source_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9DaVJBQ2FMZVJMYmNURFNVZm5wRTg0MFgxZlhxZVJ2SjZYeXE5NF9rU1JEeWVSa1BEVUM3c2xrZlFOTEFnMTVPVk1wV0o?oc=5",
+    "published_at": "2026-07-19T01:43:12.000Z",
+    "raw_excerpt": "仕事用の新機能ChatGPT Workで何ができるかを解説した記事",
+    "detail": "OpenAIが出した業務向けの新機能「ChatGPT Work」について、何ができるのかをまとめた記事です。社内文書作成や業務効率化にChatGPTを使う新井さんにとって、仕事に特化した機能の内容を知ることは実務で役立ちます。"
   },
   {
-    "tool": "Suno",
-    "title": "Sunoが無断で数百万曲を収集、ソースコード流出で判明",
-    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1RbjR0SFRzSTZBV2E5S3VzbFhXazRlazVkdVBkbkMzVDNrX2FWYlFkVy14TlBSMkVXNWlvSzNmenJlLUhQX3dQVW5LcFE1c1hlQUhSa1VUNWJmQ2FjM0RBcG9VekZlV09jNFN2RENGZW5tTVRw?oc=5",
-    "published_at": "2026-07-17T14:35:00.000Z",
-    "raw_excerpt": "AI音楽SunoがYouTube等から無断で数百万曲を集めていた実態が流出",
-    "detail": "AI作曲サービス「Suno」の内部コードが漏れ、YouTubeなどから許可なく大量の曲を集めて学習していたことが分かりました。音楽制作でSunoを使う新井さんは、著作権トラブルのリスクを頭に入れておくと安心です。"
-  },
-  {
-    "tool": "NotebookLM",
-    "title": "NotebookLMがGemini Notebookへ改称、連携強化",
-    "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTFpLRHMxcTJCc2kyTEx3LUVYUFZXQTJkRVhaeE9LRjRnOXJzRllvclJpMDVoQUVCc1d3bUVBZHIzU2JSWjBGcDRkSEM3bFcxYURLV25GaFliRjdZbl9HRF96UmR6UC1vSEpKWUI4TVA0dGgyQU1BSVlhY1E0TUFTMlgwMWF1bHhCdS12RjhR?oc=5",
-    "published_at": "2026-07-17T11:35:00.000Z",
-    "raw_excerpt": "GoogleのAI資料整理ツールが「Gemini Notebook」に改名、機能も強化",
-    "detail": "Googleの資料まとめAI「NotebookLM」が「Gemini Notebook」という名前に変わり、GeminiやGoogle検索との連携が強くなりました。コード実行機能も追加。資料や社内文書の作成・要約に使えるので、新井さんの文書業務が楽になります。"
+    "tool": "Canva",
+    "title": "Google検索AIモードがCanva等と連携",
+    "source_url": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxOX1ZBM2pRZW95ZkR2emFXWDBpaC1GcVFNZHIyQ1dsODNTVWF6VFdqOHRhZFNQWnVKelBlQXJTT3N6NlFEMUNGcFZQWXNsYy1UUFhib2F4UlZ6bkZ4c291TC1id0NaUG5XcnJJR1V4ZTVUVGp3NzlpckRaSVg2STVzSUxjSW8yZ1RURlRzMnU1ZjlkYzdCbnV0V3lRMWthWmRfUENhWkFudVVzOWR4SHlvQUU3SUUzV3g3cGtQdkpyM2tQZ3BrcVlrRXB0N0ozX0pMZ1l3azE2dURWWG1fYVhnMHIya210ckgzVzQ1ckFFWTh3YXpySVlkQ2dQb0xwTm1UOC1jd2w3dWVYUWlqUWZPWW9QXzJaeHRBdlEzSUZIMkNUbS1jTmo3NXFlUlI5RHRpSWwtVThkb3djRnV3RVF2cFVVQ3dHYXFQUVliMlNVYkVqR3hna1cyalNELWU?oc=5",
+    "published_at": "2026-07-18T06:27:30.000Z",
+    "raw_excerpt": "Google検索の「AIモード」がCanvaやYouTube Musicと連携開始",
+    "detail": "Google検索のAIモードが、CanvaやYouTube Musicなど外部サービスとつながるようになりました。検索から直接デザイン作業などに移れるようになる可能性があり、LP制作やCanvaを多用する新井さんの制作フローが便利になるかもしれません。"
   },
   {
     "tool": "Gemini",
-    "title": "Gemini Sparkが日本語登場、要約や予約を自律実行",
-    "source_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFA0Zjc1UDBOelp2bW1CS2xYcWVPMzhtazVDVE05dFRhQ29OclZidkxZMmN0RWZhczZLVEIxTjM3aVhWYkNpR3JVdXhRcng?oc=5",
-    "published_at": "2026-07-17T10:35:43.000Z",
-    "raw_excerpt": "スマホがオフでも24時間動く自律型AI「Gemini Spark」が日本語対応",
-    "detail": "Googleの新機能「Gemini Spark」は、あなたのスマホがオフでも自動で働き、メールの要約や予約などを自分でこなします。日本語でも使えるようになりました。日々の事務作業や連絡対応を自動化したい新井さんの業務効率化に役立ちます。"
+    "title": "NotebookLMにコード実行機能が追加",
+    "source_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5hZnY4VjE4RWV6dUFpM2Z4MkE3SDBFbnJBU01hZlEtMFk4Ui1VVmxEN0l3Ukh2YTFPaTExTnowenlDQ2FjcEJlU05jeUdHVl9ZcHhWM1AyY2owbmhXTUZhN3lZMUx1WUlWSWVHbk9sajNIYm53VHc4?oc=5",
+    "published_at": "2026-07-18T02:00:03.000Z",
+    "raw_excerpt": "改称したNotebookLMにコードを動かせる新機能が加わった",
+    "detail": "名称変更に加えて、NotebookLM(Gemini Notebook)に自分でコードを実行できる機能が追加されました。データの計算や自動処理をツール内で完結できるので、業務の自動化・効率化を進める新井さんの作業の幅が広がります。"
   },
   {
     "tool": "v0",
-    "title": "Vercel Sandboxのダウンロード通信が無料化",
-    "source_url": "https://vercel.com/changelog/data-downloaded-by-vercel-sandbox-is-now-free",
-    "published_at": "2026-07-17T07:01:00.000Z",
-    "raw_excerpt": "Vercel Sandboxがネットからのデータ取得を無料化、開発コスト減",
-    "detail": "v0を提供するVercelの開発環境「Sandbox」で、ネットからのデータ取得（パッケージ導入やコード取得など）が課金対象外になりました。アプリ開発の実験コストが下がるので、v0で開発する新井さんの費用を抑えられます。"
+    "title": "v0と競合ツールの比較記事",
+    "source_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFByNlc0QmR4a2VLd3NoelNzSWYtT1k4bmxZZmZ0aEdzZVFzdmRsU2M5SW9JSVY5MkZhWl90bXd5ZElseHU4MHFVQTllWXdIalBBSGVXaW42Umg1MDc0alFOdzVqYUFJVXJ1OGdz?oc=5",
+    "published_at": "2026-07-17T22:23:13.000Z",
+    "raw_excerpt": "Lovable・Bolt.new・v0の規模や差を比較した記事",
+    "detail": "AIでアプリやWebを作れるツール、Lovable・Bolt.new・v0の勢いや違いを比較した記事です。v0を使う新井さんが、他ツールとの違いや選び方を知る参考になります。"
+  },
+  {
+    "tool": "Runway",
+    "title": "Runway Agent 2.0が動画制作を刷新",
+    "source_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1QVlFtbEFyZnVGeEQwNlhlcTRKSDNTb1YzVUpWVy1NMHl6MldIckJUS3lmOUQ5R24xaWU1NzAwSWFmVXhOaHNOSlVpMnZVeWE5U09DS1BfRTJLMHJZNVJjeENYY3oxOTNRMmlIV0lB?oc=5",
+    "published_at": "2026-07-17T22:05:03.000Z",
+    "raw_excerpt": "マーケター向けにRunway Agent 2.0がAI動画制作を強化",
+    "detail": "AI動画生成のRunwayが「Agent 2.0」を発表し、マーケティング用の動画を作りやすくしました。YouTube運用や動画生成をする新井さんにとって、宣伝用動画を効率よく作れる可能性がある新機能です。"
   },
   {
     "tool": "Suno",
-    "title": "SunoがiMessageに統合、手軽に作曲可能に",
-    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE44bVlZV3VCWGxJVUwzSld4RjkwTVFTMTFqTVp5WDd2NGlKRC0yVl9iQ3gzeEJsUWNzYVZnRTFRT2lVT01feUowZkpWaXcwTDRHb0hFakowU01yNEwzQUNtWUsxTDJldjhBbUNUMWhQaFd1a3Ex?oc=5",
-    "published_at": "2026-07-16T18:59:00.000Z",
-    "raw_excerpt": "AI音楽生成SunoがiMessageに統合され手軽に曲が作れるように",
-    "detail": "AI作曲サービス「Suno」がiPhoneのメッセージアプリ「iMessage」でも使えるようになりました。チャットの流れで手軽に曲を作れます。Kiki Toaの音楽制作をする新井さんの制作アイデア出しに使えます。"
+    "title": "Suno、無断で数百万曲を学習と判明",
+    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1RbjR0SFRzSTZBV2E5S3VzbFhXazRlazVkdVBkbkMzVDNrX2FWYlFkVy14TlBSMkVXNWlvSzNmenJlLUhQX3dQVW5LcFE1c1hlQUhSa1VUNWJmQ2FjM0RBcG9VekZlV09jNFN2RENGZW5tTVRw?oc=5",
+    "published_at": "2026-07-17T14:35:00.000Z",
+    "raw_excerpt": "流出コードでSunoがYouTube等から無断収集していた実態が発覚",
+    "detail": "AI音楽生成サービスSunoのソースコードが流出し、YouTubeなどから数百万曲を無断で集めて学習していたことが分かりました。Kiki Toaの音楽制作でSunoを使う新井さんは、著作権リスクや今後の規制の可能性を意識する必要があります。"
+  },
+  {
+    "tool": "NotebookLM",
+    "title": "NotebookLMがGemini Notebookに改称",
+    "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTFpLRHMxcTJCc2kyTEx3LUVYUFZXQTJkRVhaeE9LRjRnOXJzRllvclJpMDVoQUVCc1d3bUVBZHIzU2JSWjBGcDRkSEM3bFcxYURLV25GaFliRjdZbl9HRF96UmR6UC1vSEpKWUI4TVA0dGgyQU1BSVlhY1E0TUFTMlgwMWF1bHhCdS12RjhR?oc=5",
+    "published_at": "2026-07-17T11:35:00.000Z",
+    "raw_excerpt": "人気の資料整理AI「NotebookLM」がGemini傘下で名称変更・連携強化",
+    "detail": "Googleの資料整理・要約ツール「NotebookLM」が「Gemini Notebook」に名前を変え、GeminiやGoogle検索との連携が強くなります。営業資料や社内文書を作る際、大量の資料を読み込んで要約させる作業がやりやすくなる可能性があり、新井さんの文書作成に役立ちます。"
+  },
+  {
+    "tool": "v0",
+    "title": "Vercel Sandboxのダウンロード無料化",
+    "source_url": "https://vercel.com/changelog/data-downloaded-by-vercel-sandbox-is-now-free",
+    "published_at": "2026-07-17T07:01:00.000Z",
+    "raw_excerpt": "v0関連のVercel Sandboxで外部データ取得の課金が無料に",
+    "detail": "v0を提供するVercelのSandbox機能で、ネットからのデータ取得(パッケージ導入やデータ取得)が無料になりました。v0でLPやアプリを試作する新井さんにとって、余計な費用を気にせず開発できるようになります。"
   },
   {
     "tool": "Cursor",
-    "title": "Cursor全プランでAIモデル使用上限が2倍に",
-    "source_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFA1M3pIVFd3aVFpUDByZUJNZDZVeG50QXhvalFiVDJlbGEtTGEyQi1QeUV1bTJGTWZLbGJJRERrTHZlZDRYaVpLcEhQUnloQUNuRi1nMnl3ZUtucnMyLVRXWXJDQWt3UnBZU3pF?oc=5",
-    "published_at": "2026-07-16T12:33:55.000Z",
-    "raw_excerpt": "開発ツールCursorの全プランでAI利用上限が2倍に増加",
-    "detail": "AI開発ツール「Cursor」で、すべての料金プランのAIモデル使用上限が2倍になりました。同じ料金でより多くコードを書かせられます。アプリ開発をする新井さんにとって、作業量を増やせるうれしい変更です。"
+    "title": "Cursorに深刻な脆弱性、未修正",
+    "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1iX1RuY2xTZ0g3MjRPdllMTDdxR1JIemJaaldFV2VvUXhWZXRzcGZWRmk5S3J2NnNzQU1yQ20tNFotQ1dra0dWV2ttTlVPTTJsUC1mdTRwMkdiQ2RucGdYdm9QTndSa3RjVHc?oc=5",
+    "published_at": "2026-07-15T06:30:00.000Z",
+    "raw_excerpt": "リポジトリを開くだけで任意コードが実行される危険がCursorに",
+    "detail": "AI開発ツールCursorに、リポジトリ(コードの入れ物)を開いただけで悪意あるコードが動いてしまう深刻な欠陥が見つかりました。報告から7カ月経っても直っていないとのこと。開発ツールを使う新井さんは、信頼できないコードを開かないよう注意が必要です。"
+  },
+  {
+    "tool": "Cursor",
+    "title": "CursorのiOSアプリが公開ベータに",
+    "source_url": "https://cursor.com/changelog/ios-mobile-app",
+    "published_at": "2026-06-29T00:00:00.000Z",
+    "raw_excerpt": "スマホからAIエージェントを操作できるCursor iOSアプリ登場",
+    "detail": "Cursorのスマホアプリ(iOS版)が有料プランで使えるようになりました。外出先からでもAIエージェントに開発作業を任せられます。アプリ開発をする新井さんが、場所を選ばず作業を進められるようになります。"
   }
 ]
