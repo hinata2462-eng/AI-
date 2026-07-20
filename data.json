@@ -1,98 +1,98 @@
 [
   {
-    "tool": "Claude / Claude Code",
-    "title": "Claude Fable 5が一部プランで利用可能に",
-    "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA2REZOaTV1YWpYSVB4QlFCTFFEMi0wU1BrR1RoOEpCd2NvTjZ2SURtSzB2c0xUdXNzYUttSzNQbHdOaWI1ZGMwT3lIWmNFbzd2eHRqS1dDMmdIdGMxV3cyOVlERXdvZw?oc=5",
-    "published_at": "2026-07-19T21:31:09.000Z",
-    "raw_excerpt": "新モデルClaude Fable 5が一部サブスクプランで使えるようになった",
-    "detail": "Claudeの新しいモデル「Fable 5」が、一部の有料プランで使えるようになったというニュースです。新モデルはより賢く長い作業をこなせる可能性があり、Claude Codeでアプリ開発や資料作成をする新井さんにとって性能向上は作業効率に直結します。"
-  },
-  {
-    "tool": "Claude / Claude Code",
-    "title": "Claude上位プランの料金・制限が確定",
-    "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9XNEJ0WlRUdWpTQlVTTWdqOUt0OU0yTGczalZvTkk1RmFWYkphM1k2YzhGYzhNc0NWN3c5OVg2VW9GY3lqdHpEa3dCVXg4UVN5R09VaWsxUGRDbjUyRlVkYlZMd9IBaEFVX3lxTE5wVEZuRmFqZkdCYnlyMkJ4emdxQm8xazlPUVRJOHExZmMySnF4ME91U1k5Vi1HVjJsR2pXYWlkVmhvNkNUcEhRSEVuMFROZU1OMWRSTTBRVXd3ejJnZFpEbG5rRnc4TENh?oc=5",
-    "published_at": "2026-07-19T05:45:50.000Z",
-    "raw_excerpt": "Claude Fable 5でMaxは週制限50%継続、Proは100ドルクレジット後に従量課金へ",
-    "detail": "Anthropicが新モデルClaude Fable 5のサブスク提供方針を決めました。Maxプランは週の利用制限が半分になる形で継続、Proプランは100ドル分のクレジットを使い切ると従量課金になります。新井さんがClaude Codeで開発や文書作成を大量に使う場合、コストと使える量に直結するので事前に把握しておくべき情報です。"
-  },
-  {
-    "tool": "ChatGPT / OpenAI",
-    "title": "OpenAIの新機能「ChatGPT Work」とは",
-    "source_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9DaVJBQ2FMZVJMYmNURFNVZm5wRTg0MFgxZlhxZVJ2SjZYeXE5NF9rU1JEeWVSa1BEVUM3c2xrZlFOTEFnMTVPVk1wV0o?oc=5",
-    "published_at": "2026-07-19T01:43:12.000Z",
-    "raw_excerpt": "仕事用の新機能ChatGPT Workで何ができるかを解説した記事",
-    "detail": "OpenAIが出した業務向けの新機能「ChatGPT Work」について、何ができるのかをまとめた記事です。社内文書作成や業務効率化にChatGPTを使う新井さんにとって、仕事に特化した機能の内容を知ることは実務で役立ちます。"
-  },
-  {
-    "tool": "Canva",
-    "title": "Google検索AIモードがCanva等と連携",
-    "source_url": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxOX1ZBM2pRZW95ZkR2emFXWDBpaC1GcVFNZHIyQ1dsODNTVWF6VFdqOHRhZFNQWnVKelBlQXJTT3N6NlFEMUNGcFZQWXNsYy1UUFhib2F4UlZ6bkZ4c291TC1id0NaUG5XcnJJR1V4ZTVUVGp3NzlpckRaSVg2STVzSUxjSW8yZ1RURlRzMnU1ZjlkYzdCbnV0V3lRMWthWmRfUENhWkFudVVzOWR4SHlvQUU3SUUzV3g3cGtQdkpyM2tQZ3BrcVlrRXB0N0ozX0pMZ1l3azE2dURWWG1fYVhnMHIya210ckgzVzQ1ckFFWTh3YXpySVlkQ2dQb0xwTm1UOC1jd2w3dWVYUWlqUWZPWW9QXzJaeHRBdlEzSUZIMkNUbS1jTmo3NXFlUlI5RHRpSWwtVThkb3djRnV3RVF2cFVVQ3dHYXFQUVliMlNVYkVqR3hna1cyalNELWU?oc=5",
-    "published_at": "2026-07-18T06:27:30.000Z",
-    "raw_excerpt": "Google検索の「AIモード」がCanvaやYouTube Musicと連携開始",
-    "detail": "Google検索のAIモードが、CanvaやYouTube Musicなど外部サービスとつながるようになりました。検索から直接デザイン作業などに移れるようになる可能性があり、LP制作やCanvaを多用する新井さんの制作フローが便利になるかもしれません。"
-  },
-  {
     "tool": "Gemini",
-    "title": "NotebookLMにコード実行機能が追加",
-    "source_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5hZnY4VjE4RWV6dUFpM2Z4MkE3SDBFbnJBU01hZlEtMFk4Ui1VVmxEN0l3Ukh2YTFPaTExTnowenlDQ2FjcEJlU05jeUdHVl9ZcHhWM1AyY2owbmhXTUZhN3lZMUx1WUlWSWVHbk9sajNIYm53VHc4?oc=5",
-    "published_at": "2026-07-18T02:00:03.000Z",
-    "raw_excerpt": "改称したNotebookLMにコードを動かせる新機能が加わった",
-    "detail": "名称変更に加えて、NotebookLM(Gemini Notebook)に自分でコードを実行できる機能が追加されました。データの計算や自動処理をツール内で完結できるので、業務の自動化・効率化を進める新井さんの作業の幅が広がります。"
-  },
-  {
-    "tool": "v0",
-    "title": "v0と競合ツールの比較記事",
-    "source_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFByNlc0QmR4a2VLd3NoelNzSWYtT1k4bmxZZmZ0aEdzZVFzdmRsU2M5SW9JSVY5MkZhWl90bXd5ZElseHU4MHFVQTllWXdIalBBSGVXaW42Umg1MDc0alFOdzVqYUFJVXJ1OGdz?oc=5",
-    "published_at": "2026-07-17T22:23:13.000Z",
-    "raw_excerpt": "Lovable・Bolt.new・v0の規模や差を比較した記事",
-    "detail": "AIでアプリやWebを作れるツール、Lovable・Bolt.new・v0の勢いや違いを比較した記事です。v0を使う新井さんが、他ツールとの違いや選び方を知る参考になります。"
-  },
-  {
-    "tool": "Runway",
-    "title": "Runway Agent 2.0が動画制作を刷新",
-    "source_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1QVlFtbEFyZnVGeEQwNlhlcTRKSDNTb1YzVUpWVy1NMHl6MldIckJUS3lmOUQ5R24xaWU1NzAwSWFmVXhOaHNOSlVpMnZVeWE5U09DS1BfRTJLMHJZNVJjeENYY3oxOTNRMmlIV0lB?oc=5",
-    "published_at": "2026-07-17T22:05:03.000Z",
-    "raw_excerpt": "マーケター向けにRunway Agent 2.0がAI動画制作を強化",
-    "detail": "AI動画生成のRunwayが「Agent 2.0」を発表し、マーケティング用の動画を作りやすくしました。YouTube運用や動画生成をする新井さんにとって、宣伝用動画を効率よく作れる可能性がある新機能です。"
-  },
-  {
-    "tool": "Suno",
-    "title": "Suno、無断で数百万曲を学習と判明",
-    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1RbjR0SFRzSTZBV2E5S3VzbFhXazRlazVkdVBkbkMzVDNrX2FWYlFkVy14TlBSMkVXNWlvSzNmenJlLUhQX3dQVW5LcFE1c1hlQUhSa1VUNWJmQ2FjM0RBcG9VekZlV09jNFN2RENGZW5tTVRw?oc=5",
-    "published_at": "2026-07-17T14:35:00.000Z",
-    "raw_excerpt": "流出コードでSunoがYouTube等から無断収集していた実態が発覚",
-    "detail": "AI音楽生成サービスSunoのソースコードが流出し、YouTubeなどから数百万曲を無断で集めて学習していたことが分かりました。Kiki Toaの音楽制作でSunoを使う新井さんは、著作権リスクや今後の規制の可能性を意識する必要があります。"
+    "title": "Geminiで副業を立ち上げる5つの方法",
+    "source_url": "https://blog.google/products-and-platforms/products/gemini/launch-business-with-gemini/",
+    "published_at": "2026-07-20T19:00:00.000Z",
+    "raw_excerpt": "事業設計・市場調査・業務自動化にGeminiを活用する使い方紹介",
+    "detail": "Geminiを使って副業を始める具体的な方法として、事業のアイデア設計、市場調査、雑務の自動化などが紹介されています。ECや音楽・アプリなど複数の事業を持つ新井さんが、企画や調査を効率化するヒントになります。"
   },
   {
     "tool": "NotebookLM",
-    "title": "NotebookLMがGemini Notebookに改称",
-    "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTFpLRHMxcTJCc2kyTEx3LUVYUFZXQTJkRVhaeE9LRjRnOXJzRllvclJpMDVoQUVCc1d3bUVBZHIzU2JSWjBGcDRkSEM3bFcxYURLV25GaFliRjdZbl9HRF96UmR6UC1vSEpKWUI4TVA0dGgyQU1BSVlhY1E0TUFTMlgwMWF1bHhCdS12RjhR?oc=5",
-    "published_at": "2026-07-17T11:35:00.000Z",
-    "raw_excerpt": "人気の資料整理AI「NotebookLM」がGemini傘下で名称変更・連携強化",
-    "detail": "Googleの資料整理・要約ツール「NotebookLM」が「Gemini Notebook」に名前を変え、GeminiやGoogle検索との連携が強くなります。営業資料や社内文書を作る際、大量の資料を読み込んで要約させる作業がやりやすくなる可能性があり、新井さんの文書作成に役立ちます。"
+    "title": "NotebookLMが「Gemini Notebook」に刷新",
+    "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA2SXVHRE5GR01BWTFJcTlaOEZ5VkdoM1JjWFdxZ09hYkc2cEg0NVhDMHZhQ2xtckF5ZnpNRGxMSXhfMXQ1RWdJS0drMzlUODlsV3E2bDd0SEFpc2ZuSTVz?oc=5",
+    "published_at": "2026-07-20T09:04:48.000Z",
+    "raw_excerpt": "自分でコードを書いて複雑な分析まで実行可能に、Gemini連携も強化",
+    "detail": "資料を読み込ませて要約や質問ができるツール「NotebookLM」が大きくリニューアルし、AI自身がコードを書いて複雑なデータ分析まで行えるようになりました。営業資料の下調べや業務データの整理・分析が一気に楽になります。"
   },
   {
-    "tool": "v0",
-    "title": "Vercel Sandboxのダウンロード無料化",
-    "source_url": "https://vercel.com/changelog/data-downloaded-by-vercel-sandbox-is-now-free",
-    "published_at": "2026-07-17T07:01:00.000Z",
-    "raw_excerpt": "v0関連のVercel Sandboxで外部データ取得の課金が無料に",
-    "detail": "v0を提供するVercelのSandbox機能で、ネットからのデータ取得(パッケージ導入やデータ取得)が無料になりました。v0でLPやアプリを試作する新井さんにとって、余計な費用を気にせず開発できるようになります。"
+    "tool": "Claude / Claude Code",
+    "title": "Claude Fable 5の料金体系が決定、Proでは使えず",
+    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE03S0s4ZXNFV182VG81VUlFMzRtbGRKSjNOTFNwT3RoaVlrMl9oanpkVzgxQlhsYkJKYThEVlREdGZlcVFBRTNKZ2xpeTZ5VDlzazZscFFENGllWjlYdl80NG9wXzJ3YzBLQ0RnM0hpSWdFVE1H?oc=5",
+    "published_at": "2026-07-20T06:55:00.000Z",
+    "raw_excerpt": "月額3,300円のProプランでは新モデルは利用不可に",
+    "detail": "Claude Fable 5の課金ルールが決まり、月額3,300円のProプランでは新モデルが使えないことがわかりました。上位プランへの加入が必要です。Claude Codeでの開発に最新モデルを使いたい新井さんは、料金と使えるモデルを見比べて判断できます。"
+  },
+  {
+    "tool": "Claude / Claude Code",
+    "title": "Claude Code開発者が語る新しいプログラミング手法",
+    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1pTXNwYWRHSEVOM3JWNmxoZ1ozanRoWVNDbW1LVTNLRjhJRXFudVpoaGdtbVF2RW05Y01aR1NVTkZPMW95LWRaUF9rTERPd0hWSkYyYkxaalhxZzk5eGJselRtSkV4WmRpUG8zdFVDMGFPUE1z?oc=5",
+    "published_at": "2026-07-20T00:56:00.000Z",
+    "raw_excerpt": "手書きプロンプトに頼らない「ループエンジニアリング」を解説",
+    "detail": "Claude Codeを作った人が、毎回プロンプトを手で書くのではなく、AIに繰り返し作業させる「ループエンジニアリング」という考え方を語っています。アプリ開発でClaude Codeをより上手に使うためのヒントになります。"
+  },
+  {
+    "tool": "ChatGPT / OpenAI",
+    "title": "OpenAIが「GPT-5.6」を一般公開",
+    "source_url": "https://news.google.com/rss/articles/CBMi1gRBVV95cUxNVVFfV2lNRDd6dUZJdU5sM2t5ZGZ4RnNGeDMwTF9ab1B3SEdabmQzR2tETWJyNXhBYmQycllwcndJcnhRNW5yUkFva2poNVpzLThoSFUtZVg1cjJSSm10UEtfRE9NTndSS0hicDl4OEtpUVhNT1VnZ3U5a0ZwT1JOaTZwdzNxdFA4ZDFKSk1PQ1RjczFwVnFBRU9BMmJfRVpJNjF5LTBoc0M0RHB6VnNyMGhUREttT1ZUQTJldGtQTENSVjBqemVSMzhDZ3g5QXE3NC1oQkQxaUdKUFVkdnVnRF9lNDN2ZVhPYjkybTF2enpmanZrVXg4clJ2YktDVlFZZktHMERiQWUyNE1Mc3VNMUtTT3pHV1EtLUhFX3I5YXB0TjczUkZWbVAxam1NZXZ5ZmM4TDhJS0ZQRVM5c21ncV92WmV5RzMxcFU5a0FfMWZZb2VlODFaMFdGOXY4ek5URjFWa0hxdU9nakRkQWcyWkdUTUFlZHJrdzV3WlExVXpXa1FucWZBVF9RVGdnRGtwM29JSlJveG5kQlAwcTJmSkFwRFpSQXVlMkhWcG9vQmlFV1lUTXlSSUJ3YjN1LVA0WFl5ekJQS0JkamdpWmF4ZjhwbUZoMHd6aW1zazdFRVFSRV9DWFhFTW5YUjRPLWllYWM2U0tNcmNNaUpOSkFsd25VcE9TRjJlb1dyMXNqc19YaWNsY3FIZEE5TTVuZXhyRXVkdWthaUEwOXBnd3J1TnNNcV9RMTJvVFhiQ0RhQ1dvZ3IxeG80TXhuWVQwN2M4MTFOM0xB?oc=5",
+    "published_at": "2026-07-19T22:26:34.000Z",
+    "raw_excerpt": "最上位モデルはコスト半分で一部Claude超えをうたう新モデルが公開",
+    "detail": "OpenAIがChatGPTの新しいAIモデル「GPT-5.6」を誰でも使えるように公開しました。最上位モデルはこれまでより安いコストで、一部の作業ではライバルのClaudeを上回る性能とされています。営業資料や社内文書作成、コード生成のコストを下げつつ質を上げられる可能性があります。"
+  },
+  {
+    "tool": "Claude / Claude Code",
+    "title": "Claude Fable 5が一部サブスクプランで利用可能に",
+    "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA2REZOaTV1YWpYSVB4QlFCTFFEMi0wU1BrR1RoOEpCd2NvTjZ2SURtSzB2c0xUdXNzYUttSzNQbHdOaWI1ZGMwT3lIWmNFbzd2eHRqS1dDMmdIdGMxV3cyOVlERXdvZw?oc=5",
+    "published_at": "2026-07-19T12:00:00.000Z",
+    "raw_excerpt": "上位のMax・Team Premiumで新モデルが正式提供開始",
+    "detail": "Anthropicの新AI「Claude Fable 5」が、これまでのお試しから恒久提供になりました。ただし使えるのは月額の高いMaxやTeam Premiumプランのみです。Claude Codeでのアプリ開発や文書作成に最新モデルを使いたい人は、プランを確認する必要があります。"
+  },
+  {
+    "tool": "Canva",
+    "title": "Google検索AIモードがCanva等と連携開始",
+    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1GQlIxZFJ6VkZObWx4YWtpZFItSWRqb1o0eW1uT3ZZX1ZfU3NPeXpxV3lBMXNiMHJNTm56c3VyZE1oZ2FyaEVCZk1QWmdEUlY1Z2l3LXdZMTJ6V3NLcWM5Rm03MTlGSF96RnZoa0gtdDhxNVda?oc=5",
+    "published_at": "2026-07-18T00:35:00.000Z",
+    "raw_excerpt": "AIモード検索が外部アプリと双方向でつながるように",
+    "detail": "Googleの検索AIモードが、CanvaやYouTube Music、Instacartなど外部アプリと連携できるようになりました。検索からそのままデザイン作業などにつなげられます。Canvaでの画像・LP制作の入口が広がり、作業の流れがスムーズになります。"
   },
   {
     "tool": "Cursor",
-    "title": "Cursorに深刻な脆弱性、未修正",
-    "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1iX1RuY2xTZ0g3MjRPdllMTDdxR1JIemJaaldFV2VvUXhWZXRzcGZWRmk5S3J2NnNzQU1yQ20tNFotQ1dra0dWV2ttTlVPTTJsUC1mdTRwMkdiQ2RucGdYdm9QTndSa3RjVHc?oc=5",
-    "published_at": "2026-07-15T06:30:00.000Z",
-    "raw_excerpt": "リポジトリを開くだけで任意コードが実行される危険がCursorに",
-    "detail": "AI開発ツールCursorに、リポジトリ(コードの入れ物)を開いただけで悪意あるコードが動いてしまう深刻な欠陥が見つかりました。報告から7カ月経っても直っていないとのこと。開発ツールを使う新井さんは、信頼できないコードを開かないよう注意が必要です。"
+    "title": "Cursorに深刻なゼロデイ脆弱性",
+    "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9CbDROVWVUNXQ5WTh5R1h5TFNSSS1zTWtrWGpaMl9wdzltT0tzekhEY3BOSHJBS0JPRThHczIzLUpNRlZzaWoyNUcxQTVKdk1Bc1J2aDIxVVF5UGk4YjYtcXRwZ9IBaEFVX3lxTE9jSkFxRmIzOVY3d1g0VzI0SGg5cjlHVU1tRnE4RDJEZjA5b0EtN3pjRFA0SEZjTjhpS3RmVUIxOUN6cWtjNmFBaFN1WWhORm1wUHM5LWRNZ1g4ck02VExPVDBzd2xRcy1h?oc=5",
+    "published_at": "2026-07-17T22:09:51.000Z",
+    "raw_excerpt": "リポジトリを開くだけで任意コードが実行される恐れ",
+    "detail": "AI開発ツール「Cursor」に、悪意あるプロジェクトを開くだけで勝手にプログラムが実行されてしまう危険な弱点が見つかりました。信頼できないコードをうかつに開かないよう注意が必要です。開発でCursorを使う新井さんは安全対策を意識すべきです。"
+  },
+  {
+    "tool": "Suno",
+    "title": "Suno、YouTube等から数百万曲を無断収集か",
+    "source_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBJYWJGYUh1cE9SRWxMYzZuaW8wWXNfdmRQaTNjcmNiVHNDOXotX3lBZ2pWaVdLTTNpMXpteEc4MTdHc2c0cVUtLWRrcXk2MlR6Zk1IdHdZRHU0dzl4LTlBeG5HMTl4TFMwUGhuMGNnVHlzSjA5Q1pqTA?oc=5",
+    "published_at": "2026-07-17T13:00:00.000Z",
+    "raw_excerpt": "流出したソースコードから大規模なデータ収集の実態が判明",
+    "detail": "音楽生成AI「Suno」が、YouTubeやDeezerから数百万曲を無断で集めてAIの学習に使っていた疑いが、流出したソースコードから明らかになりました。Kiki Toaの音楽制作でSunoを使う際、著作権をめぐる今後のリスクを知っておく必要があります。"
+  },
+  {
+    "tool": "v0",
+    "title": "AI Gatewayで「GLM 5.2」が35%割引",
+    "source_url": "https://vercel.com/changelog/glm-5-2-is-35-off-via-novita-on-ai-gateway",
+    "published_at": "2026-07-17T00:01:00.000Z",
+    "raw_excerpt": "Novita経由でGLM 5.2モデルが7月24日まで割引に",
+    "detail": "開発向けサービスAI Gatewayで、Novita経由なら「GLM 5.2」というAIモデルが35%安く使えます。アプリ開発でAIを組み込む際、コストを抑えたい場合の選択肢になります。"
+  },
+  {
+    "tool": "Cursor",
+    "title": "CursorのSlack連携が強化",
+    "source_url": "https://cursor.com/changelog/slack-improvements",
+    "published_at": "2026-07-17T00:00:00.000Z",
+    "raw_excerpt": "作業前に計画を共有し、複数リポジトリやスレッド横断に対応",
+    "detail": "AI開発ツール「Cursor」のSlack連携が改善され、作業を始める前に何をするか計画を先に見せてくれるようになりました。複数のプロジェクトやチャンネルをまたいで作業できます。アプリ開発の指示出しがチャットから手軽にでき、効率化に役立ちます。"
   },
   {
     "tool": "Cursor",
     "title": "CursorのiOSアプリが公開ベータに",
     "source_url": "https://cursor.com/changelog/ios-mobile-app",
     "published_at": "2026-06-29T00:00:00.000Z",
-    "raw_excerpt": "スマホからAIエージェントを操作できるCursor iOSアプリ登場",
-    "detail": "Cursorのスマホアプリ(iOS版)が有料プランで使えるようになりました。外出先からでもAIエージェントに開発作業を任せられます。アプリ開発をする新井さんが、場所を選ばず作業を進められるようになります。"
+    "raw_excerpt": "有料プランでスマホからAIエージェントを起動・管理可能に",
+    "detail": "開発ツールCursorのiPhone向けアプリが、有料プラン向けに公開ベータとして登場しました。外出先でもスマホから常時稼働するAIに作業を頼めます。移動中や隙間時間にアプリ開発の指示を出せるので、作業のスピードが上がります。"
   }
 ]
