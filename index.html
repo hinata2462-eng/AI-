@@ -1395,10 +1395,24 @@
   }
   .card-source:hover{color:#e7fbff;border-color:rgba(88,226,238,.48);background:rgba(21,61,88,.78)}
   .card-source svg,.card-detail svg{width:14px;height:14px}
+  .ucard-meta{display:flex;flex-direction:column;align-items:flex-start!important;gap:6px!important}
+  .ucard-meta-group,.ucard-status-group{display:flex;align-items:center;flex-wrap:wrap;gap:6px}
+  .ucard-meta-label{
+    color:#8291aa;font-size:9px;font-weight:800;letter-spacing:.05em;white-space:nowrap;
+  }
+  .chip.more{color:#aebbd0!important;border-color:rgba(126,160,204,.24)!important;background:rgba(71,105,150,.12)!important}
+  .mark-read.card-action-labeled,.icon-action.card-action-labeled{
+    width:auto!important;min-width:94px;height:36px;padding:0 11px!important;gap:6px;
+    border-radius:0!important;font-size:10.5px!important;font-weight:800;white-space:nowrap;
+    clip-path:polygon(7px 0,100% 0,100% calc(100% - 7px),calc(100% - 7px) 100%,0 100%,0 7px)!important;
+  }
+  .card-action-labeled svg{width:14px;height:14px;flex-shrink:0}
+  .card-actions{flex-wrap:wrap}
   @media(max-width:760px){
     .card-actions{justify-content:flex-start!important;flex-wrap:wrap}
-    .card-detail{order:-2;flex:1;max-width:none!important;min-width:142px}
-    .card-source{order:-1}
+    .card-detail{flex:1 1 150px;max-width:none!important;min-width:142px}
+    .card-source{flex:1 1 140px;min-width:140px}
+    .mark-read.card-action-labeled,.icon-action.card-action-labeled{flex:1 1 120px}
   }
 </style>
 </head>
@@ -1954,7 +1968,7 @@ function relDate(iso){
 function esc(s){ return (s==null?'':String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 function rankBadge(r){ return `<span class="rank ${r}">${r}</span>`; }
 function statusBadge(s){ return `<span class="status ${s}">${STATUS_LABELS[s]||s}</span>`; }
-function catChips(cats,max){ cats=cats||[]; const shown=max?cats.slice(0,max):cats; let h=shown.map(c=>`<span class="chip cat">${esc(c)}</span>`).join(''); if(max&&cats.length>max)h+=`<span class="chip">+${cats.length-max}</span>`; return h; }
+function catChips(cats,max){ cats=cats||[]; const shown=max?cats.slice(0,max):cats; let h=shown.map(c=>`<span class="chip cat">${esc(c)}</span>`).join(''); if(max&&cats.length>max)h+=`<span class="chip more">ほか${cats.length-max}件</span>`; return h; }
 
 const ART_VARIANTS=['art-quantum','art-robot','art-city','art-space','art-cyber','art-bio','art-factory','art-finance','art-creative','art-cloud','art-mobility','art-energy','art-agriculture','art-education','art-legal','art-logistics','art-architecture','art-ocean'];
 let visualShiftSession=0;
@@ -2004,12 +2018,15 @@ function updateCard(u){
     <button class="ucard-title-link" onclick="go('update-detail','${u.id}')" aria-label="${esc(u.title)}の詳細をアプリ内で見る"><h3>${esc(u.title)}</h3></button>
     <div class="summary-wrap"><span class="ai-label">AI要約</span><div class="summary">${esc(sum)}</div></div>
     <div class="ucard-footer">
-      <div class="ucard-meta">${catChips(u.related_categories,2)}${u.status!=='unread'?statusBadge(u.status):''}</div>
+      <div class="ucard-meta">
+        <div class="ucard-meta-group"><span class="ucard-meta-label">関連する分野</span>${catChips(u.related_categories,2)}</div>
+        ${u.status!=='unread'?`<div class="ucard-status-group"><span class="ucard-meta-label">現在の状態</span>${statusBadge(u.status)}</div>`:''}
+      </div>
       <div class="card-actions">
         <button class="card-open card-detail" onclick="go('update-detail','${u.id}')">${icon('eye')}アプリ内で詳しく見る</button>
-        ${u.status==='unread'?`<button class="mark-read" onclick="markRead('${u.id}')" aria-label="既読にする" title="既読にする">${icon('check')}既読にする</button>`:''}
-        ${u.status!=='try_later'?`<button class="icon-action" onclick="quickStatus('${u.id}','try_later');render()" aria-label="あとで試すに保存" title="あとで試すに保存">${icon('flask')}</button>`:''}
-        ${u.source_url?`<a class="card-source" href="${esc(u.source_url)}" target="_blank" rel="noopener" aria-label="元記事を外部サイトで見る">${icon('ext')}元記事（外部）</a>`:''}
+        ${u.source_url?`<a class="card-source" href="${esc(u.source_url)}" target="_blank" rel="noopener" aria-label="情報元の記事を外部サイトで読む">${icon('ext')}情報元の記事を読む</a>`:''}
+        ${u.status==='unread'?`<button class="mark-read card-action-labeled" onclick="markRead('${u.id}')" aria-label="既読にする" title="読んだ記事として記録する">${icon('check')}<span>既読にする</span></button>`:''}
+        ${u.status!=='try_later'?`<button class="icon-action card-action-labeled" onclick="quickStatus('${u.id}','try_later');render()" aria-label="あとで試すに保存" title="あとで試す一覧に保存する">${icon('flask')}<span>あとで試す</span></button>`:''}
       </div>
     </div>
   </article>`;
@@ -2227,7 +2244,7 @@ function renderDetailRead(v,u,tool){
         <div class="rb-body">${esc(u.easy_summary)}</div>
       </div>`:''}
 
-      ${u.source_url?`<a class="btn btn-primary" href="${esc(u.source_url)}" target="_blank" rel="noopener" style="text-decoration:none;display:inline-flex;width:fit-content;margin-bottom:14px">${icon('ext')}元記事を読む（証拠・全文）</a>`:''}
+      ${u.source_url?`<a class="btn btn-primary" href="${esc(u.source_url)}" target="_blank" rel="noopener" style="text-decoration:none;display:inline-flex;width:fit-content;margin-bottom:14px" aria-label="情報元の記事を外部サイトで読む">${icon('ext')}情報元の記事を読む（外部サイト）</a>`:''}
 
       ${readBlock(u.id,'何が変わったか',u.simple_explanation,'eye','#2563eb','#e7efff')}
       ${readBlock(u.id,'仕事への影響',u.impact_summary,'bolt','#7c5cf6','#efeaff')}
