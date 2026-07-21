@@ -1504,13 +1504,17 @@
     overflow-wrap:anywhere;
   }
   .mark-read.card-action-labeled,.icon-action.card-action-labeled{
-    width:auto!important;max-width:136px!important;min-width:108px!important;
-    min-height:36px!important;height:36px!important;padding:6px 10px!important;
-    border-radius:10px!important;clip-path:none!important;font-size:11px!important;
+    width:auto!important;max-width:118px!important;min-width:92px!important;
+    min-height:32px!important;height:32px!important;padding:5px 9px!important;
+    border-radius:9px!important;clip-path:none!important;font-size:10.5px!important;
     justify-self:start;
   }
   .card-detail{min-height:48px!important;font-size:13.5px!important}
-  .card-source{font-size:12px!important}
+  .card-source{
+    width:auto!important;max-width:190px!important;min-width:164px!important;
+    min-height:34px!important;height:34px!important;padding:5px 10px!important;
+    justify-self:start;font-size:10.5px!important;
+  }
   .card-actions svg{width:15px!important;height:15px!important;flex:0 0 15px}
 
   @media(max-width:520px){
@@ -1525,12 +1529,15 @@
     .topbar .btn svg{width:17px;height:17px;margin:0}
     .ucard h3{font-size:18px!important;line-height:1.55!important}
     .card-actions{grid-template-columns:repeat(2,minmax(0,1fr))}
-    .card-detail,.card-source{grid-column:1/-1;width:100%!important;max-width:100%!important}
+    .card-detail{grid-column:1/-1;width:100%!important;max-width:100%!important}
     .card-detail{min-height:48px!important}
-    .card-source{min-height:42px!important}
+    .card-source{
+      grid-column:1/-1;width:auto!important;max-width:190px!important;min-width:164px!important;
+      min-height:34px!important;height:34px!important;
+    }
     .mark-read.card-action-labeled,.icon-action.card-action-labeled{
-      width:100%!important;max-width:100%!important;min-width:0!important;
-      min-height:38px!important;height:38px!important;padding:6px 8px!important;
+      width:auto!important;max-width:112px!important;min-width:92px!important;
+      min-height:32px!important;height:32px!important;padding:5px 8px!important;
     }
     .quick-stats .mini-chip{min-height:38px}
   }
