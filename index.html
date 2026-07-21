@@ -2981,18 +2981,18 @@ function renderPricing(v){
   document.getElementById('topActions').innerHTML='';
   const plans=[
     {
-      key:'free',kicker:'まずは無料で試す',name:'無料',price:'¥0',unit:'ずっと無料',desc:'AIニュースを気軽に追い始めたい方へ。基本機能をシンプルに使えます。',
-      features:['AIニュースを毎日10件まで表示','AIツールを3件まで登録','AI要約と情報元リンク','閲覧履歴を7日間保存'],
+      key:'free',kicker:'まずは無料で試す',name:'無料',price:'¥0',unit:'ずっと無料',desc:'運営が厳選したAIニュースを、おまかせで気軽に確認したい方へ。',
+      features:['運営が選ぶ総合フィードを表示','追跡するAIツールは選択不可','AI要約と情報元リンク','閲覧履歴を7日間保存'],
       cta:'現在のプラン',disabled:true
     },
     {
       key:'standard',kicker:'毎日の情報収集を効率化',name:'スタンダード',price:'¥980',unit:'税込／月',desc:'必要なAI情報を見逃さず、仕事に活かしたい個人ユーザー向け。',
-      features:['AIニュースの表示件数が無制限','AIツールを20件まで登録','事業別フィルターと保存機能','閲覧履歴を無制限に保存','キーワード通知（提供予定）'],
+      features:['好きなAIツールを10件まで選択','選んだツール中心の専用フィード','事業別フィルターと保存機能','閲覧履歴を90日間保存','キーワード通知（提供予定）'],
       cta:'提供開始を通知',recommended:true
     },
     {
       key:'premium',kicker:'本格的な情報活用へ',name:'プレミアム',price:'¥2,980',unit:'税込／月',desc:'複数事業やチームで、AIの変化を深く管理・分析したい方向け。',
-      features:['登録ツール・情報源が無制限','重要度の優先判定を強化','カスタム情報源を追加','CSVデータ書き出し（提供予定）','優先サポート'],
+      features:['好きなAIツールを無制限に選択','カスタム情報源とキーワードを追加','重要度の優先判定を強化','閲覧履歴を無制限に保存','CSVデータ書き出しと優先サポート'],
       cta:'提供開始を通知'
     }
   ];
@@ -3000,7 +3000,7 @@ function renderPricing(v){
     <section class="pricing-hero">
       <div class="pricing-eyebrow">AI UPDATE RADAR MEMBERSHIP</div>
       <h2>必要な深さに合わせて、<br>3つのプラン。</h2>
-      <p>まずは無料から。情報収集の量や使い方に合わせて、いつでも上位プランへ変更できます。</p>
+      <p>件数ではなく、選べるツールと情報収集の深さで比較。無料はおまかせ、上位プランでは自分専用のフィードを作れます。</p>
     </section>
     <div class="pricing-grid">
       ${plans.map(p=>`<article class="plan-card ${p.recommended?'recommended':''}" aria-labelledby="plan-${p.key}">
@@ -3014,7 +3014,7 @@ function renderPricing(v){
         <button class="btn ${p.recommended?'btn-primary':''} plan-cta" ${p.disabled?'disabled aria-disabled="true"':`onclick="requestPlan('${p.name}')"`}>${p.disabled?icon('check'):icon('star')}${p.cta}</button>
       </article>`).join('')}
     </div>
-    <div class="pricing-common">${icon('bolt')}<span><b>すべてのプランに共通：</b>スマホ対応、読みやすいAI要約、情報元へのリンク、未来的なレーダーUIを利用できます。</span></div>
+    <div class="pricing-common">${icon('bolt')}<span><b>すべてのプランに共通：</b>配信件数はAIニュースの発生状況に応じて変わります。スマホ対応、読みやすいAI要約、情報元へのリンクを利用できます。</span></div>
     <p class="pricing-note">有料プランと決済機能は準備中です。料金・機能内容は正式提供前に変更される場合があります。</p>
   </div>`;
 }
