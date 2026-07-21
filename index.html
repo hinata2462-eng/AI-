@@ -1368,6 +1368,38 @@
     .ucard{background-position:center,center,center,66% center!important;background-size:auto,auto,auto,auto 100%!important}
     .btn:not(.btn-icon),.card-open,.mini-chip{padding-right:13px!important;background-size:auto!important}
   }
+
+  /* V4.6 / Clear card navigation: app detail vs. external source */
+  .ucard-title-link{
+    display:flex;align-items:flex-start;gap:8px;width:100%;padding:0;border:0;background:none;
+    color:inherit;text-align:left;font:inherit;cursor:pointer;
+  }
+  .ucard-title-link::after{
+    content:"詳細";flex-shrink:0;margin:5px 0 0 auto;padding:2px 6px;
+    border:1px solid rgba(92,229,240,.28);color:#7beff3;background:rgba(22,161,183,.10);
+    font-size:8px;font-weight:800;letter-spacing:.08em;
+    clip-path:polygon(5px 0,100% 0,100% calc(100% - 5px),calc(100% - 5px) 100%,0 100%,0 5px);
+  }
+  .ucard-title-link:hover h3,.ucard-title-link:focus-visible h3{color:#8cf8fb!important;text-decoration:underline;text-decoration-color:rgba(98,235,242,.45);text-underline-offset:4px}
+  .ucard-title-link:focus-visible{outline:2px solid #58eaf0;outline-offset:5px;border-radius:3px}
+  .card-detail{
+    min-width:160px;gap:7px!important;color:#fff!important;border-color:rgba(101,241,247,.62)!important;
+    background-image:linear-gradient(110deg,rgba(5,151,177,.98),rgba(42,74,199,.98) 58%,rgba(106,48,200,.98))!important;
+    box-shadow:0 0 22px rgba(40,219,235,.22),inset 0 1px rgba(220,255,255,.22)!important;
+  }
+  .card-source{
+    height:36px;display:inline-flex;align-items:center;justify-content:center;gap:5px;padding:0 9px;
+    color:#aebbd0;border:1px solid rgba(139,163,204,.24);background:rgba(8,20,43,.66);
+    font-size:10.5px;font-weight:700;text-decoration:none;white-space:nowrap;
+    clip-path:polygon(7px 0,100% 0,100% calc(100% - 7px),calc(100% - 7px) 100%,0 100%,0 7px);
+  }
+  .card-source:hover{color:#e7fbff;border-color:rgba(88,226,238,.48);background:rgba(21,61,88,.78)}
+  .card-source svg,.card-detail svg{width:14px;height:14px}
+  @media(max-width:760px){
+    .card-actions{justify-content:flex-start!important;flex-wrap:wrap}
+    .card-detail{order:-2;flex:1;max-width:none!important;min-width:142px}
+    .card-source{order:-1}
+  }
 </style>
 </head>
 <body>
@@ -1969,14 +2001,15 @@ function updateCard(u){
       <div class="ucard-tool"><span class="tool-dot" style="background:${color};color:${color}"></span><span>${esc(tool?tool.name:'不明')}</span></div>
       <span class="ucard-date" style="margin-left:auto">${relDate(u.published_at)}</span>
     </div>
-    <h3 onclick="go('update-detail','${u.id}')">${esc(u.title)}</h3>
+    <button class="ucard-title-link" onclick="go('update-detail','${u.id}')" aria-label="${esc(u.title)}の詳細をアプリ内で見る"><h3>${esc(u.title)}</h3></button>
     <div class="summary-wrap"><span class="ai-label">AI要約</span><div class="summary">${esc(sum)}</div></div>
     <div class="ucard-footer">
       <div class="ucard-meta">${catChips(u.related_categories,2)}${u.status!=='unread'?statusBadge(u.status):''}</div>
       <div class="card-actions">
+        <button class="card-open card-detail" onclick="go('update-detail','${u.id}')">${icon('eye')}アプリ内で詳しく見る</button>
         ${u.status==='unread'?`<button class="mark-read" onclick="markRead('${u.id}')" aria-label="既読にする" title="既読にする">${icon('check')}既読にする</button>`:''}
         ${u.status!=='try_later'?`<button class="icon-action" onclick="quickStatus('${u.id}','try_later');render()" aria-label="あとで試すに保存" title="あとで試すに保存">${icon('flask')}</button>`:''}
-        ${u.source_url?`<a class="card-open" href="${esc(u.source_url)}" target="_blank" rel="noopener">${icon('ext')}記事を開く</a>`:`<button class="card-open" onclick="go('update-detail','${u.id}')">詳細を見る</button>`}
+        ${u.source_url?`<a class="card-source" href="${esc(u.source_url)}" target="_blank" rel="noopener" aria-label="元記事を外部サイトで見る">${icon('ext')}元記事（外部）</a>`:''}
       </div>
     </div>
   </article>`;
