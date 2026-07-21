@@ -1484,7 +1484,8 @@
   .bottom-item{box-shadow:none!important}
   .bottom-item.active{background:rgba(31,128,158,.22)!important;box-shadow:none!important}
   .seg button.on{background:rgba(31,74,105,.68)!important;box-shadow:none!important;color:#effaff!important}
-  .ucard-title-link::after{clip-path:none!important;border-radius:6px!important}
+  .ucard-title-link::after{content:"要約"!important;clip-path:none!important;border-radius:6px!important}
+  .ucard h3{font-size:20px!important;line-height:1.52!important;letter-spacing:-.018em!important}
 
   .ucard-footer{display:block!important;min-width:0;width:100%}
   .ucard-meta{width:100%;min-width:0;margin-bottom:13px!important}
@@ -1503,9 +1504,12 @@
     overflow-wrap:anywhere;
   }
   .mark-read.card-action-labeled,.icon-action.card-action-labeled{
-    width:100%!important;min-width:0!important;height:auto!important;padding:9px 12px!important;
-    border-radius:11px!important;clip-path:none!important;font-size:12px!important;
+    width:auto!important;max-width:136px!important;min-width:108px!important;
+    min-height:36px!important;height:36px!important;padding:6px 10px!important;
+    border-radius:10px!important;clip-path:none!important;font-size:11px!important;
+    justify-self:start;
   }
+  .card-detail{min-height:48px!important;font-size:13.5px!important}
   .card-source{font-size:12px!important}
   .card-actions svg{width:15px!important;height:15px!important;flex:0 0 15px}
 
@@ -1519,8 +1523,15 @@
       padding:0!important;font-size:0!important;overflow:hidden;
     }
     .topbar .btn svg{width:17px;height:17px;margin:0}
-    .card-actions{grid-template-columns:1fr}
-    .card-actions>*{min-height:44px}
+    .ucard h3{font-size:18px!important;line-height:1.55!important}
+    .card-actions{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .card-detail,.card-source{grid-column:1/-1;width:100%!important;max-width:100%!important}
+    .card-detail{min-height:48px!important}
+    .card-source{min-height:42px!important}
+    .mark-read.card-action-labeled,.icon-action.card-action-labeled{
+      width:100%!important;max-width:100%!important;min-width:0!important;
+      min-height:38px!important;height:38px!important;padding:6px 8px!important;
+    }
     .quick-stats .mini-chip{min-height:38px}
   }
 </style>
@@ -2124,7 +2135,7 @@ function updateCard(u){
       <div class="ucard-tool"><span class="tool-dot" style="background:${color};color:${color}"></span><span>${esc(tool?tool.name:'不明')}</span></div>
       <span class="ucard-date" style="margin-left:auto">${relDate(u.published_at)}</span>
     </div>
-    <button class="ucard-title-link" onclick="go('update-detail','${u.id}')" aria-label="${esc(u.title)}の詳細をアプリ内で見る"><h3>${esc(u.title)}</h3></button>
+    <button class="ucard-title-link" onclick="go('update-detail','${u.id}')" aria-label="${esc(u.title)}の要約をアプリ内で見る"><h3>${esc(u.title)}</h3></button>
     <div class="summary-wrap"><span class="ai-label">AI要約</span><div class="summary">${esc(sum)}</div></div>
     <div class="ucard-footer">
       <div class="ucard-meta">
@@ -2132,7 +2143,7 @@ function updateCard(u){
         ${u.status!=='unread'?`<div class="ucard-status-group"><span class="ucard-meta-label">現在の状態</span>${statusBadge(u.status)}</div>`:''}
       </div>
       <div class="card-actions">
-        <button class="card-open card-detail" onclick="go('update-detail','${u.id}')">${icon('eye')}アプリ内で詳しく見る</button>
+        <button class="card-open card-detail" onclick="go('update-detail','${u.id}')">${icon('eye')}要約を見る</button>
         ${u.source_url?`<a class="card-source" href="${esc(u.source_url)}" target="_blank" rel="noopener" aria-label="情報元の記事を外部サイトで読む">${icon('ext')}情報元の記事を読む</a>`:''}
         ${u.status==='unread'?`<button class="mark-read card-action-labeled" onclick="markRead('${u.id}')" aria-label="既読にする" title="読んだ記事として記録する">${icon('check')}<span>既読にする</span></button>`:''}
         ${u.status!=='try_later'?`<button class="icon-action card-action-labeled" onclick="quickStatus('${u.id}','try_later');render()" aria-label="あとで試すに保存" title="あとで試す一覧に保存する">${icon('flask')}<span>あとで試す</span></button>`:''}
