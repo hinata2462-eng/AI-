@@ -1541,6 +1541,69 @@
     }
     .quick-stats .mini-chip{min-height:38px}
   }
+
+  /* V4.8 / Calm information hierarchy inside news cards */
+  .ucard{
+    gap:14px!important;
+    background-image:
+      linear-gradient(100deg,rgba(3,13,30,.995) 0%,rgba(4,14,31,.985) 54%,rgba(4,12,28,.86) 76%,rgba(3,8,20,.66) 100%),
+      repeating-linear-gradient(90deg,transparent 0 41px,rgba(47,211,231,.016) 42px 43px),
+      radial-gradient(circle at 88% 42%,rgba(66,74,229,.09),transparent 38%),
+      var(--card-art,var(--art-quantum))!important;
+  }
+  .ucard-top{padding-bottom:8px!important}
+  .ucard-top-meta{margin-left:auto;display:flex;align-items:center;gap:7px}
+  .ucard-top-meta .status{
+    min-height:22px;padding:3px 8px!important;border-radius:999px!important;clip-path:none!important;
+    background:rgba(16,31,55,.72)!important;box-shadow:none!important;font-size:9px!important;
+  }
+  .ucard-title-link::after{display:none!important}
+  .summary-wrap{
+    gap:10px!important;padding:12px 14px!important;border-left:3px solid rgba(65,215,231,.52)!important;
+    background:linear-gradient(90deg,rgba(6,28,49,.86),rgba(6,19,39,.54) 72%,transparent)!important;
+    box-shadow:none!important;
+  }
+  .ucard-footer{padding-top:2px!important;border-top:0!important}
+  .ucard-meta{
+    flex-direction:row!important;align-items:center!important;gap:8px!important;margin-bottom:14px!important;
+  }
+  .ucard-meta-group{gap:7px!important}
+  .ucard-meta-label{font-size:10px!important;color:#8998ad!important;letter-spacing:.02em!important}
+  .ucard .chip,.ucard .status{
+    border-radius:999px!important;clip-path:none!important;background:rgba(27,36,76,.74)!important;
+    border-color:rgba(116,125,211,.28)!important;box-shadow:none!important;
+  }
+  .ucard .chip::after,.ucard .status::after{display:none!important}
+  .ucard .chip.more{background:rgba(20,32,53,.70)!important;color:#91a0b5!important}
+  .card-actions{
+    display:flex!important;align-items:center!important;justify-content:flex-start!important;
+    flex-wrap:wrap!important;gap:9px!important;
+  }
+  .card-actions>*{flex:0 0 auto!important;white-space:nowrap!important;overflow-wrap:normal!important}
+  .card-detail{
+    width:214px!important;max-width:214px!important;min-width:180px!important;
+    min-height:48px!important;padding:10px 18px!important;font-size:13.5px!important;
+  }
+  .card-source{
+    width:auto!important;max-width:none!important;min-width:0!important;height:34px!important;min-height:34px!important;
+    padding:5px 12px!important;background:rgba(7,18,36,.72)!important;border-color:rgba(126,156,196,.21)!important;
+    box-shadow:none!important;color:#aebbd0!important;font-size:10.5px!important;
+  }
+  .mark-read.card-action-labeled,.icon-action.card-action-labeled{
+    width:auto!important;max-width:none!important;min-width:0!important;height:32px!important;min-height:32px!important;
+    padding:5px 10px!important;background:rgba(7,18,36,.62)!important;border-color:rgba(126,156,196,.18)!important;
+    box-shadow:none!important;color:#9fadc1!important;font-size:10.5px!important;
+  }
+  @media(max-width:520px){
+    .ucard{gap:12px!important;padding:18px 15px 16px!important}
+    .ucard-top-meta{gap:5px}
+    .summary-wrap{padding:10px 11px!important}
+    .ucard-meta{margin-bottom:12px!important}
+    .card-actions{display:flex!important;gap:8px!important}
+    .card-detail{width:100%!important;max-width:100%!important;min-width:0!important}
+    .card-source{width:auto!important;max-width:none!important;min-width:0!important}
+    .mark-read.card-action-labeled,.icon-action.card-action-labeled{width:auto!important;max-width:none!important;min-width:0!important}
+  }
 </style>
 </head>
 <body>
@@ -2140,14 +2203,13 @@ function updateCard(u){
   return `<article class="ucard ${u.status==='unread'?'is-new':''} ${artClass}">
     <div class="ucard-top">
       <div class="ucard-tool"><span class="tool-dot" style="background:${color};color:${color}"></span><span>${esc(tool?tool.name:'不明')}</span></div>
-      <span class="ucard-date" style="margin-left:auto">${relDate(u.published_at)}</span>
+      <div class="ucard-top-meta">${u.status!=='unread'?statusBadge(u.status):''}<span class="ucard-date">${relDate(u.published_at)}</span></div>
     </div>
     <button class="ucard-title-link" onclick="go('update-detail','${u.id}')" aria-label="${esc(u.title)}の要約をアプリ内で見る"><h3>${esc(u.title)}</h3></button>
     <div class="summary-wrap"><span class="ai-label">AI要約</span><div class="summary">${esc(sum)}</div></div>
     <div class="ucard-footer">
       <div class="ucard-meta">
-        <div class="ucard-meta-group"><span class="ucard-meta-label">関連する分野</span>${catChips(u.related_categories,2)}</div>
-        ${u.status!=='unread'?`<div class="ucard-status-group"><span class="ucard-meta-label">現在の状態</span>${statusBadge(u.status)}</div>`:''}
+        <div class="ucard-meta-group"><span class="ucard-meta-label">分野</span>${catChips(u.related_categories,2)}</div>
       </div>
       <div class="card-actions">
         <button class="card-open card-detail" onclick="go('update-detail','${u.id}')">${icon('eye')}要約を見る</button>
