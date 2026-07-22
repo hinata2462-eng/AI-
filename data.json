@@ -1,98 +1,98 @@
 [
   {
     "tool": "Gemini",
-    "title": "Google、新Gemini「3.6 Flash」など発表",
-    "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9iN0JFUkZYd1MtMG1DR2stRmVqYWE1MFNEeVdCOXItajI0V0RmYzk5WjFQdVdqcUU4dXRWRzNvbm4zUXVpNk1JQUtJYVBVQ19fWHByRWdhS1NfRkE0b0FvN2RyVEhOTWxW?oc=5",
-    "published_at": "2026-07-21T20:59:17.000Z",
-    "raw_excerpt": "Googleが高速・低価格の新Geminiモデルを複数発表。仕事の下書きや資料作成に。",
-    "detail": "Googleが新しいGemini「3.6 Flash」「3.5 Flash-Lite」を発表しました。速さと手頃な価格を重視したモデルで、文章生成やアイデア出しを安く速くこなせます。営業資料や社内文書、LPの原稿作りを効率化したい新井さんに役立ちます。"
+    "title": "Geminiの自動実行が40アプリ超に拡大",
+    "source_url": "https://news.google.com/rss/articles/CBMi9ANBVV95cUxNbEhBTHcwSVBaUjJmTm02a3p4eWNwOHlVbjh0X3ZvcjB6d0hOVzBNY2VHNjljNU5NbGlKS2dvT00tZktzdDExSVVlRzBvdWx6cXFmTkJjOFptMjdkTDdTaUstMWRsTUZtbzNldWxGbk4xVzZZV29ZcFpKR1lFenBDSF9yeWJ2MjgwOS1kZTJqYUdIUnA2UHNEd1FNRzN5UWwxNDQtYm9FbWhnUFJqOERId0FXd2gwdmdfWktHVXl4cENxS3NIY2xZUGEzM3ZxaVV3NEYzTm1PN01WU1NsM1ZiZmZBcFVsMzFZRmY5RnQ4VWdURlpzVXNwcnlXWlFOaFk0Ti1nZGJ3cTB0ZVN2alV3WVRrZTB1V0ZqaDhmbF9mQ21HZ2NZdTBQRHNQVWsyNFM1TkRBUWFXZm1nb3BXLWFhbGxXS1RKNUNJMEdHWl96SFZSWjE5TWQ5ejU1ZnJEbU1sdzE5WVo0eW1Fb09NU0dKQzNBYnBvVUNhOXU2azJaWW1LT2xLeEpKbHRaRlo4SkJQd2FBRktyZjdMYndmaXRUQmZnQnZUSW1kTmphNEJQakVMb0ZUQ1NfRnBNMHFhRm5GQkE5bmotN202eGtRM3F5ZnpnZHJiMHpobjJxUjZmRklOcXhSUE5RdnNnRGFRdGFVYlFkZw?oc=5",
+    "published_at": "2026-07-22T17:20:27.000Z",
+    "raw_excerpt": "GeminiがアプリをまたいでAIが自動で操作する範囲を拡大",
+    "detail": "Geminiが40以上のアプリで、AIが自動的に操作してくれる「エージェント」機能を広げました。複数のアプリをまたぐ作業をAIに任せられるようになり、日々の業務の自動化・効率化に役立ちます。"
+  },
+  {
+    "tool": "Gemini",
+    "title": "Gemini NotebookでAIブレーンを量産",
+    "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE50WV9TZXFhZzFPS3RQSHY5UzVoc2ZvY1l2Yk45aHpCbktLQ2plVkhQTjRvWkVUcmZkVVQyVGFEVkxTMTgzV1Zlb2dKV1Y2UElWRUV4MXFCb0dvZWc2aVhIdEVSSUloZw?oc=5",
+    "published_at": "2026-07-22T15:00:00.000Z",
+    "raw_excerpt": "Gemini Notebookで複数視点の分析ができる使い方を日経が解説",
+    "detail": "Gemini Notebookに資料を入れて、目的別の「AIの相談相手」を複数作り、多角的に分析する使い方を紹介しています。営業資料や業務改善の企画を練るとき、いろんな視点で下調べや意見出しができて便利です。"
   },
   {
     "tool": "ChatGPT / OpenAI",
-    "title": "OpenAIが中小企業向けChatGPTプログラム開始",
-    "source_url": "https://openai.com/index/introducing-chatgpt-small-business-program",
-    "published_at": "2026-07-21T17:00:00.000Z",
-    "raw_excerpt": "起業家・中小企業がAIスキル習得や業務自動化を学べる新プログラム。",
-    "detail": "OpenAIが中小企業向けの「ChatGPT for Small Business」プログラムを始めました。AIの使い方を学び、仕事を自動化して事業を伸ばす手助けをします。三高産業の業務改善やEC運営を進める新井さんに実践的なヒントになります。"
-  },
-  {
-    "tool": "Cursor",
-    "title": "Cursor報告：計画役と実行役の分担でコスト8分の1",
-    "source_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1LVXJqVXlaS2JyVWJ3d0xwYzhtMXFfT0VUdTZ3bVR4UjdoeXF0b0RnTENOVkoxa0FweGwwMDRjS0FYa3lfdUd6bzZNUGZTdGJyRXpiR3ZvMkh0Y1hjblF5RVNCemJYMkpYbXlQdnBvdF8?oc=5",
-    "published_at": "2026-07-21T13:00:00.000Z",
-    "raw_excerpt": "高性能AIで計画、安価AIで実行と分けるとコストが約8分の1に。",
-    "detail": "Cursorが、AIの使い方を「賢い計画役」と「安い実行役」に分けると費用が約8分の1になったと報告しました。すべてを高性能AIに任せず役割分担する工夫です。Claude CodeやAIでアプリ開発をする新井さんのコスト節約のヒントになります。"
-  },
-  {
-    "tool": "Claude / Claude Code",
-    "title": "Claudeの新機能「Claude Tag」がSlackで自動作業",
-    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9CS1hweV9adzN6YUVpWlhtVmhKbGVuWnhzUE5uSFc2SjE2Mm4tb1ZxTTI4eVlDUVJKNG91T09aRVlqX0dsSkt0Y0VxamVDWVdlUTk5ekt6ZjhYUTZ6Y1o1VXlucHJpb0tZa2J0aGdaQzF1ckFT?oc=5",
-    "published_at": "2026-07-21T09:22:44.000Z",
-    "raw_excerpt": "Slack上でClaudeがタスクを自律処理する新機能。チームで利用可能。",
-    "detail": "AnthropicがSlackで動く新機能「Claude Tag」を発表しました。Slackで指示するとClaudeが自分でタスクを進めてくれ、チームでも使えます。社内のやり取りや業務の自動化・効率化を狙う新井さんに便利です。"
-  },
-  {
-    "tool": "v0",
-    "title": "Vercelの新AIエージェント拡張",
-    "source_url": "https://vercel.com/blog/vercel-agent",
-    "published_at": "2026-07-21T04:00:00.000Z",
-    "raw_excerpt": "アラート対応やコードレビューに加え、本番調査までダッシュボードで対応。",
-    "detail": "v0を運営するVercelがAIエージェントを拡張しました。これまでの通知の仕分けやコード確認に加え、公開中サイトの問題調査などをダッシュボードでこなせます。v0で作ったサイト運用を安定させたい新井さんに役立ちます。"
-  },
-  {
-    "tool": "v0",
-    "title": "AI GatewayでGemini新モデルが利用可能に",
-    "source_url": "https://vercel.com/changelog/gemini-3-6-flash-3-5-flash-lite-on-ai-gateway",
-    "published_at": "2026-07-21T00:00:00.000Z",
-    "raw_excerpt": "v0のAI Gatewayで新Geminiが使え、コーディングやWeb制作の質が向上。",
-    "detail": "v0(Vercel)のAI Gatewayで、新しいGemini 3.6 FlashとFlash-Liteが使えるようになりました。前より少ない計算で、コーディングやWebサイト制作の品質が上がっています。v0でLPやアプリを作る新井さんは、より速く安く作れるようになります。"
-  },
-  {
-    "tool": "v0",
-    "title": "v0のVercel Connectに90超の接続先追加",
-    "source_url": "https://vercel.com/changelog/vercel-connect-preset-connectors",
-    "published_at": "2026-07-21T00:00:00.000Z",
-    "raw_excerpt": "ShopifyやJiraなど90以上の外部サービスと簡単連携できるように。",
-    "detail": "v0のVercel Connectが、Shopifyなど90以上のサービスとあらかじめ用意された設定でつなげられるようになりました。ECや外部ツールとの連携を、細かい設定なしで手早く行えます。EC/LP制作や業務自動化を進める新井さんの手間を減らせます。"
+    "title": "OpenAIが小規模ビジネス向けChatGPT提供",
+    "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9GaUIwcl95S01XbjdBSW40T1JoZFl0MjdKT0QwSmlrQ1hiSnZfUnNNWkN2czlvcW5lNldOQUNUWXpTeTNHcjJJNjB5bTBXUQ?oc=5",
+    "published_at": "2026-07-22T11:34:44.000Z",
+    "raw_excerpt": "少人数チーム向けChatGPTプログラムと新モデルGPT-5.6を発表",
+    "detail": "OpenAIが少人数の会社向けにChatGPTの支援プログラムと最新モデルを発表しました。小規模な業務をAIで強力に手伝う内容で、三高産業の業務改善や社内文書作成をコストを抑えて進めたい新井さんに向いています。"
   },
   {
     "tool": "Canva",
-    "title": "Canvaコード2.0でサイト・アプリ生成",
-    "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE40X20xU09vRUdXZks1a3NwanAxS1pIQmlnQmstcVRiT2RkWUppNnRqOWltOHFiOV9HTkJ0V3NKd04yd21ZbzZQb0s3emZ5aTBTN1lvYmluZHp0Y1U?oc=5",
-    "published_at": "2026-07-20T22:57:38.000Z",
-    "raw_excerpt": "言葉で指示するとWebサイトやアプリを自動生成、デザイン感覚で編集可能。",
-    "detail": "Canvaが「Canvaコード2.0」を提供開始しました。作りたいものを言葉で伝えるとWebサイトやアプリが自動でできあがり、いつものデザイン画面のように直接いじれます。LP制作やアプリ開発を、コードを深く書かずに素早く試作できるので新井さんの制作作業に直結します。"
+    "title": "Canvaコード2.0が登場、デザイン感覚でアプリ編集",
+    "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1Ec3FYWWY2cjBub3UzdmJiRDkySm5uNV9NNGFTc0lnNWd1bV9kbmxRaF9kcGo0cDJDM3hGT0ZKcXJpZVFDbEZveFNOUUpWMlp0Wllxd3kxQlRHcEVrR2RB?oc=5",
+    "published_at": "2026-07-22T08:02:11.000Z",
+    "raw_excerpt": "CanvaがWebサイトやアプリを生成し、デザインのように直接編集できる新機能を開始",
+    "detail": "Canvaが「Canvaコード2.0」を出しました。文章で指示するとWebサイトやアプリが作られ、しかもCanvaのデザイン画面のように直感的に手直しできます。LP制作や営業資料、簡単なアプリ作りをコードなしで進められるので、新井さんの制作業務のスピードが上がります。"
+  },
+  {
+    "tool": "Claude / Claude Code",
+    "title": "Claude Cowork、録画からスキルを習得",
+    "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBTejhiVkF5Qm1laVRNUkEwVTE1NVlCVklodGFWRTNISW5wMm0yRzk0RTVxM1RIWDdOVl9leTBpZmtudUw1blI1Qkk3dllGVWJHM1I0Mi1rSWJaWVF1Q1AtaTBn?oc=5",
+    "published_at": "2026-07-22T06:45:17.000Z",
+    "raw_excerpt": "Claude Coworkが画面録画と音声説明で作業手順を覚えられるように",
+    "detail": "Claude Coworkが、画面録画と音声での説明を見せるだけで作業のやり方を学べるようになりました。繰り返しの手作業をお手本として教えれば代わりにやってくれるので、業務の自動化・効率化に役立ちます。"
+  },
+  {
+    "tool": "Claude / Claude Code",
+    "title": "Claude CodeにiOSシミュレータ統合",
+    "source_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE9uSnRNQUMtUWhGQnZOLWVvbzlSWllKR1o5RW5nNVRncXl4WmU2dWxSRXhaV0VFbU9Yb0lBWmFFYUM?oc=5",
+    "published_at": "2026-07-22T03:12:38.000Z",
+    "raw_excerpt": "Claude CodeがiOSアプリの動作確認をできるベータを開始",
+    "detail": "Claude Codeに、iPhoneアプリを画面上で試せる仕組みが加わり、公開テストが始まりました。アプリ開発で作った画面をその場で確認しながら直せるので、開発の手間が減ります。"
   },
   {
     "tool": "NotebookLM",
-    "title": "NotebookLMが「Gemini Notebook」に刷新",
-    "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA2SXVHRE5GR01BWTFJcTlaOEZ5VkdoM1JjWFdxZ09hYkc2cEg0NVhDMHZhQ2xtckF5ZnpNRGxMSXhfMXQ1RWdJS0drMzlUODlsV3E2bDd0SEFpc2ZuSTVz?oc=5",
-    "published_at": "2026-07-20T09:04:48.000Z",
-    "raw_excerpt": "名称変更しGemini連携強化、自らコードを書いて複雑な分析も可能に。",
-    "detail": "GoogleのNotebookLMが「Gemini Notebook」に改称され、機能が強化されました。資料を読み込ませて要約するだけでなく、自分でコードを書いて複雑な分析までこなせます。営業資料の整理やデータ分析、文書作成に使いたい新井さんに役立ちます。"
+    "title": "NotebookLMがGemini Notebookに進化",
+    "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1yY0FqOEx2bDhUWV9paUYza1FUWjJHSzFyMjgzUXNfVFJseTVIVEREd2FwRU9fZkptS0xCYkc4dHliOGIycTE5R3FWTnpQUmQzUUhXSHV1dGU4NkRpQXhfTjZ2cXdtRXRzWkFKWmhDR2szcUNGdjZ5clV4a2JEYU0?oc=5",
+    "published_at": "2026-07-22T03:11:02.000Z",
+    "raw_excerpt": "NotebookLMが改称され、Google検索連携などでリサーチ機能が強化",
+    "detail": "資料を読み込ませて質問できるNotebookLMが「Gemini Notebook」に名前を変え、Google検索とつながって最新情報も調べられるようになりました。業務資料の要約や市場調査、社内文書づくりのリサーチが速くなります。"
+  },
+  {
+    "tool": "Cursor",
+    "title": "高性能な計画役＋安価な実行役でコスト8分の1",
+    "source_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1LVXJqVXlaS2JyVWJ3d0xwYzhtMXFfT0VUdTZ3bVR4UjdoeXF0b0RnTENOVkoxa0FweGwwMDRjS0FYa3lfdUd6bzZNUGZTdGJyRXpiR3ZvMkh0Y1hjblF5RVNCemJYMkpYbXlQdnBvdF8?oc=5",
+    "published_at": "2026-07-21T13:00:00.000Z",
+    "raw_excerpt": "Cursorが役割分担でAI開発コストを約8分の1に削減できると報告",
+    "detail": "賢いAIに計画を立てさせ、安いAIに実際の作業をさせる方法で、開発費用が約8分の1になったとCursorが報告しました。AIを賢く使い分ける考え方は、新井さんのアプリ開発や自動化のコスト節約に応用できます。"
   },
   {
     "tool": "Suno",
-    "title": "Suno、YouTube等から数百万曲を無断収集か",
-    "source_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE96aGlYRzI3Q0VLLTgyODlENS1yQ3hfRXVRSEtWOGZtR01RbHVHTVpnTE02S3VhSTdCRGU4R1pOeHA1VFhLVXdhMHJnZDFOUmg2eDdrNVNlZ1NjVGF1elFPWEhMWFdDUHR3aF84RzJUMmpCM3JkOXV5cjRR?oc=5",
-    "published_at": "2026-07-20T05:02:04.000Z",
-    "raw_excerpt": "流出コードでSunoの大量スクレイピング疑惑が判明、著作権論争続く。",
-    "detail": "音楽生成AI「Suno」が、YouTubeなどから数百万曲を無断で集めていた疑いが流出したソースコードから判明しました。著作権をめぐる裁判も続いています。Sunoで音楽制作しYouTube運用する新井さんは、権利面のリスクを把握しておくと安心です。"
+    "title": "Sunoがテキストから曲生成機能を提供",
+    "source_url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5EcHExaEZuS211Vm5xZHBEOUt3a2UyRjZYYlhKWHhOcFBiLURQcGdVcENhZjBxVEFpdm4tZFJRbEllLUkyYkE?oc=5",
+    "published_at": "2026-07-21T08:26:26.000Z",
+    "raw_excerpt": "SunoがiMessageで文章から曲を作る機能を開始しTikTokで話題",
+    "detail": "音楽生成AIのSunoが、文章を入れるだけで曲を作れる機能をメッセージアプリ向けに始めました。手軽に曲アイデアを試せるので、Kiki Toaの音楽制作やYouTube用の楽曲づくりのヒントになります。"
+  },
+  {
+    "tool": "NotebookLM",
+    "title": "NotebookLM改称、Gemini 3.5で推論強化",
+    "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5HZEwwUlYxNGNpYUlPeXo1azk3bmhIeFBJYkJ6S1Rrc0VDRVE5OGxZRG5KUGJmUVVNNk5JaFU4T1lacE5PX1EwN2Z5OFZkdXBCU0FJc2tUcHBNVVQtZl9qSDh3UFlzcU9s?oc=5",
+    "published_at": "2026-07-21T03:45:50.000Z",
+    "raw_excerpt": "NotebookLMがGemini Notebookになり推論力が向上",
+    "detail": "NotebookLMが「Gemini Notebook」に改称され、新しいGeminiモデルで考える力（推論）が強くなりました。資料をもとにした複雑な質問への回答精度が上がるので、調べ物や文書作成の質を高められます。"
+  },
+  {
+    "tool": "Canva",
+    "title": "Canvaコード2.0の詳しい解説記事",
+    "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE40X20xU09vRUdXZks1a3NwanAxS1pIQmlnQmstcVRiT2RkWUppNnRqOWltOHFiOV9HTkJ0V3NKd04yd21ZbzZQb0s3emZ5aTBTN1lvYmluZHp0Y1U?oc=5",
+    "published_at": "2026-07-20T22:57:38.000Z",
+    "raw_excerpt": "Canvaコード2.0でWebサイトやアプリを生成し直接編集できる仕組みを紹介",
+    "detail": "Canvaの新機能「Canvaコード2.0」について、文章からWebサイトやアプリを作り、デザインのように編集できる点を解説しています。EC向けLPや販促ページ作りに直接使えるので、実際の操作イメージを知る参考になります。"
   },
   {
     "tool": "Cursor",
-    "title": "Slack版Cursorが計画共有・複数リポ対応",
-    "source_url": "https://cursor.com/changelog/slack-improvements",
-    "published_at": "2026-07-17T00:00:00.000Z",
-    "raw_excerpt": "Cursorが作業前に計画を提示、複数プロジェクト横断で動作。",
-    "detail": "Slack上のCursorが、作業を始める前に何をするか計画を見せ、複数のプロジェクトやチャンネルをまたいで動くようになりました。指示の意図がずれにくくなります。チームで開発や自動化を進める新井さんの作業がスムーズになります。"
-  },
-  {
-    "tool": "Cursor",
-    "title": "Cursorのスマホアプリ(iOS)が公開ベータ",
-    "source_url": "https://cursor.com/changelog/ios-mobile-app",
-    "published_at": "2026-06-29T00:00:00.000Z",
-    "raw_excerpt": "iPhoneからAIエージェントを起動・管理できるアプリが登場。",
-    "detail": "コーディング支援のCursorがiOS版アプリを公開ベータで出しました。外出先からでもAIに作業を任せて進捗を管理できます。移動中や隙間時間に開発や自動化を進めたい新井さんに便利です。"
+    "title": "Cursor全プランで利用上限が2倍に",
+    "source_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFA1M3pIVFd3aVFpUDByZUJNZDZVeG50QXhvalFiVDJlbGEtTGEyQi1QeUV1bTJGTWZLbGJJRERrTHZlZDRYaVpLcEhQUnloQUNuRi1nMnl3ZUtucnMyLVRXWXJDQWt3UnBZU3pF?oc=5",
+    "published_at": "2026-07-16T12:33:55.000Z",
+    "raw_excerpt": "CursorがAIモデルの使用上限を全プランで2倍に増やした",
+    "detail": "AIコーディングツールCursorで、AIを使える回数の上限が全プランで2倍になりました。同じ料金でより多く開発作業を任せられるので、アプリ開発や自動化スクリプト作りが捗ります。"
   }
 ]
