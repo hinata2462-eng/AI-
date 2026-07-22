@@ -1637,7 +1637,7 @@
   .plan-features{display:grid;gap:11px;margin:0 0 22px;padding:0;list-style:none}
   .plan-features li{display:flex;align-items:flex-start;gap:8px;color:#c0cada;font-size:12px;line-height:1.55}
   .plan-features svg{width:15px;height:15px;margin-top:2px;flex:0 0 15px;color:#53dce5}
-  .plan-cta{width:100%;margin-top:auto;min-height:44px!important;justify-content:center}
+  .plan-cta{width:100%;margin-top:auto;min-height:44px!important;justify-content:center;text-decoration:none}
   .plan-cta[disabled]{cursor:default;opacity:.64}
   .pricing-common{display:flex;align-items:center;gap:12px;margin-top:18px;padding:15px 17px;border:1px solid rgba(112,148,190,.17);border-radius:13px;background:rgba(8,19,37,.58);color:#95a5ba;font-size:11.5px;line-height:1.6}
   .pricing-common svg{width:18px;height:18px;flex:0 0 18px;color:#54dce5}
@@ -2989,12 +2989,12 @@ function renderPricing(v){
     {
       key:'standard',kicker:'毎日の情報収集を効率化',name:'スタンダード',price:'¥980',unit:'税込／月',desc:'必要なAI情報を見逃さず、仕事に活かしたい個人ユーザー向け。',
       features:['好きなAIツールを10件まで選択','選んだツール中心の専用フィード','情報元の記事は月10件まで','事業別フィルターと保存機能','閲覧履歴を14日間保存','キーワード通知（提供予定）'],
-      cta:'提供開始を通知',recommended:true
+      cta:'テスト決済へ進む',checkoutUrl:'https://buy.stripe.com/test_dRm6oG5850vt4AedBn6J200',recommended:true
     },
     {
       key:'premium',kicker:'本格的な情報活用へ',name:'プレミアム',price:'¥2,980',unit:'税込／月',desc:'複数事業やチームで、AIの変化を深く管理・分析したい方向け。',
       features:['好きなAIツールを無制限に選択','カスタム情報源とキーワードを追加','情報元の記事を無制限に閲覧','重要度の優先判定を強化','閲覧履歴を30日間保存','CSVデータ書き出しと優先サポート'],
-      cta:'提供開始を通知'
+      cta:'テスト決済へ進む',checkoutUrl:'https://buy.stripe.com/test_dRm6oG441dif7Mq2WJ6J201'
     }
   ];
   v.innerHTML=`<div class="pricing-page">
@@ -3012,15 +3012,14 @@ function renderPricing(v){
         <p class="plan-desc">${p.desc}</p>
         <div class="plan-divider"></div>
         <ul class="plan-features">${p.features.map(f=>`<li>${icon('check')}<span>${f}</span></li>`).join('')}</ul>
-        <button class="btn ${p.recommended?'btn-primary':''} plan-cta" ${p.disabled?'disabled aria-disabled="true"':`onclick="requestPlan('${p.name}')"`}>${p.disabled?icon('check'):icon('star')}${p.cta}</button>
+        ${p.disabled
+          ? `<button class="btn plan-cta" disabled aria-disabled="true">${icon('check')}${p.cta}</button>`
+          : `<a class="btn ${p.recommended?'btn-primary':''} plan-cta" href="${p.checkoutUrl}" target="_blank" rel="noopener noreferrer" aria-label="${p.name}のテスト決済へ進む（新しいタブ）">${icon('ext')}${p.cta}</a>`}
       </article>`).join('')}
     </div>
     <div class="pricing-common">${icon('bolt')}<span><b>すべてのプランに共通：</b>配信件数はAIニュースの発生状況に応じて変わります。スマホ対応、読みやすいAI要約、情報元へのリンクを利用できます。</span></div>
-    <p class="pricing-note">情報元の記事の閲覧回数は毎月1日にリセットされる予定です。有料プラン・決済・利用制限の自動適用は準備中です。</p>
+    <p class="pricing-note">現在はStripeのテスト決済です。実際の請求は発生しません。情報元の記事の閲覧回数は毎月1日にリセットされる予定です。プランの自動適用は準備中です。</p>
   </div>`;
-}
-function requestPlan(name){
-  toast(`${name}プランは準備中です。提供開始時にお知らせします。`,'ok');
 }
 window.addEventListener('keydown',e=>{ if(e.key==='Escape')closeModal(); });
 
