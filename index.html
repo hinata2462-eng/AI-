@@ -2470,15 +2470,6 @@ function statusBadge(s){ return `<span class="status ${s}">${STATUS_LABELS[s]||s
 function catChips(cats,max){ cats=cats||[]; const shown=max?cats.slice(0,max):cats; let h=shown.map(c=>`<span class="chip cat">${esc(c)}</span>`).join(''); if(max&&cats.length>max)h+=`<span class="chip more">ほか${cats.length-max}件</span>`; return h; }
 
 const ART_VARIANTS=['art-quantum','art-robot','art-city','art-space','art-cyber','art-bio','art-factory','art-finance','art-creative','art-cloud','art-mobility','art-energy','art-agriculture','art-education','art-legal','art-logistics','art-architecture','art-ocean'];
-let visualShiftSession=0;
-function getVisualShift(){
-  try{const saved=localStorage.getItem('aiRadarVisualShift');return saved===null?visualShiftSession:Math.abs(parseInt(saved,10)||0)%ART_VARIANTS.length}catch(e){return visualShiftSession}
-}
-function cycleVisuals(){
-  visualShiftSession=(getVisualShift()+1)%ART_VARIANTS.length;
-  try{localStorage.setItem('aiRadarVisualShift',String(visualShiftSession))}catch(e){}
-  render();
-}
 
 function updateCard(u){
   const tool=toolById(u.tool_id);
@@ -2508,7 +2499,7 @@ function updateCard(u){
   else if(/(agent|assistant|robot|エージェント|アシスタント|ロボット)/.test(storyKey))artPool=['art-robot','art-factory','art-quantum','art-cyber'];
   else if(/(model|code|api|developer|fable|モデル|コード|開発|生成)/.test(storyKey))artPool=['art-quantum','art-robot','art-cyber','art-creative'];
   const artDeck=[...artPool,...allArt.filter(art=>!artPool.includes(art))];
-  const artClass=artDeck[((artSeed%artPool.length)+getVisualShift())%artDeck.length];
+  const artClass=artDeck[(artSeed%artPool.length)%artDeck.length];
   return `<article class="ucard ${u.status==='unread'?'is-new':''} ${artClass}">
     <div class="ucard-top">
       <div class="ucard-tool"><span class="tool-dot" style="background:${color};color:${color}"></span><span>${esc(tool?tool.name:'不明')}</span></div>
@@ -2541,10 +2532,8 @@ function renderHome(v){
   // 新しい順（公開日の新しいものが上）
   const list=[...ups].sort(byPub);
 
-  const visualPosition=getVisualShift()+1;
   document.getElementById('topActions').innerHTML =
-    `<button class="btn btn-sm btn-ghost" onclick="cycleVisuals()" aria-label="カード背景を切り替える。現在${visualPosition}/${ART_VARIANTS.length}" title="18種類のカード背景を切り替え">${icon('shuffle')}背景 ${visualPosition}/${ART_VARIANTS.length}</button>
-     <button class="btn btn-sm" onclick="go('updates')">${icon('search')}検索・絞り込み</button>`;
+    `<button class="btn btn-sm" onclick="go('updates')">${icon('search')}検索・絞り込み</button>`;
 
   const latest=list.length?fmtDate(list[0].published_at):'—';
   let html = `<section class="radar-overview" aria-label="AIシグナル概要">
