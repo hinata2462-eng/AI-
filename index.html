@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>AI進化レーダー</title>
-<meta name="description" content="使っているAIツールの最新アップデートを集めて重要度判定するダッシュボード" />
+<meta name="description" content="AIツール、政策、補助金、企業・株式まで、AIに関わる最新情報を集めて重要度判定するダッシュボード" />
 <meta name="theme-color" content="#070b14" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="mobile-web-app-capable" content="yes" />
@@ -376,6 +376,41 @@
     box-shadow:0 3px 10px rgba(108,86,243,.35);
   }
   .check-pill input{display:none}
+  .check-pill .check-mark{display:none;font-size:12px;font-weight:900}
+  .check-pill:has(input:checked),.check-pill.on{
+    background:linear-gradient(135deg,rgba(10,141,177,.95),rgba(65,73,206,.96))!important;
+    border-color:rgba(97,232,239,.72)!important;color:#fff!important;
+    box-shadow:0 0 0 2px rgba(70,222,232,.10),0 8px 18px rgba(0,0,0,.22)!important;
+  }
+  .check-pill:has(input:checked) .check-mark,.check-pill.on .check-mark{display:inline}
+  .selection-help{margin-top:10px;color:var(--text-mute);font-size:11.5px;line-height:1.6}
+  .selection-count{display:inline-flex;align-items:center;margin-left:6px;padding:2px 8px;border-radius:999px;background:rgba(51,202,218,.13);color:#71e8ed;font-weight:800}
+  .priority-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+  .priority-choice{
+    display:grid;grid-template-columns:auto 1fr;align-items:center;gap:10px;min-height:68px;padding:11px 12px;
+    border:1px solid rgba(104,146,190,.25);border-radius:12px;background:rgba(6,18,37,.72);
+    cursor:pointer;transition:border-color .16s,background .16s,transform .16s,box-shadow .16s;
+  }
+  .priority-choice:hover{border-color:rgba(74,214,229,.48);transform:translateY(-1px)}
+  .priority-choice input{position:absolute;opacity:0;pointer-events:none}
+  .priority-choice:has(input:checked){border-color:rgba(80,224,232,.78);background:linear-gradient(145deg,rgba(9,79,105,.72),rgba(34,40,113,.72));box-shadow:0 0 0 2px rgba(66,220,231,.10),0 9px 22px rgba(0,0,0,.22)}
+  .priority-code{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;font-size:15px;font-weight:900;background:rgba(83,112,159,.18);color:#b6c3d7}
+  .priority-choice:has(input:checked) .priority-code{background:linear-gradient(135deg,#13a8c7,#5261dc);color:#fff;box-shadow:0 5px 14px rgba(25,159,197,.28)}
+  .priority-copy{display:grid;gap:2px}.priority-copy strong{font-size:12px;color:#edf5ff}.priority-copy small{font-size:9.5px;line-height:1.35;color:#8998ae}
+  .preset-intro{margin:-4px 0 16px;color:var(--text-soft);font-size:12.5px;line-height:1.7}
+  .topic-search{display:flex;align-items:center;gap:9px;margin-bottom:14px;padding:0 13px;border:1px solid rgba(80,178,210,.32);border-radius:12px;background:rgba(5,18,37,.78)}
+  .topic-search svg{width:17px;height:17px;flex:0 0 17px;color:#62dfe7}.topic-search input{width:100%;min-height:46px;border:0!important;background:transparent!important;box-shadow:none!important;padding:9px 0!important;color:var(--text)!important;outline:0}
+  .preset-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;max-height:380px;overflow:auto;padding:1px 3px 3px 1px}
+  .preset-card{display:grid;gap:5px;min-width:0;padding:13px 14px;border:1px solid rgba(104,146,190,.22);border-radius:12px;background:linear-gradient(145deg,rgba(6,20,39,.82),rgba(10,13,32,.84));color:var(--text);text-align:left;cursor:pointer;transition:.16s}
+  .preset-card:hover,.preset-card:focus-visible{border-color:rgba(74,218,231,.60);background:linear-gradient(145deg,rgba(8,48,67,.88),rgba(26,27,73,.88));transform:translateY(-1px);outline:0}
+  .preset-card.is-selected{border-color:#53e0e8;background:linear-gradient(145deg,rgba(8,80,101,.92),rgba(45,39,130,.88));box-shadow:0 0 0 2px rgba(83,224,232,.11)}
+  .preset-card[hidden]{display:none}
+  .preset-top{display:flex;align-items:center;justify-content:space-between;gap:8px}.preset-name{font-size:12.5px;font-weight:800;color:#f2f7ff}.preset-kind{flex:0 0 auto;padding:3px 7px;border-radius:999px;background:rgba(73,192,210,.12);color:#71e4ea;font-size:8.5px;font-weight:800}
+  .preset-desc{color:#8f9db1;font-size:10.5px;line-height:1.5}
+  .preset-empty{display:none;padding:22px 12px;color:var(--text-mute);font-size:12px;text-align:center}.preset-empty.show{display:block}
+  .auto-source-note{display:flex;align-items:flex-start;gap:8px;margin-top:10px;padding:10px 12px;border-radius:10px;background:rgba(27,136,158,.10);color:#92bdc8;font-size:10.5px;line-height:1.55}.auto-source-note svg{width:15px;height:15px;flex:0 0 15px;color:#62dfe7}
+  .manual-details{margin-top:14px;border:1px solid rgba(104,146,190,.18);border-radius:12px;background:rgba(4,14,30,.46);overflow:hidden}.manual-details summary{display:flex;align-items:center;gap:8px;padding:13px 14px;color:#aebbd0;font-size:12px;font-weight:800;cursor:pointer;list-style:none}.manual-details summary::-webkit-details-marker{display:none}.manual-details summary::after{content:"＋";margin-left:auto;color:#67dfe7}.manual-details[open] summary::after{content:"−"}.manual-fields{padding:0 14px 15px}
+  .field select option,select.filter option{background:#091429;color:#f3f6ff}
   .switch{display:inline-flex;align-items:center;gap:10px;font-weight:600;color:var(--text-soft);cursor:pointer}
   .switch input{appearance:none;width:44px;height:25px;border-radius:999px;background:#ccd1e0;position:relative;cursor:pointer;transition:.2s;flex-shrink:0}
   .switch input::after{content:"";position:absolute;width:19px;height:19px;border-radius:50%;background:#fff;top:3px;left:3px;transition:.2s cubic-bezier(.3,1.4,.6,1);box-shadow:0 1px 4px rgba(0,0,0,.25)}
@@ -383,6 +418,7 @@
   .switch input:checked::after{left:22px}
 
   .form-actions{display:flex;gap:10px;margin-top:8px}
+  @media(max-width:620px){.priority-grid{grid-template-columns:1fr}.priority-choice{min-height:58px}.preset-grid{grid-template-columns:1fr;max-height:430px}}
 
   /* ============ Detail ============ */
   .detail-grid{display:grid;grid-template-columns:1fr 320px;gap:20px;align-items:start}
@@ -1765,9 +1801,37 @@ function icon(name,cls){return `<svg class="${cls||''}" viewBox="0 0 24 24" fill
 
 /* ---------- Constants (lib/constants.ts 相当) ---------- */
 const BUSINESS_CATEGORIES = [
-  'EC / 楽天 / LP制作','三高産業','Kiki Toa','アプリ開発','画像生成',
-  '動画生成','音楽制作','営業資料','自動化','その他'
+  'AIツール・モデル','政策・行政','補助金・助成金','企業・株式',
+  '規制・法務','研究・技術','セキュリティ','半導体・インフラ',
+  'アプリ開発・自動化','画像・動画生成','音楽・クリエイティブ',
+  '営業・マーケティング','EC・業務活用','その他'
 ];
+const CATEGORY_ALIASES = {
+  'EC / 楽天 / LP制作':'EC・業務活用','三高産業':'EC・業務活用','Kiki Toa':'音楽・クリエイティブ',
+  'アプリ開発':'アプリ開発・自動化','画像生成':'画像・動画生成','動画生成':'画像・動画生成',
+  '音楽制作':'音楽・クリエイティブ','営業資料':'営業・マーケティング','自動化':'アプリ開発・自動化'
+};
+const INFORMATION_PRESETS = [
+  {name:'AI政策・政府動向',kind:'政策',desc:'政府・省庁・自治体のAI方針や支援策',query:'AI 政策 政府 デジタル庁',category:'政策・行政',priority:'A'},
+  {name:'AIと政治・選挙',kind:'政治',desc:'選挙、国会、行政でのAI活用と課題',query:'AI 政治 選挙 国会 行政',category:'政策・行政',priority:'B'},
+  {name:'AI補助金・助成金',kind:'支援制度',desc:'企業・個人事業向けの導入支援情報',query:'AI 導入 補助金 助成金',category:'補助金・助成金',priority:'A'},
+  {name:'AI規制・著作権',kind:'法律',desc:'生成AIの規制、著作権、判例の動き',query:'生成AI 規制 著作権 法律',category:'規制・法務',priority:'A'},
+  {name:'AI企業・関連株',kind:'投資',desc:'AI関連企業の株価材料・決算・提携',query:'AI 関連企業 株価 決算 提携',category:'企業・株式',priority:'B'},
+  {name:'AIスタートアップ',kind:'企業',desc:'資金調達、買収、新サービスの動き',query:'AI スタートアップ 資金調達 買収',category:'企業・株式',priority:'B'},
+  {name:'NVIDIA・AI半導体',kind:'半導体',desc:'GPU、データセンター、AIインフラ',query:'NVIDIA AI 半導体 GPU データセンター',category:'半導体・インフラ',priority:'A'},
+  {name:'OpenAI / ChatGPT',kind:'AIサービス',desc:'新モデル、機能、料金、APIの更新',query:'OpenAI ChatGPT 新機能 API',category:'AIツール・モデル',priority:'A'},
+  {name:'Anthropic / Claude',kind:'AIサービス',desc:'ClaudeとClaude Codeの最新情報',query:'Anthropic Claude Claude Code',category:'AIツール・モデル',priority:'A'},
+  {name:'Google Gemini',kind:'AIサービス',desc:'Gemini、Google AI、Workspaceの更新',query:'Google Gemini AI Workspace',category:'AIツール・モデル',priority:'A'},
+  {name:'Microsoft Copilot',kind:'AIサービス',desc:'Copilot、Azure AI、Microsoft 365',query:'Microsoft Copilot Azure AI',category:'AIツール・モデル',priority:'B'},
+  {name:'AI研究・新技術',kind:'研究',desc:'論文、モデル、エージェントの進歩',query:'生成AI 研究 論文 新技術 AIエージェント',category:'研究・技術',priority:'B'},
+  {name:'AIセキュリティ',kind:'安全',desc:'不正利用、情報漏えい、対策の動向',query:'生成AI セキュリティ 情報漏えい リスク',category:'セキュリティ',priority:'A'},
+  {name:'AIと医療',kind:'業界',desc:'診断支援、創薬、医療制度への活用',query:'AI 医療 診断 創薬',category:'研究・技術',priority:'B'},
+  {name:'AIと教育',kind:'業界',desc:'学校・学習・人材育成でのAI活用',query:'AI 教育 学校 学習 人材育成',category:'その他',priority:'B'},
+  {name:'海外AI動向',kind:'海外',desc:'米国・EU・中国など世界の主要動向',query:'AI 海外 米国 EU 中国 最新動向',category:'研究・技術',priority:'B'}
+];
+function googleNewsRss(query){
+  return query ? `https://news.google.com/rss/search?q=${encodeURIComponent(query)}&hl=ja&gl=JP&ceid=JP:ja` : '';
+}
 const STATUS_LABELS = {unread:'未読',read:'既読',try_later:'あとで試す',tried:'試した',adopted:'導入済み',ignored:'無視'};
 const STATUS_ORDER = ['unread','read','try_later','tried','adopted','ignored'];
 const TOOL_COLORS = ['#4f46e5','#0ea5e9','#16a34a','#db2777','#ea580c','#7c3aed','#0891b2','#ca8a04','#dc2626','#059669'];
@@ -2053,9 +2117,8 @@ function seedData(){
   updates[7].status='ignored';
 
   const base = {tools, updates, fetch_logs:[], categories:BUSINESS_CATEGORIES.map(n=>({id:uid(),name:n,slug:slugify(n),description:''}))};
-  // 重要実ニュースを初期データに同梱（新規インストール時）
-  const f = buildFable5Update(base); if(f) base.updates.unshift(f);
-  base.applied_migrations = MIGRATIONS.map(m=>m.id); // 新規は適用済み扱い（二重追加防止）
+  base.applied_migrations = [];
+  runMigrations(base);
   return base;
 }
 
@@ -2090,6 +2153,18 @@ function buildFable5Update(d){
 
 const MIGRATIONS = [
   { id:'2026-06-13-fable5-export', apply(d){ const u=buildFable5Update(d); if(u) d.updates.unshift(u); } },
+  { id:'2026-07-23-public-information-categories', apply(d){
+    const normalize=c=>CATEGORY_ALIASES[c]||c;
+    (d.tools||[]).forEach(t=>{
+      t.related_businesses=[...new Set((t.related_businesses||[]).map(normalize))]
+        .filter(c=>BUSINESS_CATEGORIES.includes(c));
+    });
+    (d.updates||[]).forEach(u=>{
+      u.related_categories=[...new Set((u.related_categories||[]).map(normalize))]
+        .filter(c=>BUSINESS_CATEGORIES.includes(c));
+    });
+    d.categories=BUSINESS_CATEGORIES.map(n=>({id:uid(),name:n,slug:slugify(n),description:''}));
+  } },
 ];
 function runMigrations(d){
   d.applied_migrations = d.applied_migrations || [];
@@ -2187,11 +2262,11 @@ const NAV = [
   {group:'メイン',items:[
     {id:'home',label:'ホーム',icon:'home'},
     {id:'updates',label:'アップデート',icon:'updates'},
-    {id:'categories',label:'事業別',icon:'category'},
+    {id:'categories',label:'ジャンル別',icon:'category'},
     {id:'try-list',label:'あとで試す',icon:'flask'},
   ]},
   {group:'管理',items:[
-    {id:'tools',label:'AIツール',icon:'tools'},
+    {id:'tools',label:'情報テーマ',icon:'tools'},
     {id:'fetch',label:'取得実行',icon:'fetch'},
   ]},
   {group:'アカウント',items:[
@@ -2256,11 +2331,11 @@ function renderNav(){
 const PAGE_META = {
   home:['ホーム','あなた専用に厳選した最新AIニュース'],
   updates:['アップデート','すべての更新情報を検索・絞り込み'],
-  categories:['事業別','あなたの仕事カテゴリ別に表示'],
+  categories:['ジャンル別','関心のあるAI分野ごとに情報を確認'],
   'try-list':['あとで試す','試す・試した・導入済みを管理'],
-  tools:['AIツール','登録ツールの管理'],
-  'tool-form':['ツール編集',''],
-  fetch:['取得実行','最新アップデートを取得'],
+  tools:['情報テーマ','知りたいAI情報と収集元を管理'],
+  'tool-form':['情報テーマを編集',''],
+  fetch:['取得実行','登録した情報テーマの最新ニュースを取得'],
   account:['ログイン・会員情報','アカウントと契約プランを確認'],
   pricing:['料金プラン','利用スタイルに合わせて選べる3つのプラン'],
   'update-detail':['アップデート詳細',''],
@@ -2665,12 +2740,12 @@ function openUpdateForm(){
    ============================================================ */
 function renderTools(v){
   document.getElementById('topActions').innerHTML =
-    `<button class="btn btn-primary" onclick="go('tool-form','new')">${icon('plus')}ツールを追加</button>`;
+    `<button class="btn btn-primary" onclick="go('tool-form','new')">${icon('plus')}情報テーマを追加</button>`;
   const tools=getTools();
-  if(!tools.length){ v.innerHTML=emptyState('ツールがありません','右上の「ツールを追加」から登録してください。'); return; }
+  if(!tools.length){ v.innerHTML=emptyState('情報テーマがありません','右上の「情報テーマを追加」から、知りたい分野を登録してください。'); return; }
 
   let html=`<div class="table-wrap"><table>
-    <thead><tr><th>ツール名</th><th style="width:120px">カテゴリ</th><th style="width:56px">優先</th><th style="width:90px">使用中</th><th style="width:150px">関連事業</th><th style="width:96px">最終取得</th><th style="width:80px">状態</th><th style="width:96px"></th></tr></thead><tbody>`;
+    <thead><tr><th>情報テーマ</th><th style="width:120px">種類</th><th style="width:62px">優先度</th><th style="width:90px">注目</th><th style="width:180px">収集ジャンル</th><th style="width:96px">最終取得</th><th style="width:80px">状態</th><th style="width:96px"></th></tr></thead><tbody>`;
   tools.forEach((t,i)=>{
     html+=`<tr>
       <td><span style="display:inline-flex;align-items:center;gap:9px"><span class="tool-dot" style="background:${TOOL_COLORS[i%TOOL_COLORS.length]}"></span><span style="font-weight:700">${esc(t.name)}</span></span>
@@ -2678,7 +2753,7 @@ function renderTools(v){
       </td>
       <td><span class="chip">${esc(t.category||'—')}</span></td>
       <td><span class="pri ${t.priority}">${t.priority}</span></td>
-      <td>${t.is_using?`<span class="tool-on">${icon('check')}使用中</span>`:`<span class="tool-off">—</span>`}</td>
+      <td>${t.is_using?`<span class="tool-on">${icon('check')}注目中</span>`:`<span class="tool-off">—</span>`}</td>
       <td style="font-size:12px;color:var(--text-soft)">${(t.related_businesses||[]).slice(0,2).map(esc).join('、')||'—'}${(t.related_businesses||[]).length>2?' …':''}</td>
       <td style="font-size:12.5px;color:var(--text-mute)">${t.last_fetched_at?relDate(t.last_fetched_at):'未取得'}</td>
       <td>${t.is_active?`<span class="status adopted" style="padding:3px 9px">有効</span>`:`<span class="status ignored" style="padding:3px 9px">無効</span>`}</td>
@@ -2693,7 +2768,7 @@ function renderTools(v){
 }
 function confirmDeleteTool(id){
   const t=toolById(id); const n=getUpdates().filter(u=>u.tool_id===id).length;
-  modal('ツールを削除',`「${esc(t.name)}」を削除します。${n?`関連する${n}件のアップデートも削除されます。`:''}`,()=>{ deleteTool(id); toast('削除しました','ok'); render(); },'削除する',true);
+  modal('情報テーマを削除',`「${esc(t.name)}」を削除します。${n?`関連する${n}件のアップデートも削除されます。`:''}`,()=>{ deleteTool(id); toast('削除しました','ok'); render(); },'削除する',true);
 }
 
 /* ============================================================
@@ -2701,59 +2776,116 @@ function confirmDeleteTool(id){
    ============================================================ */
 function renderToolForm(v){
   const isNew = route.param==='new';
-  const t = isNew ? {name:'',category:'',official_url:'',release_notes_url:'',rss_url:'',x_url:'',priority:'B',is_using:false,related_businesses:[],memo:'',is_active:true}
+  const t = isNew ? {name:'',category:'',search_query:'',official_url:'',release_notes_url:'',rss_url:'',x_url:'',priority:'B',is_using:false,related_businesses:[],memo:'',is_active:true}
                   : Object.assign({},toolById(route.param));
-  if(!t){ v.innerHTML=emptyState('ツールが見つかりません',''); return; }
-  document.getElementById('pageTitle').textContent = isNew?'ツールを追加':'ツールを編集';
+  if(!t){ v.innerHTML=emptyState('情報テーマが見つかりません',''); return; }
+  t.related_businesses=t.related_businesses||[];
+  document.getElementById('pageTitle').textContent = isNew?'情報テーマを追加':'情報テーマを編集';
 
-  v.innerHTML = `<button class="back-link" onclick="go('tools')">${icon('arrowLeft')}ツール一覧に戻る</button>
-  <div style="max-width:760px">
+  v.innerHTML = `<button class="back-link" onclick="go('tools')">${icon('arrowLeft')}情報テーマ一覧に戻る</button>
+  <div style="max-width:900px">
     <div class="form-card">
-      <h3>${icon('tools')} 基本情報</h3>
-      <div class="field"><label>ツール名<span class="req">*</span></label><input type="text" id="tf_name" value="${esc(t.name)}" placeholder="例：ChatGPT / OpenAI"></div>
-      <div class="field-row">
-        <div class="field"><label>カテゴリ</label><input type="text" id="tf_category" value="${esc(t.category)}" placeholder="例：総合AI"></div>
-        <div class="field"><label>優先度</label>
-          <select id="tf_priority" class="filter" style="width:100%">${['A','B','C'].map(p=>`<option ${t.priority===p?'selected':''}>${p}</option>`).join('')}</select></div>
-      </div>
+      <h3>${icon('search')} 探して追加</h3>
+      <p class="preset-intro">知りたい分野を選ぶだけで、検索キーワードとニュース取得先を自動設定します。政治・補助金・関連株・研究など、AIに関わる情報を幅広く探せます。</p>
+      <div class="topic-search">${icon('search')}<input type="search" aria-label="情報テーマを検索" placeholder="例：補助金、株、政治、NVIDIA、著作権" oninput="filterInformationPresets(this.value)"></div>
+      <div class="preset-grid" id="presetGrid">${INFORMATION_PRESETS.map((p,i)=>`
+        <button type="button" class="preset-card" data-search="${esc(`${p.name} ${p.kind} ${p.desc} ${p.query}`.toLowerCase())}" onclick="applyInformationPreset(${i},this)">
+          <span class="preset-top"><span class="preset-name">${esc(p.name)}</span><span class="preset-kind">${esc(p.kind)}</span></span>
+          <span class="preset-desc">${esc(p.desc)}</span>
+        </button>`).join('')}</div>
+      <div class="preset-empty" id="presetEmpty">一致する候補がありません。下の「自由に設定」で好きな言葉を入力できます。</div>
     </div>
 
     <div class="form-card">
-      <h3>${icon('updates')} 情報源URL</h3>
-      <div class="field"><label>公式サイトURL</label><input type="url" id="tf_official" value="${esc(t.official_url)}" placeholder="https://"></div>
-      <div class="field"><label>Release Notes URL</label><input type="url" id="tf_release" value="${esc(t.release_notes_url)}" placeholder="https://"></div>
-      <div class="field"><label>RSS URL</label><input type="url" id="tf_rss" value="${esc(t.rss_url)}" placeholder="https://（あれば取得に優先利用）"></div>
-      <div class="field"><label>X (Twitter) URL</label><input type="url" id="tf_x" value="${esc(t.x_url)}" placeholder="https://x.com/"></div>
+      <h3>${icon('tools')} 自由に設定</h3>
+      <div class="field"><label>情報テーマ名<span class="req">*</span></label><input type="text" id="tf_name" value="${esc(t.name)}" placeholder="例：自治体のAI補助金"></div>
+      <div class="field-row">
+        <div class="field"><label>種類</label><input type="text" id="tf_category" value="${esc(t.category)}" placeholder="例：政策、投資、AIサービス"></div>
+        <div class="field"><label>検索キーワード</label><input type="text" id="tf_query" value="${esc(t.search_query||'')}" placeholder="例：AI 補助金 中小企業"></div>
+      </div>
+      <div class="auto-source-note">${icon('updates')}<span>検索キーワードを入力すると、保存時にGoogleニュースの取得先を自動作成します。URLを探す必要はありません。</span></div>
+      <div class="field" style="margin-top:18px"><label>優先度</label>
+        <div class="priority-grid">
+          ${[
+            ['A','最優先','重要ニュースを逃したくない'],
+            ['B','標準・おすすめ','通常の新着を確認する'],
+            ['C','参考','周辺情報として見る']
+          ].map(([p,title,desc])=>`<label class="priority-choice"><input type="radio" name="tf_priority" value="${p}" ${t.priority===p?'checked':''}><span class="priority-code">${p}</span><span class="priority-copy"><strong>${title}</strong><small>${desc}</small></span></label>`).join('')}
+        </div>
+      </div>
+      <details class="manual-details" ${(t.official_url||t.release_notes_url||t.x_url)?'open':''}>
+        <summary>${icon('edit')} 手入力で情報源を細かく設定</summary>
+        <div class="manual-fields">
+          <div class="field"><label>公式サイトURL</label><input type="url" id="tf_official" value="${esc(t.official_url||'')}" placeholder="https://"></div>
+          <div class="field"><label>Release Notes URL</label><input type="url" id="tf_release" value="${esc(t.release_notes_url||'')}" placeholder="https://"></div>
+          <div class="field"><label>RSS URL</label><input type="url" id="tf_rss" value="${esc(t.rss_url||'')}" placeholder="https://（入力した場合はこちらを優先）"></div>
+          <div class="field"><label>X（Twitter）URL</label><input type="url" id="tf_x" value="${esc(t.x_url||'')}" placeholder="https://x.com/"></div>
+        </div>
+      </details>
     </div>
 
     <div class="form-card">
       <h3>${icon('category')} 分類・設定</h3>
-      <div class="field"><label>関連事業カテゴリ</label>
-        <div class="checks" id="tf_biz">${BUSINESS_CATEGORIES.map(c=>`<label class="check-pill ${t.related_businesses.includes(c)?'on':''}" onclick="this.classList.toggle('on')"><input type="checkbox" value="${esc(c)}" ${t.related_businesses.includes(c)?'checked':''}>${esc(c)}</label>`).join('')}</div>
+      <div class="field"><label>収集ジャンル（複数選択できます）</label>
+        <div class="checks" id="tf_biz">${BUSINESS_CATEGORIES.map(c=>`<label class="check-pill"><input type="checkbox" value="${esc(c)}" ${t.related_businesses.includes(c)?'checked':''} onchange="updateCategorySelection()"><span class="check-mark">✓</span>${esc(c)}</label>`).join('')}</div>
+        <div class="selection-help">選んだ項目は青く表示され、チェックマークが付きます。<span class="selection-count" id="tf_category_state">選択中 ${t.related_businesses.length}件</span></div>
       </div>
-      <div class="field"><label>メモ</label><textarea id="tf_memo" rows="2" placeholder="自由メモ">${esc(t.memo)}</textarea></div>
+      <div class="field"><label>メモ（任意）</label><textarea id="tf_memo" rows="2" placeholder="このテーマで特に知りたいことなど">${esc(t.memo||'')}</textarea></div>
       <div class="field-row" style="margin-top:15px">
-        <label class="switch"><input type="checkbox" id="tf_using" ${t.is_using?'checked':''}>現在使っているツール</label>
-        <label class="switch"><input type="checkbox" id="tf_active" ${t.is_active?'checked':''}>有効（取得対象にする）</label>
+        <label class="switch"><input type="checkbox" id="tf_using" ${t.is_using?'checked':''}>注目テーマにする</label>
+        <label class="switch"><input type="checkbox" id="tf_active" ${t.is_active?'checked':''}>ニュース取得を有効にする</label>
       </div>
     </div>
 
     <div class="form-actions">
-      <button class="btn btn-primary" onclick="submitTool('${isNew?'':t.id}')">${icon('check')}${isNew?'追加する':'保存する'}</button>
+      <button class="btn btn-primary" onclick="submitTool('${isNew?'':t.id}')">${icon('check')}${isNew?'情報テーマを追加':'変更を保存'}</button>
       <button class="btn btn-ghost" onclick="go('tools')">キャンセル</button>
     </div>
   </div>`;
 }
+function filterInformationPresets(value){
+  const q=String(value||'').trim().toLowerCase();
+  let visible=0;
+  document.querySelectorAll('#presetGrid .preset-card').forEach(card=>{
+    const show=!q||card.dataset.search.includes(q);
+    card.hidden=!show;
+    if(show)visible++;
+  });
+  document.getElementById('presetEmpty')?.classList.toggle('show',visible===0);
+}
+function updateCategorySelection(){
+  const count=document.querySelectorAll('#tf_biz input:checked').length;
+  const state=document.getElementById('tf_category_state');
+  if(state)state.textContent=`選択中 ${count}件`;
+}
+function applyInformationPreset(index,button){
+  const p=INFORMATION_PRESETS[index]; if(!p)return;
+  document.getElementById('tf_name').value=p.name;
+  document.getElementById('tf_category').value=p.kind;
+  document.getElementById('tf_query').value=p.query;
+  document.getElementById('tf_rss').value=googleNewsRss(p.query);
+  const priority=document.querySelector(`input[name="tf_priority"][value="${p.priority}"]`);
+  if(priority)priority.checked=true;
+  document.querySelectorAll('#tf_biz input').forEach(input=>{ input.checked=input.value===p.category; });
+  updateCategorySelection();
+  document.querySelectorAll('#presetGrid .preset-card').forEach(card=>card.classList.remove('is-selected'));
+  button?.classList.add('is-selected');
+  document.getElementById('tf_name')?.scrollIntoView({behavior:'smooth',block:'center'});
+  toast(`「${p.name}」を設定しました`,'ok');
+}
 function submitTool(id){
-  const name=val('tf_name'); if(!name){ toast('ツール名を入力してください','err'); return; }
+  const name=val('tf_name'); if(!name){ toast('情報テーマ名を入力してください','err'); return; }
   const t = id ? Object.assign({},toolById(id)) : {};
-  t.name=name; t.category=val('tf_category'); t.priority=document.getElementById('tf_priority').value;
-  t.official_url=val('tf_official'); t.release_notes_url=val('tf_release'); t.rss_url=val('tf_rss'); t.x_url=val('tf_x');
+  t.name=name; t.category=val('tf_category');
+  t.search_query=val('tf_query');
+  t.priority=document.querySelector('input[name="tf_priority"]:checked')?.value||'B';
+  t.official_url=val('tf_official'); t.release_notes_url=val('tf_release');
+  t.rss_url=val('tf_rss')||googleNewsRss(t.search_query); t.x_url=val('tf_x');
   t.related_businesses=[...document.querySelectorAll('#tf_biz input:checked')].map(c=>c.value);
   t.memo=val('tf_memo'); t.is_using=document.getElementById('tf_using').checked; t.is_active=document.getElementById('tf_active').checked;
   if(id)t.id=id;
   saveTool(t); recomputeAll();
-  toast(id?'保存しました':'ツールを追加しました','ok'); go('tools');
+  toast(id?'変更を保存しました':'情報テーマを追加しました','ok'); go('tools');
 }
 
 /* ============================================================
@@ -2835,20 +2967,20 @@ function renderFetch(v){
     <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
       <div style="flex:1;min-width:200px">
         <div style="font-weight:800;font-size:15px;margin-bottom:3px">アップデートを取得</div>
-        <div style="font-size:13px;color:var(--text-soft)">有効な${tools.length}件のツールから最新情報を取得します。RSSがあれば優先、なければRelease Notesを取得します。</div>
+        <div style="font-size:13px;color:var(--text-soft)">有効な${tools.length}件の情報テーマから最新ニュースを取得します。自動設定されたRSS、または登録済みの情報源を利用します。</div>
       </div>
-      <button class="btn btn-primary" id="fetchAllBtn" onclick="runFetchAll()">${icon('fetch')}全ツール取得</button>
+      <button class="btn btn-primary" id="fetchAllBtn" onclick="runFetchAll()">${icon('fetch')}まとめて取得</button>
     </div>
     <label class="switch" style="margin-top:14px">
       <input type="checkbox" ${getSettings().autoFetch?'checked':''} onchange="setSetting('autoFetch',this.checked);toast(this.checked?'アプリを開くたびに自動取得します':'自動取得をオフにしました','ok')">
       <span>アプリを開くたびに最新情報を自動で読み込む</span>
     </label>
     <div style="margin-top:14px;padding:11px 13px;background:var(--ok-bg);border-radius:10px;font-size:12.5px;color:#14633a;line-height:1.6">
-      ✅ <b>自動更新の仕組み</b>：GitHubが毎日決まった時刻に各ツールの最新ニュース（GoogleニュースRSS等）を集めて <code>data.json</code> を更新し、Netlifyが自動で再公開します。アプリは開くたびにその <code>data.json</code> を読み込むので、ブラウザのCORS制約を受けず確実に最新が入ります。下の「全ツール取得」ボタンはブラウザから直接取りに行く予備手段で、環境により失敗することがあります。
+      ✅ <b>情報取得の仕組み</b>：登録した検索キーワードやRSSから最新情報を読み込みます。「まとめて取得」はブラウザから直接確認するため、情報源の設定によっては取得できない場合があります。
     </div>
   </div>`;
 
-  html+=`<div class="section-head"><h2>ツール別に取得</h2></div>`;
+  html+=`<div class="section-head"><h2>情報テーマ別に取得</h2></div>`;
   html+=`<div class="table-wrap"><table><thead><tr><th>ツール</th><th style="width:140px">取得URL</th><th style="width:110px">最終取得</th><th style="width:110px"></th></tr></thead><tbody>`;
   tools.forEach((t,i)=>{
     const url=t.rss_url||t.release_notes_url;
@@ -2867,7 +2999,7 @@ function renderFetch(v){
   if(logs.length){
     html+=`<div class="table-wrap"><div id="logList">`+logs.map(logLine).join('')+`</div></div>`;
   }else{
-    html+=`<div class="card empty" style="padding:36px">${icon('fetch')}<h3>まだ取得ログはありません</h3><p>「全ツール取得」または各ツールの「取得」を押すと、結果がここに記録されます。</p></div>`;
+    html+=`<div class="card empty" style="padding:36px">${icon('fetch')}<h3>まだ取得ログはありません</h3><p>「まとめて取得」または各テーマの「取得」を押すと、結果がここに記録されます。</p></div>`;
   }
   v.innerHTML=html;
 }
@@ -3115,17 +3247,17 @@ function renderPricing(v){
   const plans=[
     {
       key:'free',kicker:'まずは無料で試す',name:'無料',price:'¥0',unit:'ずっと無料',desc:'運営が厳選したAIニュースを、おまかせで気軽に確認したい方へ。',
-      features:['運営が選ぶ総合フィードを表示','追跡するAIツールは選択不可','情報元の記事は月3件まで','AI要約を利用可能','閲覧履歴を3日間保存'],
+      features:['運営が選ぶ総合フィードを表示','追跡する情報テーマは選択不可','情報元の記事は月3件まで','AI要約を利用可能','閲覧履歴を3日間保存'],
       cta:'無料で登録'
     },
     {
       key:'standard',kicker:'毎日の情報収集を効率化',name:'スタンダード',price:'¥980',unit:'税込／月',desc:'必要なAI情報を見逃さず、仕事に活かしたい個人ユーザー向け。',
-      features:['好きなAIツールを10件まで選択','選んだツール中心の専用フィード','情報元の記事は月10件まで','事業別フィルターと保存機能','閲覧履歴を14日間保存','キーワード通知（提供予定）'],
+      features:['好きな情報テーマを10件まで選択','選んだテーマ中心の専用フィード','情報元の記事は月10件まで','ジャンル別フィルターと保存機能','閲覧履歴を14日間保存','キーワード通知（提供予定）'],
       cta:'テスト決済へ進む',checkoutUrl:'https://buy.stripe.com/test_dRm6oG5850vt4AedBn6J200',recommended:true
     },
     {
       key:'premium',kicker:'本格的な情報活用へ',name:'プレミアム',price:'¥2,980',unit:'税込／月',desc:'複数事業やチームで、AIの変化を深く管理・分析したい方向け。',
-      features:['好きなAIツールを無制限に選択','カスタム情報源とキーワードを追加','情報元の記事を無制限に閲覧','重要度の優先判定を強化','閲覧履歴を30日間保存','CSVデータ書き出しと優先サポート'],
+      features:['好きな情報テーマを無制限に選択','カスタム情報源とキーワードを追加','情報元の記事を無制限に閲覧','重要度の優先判定を強化','閲覧履歴を30日間保存','CSVデータ書き出しと優先サポート'],
       cta:'テスト決済へ進む',checkoutUrl:'https://buy.stripe.com/test_dRm6oG441dif7Mq2WJ6J201'
     }
   ];
