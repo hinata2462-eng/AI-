@@ -1698,6 +1698,24 @@
     .pricing-common{align-items:flex-start;padding:13px 14px}
     .account-panel{padding:23px 18px}.account-head h2{font-size:23px}.auth-actions{display:grid;grid-template-columns:1fr}.auth-actions .btn{width:100%;min-width:0}.member-row{align-items:flex-start;flex-direction:column;gap:7px}.member-row strong{text-align:left}
   }
+  /* KIZASHI official media links */
+  .official-media{margin:18px 14px 16px;padding:14px;border:1px solid rgba(77,211,230,.2);background:rgba(5,15,34,.62);border-radius:14px}
+  .official-media-kicker{display:block;margin-bottom:5px;color:#65eaf0;font-size:9px;font-weight:800;letter-spacing:.16em}
+  .official-media-title{margin:0 0 5px;color:#f4f8ff;font-size:13px;font-weight:800}
+  .official-media-copy{margin:0 0 11px;color:#8390aa;font-size:10px;line-height:1.55}
+  .official-media-links{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+  .official-media-link{display:flex;min-width:0;min-height:38px;align-items:center;justify-content:center;gap:5px;border:1px solid rgba(99,174,216,.22);border-radius:9px;background:rgba(11,25,51,.82);color:#dbe7f7;text-decoration:none;font-size:10px;font-weight:800;transition:.18s ease}
+  .official-media-link:hover{transform:translateY(-1px);border-color:rgba(91,235,242,.58);background:rgba(14,45,70,.9);color:#fff;box-shadow:0 8px 20px rgba(0,0,0,.24)}
+  .official-media-mark{display:grid;width:19px;height:19px;place-items:center;border-radius:6px;background:linear-gradient(135deg,#0c9fbd,#503dcc);color:#fff;font-size:8px;letter-spacing:-.03em}
+  .media-promo{margin-top:18px;padding:20px;border:1px solid rgba(73,218,232,.24);border-radius:16px;background:linear-gradient(135deg,rgba(5,25,43,.82),rgba(14,17,49,.76))}
+  .media-promo-head{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin-bottom:15px}
+  .media-promo h3{margin:3px 0 5px;color:#f6fbff;font-size:19px}.media-promo p{margin:0;color:#9eabc0;font-size:13px;line-height:1.7}
+  .media-promo .official-media-links{grid-template-columns:repeat(3,minmax(120px,1fr));max-width:540px}
+  .media-promo .official-media-link{min-height:46px;font-size:12px}.media-promo .official-media-mark{width:25px;height:25px;font-size:9px}
+  @media(max-width:760px){
+    .media-promo{padding:17px 14px}.media-promo-head{display:block}.media-promo h3{font-size:17px}
+    .media-promo .official-media-links{grid-template-columns:1fr}.media-promo .official-media-link{justify-content:flex-start;padding:0 14px}
+  }
 </style>
 </head>
 <body>
@@ -1721,6 +1739,16 @@
       </div>
     </div>
     <nav class="nav" id="nav"></nav>
+    <section class="official-media" aria-label="KIZASHI公式メディア">
+      <span class="official-media-kicker">OFFICIAL MEDIA</span>
+      <h2 class="official-media-title">KIZASHI 公式チャンネル</h2>
+      <p class="official-media-copy">AIの最新情報を動画とSNSでも発信しています。</p>
+      <div class="official-media-links">
+        <a class="official-media-link" href="https://www.youtube.com/@kizashi_jp" target="_blank" rel="noopener noreferrer" aria-label="KIZASHIのYouTubeを開く"><span class="official-media-mark">YT</span><span>YouTube</span></a>
+        <a class="official-media-link" href="https://x.com/KIZASHI_jp" target="_blank" rel="noopener noreferrer" aria-label="KIZASHIのXを開く"><span class="official-media-mark">X</span><span>X</span></a>
+        <a class="official-media-link" href="https://www.instagram.com/kizashi_jp/" target="_blank" rel="noopener noreferrer" aria-label="KIZASHIのInstagramを開く"><span class="official-media-mark">IG</span><span>Instagram</span></a>
+      </div>
+    </section>
   </aside>
 
   <div class="main">
@@ -3430,6 +3458,20 @@ function renderPricing(v){
       </article>`).join('')}
     </div>
     <div class="pricing-common">${icon('bolt')}<span><b>すべてのプランに共通：</b>配信件数はAIニュースの発生状況に応じて変わります。スマホ対応、読みやすいAI要約、情報元へのリンクを利用できます。</span></div>
+    <section class="media-promo" aria-labelledby="media-promo-title">
+      <div class="media-promo-head">
+        <div>
+          <span class="official-media-kicker">KIZASHI OFFICIAL MEDIA</span>
+          <h3 id="media-promo-title">AIニュースを、動画とSNSでも。</h3>
+          <p>AI進化レーダーと一貫した視点で、最新情報や活用のヒントを発信しています。使いやすいチャンネルからご覧ください。</p>
+        </div>
+      </div>
+      <div class="official-media-links">
+        <a class="official-media-link" href="https://www.youtube.com/@kizashi_jp" target="_blank" rel="noopener noreferrer"><span class="official-media-mark">YT</span><span>YouTubeで見る</span></a>
+        <a class="official-media-link" href="https://x.com/KIZASHI_jp" target="_blank" rel="noopener noreferrer"><span class="official-media-mark">X</span><span>Xで最新情報を見る</span></a>
+        <a class="official-media-link" href="https://www.instagram.com/kizashi_jp/" target="_blank" rel="noopener noreferrer"><span class="official-media-mark">IG</span><span>Instagramで見る</span></a>
+      </div>
+    </section>
     <p class="pricing-note">現在はStripeのテスト決済です。実際の請求は発生しません。決済時にはログイン中の会員IDが安全に引き継がれます。情報元の記事の閲覧回数は毎月1日にリセットされる予定です。</p>
   </div>`;
 }
