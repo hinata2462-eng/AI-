@@ -2143,6 +2143,32 @@ function seedData(){
        official_url:'https://notebooklm.google.com',release_notes_url:'https://blog.google/technology/ai/notebooklm-new-features/',related_businesses:['三高産業','その他']}),
   ];
 
+  // 新規ユーザーは、AI全般を見渡せる大分類をすべて有効にして開始する。
+  const presetAliases = {
+    'OpenAI / ChatGPT':'ChatGPT / OpenAI',
+    'Anthropic / Claude':'Claude / Claude Code',
+    'Google Gemini':'Gemini'
+  };
+  INFORMATION_PRESETS.forEach(preset=>{
+    const existingName=presetAliases[preset.name]||preset.name;
+    const existing=tools.find(tool=>tool.name===existingName);
+    if(existing){
+      existing.is_active=true;
+      if(!existing.rss_url)existing.rss_url=googleNewsRss(preset.query);
+      existing.related_businesses=[...new Set([...(existing.related_businesses||[]),preset.category])];
+      return;
+    }
+    tools.push(t({
+      name:preset.name,
+      category:preset.kind,
+      priority:preset.priority,
+      rss_url:googleNewsRss(preset.query),
+      related_businesses:[preset.category],
+      memo:'初期設定：AI全般の情報を幅広く収集',
+      is_active:true
+    }));
+  });
+
   const byName = (n)=>tools.find(x=>x.name===n).id;
   const daysAgo = (n)=>{ const d=new Date(); d.setDate(d.getDate()-n); return d.toISOString(); };
 
