@@ -1924,6 +1924,78 @@ const DB = {
 function uid(){ return 'id-'+Math.random().toString(36).slice(2,10)+Date.now().toString(36).slice(-4); }
 function nowISO(){ return new Date().toISOString(); }
 
+/* ---------- Article history (一度取り込んだ記事を再表示しない) ---------- */
+function stableHash(text){
+  const s=String(text||'');
+  let h1=0xdeadbeef^s.length,h2=0x41c6ce57^s.length;
+  for(let i=0,ch;i<s.length;i++){
+    ch=s.charCodeAt(i);
+    h1=Math.imul(h1^ch,2654435761);
+    h2=Math.imul(h2^ch,1597334677);
+  }
+  h1=Math.imul(h1^(h1>>>16),2246822507)^Math.imul(h2^(h2>>>13),3266489909);
+  h2=Math.imul(h2^(h2>>>16),2246822507)^Math.imul(h1^(h1>>>13),3266489909);
+  return (4294967296*(2097151&h2)+(h1>>>0)).toString(36);
+}
+function normalizeArticleUrl(value){
+  const raw=String(value||'').trim();
+  if(!raw)return '';
+  try{
+    const u=new URL(raw,location.href);
+    u.hash='';
+    [...u.searchParams.keys()].forEach(k=>{
+      if(/^utm_/i.test(k)||['oc','hl','gl','ceid','ref','ref_src','source','campaign'].includes(k.toLowerCase()))u.searchParams.delete(k);
+    });
+    u.hostname=u.hostname.toLowerCase().replace(/^www\./,'');
+    u.pathname=u.pathname.replace(/\/+$/,'')||'/';
+    const sorted=[...u.searchParams.entries()].sort(([a],[b])=>a.localeCompare(b));
+    u.search='';
+    sorted.forEach(([k,v])=>u.searchParams.append(k,v));
+    return u.toString();
+  }catch(e){
+    return raw.replace(/[?#].*$/,'').replace(/\/+$/,'').toLowerCase();
+  }
+}
+function normalizeArticleTitle(value){
+  let s=String(value||'').normalize('NFKC').toLowerCase().trim();
+  const parts=s.split(/\s*[-–—｜|]\s*/);
+  if(parts.length>1){
+    const tail=parts[parts.length-1].replace(/[^\p{L}\p{N}]+/gu,'');
+    const head=parts.slice(0,-1).join(' ').replace(/[^\p{L}\p{N}]+/gu,'');
+    if(head.length>=12&&tail.length<=28)s=parts.slice(0,-1).join(' ');
+  }
+  return s.replace(/[^\p{L}\p{N}]+/gu,'');
+}
+function articleKeys(item){
+  const url=normalizeArticleUrl(item&&item.source_url);
+  const title=normalizeArticleTitle(item&&item.title);
+  return {u:url?stableHash(url):'',t:title?stableHash(title):''};
+}
+function hasSeenArticle(item,data){
+  const d=data||DB.load();
+  const keys=articleKeys(item);
+  if(!keys.u&&!keys.t)return false;
+  return (d.seen_articles||[]).some(x=>
+    (keys.u&&x.u===keys.u)||(keys.t&&x.t===keys.t)
+  );
+}
+function rememberArticle(item,data){
+  const d=data||DB.load();
+  d.seen_articles=d.seen_articles||[];
+  const keys=articleKeys(item);
+  if(!keys.u&&!keys.t)return;
+  const found=d.seen_articles.find(x=>
+    (keys.u&&x.u===keys.u)||(keys.t&&x.t===keys.t)
+  );
+  if(found){
+    if(keys.u&&!found.u)found.u=keys.u;
+    if(keys.t&&!found.t)found.t=keys.t;
+    return;
+  }
+  d.seen_articles.push({u:keys.u,t:keys.t,at:nowISO()});
+  if(d.seen_articles.length>12000)d.seen_articles.splice(0,d.seen_articles.length-12000);
+}
+
 /* ---------- Score engine (lib/score.ts 相当・仕様書8章) ---------- */
 const SCORE_KEYWORDS = ['new model','release','beta','launch','api','pricing','code','agent','image','video','music','voice','workflow','automation','claude code','codex','gemini','chatgpt','suno','runway','v0'];
 function computeScore(update, tool){
@@ -1971,6 +2043,7 @@ function saveUpdate(u){
   u.rank = rankFromScore(u.score);
   if(u.id){ const i=d.updates.findIndex(x=>x.id===u.id); u.updated_at=nowISO(); d.updates[i]=u; }
   else{ u.id=uid(); u.created_at=nowISO(); u.updated_at=nowISO(); u.fetched_at=u.fetched_at||nowISO(); d.updates.push(u); }
+  rememberArticle(u,d);
   DB.save(); return u;
 }
 function deleteUpdate(id){ const d=DB.load(); d.updates=d.updates.filter(u=>u.id!==id); DB.save(); }
@@ -2165,6 +2238,10 @@ const MIGRATIONS = [
     });
     d.categories=BUSINESS_CATEGORIES.map(n=>({id:uid(),name:n,slug:slugify(n),description:''}));
   } },
+  { id:'2026-07-23-seen-article-history', apply(d){
+    d.seen_articles=d.seen_articles||[];
+    (d.updates||[]).forEach(u=>rememberArticle(u,d));
+  } },
 ];
 function runMigrations(d){
   d.applied_migrations = d.applied_migrations || [];
@@ -2212,8 +2289,7 @@ async function fetchToolUpdates(tool){
     const items = parseFeed(text, tool);
     let added=0;
     items.forEach(it=>{
-      const dup = getUpdates().some(u=>u.tool_id===tool.id && (u.source_url===it.source_url || u.title===it.title));
-      if(!dup){ saveUpdate(it); added++; }
+      if(!hasSeenArticle(it)){ saveUpdate(it); added++; }
     });
     const tl=toolById(tool.id); if(tl){ tl.last_fetched_at=nowISO(); DB.save(); }
     return {tool_id:tool.id,status: added>0?'success':'success',
@@ -3121,8 +3197,7 @@ async function syncFromDataJson(){
       if(it.published_at && !isRecent({published_at:it.published_at})) return;
       const tool=getTools().find(t=>t.name===it.tool)||getTools().find(t=>t.slug===it.tool);
       if(!tool) return;
-      const dup=getUpdates().some(u=>(it.source_url&&u.source_url===it.source_url)||(u.tool_id===tool.id&&u.title===it.title));
-      if(dup) return;
+      if(hasSeenArticle({tool_id:tool.id,title:it.title,source_url:it.source_url||''})) return;
       const ex=(it.raw_excerpt||it.summary||'').toString();
       saveUpdate({
         tool_id:tool.id, title:it.title, source_url:it.source_url||'',
