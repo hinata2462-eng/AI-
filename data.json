@@ -1,98 +1,98 @@
 [
   {
-    "tool": "Gemini",
-    "title": "Geminiの自動実行が40アプリ超に拡大",
-    "source_url": "https://news.google.com/rss/articles/CBMi9ANBVV95cUxNbEhBTHcwSVBaUjJmTm02a3p4eWNwOHlVbjh0X3ZvcjB6d0hOVzBNY2VHNjljNU5NbGlKS2dvT00tZktzdDExSVVlRzBvdWx6cXFmTkJjOFptMjdkTDdTaUstMWRsTUZtbzNldWxGbk4xVzZZV29ZcFpKR1lFenBDSF9yeWJ2MjgwOS1kZTJqYUdIUnA2UHNEd1FNRzN5UWwxNDQtYm9FbWhnUFJqOERId0FXd2gwdmdfWktHVXl4cENxS3NIY2xZUGEzM3ZxaVV3NEYzTm1PN01WU1NsM1ZiZmZBcFVsMzFZRmY5RnQ4VWdURlpzVXNwcnlXWlFOaFk0Ti1nZGJ3cTB0ZVN2alV3WVRrZTB1V0ZqaDhmbF9mQ21HZ2NZdTBQRHNQVWsyNFM1TkRBUWFXZm1nb3BXLWFhbGxXS1RKNUNJMEdHWl96SFZSWjE5TWQ5ejU1ZnJEbU1sdzE5WVo0eW1Fb09NU0dKQzNBYnBvVUNhOXU2azJaWW1LT2xLeEpKbHRaRlo4SkJQd2FBRktyZjdMYndmaXRUQmZnQnZUSW1kTmphNEJQakVMb0ZUQ1NfRnBNMHFhRm5GQkE5bmotN202eGtRM3F5ZnpnZHJiMHpobjJxUjZmRklOcXhSUE5RdnNnRGFRdGFVYlFkZw?oc=5",
-    "published_at": "2026-07-22T17:20:27.000Z",
-    "raw_excerpt": "GeminiがアプリをまたいでAIが自動で操作する範囲を拡大",
-    "detail": "Geminiが40以上のアプリで、AIが自動的に操作してくれる「エージェント」機能を広げました。複数のアプリをまたぐ作業をAIに任せられるようになり、日々の業務の自動化・効率化に役立ちます。"
+    "tool": "ChatGPT / OpenAI",
+    "title": "ChatGPTに健康相談機能、米国で提供開始",
+    "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9vMGhOREJOX3BCQ3lCbXF3MTlVNG9nRFJxV0RJRkZvYXRDekxPWUlsZEZBNXc4d1J5NDcwTHoxX19LZGtfanpMakl3Qmt0VmpCeUZIazNWTkNRbTBZVWl4Q0JlUQ?oc=5",
+    "published_at": "2026-07-23T17:16:08.000Z",
+    "raw_excerpt": "OpenAIがChatGPT Healthを米国の18歳以上に提供。診断用途は不可と明記",
+    "detail": "OpenAIが「ChatGPT Health」という健康に関する相談ができる機能を、アメリカの18歳以上の利用者向けに提供し始めました。以前より健康の話題を扱いやすくなりましたが、会社は「病気の診断には使えない」とはっきり示しています。診断とは、医師が病名を判断することです。つまりAIの答えを医療の代わりにしてはいけません。体調が心配なときは、必ず医師など専門家に相談してください。まずは日本で使えるか、どんな注意書きがあるかを確認しましょう。"
   },
   {
-    "tool": "Gemini",
-    "title": "Gemini NotebookでAIブレーンを量産",
-    "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE50WV9TZXFhZzFPS3RQSHY5UzVoc2ZvY1l2Yk45aHpCbktLQ2plVkhQTjRvWkVUcmZkVVQyVGFEVkxTMTgzV1Zlb2dKV1Y2UElWRUV4MXFCb0dvZWc2aVhIdEVSSUloZw?oc=5",
-    "published_at": "2026-07-22T15:00:00.000Z",
-    "raw_excerpt": "Gemini Notebookで複数視点の分析ができる使い方を日経が解説",
-    "detail": "Gemini Notebookに資料を入れて、目的別の「AIの相談相手」を複数作り、多角的に分析する使い方を紹介しています。営業資料や業務改善の企画を練るとき、いろんな視点で下調べや意見出しができて便利です。"
+    "tool": "Runway",
+    "title": "Runwayが生成AIの「振り分け役」を発表",
+    "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSkdTS3FtRlNreE1zSTk0bHRHWWtPanptcEU0dWFhaUV1SmctV1FQd2U1Tm9Sc2xSNnV5MFpzYWR2YW4yUlhOMlp1TnQ5cVh3TDRqUVA1OHhGZEVNalY1MU1ZblZ0Ym4zNTVDS3RRMHU5NzBiOW1wbnhhWWtwTmRpU0lZZ2FyUDNCdjZfejF5ZFdGcjFDeWNzU3ZhVl9aUUp1?oc=5",
+    "published_at": "2026-07-23T17:07:35.000Z",
+    "raw_excerpt": "用途に合ったAIモデルを自動で選ぶルーターを公開、映像生成の競争激化",
+    "detail": "映像などをAIで作る会社Runwayが、目的に合ったAIモデルを自動で選ぶ「ルーター」を発表しました。ルーターとは、複数あるAIの中から最適なものを振り分ける仕組みです。画像や動画を作るAIが増える中、利用者が迷わず使えるようにする狙いです。以前は自分でどのモデルを使うか選ぶ必要がありました。クリエイター向けの作業がやりやすくなります。Runwayを使う人は、この振り分け機能がどう動くか試してみましょう。"
   },
   {
     "tool": "ChatGPT / OpenAI",
-    "title": "OpenAIが小規模ビジネス向けChatGPT提供",
-    "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9GaUIwcl95S01XbjdBSW40T1JoZFl0MjdKT0QwSmlrQ1hiSnZfUnNNWkN2czlvcW5lNldOQUNUWXpTeTNHcjJJNjB5bTBXUQ?oc=5",
-    "published_at": "2026-07-22T11:34:44.000Z",
-    "raw_excerpt": "少人数チーム向けChatGPTプログラムと新モデルGPT-5.6を発表",
-    "detail": "OpenAIが少人数の会社向けにChatGPTの支援プログラムと最新モデルを発表しました。小規模な業務をAIで強力に手伝う内容で、三高産業の業務改善や社内文書作成をコストを抑えて進めたい新井さんに向いています。"
+    "title": "ChatGPTの誤った医療助言で提訴",
+    "source_url": "https://news.google.com/rss/articles/CBMikwRBVV95cUxNMzA1U2RvNUNPblF5d3BxODJlUW9SX05ZYTRqSl81bkFvODJFeUNWX1BPR1dxYnhpVWFheVNtUFlwR3NXZ3RaM2UwQWVmb0gzREtXUjExS0M2MjRYZjF0QjJFYjNNQlZib25JX05CRUpjYnZsMlNoOTVubU0tUE9LN1lWSEN0MjVQUGtoRXgtX3pkNm9mSTNNZEhQWkJxdE54ak9BR2pGRWNjajQyaWg0WV9OTDhtN2lOUHNmQWZsMlhVendOUi00U0dQYXFRZF9rdXhQOTFhV3Q2aGJoa3J0RGF6OEMtRkpwVHlZOXE0bjRfRmJiRlRLYlp3dDZqaHJEMkZ1andOTEVJeXhUb3ZaQ2RrZVBoYkIzUURfMFBDN3ZqZmo1QXJmZTI4UXVIOGpqclhoOGl2LTNjaDYtM0VJbnFVV29fSTVhcVZUVGZMYXlGWTJTc3hrclJvLVc5VGFDWndCZmZIUnhuRU5GbFRTSG9NaVFKVkxILS16Q0c5aGtjbXpZbWpRd2I4bnZKLXZxN09uUlRwNllJMUs0TzZNMDJXd2pWNzhCWW5FeHJ0djVCRUtMZWFCSmRaT01vaWVlLTNyRHBYT3ZjUEdJbjlwdFotN0cyM3RST1ZkUHQyTTVOV1EzU0hBdGdtQ3RNOE9hWG5WZ3Q3ZUZYcUxUWHFnd2dyd0FxM0dBbVFuNGtPVjlJYTg?oc=5",
+    "published_at": "2026-07-23T15:27:43.000Z",
+    "raw_excerpt": "米フロリダの牧師が「命を落としかけた」とOpenAIを提訴、地裁が審理へ",
+    "detail": "アメリカ・フロリダ州の牧師が、ChatGPTから受けた誤った医療の助言で健康を害したとして、OpenAIを訴えました。牧師は「命を落としかけた」と主張し、サンフランシスコの裁判所が審理を始めます。AIは自信ありげに答えても間違うことがあり、これを鵜呑みにすると危険だと示す例です。健康や命に関わる質問は、AIの答えを信じきらないことが大切です。気になる症状があれば、必ず病院や医師に相談してください。AIはあくまで参考程度に使いましょう。"
   },
   {
-    "tool": "Canva",
-    "title": "Canvaコード2.0が登場、デザイン感覚でアプリ編集",
-    "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1Ec3FYWWY2cjBub3UzdmJiRDkySm5uNV9NNGFTc0lnNWd1bV9kbmxRaF9kcGo0cDJDM3hGT0ZKcXJpZVFDbEZveFNOUUpWMlp0Wllxd3kxQlRHcEVrR2RB?oc=5",
-    "published_at": "2026-07-22T08:02:11.000Z",
-    "raw_excerpt": "CanvaがWebサイトやアプリを生成し、デザインのように直接編集できる新機能を開始",
-    "detail": "Canvaが「Canvaコード2.0」を出しました。文章で指示するとWebサイトやアプリが作られ、しかもCanvaのデザイン画面のように直感的に手直しできます。LP制作や営業資料、簡単なアプリ作りをコードなしで進められるので、新井さんの制作業務のスピードが上がります。"
+    "tool": "Gemini",
+    "title": "サムスンがGemini搭載スマートグラス発表",
+    "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE03TWo5N0RCNWVUczlqZW91UDZUZ0VKSDlIZG9LY21qSEJZak5tQzZpcWt1QXFfUGxER2duaFA5bXNHQXRkb3NMYVlUX3QtT1J0OHplYnU2OW9aRE1JTDZ6Z1k3Smg2NTBP0gFoQVVfeXFMTTdNajk3REI1ZVRzOWplb3VQNlRnRUpIOUhkb0tjbWpIQllqTm1DNmlxa3VBcV9QbERHZ25oUDltc0dBdGRvc0xhWVRfdC1PUnQ4emVidTY5b1pETUlMNnpnWTdKaDY1ME8?oc=5",
+    "published_at": "2026-07-23T12:46:00.000Z",
+    "raw_excerpt": "AI搭載の眼鏡型端末を公開、プライバシーや法規制が課題に",
+    "detail": "サムスンが、GoogleのAI「Gemini」を搭載した眼鏡型の端末「Galaxy Glasses」を発表しました。目の前の情報をAIが手伝ってくれる新しい機器です。一方で、カメラで周囲を撮ることによるプライバシーの心配や、法律の整備が課題とされています。プライバシーとは、他人に知られたくない個人の情報のことです。便利さと安全のバランスが問われます。購入を考える人は、価格や発売時期、周囲を撮影する際のルールを確認しましょう。"
+  },
+  {
+    "tool": "Gemini",
+    "title": "Gemini利用者が月9.5億人に急増",
+    "source_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1nZFFvODFjdklwa2EwbzVmQ25YMHhQX2cxOEYwYTVLN2JOakt5LVZQYUY5RXB5WGdTSXFYWERjVmprc1dDZ3UtVXExMDIwdlhTd1hr?oc=5",
+    "published_at": "2026-07-23T10:40:00.000Z",
+    "raw_excerpt": "GoogleのAI「Gemini」が拡大し、検索もAI利用で強くなったと分析",
+    "detail": "GoogleのAI「Gemini」を使う人が月に約9.5億人まで増えたと報じられました。月間アクティブユーザーとは、1か月に一度でも使った人の数です。心配されていたGoogle検索も、AIの活用でむしろ利用が広がっているとの分析です。AIが日常のツールとして急速に広まっていることを示します。GoogleのサービスにAI機能が増えていくので、検索やスマホで使えるGemini機能を一度試してみると変化が実感できます。"
   },
   {
     "tool": "Claude / Claude Code",
-    "title": "Claude Cowork、録画からスキルを習得",
-    "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBTejhiVkF5Qm1laVRNUkEwVTE1NVlCVklodGFWRTNISW5wMm0yRzk0RTVxM1RIWDdOVl9leTBpZmtudUw1blI1Qkk3dllGVWJHM1I0Mi1rSWJaWVF1Q1AtaTBn?oc=5",
-    "published_at": "2026-07-22T06:45:17.000Z",
-    "raw_excerpt": "Claude Coworkが画面録画と音声説明で作業手順を覚えられるように",
-    "detail": "Claude Coworkが、画面録画と音声での説明を見せるだけで作業のやり方を学べるようになりました。繰り返しの手作業をお手本として教えれば代わりにやってくれるので、業務の自動化・効率化に役立ちます。"
+    "title": "Claude Codeに安全チェック機能がベータ公開",
+    "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9MZ0FOU0h0Mkg5bW5hQ0szc1JPb3RSYktrbHROaGwwNTB3SjRmU3RqdnVPanBtc2pvQW1PeVFpRkF6SWN1UzVvbnlBNTBFMUd4S2g2MVQtQXJCN0hEdXBnRWJzRm5IcVdDeDQ4MUt0eUxCRkVqbTlkUmRUVF95MlU?oc=5",
+    "published_at": "2026-07-23T09:36:00.000Z",
+    "raw_excerpt": "複数のAIがプログラムの弱点を指摘する「Claude Security」が試験提供",
+    "detail": "AnthropicのプログラミングAI「Claude Code」に、「Claude Security」という追加機能（プラグイン）がベータ版で公開されました。ベータ版とは、正式版の前の試験提供のことです。複数のAIが協力して、プログラムの弱点（脆弱性）を見つけて指摘してくれます。安全なソフトを作るのに役立ちます。プログラムを書く人は、この機能でどんな問題を検出できるか、試験版として試してみるとよいでしょう。"
   },
   {
     "tool": "Claude / Claude Code",
-    "title": "Claude CodeにiOSシミュレータ統合",
-    "source_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE9uSnRNQUMtUWhGQnZOLWVvbzlSWllKR1o5RW5nNVRncXl4WmU2dWxSRXhaV0VFbU9Yb0lBWmFFYUM?oc=5",
-    "published_at": "2026-07-22T03:12:38.000Z",
-    "raw_excerpt": "Claude CodeがiOSアプリの動作確認をできるベータを開始",
-    "detail": "Claude Codeに、iPhoneアプリを画面上で試せる仕組みが加わり、公開テストが始まりました。アプリ開発で作った画面をその場で確認しながら直せるので、開発の手間が減ります。"
+    "title": "ClaudeのAIエージェントが大幅強化",
+    "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE52QmZycUxOOURpVGxoSTRjZ2hpWkg4UU1mSDN2YUpyV05GRjZBX0dKVjhhZG93THBQcjk1SXUxYlFuZzV2aVF5V1VFRnJaOXFkNWlLT3lUazdBZzRaQ01SMkpWbmMxb044RnZoT3lDcUMtZXJr?oc=5",
+    "published_at": "2026-07-23T07:36:00.000Z",
+    "raw_excerpt": "1回の作業で使えるスキルが最大500個に増え、より複雑な仕事に対応",
+    "detail": "AnthropicがAIに自動で仕事をさせる仕組み(AIエージェント)を強化しました。1回の作業でAIが使える「スキル」の上限が500個に増えたと報じられています。スキルとは、AIができる作業や道具のことです。これまでより多くの手順や機能を組み合わせて、複雑な仕事をこなせるようになります。AIに任せられる作業の幅が広がります。開発者や業務でAIを使う人は、どんな作業を自動化できるか確認してみましょう。"
   },
   {
     "tool": "NotebookLM",
-    "title": "NotebookLMがGemini Notebookに進化",
-    "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1yY0FqOEx2bDhUWV9paUYza1FUWjJHSzFyMjgzUXNfVFJseTVIVEREd2FwRU9fZkptS0xCYkc4dHliOGIycTE5R3FWTnpQUmQzUUhXSHV1dGU4NkRpQXhfTjZ2cXdtRXRzWkFKWmhDR2szcUNGdjZ5clV4a2JEYU0?oc=5",
+    "title": "NotebookLMが「Gemini Notebook」に進化",
+    "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQWjBDQUJYdG9zN3lla3A5VVp5UWN5V3JEVWFpejBodWw0WlVEMWN1NllTN01wNDZmLW5LNHpOb3ZiUWkxbGpYZkZwOXJ2T010S1hrcXNRMFl0Q0NyM28zbnMyWGVxcHE5S1E0UDNxZC0xRnFNcTZtSjhsZ0FWVmdlcE1pTFp4SlVqWXY3LXhB?oc=5",
     "published_at": "2026-07-22T03:11:02.000Z",
-    "raw_excerpt": "NotebookLMが改称され、Google検索連携などでリサーチ機能が強化",
-    "detail": "資料を読み込ませて質問できるNotebookLMが「Gemini Notebook」に名前を変え、Google検索とつながって最新情報も調べられるようになりました。業務資料の要約や市場調査、社内文書づくりのリサーチが速くなります。"
-  },
-  {
-    "tool": "Cursor",
-    "title": "高性能な計画役＋安価な実行役でコスト8分の1",
-    "source_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1LVXJqVXlaS2JyVWJ3d0xwYzhtMXFfT0VUdTZ3bVR4UjdoeXF0b0RnTENOVkoxa0FweGwwMDRjS0FYa3lfdUd6bzZNUGZTdGJyRXpiR3ZvMkh0Y1hjblF5RVNCemJYMkpYbXlQdnBvdF8?oc=5",
-    "published_at": "2026-07-21T13:00:00.000Z",
-    "raw_excerpt": "Cursorが役割分担でAI開発コストを約8分の1に削減できると報告",
-    "detail": "賢いAIに計画を立てさせ、安いAIに実際の作業をさせる方法で、開発費用が約8分の1になったとCursorが報告しました。AIを賢く使い分ける考え方は、新井さんのアプリ開発や自動化のコスト節約に応用できます。"
+    "raw_excerpt": "Google検索と連携し、資料を調べるリサーチ機能がさらに強化",
+    "detail": "Googleの資料整理・調べ物ツール「NotebookLM」が、名前を「Gemini Notebook」に変えて生まれ変わります。GeminiはGoogleのAIの名前です。今回、Google検索とつながり、より広く情報を調べられるようになりました。以前は自分で入れた資料が中心でしたが、これで最新のネット情報も活かせます。勉強や仕事で資料をまとめたい人に便利です。まずは自分の使っているNotebookLMで新機能が使えるか、どんな検索連携ができるかを試してみましょう。"
   },
   {
     "tool": "Suno",
-    "title": "Sunoがテキストから曲生成機能を提供",
-    "source_url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5EcHExaEZuS211Vm5xZHBEOUt3a2UyRjZYYlhKWHhOcFBiLURQcGdVcENhZjBxVEFpdm4tZFJRbEllLUkyYkE?oc=5",
-    "published_at": "2026-07-21T08:26:26.000Z",
-    "raw_excerpt": "SunoがiMessageで文章から曲を作る機能を開始しTikTokで話題",
-    "detail": "音楽生成AIのSunoが、文章を入れるだけで曲を作れる機能をメッセージアプリ向けに始めました。手軽に曲アイデアを試せるので、Kiki Toaの音楽制作やYouTube用の楽曲づくりのヒントになります。"
-  },
-  {
-    "tool": "NotebookLM",
-    "title": "NotebookLM改称、Gemini 3.5で推論強化",
-    "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5HZEwwUlYxNGNpYUlPeXo1azk3bmhIeFBJYkJ6S1Rrc0VDRVE5OGxZRG5KUGJmUVVNNk5JaFU4T1lacE5PX1EwN2Z5OFZkdXBCU0FJc2tUcHBNVVQtZl9qSDh3UFlzcU9s?oc=5",
-    "published_at": "2026-07-21T03:45:50.000Z",
-    "raw_excerpt": "NotebookLMがGemini Notebookになり推論力が向上",
-    "detail": "NotebookLMが「Gemini Notebook」に改称され、新しいGeminiモデルで考える力（推論）が強くなりました。資料をもとにした複雑な質問への回答精度が上がるので、調べ物や文書作成の質を高められます。"
+    "title": "Spotify創業者の医療企業が7億ドル調達",
+    "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBqbk5UYnJkSVRSTFZQMjBIelR2NEdZQm1pQUNjbVZuUEVlNDBEVHpiaFlRSDdmVzhrcHF0aE1ZN2RqT1phVThhTXBCa3d0dWtuXzc2Sw?oc=5",
+    "published_at": "2026-07-21T10:14:09.000Z",
+    "raw_excerpt": "AI音楽Sunoの主要投資家も参加し、ヘルステック企業が大型資金を獲得",
+    "detail": "音楽配信Spotifyの創業者ダニエル・エク氏が率いる医療技術(ヘルステック)の会社が、7億ドルの資金を集めました。ヘルステックとは、技術で健康や医療を良くする分野です。この資金には、争いを抱える音楽生成AI「Suno」の主要な出資者も参加しています。AIやお金の大きな流れが、医療分野にも向かっていることを示します。私たちの生活にすぐ影響する話ではありませんが、AI関連企業の投資の動きとして知っておくとよいでしょう。"
   },
   {
     "tool": "Canva",
-    "title": "Canvaコード2.0の詳しい解説記事",
+    "title": "Canvaコード2.0でアプリ生成が可能に",
     "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE40X20xU09vRUdXZks1a3NwanAxS1pIQmlnQmstcVRiT2RkWUppNnRqOWltOHFiOV9HTkJ0V3NKd04yd21ZbzZQb0s3emZ5aTBTN1lvYmluZHp0Y1U?oc=5",
     "published_at": "2026-07-20T22:57:38.000Z",
-    "raw_excerpt": "Canvaコード2.0でWebサイトやアプリを生成し直接編集できる仕組みを紹介",
-    "detail": "Canvaの新機能「Canvaコード2.0」について、文章からWebサイトやアプリを作り、デザインのように編集できる点を解説しています。EC向けLPや販促ページ作りに直接使えるので、実際の操作イメージを知る参考になります。"
+    "raw_excerpt": "文章の指示でWebサイトやアプリを作り、デザインのように編集できる新機能",
+    "detail": "デザインツールのCanvaが「Canvaコード2.0」の提供を始めました。これは、やりたいことを文章で伝えるとWebサイトやアプリを自動で作ってくれる機能です。こうした作り方は「バイブコーディング」と呼ばれ、プログラムの専門知識がなくても形にできます。作ったものは、Canvaでデザインを直すように直接編集できます。簡単なサイトやアプリを作ってみたい人に向いています。まずはCanvaで機能が使えるか、無料でどこまで試せるかを確認しましょう。"
   },
   {
     "tool": "Cursor",
-    "title": "Cursor全プランで利用上限が2倍に",
-    "source_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFA1M3pIVFd3aVFpUDByZUJNZDZVeG50QXhvalFiVDJlbGEtTGEyQi1QeUV1bTJGTWZLbGJJRERrTHZlZDRYaVpLcEhQUnloQUNuRi1nMnl3ZUtucnMyLVRXWXJDQWt3UnBZU3pF?oc=5",
-    "published_at": "2026-07-16T12:33:55.000Z",
-    "raw_excerpt": "CursorがAIモデルの使用上限を全プランで2倍に増やした",
-    "detail": "AIコーディングツールCursorで、AIを使える回数の上限が全プランで2倍になりました。同じ料金でより多く開発作業を任せられるので、アプリ開発や自動化スクリプト作りが捗ります。"
+    "title": "AI開発ツールCursorに深刻な脆弱性",
+    "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9CbDROVWVUNXQ5WTh5R1h5TFNSSS1zTWtrWGpaMl9wdzltT0tzekhEY3BOSHJBS0JPRThHczIzLUpNRlZzaWoyNUcxQTVKdk1Bc1J2aDIxVVF5UGk4YjYtcXRwZ9IBaEFVX3lxTE9jSkFxRmIzOVY3d1g0VzI0SGg5cjlHVU1tRnE4RDJEZjA5b0EtN3pjRFA0SEZjTjhpS3RmVUIxOUN6cWtjNmFBaFN1WWhORm1wUHM5LWRNZ1g4ck02VExPVDBzd2xRcy1h?oc=5",
+    "published_at": "2026-07-17T22:09:51.000Z",
+    "raw_excerpt": "Windowsでリポジトリを開くだけで不正なコードが動く恐れが判明",
+    "detail": "プログラム作りを助けるAIツール「Cursor」に、深刻な弱点（ゼロデイ脆弱性）が見つかりました。ゼロデイとは、対策が出る前に悪用される恐れのある新しい弱点のことです。Windowsパソコンで、あるプロジェクトの保存場所（リポジトリ）を開くだけで、勝手に不正な命令が実行される危険があると報じられています。開発者が知らないうちにパソコンを乗っ取られる恐れがあります。Cursorを使っている人は、最新版に更新し、信頼できない配布元のファイルを開かないよう注意してください。"
+  },
+  {
+    "tool": "Suno",
+    "title": "AI音楽Sunoが数百万曲を無断収集か",
+    "source_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBJYWJGYUh1cE9SRWxMYzZuaW8wWXNfdmRQaTNjcmNiVHNDOXotX3lBZ2pWaVdLTTNpMXpteEc4MTdHc2c0cVUtLWRrcXk2MlR6Zk1IdHdZRHU0dzl4LTlBeG5HMTl4TFMwUGhuMGNnVHlzSjA5Q1pqTA?oc=5",
+    "published_at": "2026-07-17T13:00:00.000Z",
+    "raw_excerpt": "流出したソースコードから、YouTubeなどから大量の曲を集めていた実態が判明",
+    "detail": "AIで音楽を作るサービス「Suno」が、YouTubeや音楽配信のDeezerなどから数百万曲を無断で集めていたことが、流出した内部のプログラム（ソースコード）から分かったと報じられました。集めた曲をAIの学習に使っていたとみられ、著作権をめぐる争いになっています。学習とは、AICがたくさんのデータをまねて上達する仕組みです。作り手に無断で使うと権利の問題が起きます。AIで音楽を作る人は、生成した曲の権利がどうなるか、規約や今後の裁判の動きを確認しておきましょう。"
   }
 ]
