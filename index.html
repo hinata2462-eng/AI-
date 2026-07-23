@@ -110,6 +110,10 @@
   .brand-logo svg{width:23px;height:23px;position:relative;z-index:1}
   .brand-name{font-weight:800;font-size:16px;letter-spacing:.01em;line-height:1.15;color:#fff}
   .brand-sub{font-size:10.5px;color:rgba(235,238,255,.45);font-weight:700;letter-spacing:.14em;margin-top:2px}
+  .registered-count{display:inline-flex;align-items:center;gap:5px;margin-top:6px;color:rgba(211,224,244,.58);font-size:9.5px;font-weight:700;letter-spacing:.04em}
+  .registered-count::before{content:"";width:5px;height:5px;border-radius:50%;background:#4fdde5;box-shadow:0 0 7px rgba(79,221,229,.65)}
+  .registered-count strong{color:#d9f8fb;font-size:10.5px;font-weight:900}
+  .top-registered-count{display:none;margin:0 4px 0 9px;padding:4px 8px;border:1px solid rgba(72,213,225,.18);border-radius:999px;background:rgba(8,28,45,.48)}
 
   .nav{padding:10px 14px;flex:1;overflow-y:auto}
   .nav::-webkit-scrollbar-thumb{background:rgba(255,255,255,.15);background-clip:content-box;border:2px solid transparent}
@@ -1208,6 +1212,7 @@
       linear-gradient(180deg,rgba(1,5,15,.48),rgba(2,7,18,.74) 42%,rgba(1,4,12,.91)),
       var(--hero-art) 69% top/auto 100vh fixed no-repeat!important}
     .topbar-logo{display:block}
+    .top-registered-count{display:inline-flex}
     .menu-btn{display:none!important}
     .radar-overview{min-height:300px;background:
       linear-gradient(90deg,rgba(1,6,17,.96) 0%,rgba(2,8,20,.76) 53%,rgba(2,7,17,.06) 100%),
@@ -1712,6 +1717,7 @@
       <div>
         <div class="brand-name">AI進化レーダー</div>
         <div class="brand-sub">AI UPDATE RADAR</div>
+        <div class="registered-count" data-registered-count hidden>登録者 <strong>—</strong>人</div>
       </div>
     </div>
     <nav class="nav" id="nav"></nav>
@@ -1728,6 +1734,7 @@
         <div class="page-sub" id="pageSub"></div>
       </div>
       <span id="autoStatus" class="auto-status" style="display:none"></span>
+      <span class="registered-count top-registered-count" data-registered-count hidden>登録者 <strong>—</strong>人</span>
       <div class="spacer"></div>
       <div id="topActions"></div>
     </header>
@@ -1841,7 +1848,7 @@ const SUPABASE_URL='https://ncosmmesecpqhzfikpmn.supabase.co';
 const SUPABASE_PUBLISHABLE_KEY='sb_publishable_9nyRtwzYeaArcNKiZtVVVA_2ji4eK6G';
 const AUTH_RETURN_URL='https://hinata2462-eng.github.io/AI-/';
 const memberClient=window.supabase?.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
-const memberState={ready:false,user:null,subscription:null,message:'',error:false};
+const memberState={ready:false,user:null,subscription:null,registeredCount:null,message:'',error:false};
 
 function memberPlanLabel(plan){return ({free:'無料',standard:'スタンダード',premium:'プレミアム'})[plan]||'無料';}
 function memberStatusLabel(status){return ({active:'契約中',trialing:'トライアル中',past_due:'支払い確認中',canceled:'解約済み',unpaid:'未払い',incomplete:'手続き未完了',inactive:'無料利用中'})[status]||'確認中';}
@@ -1852,6 +1859,23 @@ function authErrorMessage(error){
   if(/password/i.test(msg))return 'パスワードは8文字以上で設定してください。';
   if(/email/i.test(msg))return 'メールアドレスを確認してください。';
   return '処理を完了できませんでした。少し待ってからもう一度お試しください。';
+}
+function renderRegisteredCount(){
+  document.querySelectorAll('[data-registered-count]').forEach(el=>{
+    const count=memberState.registeredCount;
+    el.hidden=!(Number.isFinite(count)&&count>=0);
+    const value=el.querySelector('strong');
+    if(value&&Number.isFinite(count))value.textContent=new Intl.NumberFormat('ja-JP').format(count);
+  });
+}
+async function loadRegisteredUserCount(){
+  if(!memberClient)return;
+  const {data,error}=await memberClient.rpc('registered_user_count');
+  if(error)return;
+  const count=Number(data);
+  if(!Number.isFinite(count)||count<0)return;
+  memberState.registeredCount=count;
+  renderRegisteredCount();
 }
 async function refreshMemberState(session){
   memberState.user=session?.user||null;
@@ -1866,6 +1890,7 @@ async function refreshMemberState(session){
 }
 async function initMemberAuth(){
   if(!memberClient){memberState.ready=true;return;}
+  loadRegisteredUserCount();
   const {data}=await memberClient.auth.getSession();
   await refreshMemberState(data.session);
   memberClient.auth.onAuthStateChange((_event,session)=>{window.setTimeout(()=>refreshMemberState(session),0);});
