@@ -409,7 +409,7 @@
   .preset-desc{color:#8f9db1;font-size:10.5px;line-height:1.5}
   .preset-empty{display:none;padding:22px 12px;color:var(--text-mute);font-size:12px;text-align:center}.preset-empty.show{display:block}
   .auto-source-note{display:flex;align-items:flex-start;gap:8px;margin-top:10px;padding:10px 12px;border-radius:10px;background:rgba(27,136,158,.10);color:#92bdc8;font-size:10.5px;line-height:1.55}.auto-source-note svg{width:15px;height:15px;flex:0 0 15px;color:#62dfe7}
-  .manual-details{margin-top:14px;border:1px solid rgba(104,146,190,.18);border-radius:12px;background:rgba(4,14,30,.46);overflow:hidden}.manual-details summary{display:flex;align-items:center;gap:8px;padding:13px 14px;color:#aebbd0;font-size:12px;font-weight:800;cursor:pointer;list-style:none}.manual-details summary::-webkit-details-marker{display:none}.manual-details summary::after{content:"＋";margin-left:auto;color:#67dfe7}.manual-details[open] summary::after{content:"−"}.manual-fields{padding:0 14px 15px}
+  .manual-details{margin-top:14px;border:1px solid rgba(104,146,190,.18);border-radius:12px;background:rgba(4,14,30,.46);overflow:hidden}.manual-details summary{display:flex;align-items:center;gap:8px;padding:13px 14px;color:#aebbd0;font-size:12px;font-weight:800;cursor:pointer;list-style:none}.manual-details summary svg{width:16px!important;height:16px!important;flex:0 0 16px}.manual-details summary::-webkit-details-marker{display:none}.manual-details summary::after{content:"＋";margin-left:auto;color:#67dfe7}.manual-details[open] summary::after{content:"−"}.manual-fields{padding:0 14px 15px}
   .field select option,select.filter option{background:#091429;color:#f3f6ff}
   .switch{display:inline-flex;align-items:center;gap:10px;font-weight:600;color:var(--text-soft);cursor:pointer}
   .switch input{appearance:none;width:44px;height:25px;border-radius:999px;background:#ccd1e0;position:relative;cursor:pointer;transition:.2s;flex-shrink:0}
@@ -2610,6 +2610,40 @@ function readBlock(id,label,text,iconName,color,bg,cls){
   </div>`;
 }
 
+function ensureJapaneseSentence(text){
+  const s=String(text||'').trim();
+  if(!s)return '';
+  return /[。！？!?]$/.test(s)?s:s+'。';
+}
+function buildFriendlyExplanation(u,tool){
+  const base=String(u.easy_summary||'').trim();
+  if(!base)return '';
+  if(base.length>=180)return base;
+  const hero=String(u.manual_summary||u.ai_summary||u.raw_excerpt||'').trim();
+  const all=`${u.title||''} ${hero} ${base}`.toLowerCase();
+  const parts=[];
+  if(hero&&!base.includes(hero))parts.push(`まず、このニュースをひと言でいうと、${ensureJapaneseSentence(hero)}`);
+  parts.push(ensureJapaneseSentence(base));
+
+  if(/エージェント|自動実行|自動操作/.test(all)){
+    parts.push('ここでいう「AIエージェント」とは、質問に答えるだけでなく、目的に合わせて複数の操作を順番に進めるAIのことです。これまで人がアプリを行き来していた作業を、まとめて任せやすくなる点が大きな変化です。');
+  }else if(/api|開発|コード|プログラ/.test(all)){
+    parts.push('かんたんに言うと、開発者向けの仕組みや作業手順が改善され、アプリやサービスを作る時間・手間を減らせる可能性があります。専門家でなくても、今後使うサービスの機能や料金に影響することがあります。');
+  }else if(/料金|価格|値下げ|値上げ|プラン/.test(all)){
+    parts.push('かんたんに言うと、同じ機能でも使える範囲や支払う金額が変わる可能性があるニュースです。現在の契約内容と新しい条件を比べると、自分に必要なプランか判断しやすくなります。');
+  }else if(/規制|法律|著作権|政府|政策|選挙/.test(all)){
+    parts.push('かんたんに言うと、AIを「何に、どこまで使ってよいか」というルールに関わるニュースです。仕事やサービスでAIを使う人は、今まで通りの使い方で問題ないか確認するきっかけになります。');
+  }else if(/補助金|助成金|支援金/.test(all)){
+    parts.push('かんたんに言うと、AIの導入費用や学習費用を支援してもらえる可能性があるニュースです。対象者、申請期間、対象経費は制度ごとに違うため、公式情報で条件を確認することが大切です。');
+  }else if(/株|株価|決算|投資|企業/.test(all)){
+    parts.push('かんたんに言うと、AI関連企業の成長性や事業への影響を考える材料になるニュースです。ただし、ひとつの記事だけで投資判断をせず、決算や公式発表も合わせて確認する必要があります。');
+  }else{
+    parts.push('かんたんに言うと、これまでよりAIでできることが増えたり、同じ作業を少ない手間で進められたりする可能性があるニュースです。自分の仕事や生活のどこで使えそうかに置き換えると理解しやすくなります。');
+  }
+  parts.push('すぐに全部のやり方を変える必要はありません。まずは公式情報で利用条件を確認し、失敗しても困らない小さな作業から試すと安心です。');
+  return parts.join('\n\n');
+}
+
 /* ---- 読みモード（既定） ---- */
 function renderDetailRead(v,u,tool){
   document.getElementById('topActions').innerHTML =
@@ -2638,7 +2672,7 @@ function renderDetailRead(v,u,tool){
 
       ${u.easy_summary&&u.easy_summary.trim()?`<div class="read-block is-easy">
         <div class="rb-head"><span class="rb-ico" style="background:#e9f9f0;color:#16a34a">${icon('eye')}</span><span class="rb-label">やさしい解説（AIが要約）</span></div>
-        <div class="rb-body">${esc(u.easy_summary)}</div>
+        <div class="rb-body">${esc(buildFriendlyExplanation(u,tool))}</div>
       </div>`:''}
 
       ${u.source_url?`<a class="btn btn-primary" href="${esc(u.source_url)}" target="_blank" rel="noopener" style="text-decoration:none;display:inline-flex;width:fit-content;margin-bottom:14px" aria-label="情報元の記事を外部サイトで読む">${icon('ext')}情報元の記事を読む（外部サイト）</a>`:''}
@@ -2669,6 +2703,7 @@ function renderDetailEdit(v,u,tool){
       <div class="detail-title" style="font-size:20px">${esc(u.title)}</div>
       <div class="form-card">
         <div class="field"><label>かんたん要約</label>${ta('d_manual',u.manual_summary,'このアップデートを一言で。')}</div>
+        <div class="field"><label>やさしい解説</label>${ta('d_easy',u.easy_summary,'専門用語を使わず、初めて読む人にも分かるように説明。',6)}</div>
         <div class="field"><label>何が変わったか</label>${ta('d_simple',u.simple_explanation,'専門用語を避けて、何が新しくなったか。')}</div>
         <div class="field"><label>仕事への影響</label>${ta('d_impact',u.impact_summary,'自分の仕事にどう役立つか。')}</div>
         <div class="field"><label>次にやること</label>${ta('d_action',u.action_suggestion,'具体的な次のアクション。')}</div>
@@ -2692,7 +2727,7 @@ function cancelDetailEdit(){ detailEdit=false; render(); }
 function quickStatus(id,s){ setStatus(id,s); const sel=document.getElementById('d_status'); if(sel)sel.value=s; toast('ステータスを「'+STATUS_LABELS[s]+'」に変更','ok'); renderNav(); }
 function saveDetail(id){
   const u=updateById(id); if(!u)return;
-  u.manual_summary=val('d_manual'); u.simple_explanation=val('d_simple');
+  u.manual_summary=val('d_manual'); u.easy_summary=val('d_easy'); u.simple_explanation=val('d_simple');
   u.impact_summary=val('d_impact'); u.action_suggestion=val('d_action'); u.memo=val('d_memo');
   u.related_categories=[...document.querySelectorAll('#d_cats input:checked')].map(c=>c.value);
   saveUpdate(u);
